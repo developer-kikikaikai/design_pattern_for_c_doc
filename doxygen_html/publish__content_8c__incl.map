@@ -1,0 +1,8 @@
+<map id="D:/design_pattern_for_c/publisher/lib/publish_content.c" name="D:/design_pattern_for_c/publisher/lib/publish_content.c">
+<area shape="rect" id="node2" href="$publish__content_8h.html" title="This is API for PublishContent class which managed in Publisher. " alt="" coords="5,109,129,136"/>
+<area shape="rect" id="node7" href="$dp__util_8h.html" title="Utility headers. " alt="" coords="267,109,337,136"/>
+<area shape="rect" id="node3" href="$publisher_8h.html" title="This is API as Observer(Publish&#45;Subscribe) design petten. " alt="" coords="26,184,111,211"/>
+<area shape="rect" id="node8" href="$dp__list_8h.html" title="Utility list API for design pattern. " alt="" coords="319,184,389,211"/>
+<area shape="rect" id="node9" href="$dp__mutex_8h.html" title="Utility mutex API for design pattern. " alt="" coords="414,184,505,211"/>
+<area shape="rect" id="node10" href="$dp__debug_8h.html" title="For using debug log. " alt="" coords="205,184,295,211"/>
+</map>

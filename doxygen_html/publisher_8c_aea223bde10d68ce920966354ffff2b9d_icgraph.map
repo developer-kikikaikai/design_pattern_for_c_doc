@@ -1,0 +1,5 @@
+<map id="publisher_get_content" name="publisher_get_content">
+<area shape="rect" id="node2" href="$publisher_8c.html#a4f7a8c4d7780b574c136a057ac524033" title="subscribe " alt="" coords="209,5,347,32"/>
+<area shape="rect" id="node3" href="$publisher_8c.html#a19233984adcb851a6441ac76467fc2c5" title="unsubscribe, if you want to stop subscribe, please call it " alt="" coords="203,56,353,83"/>
+<area shape="rect" id="node4" href="$publisher_8c.html#a59fb7a935a9e8dfb338ddd144366e6c2" title="publish, Publisher call subscriber&#39;s notify if type is same " alt="" coords="217,107,339,133"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="state_machine_t" name="state_machine_t">
+<area shape="rect" id="node2" href="$structstate__manager__list__data__t.html" title="information of StateMachine, to use as list " alt="" coords="11,317,143,359"/>
+<area shape="rect" id="node3" href="$structstate__manager__t.html" title="StateManager class member definition, detail is defined in C file. " alt="" coords="18,228,137,255"/>
+<area shape="rect" id="node4" href="$structstate__manager__state__info__t.html" title="state info definition. instance storaged by list " alt="" coords="5,95,149,136"/>
+<area shape="rect" id="node5" href="$structstate__info__t.html" title="state method definition, to know detail, add parameter &quot;name&quot;. It is set by STATE_MNG_SET_INFO_INIT o..." alt="" coords="33,5,122,32"/>
+</map>

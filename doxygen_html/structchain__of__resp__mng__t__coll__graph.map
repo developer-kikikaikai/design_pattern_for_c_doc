@@ -1,0 +1,5 @@
+<map id="chain_of_resp_mng_t" name="chain_of_resp_mng_t">
+<area shape="rect" id="node2" href="$structflyweight__methods__t.html" title="Flyweight methods interface definition, to set flyweight_factory_new. This interface is used for gene..." alt="" coords="5,5,145,32"/>
+<area shape="rect" id="node3" href="$structflyweight__factory__t.html" title="FlyweightFactory member definition, defined in flyweight.c. " alt="" coords="148,95,277,121"/>
+<area shape="rect" id="node4" href="$structflyweight__instance__t.html" title="instance data definition, instance storaged by list " alt="" coords="170,5,309,32"/>
+</map>

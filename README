@@ -1,0 +1,11 @@
+# Document of design_pattern_for_c
+
+  This is documents to support [design_pattern_for_c](https://github.com/developer-kikikaikai/design_pattern_for_c) package usage.
+  This repository has following:
+
+- Doxygen document of the package code
+- Base class design figure
+
+  If you want to see detail of source code, please use it.
+
+  If you want to know "how to use" or "what is" design_pattern_for_c, please see [this wiki] (https://github.com/developer-kikikaikai/design_pattern_for_c/wiki)

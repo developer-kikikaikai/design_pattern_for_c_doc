@@ -1,0 +1,6 @@
+<map id="state_manager_call" name="state_manager_call">
+<area shape="rect" id="node2" href="$state__machine_8c.html#a0ff56967f79578644a81242324f447fc" title="state_machine_call\l_event_normally" alt="" coords="188,37,323,79"/>
+<area shape="rect" id="node3" href="$state__machine_8c.html#a86a375478165e6803f5b6401c040f3af" title="state_machine_thread_main" alt="" coords="371,17,556,43"/>
+<area shape="rect" id="node5" href="$state__machine_8c.html#acc4adfef1263da6dc2d3dda61b3f0506" title="Create StateMachine class. " alt="" coords="796,42,933,69"/>
+<area shape="rect" id="node4" href="$state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="state_machine_initial\l_thread" alt="" coords="604,5,748,47"/>
+</map>
