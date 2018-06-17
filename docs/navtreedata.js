@@ -52,7 +52,7 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "flyweight_8c.html#a9ead66ee5b686f57f15c5af423cc2739",
-"struct_chain_element_part.html"
+"struct_chain_of_responsibility.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"struct_chain_element_part.html":[0,0,7],
 "struct_chain_of_responsibility.html":[0,0,8],
 "struct_d_p_util_list.html":[0,0,15],
 "struct_director.html":[0,0,11],
