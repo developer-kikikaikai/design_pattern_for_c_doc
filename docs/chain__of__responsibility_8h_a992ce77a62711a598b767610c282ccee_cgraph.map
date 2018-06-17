@@ -1,11 +1,11 @@
 <map id="cor_remove_function" name="cor_remove_function">
 <area shape="rect" id="node2" href="$flyweight_8h.html#a5a9bc49455819c7d07dc97e33d57de55" title="getter " alt="" coords="222,71,319,98"/>
 <area shape="rect" id="node8" href="$chain__element_8c.html#ac77db7177de1c0e80c29b9fe437f99e3" title="chain_element_remove\l_function" alt="" coords="193,123,348,164"/>
-<area shape="rect" id="node3" href="$flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="flyweight_factory_get" alt="" coords="406,71,549,98"/>
-<area shape="rect" id="node4" href="$flyweight_8c.html#a9a5ace54e0a77643698d26d57cc031e5" title="flyweight_factory_get\l_storaged_instance" alt="" coords="637,5,780,47"/>
-<area shape="rect" id="node5" href="$flyweight_8c.html#a354d2a3de93708ffe8c8c408581ddcfb" title="flyweight_factory_instance_new" alt="" coords="607,71,811,98"/>
-<area shape="rect" id="node7" href="$flyweight_8c.html#adc94ba02ebd59ec314dcaa4f564b75fb" title="flyweight_factory_push\l_instance" alt="" coords="632,123,785,164"/>
+<area shape="rect" id="node3" href="$flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="Getter. " alt="" coords="406,71,549,98"/>
+<area shape="rect" id="node4" href="$flyweight_8c.html#a9a5ace54e0a77643698d26d57cc031e5" title="Check has instance. " alt="" coords="637,5,780,47"/>
+<area shape="rect" id="node5" href="$flyweight_8c.html#a354d2a3de93708ffe8c8c408581ddcfb" title="allocate. " alt="" coords="607,71,811,98"/>
+<area shape="rect" id="node7" href="$flyweight_8c.html#adc94ba02ebd59ec314dcaa4f564b75fb" title="push instance into list. " alt="" coords="632,123,785,164"/>
 <area shape="rect" id="node6" href="$flyweight_8c.html#aad881aca76ab55a56d9508d419edeb77" title="flyweight_instance_new" alt="" coords="859,71,1017,98"/>
-<area shape="rect" id="node9" href="$dp__list_8h.html#a26471479b1060e936eef4872fc7acb4a" title="dputil_list_pull" alt="" coords="425,126,529,153"/>
+<area shape="rect" id="node9" href="$dp__list_8h.html#a26471479b1060e936eef4872fc7acb4a" title="list pull " alt="" coords="425,126,529,153"/>
 <area shape="rect" id="node10" href="$chain__element_8c.html#a6e9dd8dd0fc11752d41e3271707c421d" title="free ChainElementPart " alt="" coords="396,177,559,203"/>
 </map>

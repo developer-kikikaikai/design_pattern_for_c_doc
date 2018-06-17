@@ -1,0 +1,6 @@
+<map id="event_tpool_insert_info_t" name="event_tpool_insert_info_t">
+<area shape="rect" id="node2" href="$structevent__tpool__thread__info__t.html" title="thread instance and fd list " alt="" coords="163,219,293,260"/>
+<area shape="rect" id="node3" href="$structevent__tpool__fd__data__t.html" title="used fd data list " alt="" coords="5,113,152,140"/>
+<area shape="rect" id="node4" href="$structevent__tpool__thread__t.html" title="thread information " alt="" coords="228,113,369,140"/>
+<area shape="rect" id="node5" href="$structevent__subscriber__data__t.html" title="subscriber information define " alt="" coords="217,7,380,33"/>
+</map>

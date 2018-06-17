@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['device_5fplugin_5fif_2eh',['device_plugin_if.h',['../device__plugin__if_8h.html',1,'']]],
   ['director_2ec',['director.c',['../director_8c.html',1,'']]],
   ['director_2eh',['director.h',['../director_8h.html',1,'']]],
   ['dp_5fdebug_2eh',['dp_debug.h',['../dp__debug_8h.html',1,'']]],

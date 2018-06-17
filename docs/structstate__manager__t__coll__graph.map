@@ -1,4 +1,4 @@
 <map id="state_manager_t" name="state_manager_t">
-<area shape="rect" id="node2" href="$structstate__manager__state__info__t.html" title="state info definition. instance storaged by list " alt="" coords="5,95,149,136"/>
-<area shape="rect" id="node3" href="$structstate__info__t.html" title="state method definition, to know detail, add parameter &quot;name&quot;. It is set by STATE_MNG_SET_INFO_INIT o..." alt="" coords="33,5,122,32"/>
+<area shape="rect" id="node2" href="$structstate__manager__state__info__t.html" title="state info definition. " alt="" coords="5,95,149,136"/>
+<area shape="rect" id="node3" href="$structstate__info__t.html" title="state method definition, to know detail, add parameter &quot;name&quot;. " alt="" coords="33,5,122,32"/>
 </map>

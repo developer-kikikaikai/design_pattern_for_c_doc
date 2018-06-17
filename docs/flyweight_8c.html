@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">design_pattern_for_c
-   &#160;<span id="projectnumber">0.01</span>
+   &#160;<span id="projectnumber">for 1.0.0 pre</span>
    </div>
   </td>
  </tr>
@@ -110,7 +110,7 @@ Include dependency graph for flyweight.c:</div>
 <div class="center"><img src="flyweight_8c__incl.png" border="0" usemap="#_d_1_2design__pattern__for__c_2flyweight_2lib_2flyweight_8c" alt=""/></div>
 <map name="_d_1_2design__pattern__for__c_2flyweight_2lib_2flyweight_8c" id="_d_1_2design__pattern__for__c_2flyweight_2lib_2flyweight_8c">
 <area shape="rect" id="node7" href="flyweight_8h.html" title="This is API as Flyweight design petten. " alt="" coords="216,95,299,121"/>
-<area shape="rect" id="node9" href="dp__util_8h.html" title="Utility headers. " alt="" coords="290,169,361,196"/>
+<area shape="rect" id="node9" href="dp__util_8h.html" title=" Utility headers " alt="" coords="290,169,361,196"/>
 <area shape="rect" id="node10" href="dp__list_8h.html" title="Utility list API for design pattern. " alt="" coords="290,244,361,271"/>
 <area shape="rect" id="node11" href="dp__mutex_8h.html" title="Utility mutex API for design pattern. " alt="" coords="436,244,527,271"/>
 <area shape="rect" id="node12" href="dp__debug_8h.html" title="For using debug log. " alt="" coords="177,244,266,271"/>
@@ -161,14 +161,19 @@ Functions</h2></td></tr>
 <tr class="separator:a5a71dbf1c2d3a921345f27a4656aff94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">public API with FlyweightInstance</div></td></tr>
 <tr class="memitem:a9a5ace54e0a77643698d26d57cc031e5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="flyweight_8c.html#ad87b06730d05c80d303734bbf96764a1">FlyweightInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flyweight_8c.html#a9a5ace54e0a77643698d26d57cc031e5">flyweight_factory_get_storaged_instance</a> (<a class="el" href="flyweight_8h.html#a13bb31672c62df2953172ca2ac635ae3">FlyweightFactory</a> <a class="el" href="structclass__factory.html">class_factory</a>, void *constructor_parameter)</td></tr>
+<tr class="memdesc:a9a5ace54e0a77643698d26d57cc031e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check has instance.  <a href="#a9a5ace54e0a77643698d26d57cc031e5">More...</a><br /></td></tr>
 <tr class="separator:a9a5ace54e0a77643698d26d57cc031e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a354d2a3de93708ffe8c8c408581ddcfb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="flyweight_8c.html#ad87b06730d05c80d303734bbf96764a1">FlyweightInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flyweight_8c.html#a354d2a3de93708ffe8c8c408581ddcfb">flyweight_factory_instance_new</a> (<a class="el" href="flyweight_8h.html#a13bb31672c62df2953172ca2ac635ae3">FlyweightFactory</a> <a class="el" href="structclass__factory.html">class_factory</a>, void *constructor_parameter)</td></tr>
+<tr class="memdesc:a354d2a3de93708ffe8c8c408581ddcfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">allocate.  <a href="#a354d2a3de93708ffe8c8c408581ddcfb">More...</a><br /></td></tr>
 <tr class="separator:a354d2a3de93708ffe8c8c408581ddcfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc94ba02ebd59ec314dcaa4f564b75fb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flyweight_8c.html#adc94ba02ebd59ec314dcaa4f564b75fb">flyweight_factory_push_instance</a> (<a class="el" href="flyweight_8c.html#ad87b06730d05c80d303734bbf96764a1">FlyweightInstance</a> instance, <a class="el" href="flyweight_8h.html#a13bb31672c62df2953172ca2ac635ae3">FlyweightFactory</a> <a class="el" href="structclass__factory.html">class_factory</a>)</td></tr>
+<tr class="memdesc:adc94ba02ebd59ec314dcaa4f564b75fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">push instance into list.  <a href="#adc94ba02ebd59ec314dcaa4f564b75fb">More...</a><br /></td></tr>
 <tr class="separator:adc94ba02ebd59ec314dcaa4f564b75fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f162d91622fefbe67d24a0f28c0f01f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="flyweight_8c.html#ad87b06730d05c80d303734bbf96764a1">FlyweightInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flyweight_8c.html#a9f162d91622fefbe67d24a0f28c0f01f">flyweight_factory_pop_instance</a> (<a class="el" href="flyweight_8h.html#a13bb31672c62df2953172ca2ac635ae3">FlyweightFactory</a> <a class="el" href="structclass__factory.html">class_factory</a>)</td></tr>
+<tr class="memdesc:a9f162d91622fefbe67d24a0f28c0f01f"><td class="mdescLeft">&#160;</td><td class="mdescRight">pop instance from list.  <a href="#a9f162d91622fefbe67d24a0f28c0f01f">More...</a><br /></td></tr>
 <tr class="separator:a9f162d91622fefbe67d24a0f28c0f01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe495f80c904b2dc9ee940f02b951497"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="flyweight_8c.html#ad87b06730d05c80d303734bbf96764a1">FlyweightInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497">flyweight_factory_get</a> (<a class="el" href="flyweight_8h.html#a13bb31672c62df2953172ca2ac635ae3">FlyweightFactory</a> <a class="el" href="structclass__factory.html">class_factory</a>, void *constructor_parameter)</td></tr>
+<tr class="memdesc:afe495f80c904b2dc9ee940f02b951497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter.  <a href="#afe495f80c904b2dc9ee940f02b951497">More...</a><br /></td></tr>
 <tr class="separator:afe495f80c904b2dc9ee940f02b951497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
@@ -178,12 +183,16 @@ private API for FlyweightFactory</h2></td></tr>
 <tr class="memitem:afad7370d66ba7ed500eb12441298adb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flyweight_8c.html#afad7370d66ba7ed500eb12441298adb9">FLYWEIGHT_CLASS_UNLOCK</a>&#160;&#160;&#160;<a class="el" href="dp__mutex_8h.html#a5c33541ab9909d5e4431adb8353f8328">DPUTIL_UNLOCK</a></td></tr>
 <tr class="separator:afad7370d66ba7ed500eb12441298adb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ead66ee5b686f57f15c5af423cc2739"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flyweight_8c.html#a9ead66ee5b686f57f15c5af423cc2739">flyweight_class_default_constructor</a> (void *this, size_t size, void *input_parameter)</td></tr>
+<tr class="memdesc:a9ead66ee5b686f57f15c5af423cc2739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a9ead66ee5b686f57f15c5af423cc2739">More...</a><br /></td></tr>
 <tr class="separator:a9ead66ee5b686f57f15c5af423cc2739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a222109849a7f0ed96f0560437b645222"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flyweight_8c.html#a222109849a7f0ed96f0560437b645222">flyweight_class_default_equall_operand</a> (void *this, size_t size, void *input_parameter)</td></tr>
+<tr class="memdesc:a222109849a7f0ed96f0560437b645222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default equall operand.  <a href="#a222109849a7f0ed96f0560437b645222">More...</a><br /></td></tr>
 <tr class="separator:a222109849a7f0ed96f0560437b645222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acad9e8853c11887076b57e1cc2fb7370"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flyweight_8c.html#acad9e8853c11887076b57e1cc2fb7370">flyweight_class_default_setter</a> (void *this, size_t size, void *input_parameter)</td></tr>
+<tr class="memdesc:acad9e8853c11887076b57e1cc2fb7370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default setter.  <a href="#acad9e8853c11887076b57e1cc2fb7370">More...</a><br /></td></tr>
 <tr class="separator:acad9e8853c11887076b57e1cc2fb7370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37f67b7c44abcec77d903afa8acd5dac"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flyweight_8c.html#a37f67b7c44abcec77d903afa8acd5dac">flyweight_class_set_methods</a> (<a class="el" href="flyweight_8h.html#a0f47b655feb6ce69bf9b68a2537879af">FlyweightMethodsIF</a> methods, <a class="el" href="flyweight_8h.html#a13bb31672c62df2953172ca2ac635ae3">FlyweightFactory</a> instance)</td></tr>
+<tr class="memdesc:a37f67b7c44abcec77d903afa8acd5dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set methods.  <a href="#a37f67b7c44abcec77d903afa8acd5dac">More...</a><br /></td></tr>
 <tr class="separator:a37f67b7c44abcec77d903afa8acd5dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -316,6 +325,7 @@ private API for FlyweightFactory</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Default constructor. </p>
 
 <p class="definition">Definition at line <a class="el" href="flyweight_8c_source.html#l00170">170</a> of file <a class="el" href="flyweight_8c_source.html">flyweight.c</a>.</p>
@@ -324,7 +334,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="flyweight_8c_a9ead66ee5b686f57f15c5af423cc2739_icgraph.png" border="0" usemap="#flyweight_8c_a9ead66ee5b686f57f15c5af423cc2739_icgraph" alt=""/></div>
 <map name="flyweight_8c_a9ead66ee5b686f57f15c5af423cc2739_icgraph" id="flyweight_8c_a9ead66ee5b686f57f15c5af423cc2739_icgraph">
-<area shape="rect" id="node2" href="flyweight_8c.html#a37f67b7c44abcec77d903afa8acd5dac" title="flyweight_class_set\l_methods" alt="" coords="208,5,343,47"/>
+<area shape="rect" id="node2" href="flyweight_8c.html#a37f67b7c44abcec77d903afa8acd5dac" title="Set methods. " alt="" coords="208,5,343,47"/>
 <area shape="rect" id="node3" href="flyweight_8c.html#abb713f29f7f40898f65a8d809e52eb4a" title="define class for flyweight " alt="" coords="391,13,539,39"/>
 <area shape="rect" id="node4" href="chain__of__responsibility_8c.html#a7ab8871578e2e5e3c79f7ccbebe53b3e" title="add to chain api " alt="" coords="587,13,707,39"/>
 </map>
@@ -371,6 +381,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Default equall operand. </p>
 
 <p class="definition">Definition at line <a class="el" href="flyweight_8c_source.html#l00179">179</a> of file <a class="el" href="flyweight_8c_source.html">flyweight.c</a>.</p>
@@ -379,7 +390,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="flyweight_8c_a222109849a7f0ed96f0560437b645222_icgraph.png" border="0" usemap="#flyweight_8c_a222109849a7f0ed96f0560437b645222_icgraph" alt=""/></div>
 <map name="flyweight_8c_a222109849a7f0ed96f0560437b645222_icgraph" id="flyweight_8c_a222109849a7f0ed96f0560437b645222_icgraph">
-<area shape="rect" id="node2" href="flyweight_8c.html#a37f67b7c44abcec77d903afa8acd5dac" title="flyweight_class_set\l_methods" alt="" coords="208,5,343,47"/>
+<area shape="rect" id="node2" href="flyweight_8c.html#a37f67b7c44abcec77d903afa8acd5dac" title="Set methods. " alt="" coords="208,5,343,47"/>
 <area shape="rect" id="node3" href="flyweight_8c.html#abb713f29f7f40898f65a8d809e52eb4a" title="define class for flyweight " alt="" coords="391,13,539,39"/>
 <area shape="rect" id="node4" href="chain__of__responsibility_8c.html#a7ab8871578e2e5e3c79f7ccbebe53b3e" title="add to chain api " alt="" coords="587,13,707,39"/>
 </map>
@@ -426,6 +437,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Default setter. </p>
 
 <p class="definition">Definition at line <a class="el" href="flyweight_8c_source.html#l00188">188</a> of file <a class="el" href="flyweight_8c_source.html">flyweight.c</a>.</p>
@@ -434,7 +446,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="flyweight_8c_acad9e8853c11887076b57e1cc2fb7370_icgraph.png" border="0" usemap="#flyweight_8c_acad9e8853c11887076b57e1cc2fb7370_icgraph" alt=""/></div>
 <map name="flyweight_8c_acad9e8853c11887076b57e1cc2fb7370_icgraph" id="flyweight_8c_acad9e8853c11887076b57e1cc2fb7370_icgraph">
-<area shape="rect" id="node2" href="flyweight_8c.html#a37f67b7c44abcec77d903afa8acd5dac" title="flyweight_class_set\l_methods" alt="" coords="208,5,343,47"/>
+<area shape="rect" id="node2" href="flyweight_8c.html#a37f67b7c44abcec77d903afa8acd5dac" title="Set methods. " alt="" coords="208,5,343,47"/>
 <area shape="rect" id="node3" href="flyweight_8c.html#abb713f29f7f40898f65a8d809e52eb4a" title="define class for flyweight " alt="" coords="391,13,539,39"/>
 <area shape="rect" id="node4" href="chain__of__responsibility_8c.html#a7ab8871578e2e5e3c79f7ccbebe53b3e" title="add to chain api " alt="" coords="587,13,707,39"/>
 </map>
@@ -475,6 +487,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Set methods. </p>
 
 <p class="definition">Definition at line <a class="el" href="flyweight_8c_source.html#l00198">198</a> of file <a class="el" href="flyweight_8c_source.html">flyweight.c</a>.</p>
@@ -483,9 +496,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="flyweight_8c_a37f67b7c44abcec77d903afa8acd5dac_cgraph.png" border="0" usemap="#flyweight_8c_a37f67b7c44abcec77d903afa8acd5dac_cgraph" alt=""/></div>
 <map name="flyweight_8c_a37f67b7c44abcec77d903afa8acd5dac_cgraph" id="flyweight_8c_a37f67b7c44abcec77d903afa8acd5dac_cgraph">
-<area shape="rect" id="node2" href="flyweight_8c.html#a9ead66ee5b686f57f15c5af423cc2739" title="flyweight_class_default\l_constructor" alt="" coords="188,5,343,47"/>
-<area shape="rect" id="node3" href="flyweight_8c.html#a222109849a7f0ed96f0560437b645222" title="flyweight_class_default\l_equall_operand" alt="" coords="188,71,343,112"/>
-<area shape="rect" id="node4" href="flyweight_8c.html#acad9e8853c11887076b57e1cc2fb7370" title="flyweight_class_default\l_setter" alt="" coords="188,136,343,177"/>
+<area shape="rect" id="node2" href="flyweight_8c.html#a9ead66ee5b686f57f15c5af423cc2739" title="Default constructor. " alt="" coords="188,5,343,47"/>
+<area shape="rect" id="node3" href="flyweight_8c.html#a222109849a7f0ed96f0560437b645222" title="Default equall operand. " alt="" coords="188,71,343,112"/>
+<area shape="rect" id="node4" href="flyweight_8c.html#acad9e8853c11887076b57e1cc2fb7370" title="Default setter. " alt="" coords="188,136,343,177"/>
 </map>
 </div>
 <div class="dynheader">
@@ -531,7 +544,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="flyweight_8c_a5a71dbf1c2d3a921345f27a4656aff94_cgraph.png" border="0" usemap="#flyweight_8c_a5a71dbf1c2d3a921345f27a4656aff94_cgraph" alt=""/></div>
 <map name="flyweight_8c_a5a71dbf1c2d3a921345f27a4656aff94_cgraph" id="flyweight_8c_a5a71dbf1c2d3a921345f27a4656aff94_cgraph">
-<area shape="rect" id="node2" href="flyweight_8c.html#a9f162d91622fefbe67d24a0f28c0f01f" title="flyweight_factory_pop\l_instance" alt="" coords="205,5,351,47"/>
+<area shape="rect" id="node2" href="flyweight_8c.html#a9f162d91622fefbe67d24a0f28c0f01f" title="pop instance from list. " alt="" coords="205,5,351,47"/>
 <area shape="rect" id="node3" href="flyweight_8c.html#a7d451a346bca1e57284ec347c9bedc85" title="flyweight_instance_free" alt="" coords="200,71,356,98"/>
 </map>
 </div>
@@ -579,6 +592,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Getter. </p>
 
 <p class="definition">Definition at line <a class="el" href="flyweight_8c_source.html#l00152">152</a> of file <a class="el" href="flyweight_8c_source.html">flyweight.c</a>.</p>
@@ -587,9 +601,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="flyweight_8c_afe495f80c904b2dc9ee940f02b951497_cgraph.png" border="0" usemap="#flyweight_8c_afe495f80c904b2dc9ee940f02b951497_cgraph" alt=""/></div>
 <map name="flyweight_8c_afe495f80c904b2dc9ee940f02b951497_cgraph" id="flyweight_8c_afe495f80c904b2dc9ee940f02b951497_cgraph">
-<area shape="rect" id="node2" href="flyweight_8c.html#a9a5ace54e0a77643698d26d57cc031e5" title="flyweight_factory_get\l_storaged_instance" alt="" coords="227,5,369,47"/>
-<area shape="rect" id="node3" href="flyweight_8c.html#a354d2a3de93708ffe8c8c408581ddcfb" title="flyweight_factory_instance_new" alt="" coords="196,71,400,98"/>
-<area shape="rect" id="node5" href="flyweight_8c.html#adc94ba02ebd59ec314dcaa4f564b75fb" title="flyweight_factory_push\l_instance" alt="" coords="221,123,375,164"/>
+<area shape="rect" id="node2" href="flyweight_8c.html#a9a5ace54e0a77643698d26d57cc031e5" title="Check has instance. " alt="" coords="227,5,369,47"/>
+<area shape="rect" id="node3" href="flyweight_8c.html#a354d2a3de93708ffe8c8c408581ddcfb" title="allocate. " alt="" coords="196,71,400,98"/>
+<area shape="rect" id="node5" href="flyweight_8c.html#adc94ba02ebd59ec314dcaa4f564b75fb" title="push instance into list. " alt="" coords="221,123,375,164"/>
 <area shape="rect" id="node4" href="flyweight_8c.html#aad881aca76ab55a56d9508d419edeb77" title="flyweight_instance_new" alt="" coords="448,71,607,98"/>
 </map>
 </div>
@@ -641,6 +655,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Check has instance. </p>
 
 <p class="definition">Definition at line <a class="el" href="flyweight_8c_source.html#l00107">107</a> of file <a class="el" href="flyweight_8c_source.html">flyweight.c</a>.</p>
@@ -649,7 +664,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="flyweight_8c_a9a5ace54e0a77643698d26d57cc031e5_icgraph.png" border="0" usemap="#flyweight_8c_a9a5ace54e0a77643698d26d57cc031e5_icgraph" alt=""/></div>
 <map name="flyweight_8c_a9a5ace54e0a77643698d26d57cc031e5_icgraph" id="flyweight_8c_a9a5ace54e0a77643698d26d57cc031e5_icgraph">
-<area shape="rect" id="node2" href="flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="flyweight_factory_get" alt="" coords="196,81,339,108"/>
+<area shape="rect" id="node2" href="flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="Getter. " alt="" coords="196,81,339,108"/>
 <area shape="rect" id="node3" href="flyweight_8c.html#a5a9bc49455819c7d07dc97e33d57de55" title="getter " alt="" coords="387,56,484,83"/>
 <area shape="rect" id="node6" href="flyweight_8c.html#a8075a336e1a8cc72b3c57989e5d0f868" title="setter " alt="" coords="387,107,484,133"/>
 <area shape="rect" id="node4" href="chain__of__responsibility_8c.html#a6017534fc738e5fe592bc5b70a62b760" title="call chain api " alt="" coords="569,5,635,32"/>
@@ -693,6 +708,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>allocate. </p>
 
 <p class="definition">Definition at line <a class="el" href="flyweight_8c_source.html#l00126">126</a> of file <a class="el" href="flyweight_8c_source.html">flyweight.c</a>.</p>
@@ -709,7 +725,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="flyweight_8c_a354d2a3de93708ffe8c8c408581ddcfb_icgraph.png" border="0" usemap="#flyweight_8c_a354d2a3de93708ffe8c8c408581ddcfb_icgraph" alt=""/></div>
 <map name="flyweight_8c_a354d2a3de93708ffe8c8c408581ddcfb_icgraph" id="flyweight_8c_a354d2a3de93708ffe8c8c408581ddcfb_icgraph">
-<area shape="rect" id="node2" href="flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="flyweight_factory_get" alt="" coords="257,81,400,108"/>
+<area shape="rect" id="node2" href="flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="Getter. " alt="" coords="257,81,400,108"/>
 <area shape="rect" id="node3" href="flyweight_8c.html#a5a9bc49455819c7d07dc97e33d57de55" title="getter " alt="" coords="448,56,545,83"/>
 <area shape="rect" id="node6" href="flyweight_8c.html#a8075a336e1a8cc72b3c57989e5d0f868" title="setter " alt="" coords="448,107,545,133"/>
 <area shape="rect" id="node4" href="chain__of__responsibility_8c.html#a6017534fc738e5fe592bc5b70a62b760" title="call chain api " alt="" coords="630,5,697,32"/>
@@ -775,10 +791,10 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="flyweight_8c_abb713f29f7f40898f65a8d809e52eb4a_cgraph.png" border="0" usemap="#flyweight_8c_abb713f29f7f40898f65a8d809e52eb4a_cgraph" alt=""/></div>
 <map name="flyweight_8c_abb713f29f7f40898f65a8d809e52eb4a_cgraph" id="flyweight_8c_abb713f29f7f40898f65a8d809e52eb4a_cgraph">
-<area shape="rect" id="node2" href="flyweight_8c.html#a37f67b7c44abcec77d903afa8acd5dac" title="flyweight_class_set\l_methods" alt="" coords="201,71,336,112"/>
-<area shape="rect" id="node3" href="flyweight_8c.html#a9ead66ee5b686f57f15c5af423cc2739" title="flyweight_class_default\l_constructor" alt="" coords="384,5,539,47"/>
-<area shape="rect" id="node4" href="flyweight_8c.html#a222109849a7f0ed96f0560437b645222" title="flyweight_class_default\l_equall_operand" alt="" coords="384,71,539,112"/>
-<area shape="rect" id="node5" href="flyweight_8c.html#acad9e8853c11887076b57e1cc2fb7370" title="flyweight_class_default\l_setter" alt="" coords="384,136,539,177"/>
+<area shape="rect" id="node2" href="flyweight_8c.html#a37f67b7c44abcec77d903afa8acd5dac" title="Set methods. " alt="" coords="201,71,336,112"/>
+<area shape="rect" id="node3" href="flyweight_8c.html#a9ead66ee5b686f57f15c5af423cc2739" title="Default constructor. " alt="" coords="384,5,539,47"/>
+<area shape="rect" id="node4" href="flyweight_8c.html#a222109849a7f0ed96f0560437b645222" title="Default equall operand. " alt="" coords="384,71,539,112"/>
+<area shape="rect" id="node5" href="flyweight_8c.html#acad9e8853c11887076b57e1cc2fb7370" title="Default setter. " alt="" coords="384,136,539,177"/>
 </map>
 </div>
 <div class="dynheader">
@@ -815,6 +831,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>pop instance from list. </p>
 
 <p class="definition">Definition at line <a class="el" href="flyweight_8c_source.html#l00143">143</a> of file <a class="el" href="flyweight_8c_source.html">flyweight.c</a>.</p>
@@ -863,6 +880,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>push instance into list. </p>
 
 <p class="definition">Definition at line <a class="el" href="flyweight_8c_source.html#l00138">138</a> of file <a class="el" href="flyweight_8c_source.html">flyweight.c</a>.</p>
@@ -871,7 +889,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="flyweight_8c_adc94ba02ebd59ec314dcaa4f564b75fb_icgraph.png" border="0" usemap="#flyweight_8c_adc94ba02ebd59ec314dcaa4f564b75fb_icgraph" alt=""/></div>
 <map name="flyweight_8c_adc94ba02ebd59ec314dcaa4f564b75fb_icgraph" id="flyweight_8c_adc94ba02ebd59ec314dcaa4f564b75fb_icgraph">
-<area shape="rect" id="node2" href="flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="flyweight_factory_get" alt="" coords="207,81,349,108"/>
+<area shape="rect" id="node2" href="flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="Getter. " alt="" coords="207,81,349,108"/>
 <area shape="rect" id="node3" href="flyweight_8c.html#a5a9bc49455819c7d07dc97e33d57de55" title="getter " alt="" coords="397,56,495,83"/>
 <area shape="rect" id="node6" href="flyweight_8c.html#a8075a336e1a8cc72b3c57989e5d0f868" title="setter " alt="" coords="397,107,495,133"/>
 <area shape="rect" id="node4" href="chain__of__responsibility_8c.html#a6017534fc738e5fe592bc5b70a62b760" title="call chain api " alt="" coords="579,5,646,32"/>
@@ -930,10 +948,10 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="flyweight_8c_a5a9bc49455819c7d07dc97e33d57de55_cgraph.png" border="0" usemap="#flyweight_8c_a5a9bc49455819c7d07dc97e33d57de55_cgraph" alt=""/></div>
 <map name="flyweight_8c_a5a9bc49455819c7d07dc97e33d57de55_cgraph" id="flyweight_8c_a5a9bc49455819c7d07dc97e33d57de55_cgraph">
-<area shape="rect" id="node2" href="flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="flyweight_factory_get" alt="" coords="151,71,293,98"/>
-<area shape="rect" id="node3" href="flyweight_8c.html#a9a5ace54e0a77643698d26d57cc031e5" title="flyweight_factory_get\l_storaged_instance" alt="" coords="372,5,515,47"/>
-<area shape="rect" id="node4" href="flyweight_8c.html#a354d2a3de93708ffe8c8c408581ddcfb" title="flyweight_factory_instance_new" alt="" coords="341,71,545,98"/>
-<area shape="rect" id="node6" href="flyweight_8c.html#adc94ba02ebd59ec314dcaa4f564b75fb" title="flyweight_factory_push\l_instance" alt="" coords="367,123,520,164"/>
+<area shape="rect" id="node2" href="flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="Getter. " alt="" coords="151,71,293,98"/>
+<area shape="rect" id="node3" href="flyweight_8c.html#a9a5ace54e0a77643698d26d57cc031e5" title="Check has instance. " alt="" coords="372,5,515,47"/>
+<area shape="rect" id="node4" href="flyweight_8c.html#a354d2a3de93708ffe8c8c408581ddcfb" title="allocate. " alt="" coords="341,71,545,98"/>
+<area shape="rect" id="node6" href="flyweight_8c.html#adc94ba02ebd59ec314dcaa4f564b75fb" title="push instance into list. " alt="" coords="367,123,520,164"/>
 <area shape="rect" id="node5" href="flyweight_8c.html#aad881aca76ab55a56d9508d419edeb77" title="flyweight_instance_new" alt="" coords="593,71,752,98"/>
 </map>
 </div>
@@ -1016,8 +1034,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="flyweight_8c_aad881aca76ab55a56d9508d419edeb77_icgraph.png" border="0" usemap="#flyweight_8c_aad881aca76ab55a56d9508d419edeb77_icgraph" alt=""/></div>
 <map name="flyweight_8c_aad881aca76ab55a56d9508d419edeb77_icgraph" id="flyweight_8c_aad881aca76ab55a56d9508d419edeb77_icgraph">
-<area shape="rect" id="node2" href="flyweight_8c.html#a354d2a3de93708ffe8c8c408581ddcfb" title="flyweight_factory_instance_new" alt="" coords="212,81,416,108"/>
-<area shape="rect" id="node3" href="flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="flyweight_factory_get" alt="" coords="464,81,607,108"/>
+<area shape="rect" id="node2" href="flyweight_8c.html#a354d2a3de93708ffe8c8c408581ddcfb" title="allocate. " alt="" coords="212,81,416,108"/>
+<area shape="rect" id="node3" href="flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="Getter. " alt="" coords="464,81,607,108"/>
 <area shape="rect" id="node4" href="flyweight_8c.html#a5a9bc49455819c7d07dc97e33d57de55" title="getter " alt="" coords="655,56,752,83"/>
 <area shape="rect" id="node7" href="flyweight_8c.html#a8075a336e1a8cc72b3c57989e5d0f868" title="setter " alt="" coords="655,107,752,133"/>
 <area shape="rect" id="node5" href="chain__of__responsibility_8c.html#a6017534fc738e5fe592bc5b70a62b760" title="call chain api " alt="" coords="837,5,903,32"/>
@@ -1083,10 +1101,10 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="flyweight_8c_a8075a336e1a8cc72b3c57989e5d0f868_cgraph.png" border="0" usemap="#flyweight_8c_a8075a336e1a8cc72b3c57989e5d0f868_cgraph" alt=""/></div>
 <map name="flyweight_8c_a8075a336e1a8cc72b3c57989e5d0f868_cgraph" id="flyweight_8c_a8075a336e1a8cc72b3c57989e5d0f868_cgraph">
-<area shape="rect" id="node2" href="flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="flyweight_factory_get" alt="" coords="151,71,293,98"/>
-<area shape="rect" id="node3" href="flyweight_8c.html#a9a5ace54e0a77643698d26d57cc031e5" title="flyweight_factory_get\l_storaged_instance" alt="" coords="372,5,515,47"/>
-<area shape="rect" id="node4" href="flyweight_8c.html#a354d2a3de93708ffe8c8c408581ddcfb" title="flyweight_factory_instance_new" alt="" coords="341,71,545,98"/>
-<area shape="rect" id="node6" href="flyweight_8c.html#adc94ba02ebd59ec314dcaa4f564b75fb" title="flyweight_factory_push\l_instance" alt="" coords="367,123,520,164"/>
+<area shape="rect" id="node2" href="flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="Getter. " alt="" coords="151,71,293,98"/>
+<area shape="rect" id="node3" href="flyweight_8c.html#a9a5ace54e0a77643698d26d57cc031e5" title="Check has instance. " alt="" coords="372,5,515,47"/>
+<area shape="rect" id="node4" href="flyweight_8c.html#a354d2a3de93708ffe8c8c408581ddcfb" title="allocate. " alt="" coords="341,71,545,98"/>
+<area shape="rect" id="node6" href="flyweight_8c.html#adc94ba02ebd59ec314dcaa4f564b75fb" title="push instance into list. " alt="" coords="367,123,520,164"/>
 <area shape="rect" id="node5" href="flyweight_8c.html#aad881aca76ab55a56d9508d419edeb77" title="flyweight_instance_new" alt="" coords="593,71,752,98"/>
 </map>
 </div>

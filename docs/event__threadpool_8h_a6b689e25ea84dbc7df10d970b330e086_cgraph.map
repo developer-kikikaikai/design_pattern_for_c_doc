@@ -1,0 +1,7 @@
+<map id="event_tpool_del" name="event_tpool_del">
+<area shape="rect" id="node2" href="$event__tpool__manager_8c.html#a5cf33dc3f433da349f583f02071f0746" title="search insert place, to use event_tpool_thread_insert_thread " alt="" coords="164,5,315,47"/>
+<area shape="rect" id="node4" href="$event__tpool__manager_8c.html#a93e051f15d474cf9122910acaac2a81c" title="delete thread " alt="" coords="174,71,305,112"/>
+<area shape="rect" id="node3" href="$event__tpool__manager_8c.html#adbc37abfddfba5dfdf06db31f08c344c" title="search current setting " alt="" coords="363,5,535,47"/>
+<area shape="rect" id="node5" href="$event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="371,78,526,105"/>
+<area shape="rect" id="node6" href="$event__thread_8c.html#ab9f200e6f8c1c0da8ffc18717d139456" title="event_thread_msg_send_del" alt="" coords="583,78,769,105"/>
+</map>

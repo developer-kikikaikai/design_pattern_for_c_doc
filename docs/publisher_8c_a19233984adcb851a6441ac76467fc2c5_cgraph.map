@@ -1,6 +1,6 @@
 <map id="publisher_unsubscribe" name="publisher_unsubscribe">
 <area shape="rect" id="node2" href="$publisher_8c.html#aea223bde10d68ce920966354ffff2b9d" title="get content from id " alt="" coords="225,5,374,32"/>
 <area shape="rect" id="node3" href="$publish__content_8c.html#abe6cb501e94a2c20f79c49f79e54f7e8" title="publish_content_unsubscribe" alt="" coords="204,56,395,83"/>
-<area shape="rect" id="node4" href="$publish__content_8c.html#a5aa5eca411b7ea8eb68005e0513bb3d6" title="publish_content_pull\l_subscriber" alt="" coords="443,49,583,90"/>
-<area shape="rect" id="node5" href="$dp__list_8h.html#a26471479b1060e936eef4872fc7acb4a" title="dputil_list_pull" alt="" coords="631,56,735,83"/>
+<area shape="rect" id="node4" href="$publish__content_8c.html#a5aa5eca411b7ea8eb68005e0513bb3d6" title="pull subscriber " alt="" coords="443,49,583,90"/>
+<area shape="rect" id="node5" href="$dp__list_8h.html#a26471479b1060e936eef4872fc7acb4a" title="list pull " alt="" coords="631,56,735,83"/>
 </map>

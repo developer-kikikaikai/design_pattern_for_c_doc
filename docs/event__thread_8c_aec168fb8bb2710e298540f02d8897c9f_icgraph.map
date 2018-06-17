@@ -1,0 +1,8 @@
+<map id="event_tpool_thread_wait_stop" name="event_tpool_thread_wait_stop">
+<area shape="rect" id="node2" href="$event__thread_8h.html#a0be047b5d8ab4bae6aba5d4df09a518d" title="stop thread, and remove resource " alt="" coords="184,31,347,57"/>
+<area shape="rect" id="node3" href="$event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="395,23,525,65"/>
+<area shape="rect" id="node4" href="$event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="573,23,704,65"/>
+<area shape="rect" id="node5" href="$event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="752,23,896,65"/>
+<area shape="rect" id="node6" href="$event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="944,5,1119,32"/>
+<area shape="rect" id="node7" href="$event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="945,56,1117,83"/>
+</map>

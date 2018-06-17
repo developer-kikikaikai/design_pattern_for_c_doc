@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">design_pattern_for_c
-   &#160;<span id="projectnumber">0.01</span>
+   &#160;<span id="projectnumber">for 1.0.0 pre</span>
    </div>
   </td>
  </tr>
@@ -89,11 +89,14 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <div class="textblock">Here is a list of all functions, variables, defines, enums, and typedefs with links to the files they belong to:</div>
 
 <h3><a id="index_s"></a>- s -</h3><ul>
-<li>SOCK_READID
-: <a class="el" href="state__machine_8c.html#a75e037bc08a869f4131f0c4a5d5198f7">state_machine.c</a>
+<li>send_response
+: <a class="el" href="event__thread_8c.html#a772ae2b4f6e2b25d7b01eab3ae5ee726">event_thread.c</a>
 </li>
-<li>SOCK_WRITEID
-: <a class="el" href="state__machine_8c.html#ad8225045ef2d6f9340d3e90ccad347f5">state_machine.c</a>
+<li>SMACHINE_LOCK
+: <a class="el" href="state__machine_8c.html#a26123c22792d68e968ff86dab521b523">state_machine.c</a>
+</li>
+<li>SMACHINE_UNLOCK
+: <a class="el" href="state__machine_8c.html#afb705fdaece17cd150017b2e0785a1ac">state_machine.c</a>
 </li>
 <li>state_event_info_t
 : <a class="el" href="state__machine_8h.html#a56913e422151cf41ffafdf09c9c1d718">state_machine.h</a>
@@ -105,14 +108,17 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="state__machine_8c.html#aea35d3a855cf205cc2f35696b73bbb65">state_machine.c</a>
 </li>
 <li>state_machine_call_event()
-: <a class="el" href="state__machine_8h.html#a7f798cf93935a00e9838cb003bea006c">state_machine.h</a>
-, <a class="el" href="state__machine_8c.html#a7f798cf93935a00e9838cb003bea006c">state_machine.c</a>
+: <a class="el" href="state__machine_8c.html#a6b0b0b44643598e746e110500f292d31">state_machine.c</a>
+, <a class="el" href="state__machine_8h.html#a6b0b0b44643598e746e110500f292d31">state_machine.h</a>
 </li>
 <li>state_machine_call_event_multithread()
-: <a class="el" href="state__machine_8c.html#ac9b61df292bee4aeca57627c5c1ca494">state_machine.c</a>
+: <a class="el" href="state__machine_8c.html#a81664a812e29e9688c876babc5604a84">state_machine.c</a>
+</li>
+<li>state_machine_call_event_normal()
+: <a class="el" href="state__machine_8c.html#a3566a4ded1b0f00ea6d6d8db2a474c90">state_machine.c</a>
 </li>
 <li>state_machine_call_event_normally()
-: <a class="el" href="state__machine_8c.html#a0ff56967f79578644a81242324f447fc">state_machine.c</a>
+: <a class="el" href="state__machine_8c.html#a036a3a4094fcb1112a2ad408faa0152a">state_machine.c</a>
 </li>
 <li>state_machine_close_socket()
 : <a class="el" href="state__machine_8c.html#a57da8f358d1b9d7e2361d88dc50a22b9">state_machine.c</a>
@@ -121,14 +127,20 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 : <a class="el" href="state__machine_8c.html#a06dd32db130e7845676e2615343280a7">state_machine.c</a>
 </li>
 <li>state_machine_free()
-: <a class="el" href="state__machine_8h.html#a66b7645ec98b1944ff070494020cbde0">state_machine.h</a>
-, <a class="el" href="state__machine_8c.html#a66b7645ec98b1944ff070494020cbde0">state_machine.c</a>
+: <a class="el" href="state__machine_8h.html#a630a097f8c3fb7d16c581a01f69f9bcd">state_machine.h</a>
+, <a class="el" href="state__machine_8c.html#a630a097f8c3fb7d16c581a01f69f9bcd">state_machine.c</a>
 </li>
 <li>state_machine_free_states_multithread()
 : <a class="el" href="state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe">state_machine.c</a>
 </li>
 <li>state_machine_free_states_normally()
 : <a class="el" href="state__machine_8c.html#a36c95c8eeeee542fa348f50410944a15">state_machine.c</a>
+</li>
+<li>state_machine_get_read()
+: <a class="el" href="state__machine_8c.html#aed29438c1fca55cf7b910a70b3ce35d9">state_machine.c</a>
+</li>
+<li>state_machine_info_t
+: <a class="el" href="state__machine_8h.html#ad8049b967a295c26f3fc34e7511d2aff">state_machine.h</a>
 </li>
 <li>state_machine_initial_thread()
 : <a class="el" href="state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf">state_machine.c</a>
@@ -139,33 +151,33 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 <li>state_machine_manager_list_new()
 : <a class="el" href="state__machine_8c.html#a527506b3af22d012c11d7f376705b87f">state_machine.c</a>
 </li>
+<li>state_machine_msg_list_t
+: <a class="el" href="state__machine_8c.html#ad7bb303226a2ef2ec5a5e4dc3f500f6f">state_machine.c</a>
+</li>
 <li>state_machine_msg_t
-: <a class="el" href="state__machine_8c.html#a7b08c09f7eaa913cf7d9dffc52920602">state_machine.c</a>
+: <a class="el" href="state__machine_8c.html#a4bb263831a62e2d259c2dbf4d38f7caa">state_machine.c</a>
 </li>
 <li>state_machine_new()
-: <a class="el" href="state__machine_8h.html#acc4adfef1263da6dc2d3dda61b3f0506">state_machine.h</a>
-, <a class="el" href="state__machine_8c.html#acc4adfef1263da6dc2d3dda61b3f0506">state_machine.c</a>
+: <a class="el" href="state__machine_8h.html#a19b6eb0eb78ca26207289a0adb092ea3">state_machine.h</a>
+, <a class="el" href="state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3">state_machine.c</a>
 </li>
 <li>state_machine_open_socket()
 : <a class="el" href="state__machine_8c.html#ab712373292be68250906f6ff0a04bb23">state_machine.c</a>
 </li>
-<li>state_machine_read()
-: <a class="el" href="state__machine_8c.html#aeaec60659d1d5268bcea76373ab26c41">state_machine.c</a>
-</li>
 <li>state_machine_set_state()
-: <a class="el" href="state__machine_8h.html#a1f784925bb7750a22bce43060e159557">state_machine.h</a>
-, <a class="el" href="state__machine_8c.html#a1f784925bb7750a22bce43060e159557">state_machine.c</a>
+: <a class="el" href="state__machine_8h.html#a7a5094c9a7363da35fc3d6ce76780d61">state_machine.h</a>
+, <a class="el" href="state__machine_8c.html#a7a5094c9a7363da35fc3d6ce76780d61">state_machine.c</a>
 </li>
 <li>state_machine_show()
-: <a class="el" href="state__machine_8h.html#addee234bab54ecee11e1bfe27e163180">state_machine.h</a>
-, <a class="el" href="state__machine_8c.html#addee234bab54ecee11e1bfe27e163180">state_machine.c</a>
+: <a class="el" href="state__machine_8h.html#aa0289bfb25a29c73c31536d40450917e">state_machine.h</a>
+, <a class="el" href="state__machine_8c.html#aa0289bfb25a29c73c31536d40450917e">state_machine.c</a>
 </li>
 <li>state_machine_thread_main()
-: <a class="el" href="state__machine_8c.html#a86a375478165e6803f5b6401c040f3af">state_machine.c</a>
+: <a class="el" href="state__machine_8c.html#a8af8cd5d3673984515e9c28d658666e8">state_machine.c</a>
 </li>
 <li>state_machine_update_machine()
-: <a class="el" href="state__machine_8h.html#aa08f232f59d5c60dd02f11c1c99107f9">state_machine.h</a>
-, <a class="el" href="state__machine_8c.html#aa08f232f59d5c60dd02f11c1c99107f9">state_machine.c</a>
+: <a class="el" href="state__machine_8h.html#a9e228abeac323d037fde627e61b96864">state_machine.h</a>
+, <a class="el" href="state__machine_8c.html#a9e228abeac323d037fde627e61b96864">state_machine.c</a>
 </li>
 <li>state_machine_write()
 : <a class="el" href="state__machine_8c.html#a5496aaebc5dd228659a40ee3b79f4cbd">state_machine.c</a>
@@ -185,24 +197,24 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 , <a class="el" href="state__manager_8c.html#a6a212d11f1218795fdd3f0d41e308214">state_manager.c</a>
 </li>
 <li>state_manager_get_current_state()
-: <a class="el" href="state__manager_8h.html#afb2940728135955e7f980722f418c992">state_manager.h</a>
-, <a class="el" href="state__manager_8c.html#afb2940728135955e7f980722f418c992">state_manager.c</a>
+: <a class="el" href="state__manager_8c.html#afb2940728135955e7f980722f418c992">state_manager.c</a>
+, <a class="el" href="state__manager_8h.html#afb2940728135955e7f980722f418c992">state_manager.h</a>
 </li>
 <li>state_manager_new()
 : <a class="el" href="state__manager_8c.html#abbb560e7b4099d256f4ca409be71de48">state_manager.c</a>
 , <a class="el" href="state__manager_8h.html#abbb560e7b4099d256f4ca409be71de48">state_manager.h</a>
 </li>
 <li>state_manager_set_state()
-: <a class="el" href="state__manager_8h.html#a213a3722bdf21483e4ffc5d441962b9c">state_manager.h</a>
-, <a class="el" href="state__manager_8c.html#a213a3722bdf21483e4ffc5d441962b9c">state_manager.c</a>
+: <a class="el" href="state__manager_8c.html#a213a3722bdf21483e4ffc5d441962b9c">state_manager.c</a>
+, <a class="el" href="state__manager_8h.html#a213a3722bdf21483e4ffc5d441962b9c">state_manager.h</a>
 </li>
 <li>state_manager_show()
 : <a class="el" href="state__manager_8h.html#a5f953866f5dfe374706d26249b06e1a0">state_manager.h</a>
 , <a class="el" href="state__manager_8c.html#a5f953866f5dfe374706d26249b06e1a0">state_manager.c</a>
 </li>
 <li>state_manager_update_method()
-: <a class="el" href="state__manager_8c.html#a9a87a52eaf532d35559c27f60b09c6df">state_manager.c</a>
-, <a class="el" href="state__manager_8h.html#a9a87a52eaf532d35559c27f60b09c6df">state_manager.h</a>
+: <a class="el" href="state__manager_8h.html#a9a87a52eaf532d35559c27f60b09c6df">state_manager.h</a>
+, <a class="el" href="state__manager_8c.html#a9a87a52eaf532d35559c27f60b09c6df">state_manager.c</a>
 </li>
 <li>STATE_MNG_FAILED
 : <a class="el" href="state__manager_8h.html#a1cd9b7ed6e1751768eb0aa383f726dd7">state_manager.h</a>
@@ -218,6 +230,12 @@ $(document).ready(function(){initNavTree('globals_s.html','');});
 </li>
 <li>StateMachine
 : <a class="el" href="state__machine_8h.html#a9b7271875026454ab19275abfe234240">state_machine.h</a>
+</li>
+<li>StateMachineInfo
+: <a class="el" href="state__machine_8h.html#a9a0bae8342f680e2f25476bedc391031">state_machine.h</a>
+</li>
+<li>StateMachineMsg
+: <a class="el" href="state__machine_8c.html#a153b6e055852250255b342e6111c0102">state_machine.c</a>
 </li>
 <li>StateManager
 : <a class="el" href="state__manager_8h.html#ae7484524dd402e6a882073aef8dd3d9d">state_manager.h</a>

@@ -1,8 +1,8 @@
 <map id="state_machine_manager_list_new" name="state_machine_manager_list_new">
 <area shape="rect" id="node2" href="$state__manager_8h.html#abbb560e7b4099d256f4ca409be71de48" title="Create StateManager class. " alt="" coords="217,42,356,69"/>
-<area shape="rect" id="node3" href="$state__manager_8c.html#a376e0622cf8acc5513fa12f987287055" title="state_manager_add_new\l_state" alt="" coords="404,5,571,47"/>
+<area shape="rect" id="node3" href="$state__manager_8c.html#a376e0622cf8acc5513fa12f987287055" title="Add new state. " alt="" coords="404,5,571,47"/>
 <area shape="rect" id="node5" href="$state__manager_8c.html#a6a212d11f1218795fdd3f0d41e308214" title="free StateManager class " alt="" coords="419,71,555,98"/>
-<area shape="rect" id="node4" href="$dp__list_8h.html#aacb8cf2643fa1e8153eb99e724a10e3c" title="dputil_list_push" alt="" coords="619,13,731,39"/>
-<area shape="rect" id="node6" href="$dp__list_8h.html#af7b2ed26c7ad3b743389d842d9379391" title="dputil_list_pop" alt="" coords="622,71,727,98"/>
-<area shape="rect" id="node7" href="$dp__util_8c.html#a26471479b1060e936eef4872fc7acb4a" title="dputil_list_pull" alt="" coords="779,71,883,98"/>
+<area shape="rect" id="node4" href="$dp__list_8h.html#aacb8cf2643fa1e8153eb99e724a10e3c" title="list push " alt="" coords="619,13,731,39"/>
+<area shape="rect" id="node6" href="$dp__list_8h.html#af7b2ed26c7ad3b743389d842d9379391" title="list pop " alt="" coords="622,71,727,98"/>
+<area shape="rect" id="node7" href="$dp__util_8c.html#a26471479b1060e936eef4872fc7acb4a" title="list pull " alt="" coords="779,71,883,98"/>
 </map>

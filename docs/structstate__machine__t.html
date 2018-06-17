@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">design_pattern_for_c
-   &#160;<span id="projectnumber">0.01</span>
+   &#160;<span id="projectnumber">for 1.0.0 pre</span>
    </div>
   </td>
  </tr>
@@ -102,10 +102,17 @@ Collaboration diagram for state_machine_t:</div>
 <div class="dyncontent">
 <div class="center"><img src="structstate__machine__t__coll__graph.png" border="0" usemap="#state__machine__t_coll__map" alt="Collaboration graph"/></div>
 <map name="state__machine__t_coll__map" id="state__machine__t_coll__map">
-<area shape="rect" id="node2" href="structstate__manager__list__data__t.html" title="information of StateMachine, to use as list " alt="" coords="11,317,143,359"/>
-<area shape="rect" id="node3" href="structstate__manager__t.html" title="StateManager class member definition, detail is defined in C file. " alt="" coords="18,228,137,255"/>
-<area shape="rect" id="node4" href="structstate__manager__state__info__t.html" title="state info definition. instance storaged by list " alt="" coords="5,95,149,136"/>
-<area shape="rect" id="node5" href="structstate__info__t.html" title="state method definition, to know detail, add parameter &quot;name&quot;. It is set by STATE_MNG_SET_INFO_INIT o..." alt="" coords="33,5,122,32"/>
+<area shape="rect" id="node2" href="structstate__manager__list__data__t.html" title="information of StateMachine, to use as list " alt="" coords="11,364,143,405"/>
+<area shape="rect" id="node3" href="structstate__manager__t.html" title="StateManager class member definition, detail is defined in C file. " alt="" coords="18,253,137,279"/>
+<area shape="rect" id="node4" href="structstate__manager__state__info__t.html" title="state info definition. " alt="" coords="5,112,149,153"/>
+<area shape="rect" id="node5" href="structstate__info__t.html" title="state method definition, to know detail, add parameter &quot;name&quot;. " alt="" coords="33,7,122,33"/>
+<area shape="rect" id="node6" href="structstate__machine__msg__list__t.html" title="information of state machine message list " alt="" coords="219,371,394,398"/>
+<area shape="rect" id="node7" href="structstate__machine__msg__t.html" title="message definition for multi thread " alt="" coords="210,253,361,279"/>
+<area shape="rect" id="node8" href="structevent__tpool__manager__t.html" title="EventTPoolManager class instance definition. " alt="" coords="420,371,575,398"/>
+<area shape="rect" id="node9" href="structevent__tpool__thread__info__t.html" title="thread instance and fd list " alt="" coords="437,245,568,287"/>
+<area shape="rect" id="node10" href="structevent__tpool__fd__data__t.html" title="used fd data list " alt="" coords="228,119,375,146"/>
+<area shape="rect" id="node11" href="structevent__tpool__thread__t.html" title="thread information " alt="" coords="451,119,592,146"/>
+<area shape="rect" id="node12" href="structevent__subscriber__data__t.html" title="subscriber information define " alt="" coords="440,7,603,33"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -115,33 +122,53 @@ Data Fields</h2></td></tr>
 <tr class="separator:a1b72162b00c697710580cb90b7dab4ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7e5a7357642e7ac099b5aab175b7d7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="state__machine_8c.html#aa188082752a874b294392ee5537925a9">StateManagerListData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstate__machine__t.html#ad7e5a7357642e7ac099b5aab175b7d7d">tail</a></td></tr>
 <tr class="separator:ad7e5a7357642e7ac099b5aab175b7d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a9a1855bb6a3e3725fcee6afdd5b2ff"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstate__machine__t.html#a7a9a1855bb6a3e3725fcee6afdd5b2ff">call_event</a> )(<a class="el" href="state__machine_8h.html#a9b7271875026454ab19275abfe234240">StateMachine</a> this, int event, void *arg, void(*response)(int result))</td></tr>
-<tr class="separator:a7a9a1855bb6a3e3725fcee6afdd5b2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0606b8125cc7c3e70151cab678b12517"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstate__machine__t.html#a0606b8125cc7c3e70151cab678b12517">call_event</a> )(<a class="el" href="state__machine_8h.html#a9b7271875026454ab19275abfe234240">StateMachine</a> this, int event, void *arg, int arglen, void(*response)(int result))</td></tr>
+<tr class="separator:a0606b8125cc7c3e70151cab678b12517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4d713f405a7c9b361ff3a1838c94e1c"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstate__machine__t.html#ad4d713f405a7c9b361ff3a1838c94e1c">call_single_event</a> )(<a class="el" href="state__machine_8h.html#a9b7271875026454ab19275abfe234240">StateMachine</a> this, int event, void *arg, int arglen, void(*response)(int result))</td></tr>
+<tr class="separator:ad4d713f405a7c9b361ff3a1838c94e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf1fd178732c63decde67fde60a95ebf"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstate__machine__t.html#aaf1fd178732c63decde67fde60a95ebf">free</a> )(<a class="el" href="state__machine_8h.html#a9b7271875026454ab19275abfe234240">StateMachine</a> this)</td></tr>
 <tr class="separator:aaf1fd178732c63decde67fde60a95ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8508acd09df661c11963a83728af237"><td class="memItemLeft" align="right" valign="top"><a class="el" href="event__threadpool__data_8h.html#a0e979d320ef1d4fba4793d03163067fb">EventTPoolManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstate__machine__t.html#ac8508acd09df661c11963a83728af237">threadpool</a></td></tr>
+<tr class="separator:ac8508acd09df661c11963a83728af237"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a5ba243b3ab4b6093afb178de0f9509"><td class="memItemLeft" align="right" valign="top">pthread_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstate__machine__t.html#a3a5ba243b3ab4b6093afb178de0f9509">tid</a></td></tr>
 <tr class="separator:a3a5ba243b3ab4b6093afb178de0f9509"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5b41378108e3e68371be3a3455f0af7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstate__machine__t.html#af5b41378108e3e68371be3a3455f0af7">sockpair</a> [2]</td></tr>
-<tr class="separator:af5b41378108e3e68371be3a3455f0af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a9cc61b09acb4ff1716b75031befc44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structstate__machine__msg__list__t.html">state_machine_msg_list_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstate__machine__t.html#a3a9cc61b09acb4ff1716b75031befc44">msglist</a></td></tr>
+<tr class="separator:a3a9cc61b09acb4ff1716b75031befc44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>StateMachine class member definition. </p>
 
-<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00042">42</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00052">52</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a7a9a1855bb6a3e3725fcee6afdd5b2ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a9a1855bb6a3e3725fcee6afdd5b2ff">&#9670;&nbsp;</a></span>call_event</h2>
+<a id="a0606b8125cc7c3e70151cab678b12517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0606b8125cc7c3e70151cab678b12517">&#9670;&nbsp;</a></span>call_event</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* call_event) (<a class="el" href="state__machine_8h.html#a9b7271875026454ab19275abfe234240">StateMachine</a> this, int event, void *arg, void(*response)(int result))</td>
+          <td class="memname">int(* call_event) (<a class="el" href="state__machine_8h.html#a9b7271875026454ab19275abfe234240">StateMachine</a> this, int event, void *arg, int arglen, void(*response)(int result))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00045">45</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00055">55</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
+
+</div>
+</div>
+<a id="ad4d713f405a7c9b361ff3a1838c94e1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4d713f405a7c9b361ff3a1838c94e1c">&#9670;&nbsp;</a></span>call_single_event</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* call_single_event) (<a class="el" href="state__machine_8h.html#a9b7271875026454ab19275abfe234240">StateMachine</a> this, int event, void *arg, int arglen, void(*response)(int result))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00056">56</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
 
 </div>
 </div>
@@ -157,7 +184,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00046">46</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00057">57</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
 
 </div>
 </div>
@@ -173,23 +200,23 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00043">43</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00053">53</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
 
 </div>
 </div>
-<a id="af5b41378108e3e68371be3a3455f0af7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5b41378108e3e68371be3a3455f0af7">&#9670;&nbsp;</a></span>sockpair</h2>
+<a id="a3a9cc61b09acb4ff1716b75031befc44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a9cc61b09acb4ff1716b75031befc44">&#9670;&nbsp;</a></span>msglist</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sockpair[2]</td>
+          <td class="memname"><a class="el" href="structstate__machine__msg__list__t.html">state_machine_msg_list_t</a> msglist</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00049">49</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00063">63</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
 
 </div>
 </div>
@@ -205,7 +232,23 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00044">44</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00054">54</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
+
+</div>
+</div>
+<a id="ac8508acd09df661c11963a83728af237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8508acd09df661c11963a83728af237">&#9670;&nbsp;</a></span>threadpool</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="event__threadpool__data_8h.html#a0e979d320ef1d4fba4793d03163067fb">EventTPoolManager</a> threadpool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00059">59</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
 
 </div>
 </div>
@@ -221,7 +264,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00048">48</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00060">60</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
 
 </div>
 </div>

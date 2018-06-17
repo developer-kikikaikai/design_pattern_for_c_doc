@@ -1,5 +1,5 @@
 <map id="state_machine_manager_list_free" name="state_machine_manager_list_free">
 <area shape="rect" id="node2" href="$state__manager_8h.html#a6a212d11f1218795fdd3f0d41e308214" title="free StateManager class " alt="" coords="217,13,353,39"/>
-<area shape="rect" id="node3" href="$dp__list_8h.html#af7b2ed26c7ad3b743389d842d9379391" title="dputil_list_pop" alt="" coords="401,13,507,39"/>
-<area shape="rect" id="node4" href="$dp__util_8c.html#a26471479b1060e936eef4872fc7acb4a" title="dputil_list_pull" alt="" coords="555,13,659,39"/>
+<area shape="rect" id="node3" href="$dp__list_8h.html#af7b2ed26c7ad3b743389d842d9379391" title="list pop " alt="" coords="401,13,507,39"/>
+<area shape="rect" id="node4" href="$dp__util_8c.html#a26471479b1060e936eef4872fc7acb4a" title="list pull " alt="" coords="555,13,659,39"/>
 </map>

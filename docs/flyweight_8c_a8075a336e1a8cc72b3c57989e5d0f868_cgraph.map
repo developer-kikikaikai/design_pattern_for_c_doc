@@ -1,7 +1,7 @@
 <map id="flyweight_set" name="flyweight_set">
-<area shape="rect" id="node2" href="$flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="flyweight_factory_get" alt="" coords="151,71,293,98"/>
-<area shape="rect" id="node3" href="$flyweight_8c.html#a9a5ace54e0a77643698d26d57cc031e5" title="flyweight_factory_get\l_storaged_instance" alt="" coords="372,5,515,47"/>
-<area shape="rect" id="node4" href="$flyweight_8c.html#a354d2a3de93708ffe8c8c408581ddcfb" title="flyweight_factory_instance_new" alt="" coords="341,71,545,98"/>
-<area shape="rect" id="node6" href="$flyweight_8c.html#adc94ba02ebd59ec314dcaa4f564b75fb" title="flyweight_factory_push\l_instance" alt="" coords="367,123,520,164"/>
+<area shape="rect" id="node2" href="$flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="Getter. " alt="" coords="151,71,293,98"/>
+<area shape="rect" id="node3" href="$flyweight_8c.html#a9a5ace54e0a77643698d26d57cc031e5" title="Check has instance. " alt="" coords="372,5,515,47"/>
+<area shape="rect" id="node4" href="$flyweight_8c.html#a354d2a3de93708ffe8c8c408581ddcfb" title="allocate. " alt="" coords="341,71,545,98"/>
+<area shape="rect" id="node6" href="$flyweight_8c.html#adc94ba02ebd59ec314dcaa4f564b75fb" title="push instance into list. " alt="" coords="367,123,520,164"/>
 <area shape="rect" id="node5" href="$flyweight_8c.html#aad881aca76ab55a56d9508d419edeb77" title="flyweight_instance_new" alt="" coords="593,71,752,98"/>
 </map>

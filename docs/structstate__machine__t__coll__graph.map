@@ -1,6 +1,13 @@
 <map id="state_machine_t" name="state_machine_t">
-<area shape="rect" id="node2" href="$structstate__manager__list__data__t.html" title="information of StateMachine, to use as list " alt="" coords="11,317,143,359"/>
-<area shape="rect" id="node3" href="$structstate__manager__t.html" title="StateManager class member definition, detail is defined in C file. " alt="" coords="18,228,137,255"/>
-<area shape="rect" id="node4" href="$structstate__manager__state__info__t.html" title="state info definition. instance storaged by list " alt="" coords="5,95,149,136"/>
-<area shape="rect" id="node5" href="$structstate__info__t.html" title="state method definition, to know detail, add parameter &quot;name&quot;. It is set by STATE_MNG_SET_INFO_INIT o..." alt="" coords="33,5,122,32"/>
+<area shape="rect" id="node2" href="$structstate__manager__list__data__t.html" title="information of StateMachine, to use as list " alt="" coords="11,364,143,405"/>
+<area shape="rect" id="node3" href="$structstate__manager__t.html" title="StateManager class member definition, detail is defined in C file. " alt="" coords="18,253,137,279"/>
+<area shape="rect" id="node4" href="$structstate__manager__state__info__t.html" title="state info definition. " alt="" coords="5,112,149,153"/>
+<area shape="rect" id="node5" href="$structstate__info__t.html" title="state method definition, to know detail, add parameter &quot;name&quot;. " alt="" coords="33,7,122,33"/>
+<area shape="rect" id="node6" href="$structstate__machine__msg__list__t.html" title="information of state machine message list " alt="" coords="219,371,394,398"/>
+<area shape="rect" id="node7" href="$structstate__machine__msg__t.html" title="message definition for multi thread " alt="" coords="210,253,361,279"/>
+<area shape="rect" id="node8" href="$structevent__tpool__manager__t.html" title="EventTPoolManager class instance definition. " alt="" coords="420,371,575,398"/>
+<area shape="rect" id="node9" href="$structevent__tpool__thread__info__t.html" title="thread instance and fd list " alt="" coords="437,245,568,287"/>
+<area shape="rect" id="node10" href="$structevent__tpool__fd__data__t.html" title="used fd data list " alt="" coords="228,119,375,146"/>
+<area shape="rect" id="node11" href="$structevent__tpool__thread__t.html" title="thread information " alt="" coords="451,119,592,146"/>
+<area shape="rect" id="node12" href="$structevent__subscriber__data__t.html" title="subscriber information define " alt="" coords="440,7,603,33"/>
 </map>

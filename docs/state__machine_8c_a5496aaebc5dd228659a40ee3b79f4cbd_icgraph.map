@@ -1,5 +1,4 @@
 <map id="state_machine_write" name="state_machine_write">
-<area shape="rect" id="node2" href="$state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="state_machine_free\l_states_multithread" alt="" coords="195,5,331,47"/>
-<area shape="rect" id="node4" href="$state__machine_8c.html#ac9b61df292bee4aeca57627c5c1ca494" title="state_machine_call\l_event_multithread" alt="" coords="195,71,330,112"/>
-<area shape="rect" id="node3" href="$state__machine_8c.html#acc4adfef1263da6dc2d3dda61b3f0506" title="Create StateMachine class. " alt="" coords="379,46,516,73"/>
+<area shape="rect" id="node2" href="$state__machine_8c.html#a81664a812e29e9688c876babc5604a84" title="for multi thread, call event " alt="" coords="195,5,329,47"/>
+<area shape="rect" id="node3" href="$state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="377,13,515,39"/>
 </map>

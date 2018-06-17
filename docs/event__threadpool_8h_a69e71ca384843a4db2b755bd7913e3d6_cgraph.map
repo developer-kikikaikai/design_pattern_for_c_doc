@@ -1,0 +1,22 @@
+<map id="event_tpool_manager_new" name="event_tpool_manager_new">
+<area shape="rect" id="node2" href="$event__tpool__manager_8c.html#a68eaf66eb7ba7d15f8f063a58a8a52e1" title="event_tpool_manager\l_get_default_thrednum" alt="" coords="228,42,381,83"/>
+<area shape="rect" id="node3" href="$event__tpool__manager_8c.html#a67ac16d5d7417a3365bb9cf776ff7a07" title="new thread info " alt="" coords="239,107,370,149"/>
+<area shape="rect" id="node13" href="$event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="233,173,377,214"/>
+<area shape="rect" id="node4" href="$event__thread_8c.html#a4e8d5e5bc7b224c4b1349fb192b60125" title="create and thread instance " alt="" coords="429,53,589,80"/>
+<area shape="rect" id="node8" href="$event__tpool__manager_8c.html#a762bca81a6ac647786e364e0fe6f7d0e" title="start thread " alt="" coords="444,107,575,149"/>
+<area shape="rect" id="node5" href="$event__thread_8c.html#a32733e959c729cb360f17b65233de0d2" title="set event_base " alt="" coords="637,42,768,83"/>
+<area shape="rect" id="node6" href="$event__thread_8c.html#a4c58da60de2ef196d0f86f40913986d3" title="callback main " alt="" coords="831,5,982,32"/>
+<area shape="rect" id="node7" href="$event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="1310,49,1453,90"/>
+<area shape="rect" id="node9" href="$event__thread_8c.html#a1ddb76c71f97fc644e1a85f56f106435" title="start thread " alt="" coords="637,107,768,149"/>
+<area shape="rect" id="node10" href="$event__thread_8c.html#a49e9bbb821b0195b9ae31b14d93d589d" title="main thread " alt="" coords="824,115,989,141"/>
+<area shape="rect" id="node11" href="$event__thread_8c.html#a873727f5dd62d6c5beaad98426202c4d" title="free thread instance, please call stop before calling it " alt="" coords="1063,115,1222,141"/>
+<area shape="rect" id="node12" href="$event__thread_8c.html#a3a8420210f6d0bafd5a57b313996151d" title="free instance " alt="" coords="1292,115,1471,141"/>
+<area shape="rect" id="node14" href="$event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="444,173,575,214"/>
+<area shape="rect" id="node15" href="$event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="637,173,768,214"/>
+<area shape="rect" id="node16" href="$event__tpool__manager_8c.html#a259c40f9059402226bac41ae81127bcb" title="free fddata " alt="" coords="816,165,997,192"/>
+<area shape="rect" id="node19" href="$event__thread_8c.html#a0be047b5d8ab4bae6aba5d4df09a518d" title="stop thread " alt="" coords="825,216,988,243"/>
+<area shape="rect" id="node17" href="$event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="1065,165,1220,192"/>
+<area shape="rect" id="node18" href="$event__thread_8c.html#ab9f200e6f8c1c0da8ffc18717d139456" title="event_thread_msg_send_del" alt="" coords="1288,165,1475,192"/>
+<area shape="rect" id="node20" href="$event__thread_8c.html#ac3f6d6b2a6ac043ef46afba66cae53be" title="event_thread_msg_send_stop" alt="" coords="1045,216,1240,243"/>
+<area shape="rect" id="node21" href="$event__thread_8c.html#aec168fb8bb2710e298540f02d8897c9f" title="wait stop " alt="" coords="1077,267,1208,309"/>
+</map>

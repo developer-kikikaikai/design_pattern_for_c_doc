@@ -1,5 +1,5 @@
 <map id="state_manager_update_method" name="state_manager_update_method">
-<area shape="rect" id="node2" href="$state__manager_8c.html#a218797dd935bd6a6ff596dba1836aee4" title="state_manager_find\l_state" alt="" coords="224,5,359,47"/>
-<area shape="rect" id="node3" href="$state__manager_8c.html#a376e0622cf8acc5513fa12f987287055" title="state_manager_add_new\l_state" alt="" coords="208,71,375,112"/>
-<area shape="rect" id="node4" href="$dp__list_8h.html#aacb8cf2643fa1e8153eb99e724a10e3c" title="dputil_list_push" alt="" coords="423,78,535,105"/>
+<area shape="rect" id="node2" href="$state__manager_8c.html#a218797dd935bd6a6ff596dba1836aee4" title="Find state. " alt="" coords="224,5,359,47"/>
+<area shape="rect" id="node3" href="$state__manager_8c.html#a376e0622cf8acc5513fa12f987287055" title="Add new state. " alt="" coords="208,71,375,112"/>
+<area shape="rect" id="node4" href="$dp__list_8h.html#aacb8cf2643fa1e8153eb99e724a10e3c" title="list push " alt="" coords="423,78,535,105"/>
 </map>

@@ -1,5 +1,4 @@
 <map id="state_machine_close_socket" name="state_machine_close_socket">
-<area shape="rect" id="node2" href="$state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="state_machine_initial\l_thread" alt="" coords="199,5,343,47"/>
-<area shape="rect" id="node4" href="$state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="state_machine_free\l_states_multithread" alt="" coords="203,71,339,112"/>
-<area shape="rect" id="node3" href="$state__machine_8c.html#acc4adfef1263da6dc2d3dda61b3f0506" title="Create StateMachine class. " alt="" coords="391,46,528,73"/>
+<area shape="rect" id="node2" href="$state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="199,5,335,47"/>
+<area shape="rect" id="node3" href="$state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="383,13,520,39"/>
 </map>

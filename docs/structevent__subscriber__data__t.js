@@ -1,0 +1,6 @@
+var structevent__subscriber__data__t =
+[
+    [ "eventinfo", "structevent__subscriber__data__t.html#a933827f5f85850738fdbcb6bc20ed501", null ],
+    [ "next", "structevent__subscriber__data__t.html#a1cddf391803b0e2419c343e6a7317126", null ],
+    [ "prev", "structevent__subscriber__data__t.html#a0e5e45f28bfc8e72c2be79d2358b1d14", null ]
+];

@@ -1,5 +1,5 @@
 <map id="flyweight_factory_instance_new" name="flyweight_factory_instance_new">
-<area shape="rect" id="node2" href="$flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="flyweight_factory_get" alt="" coords="257,81,400,108"/>
+<area shape="rect" id="node2" href="$flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="Getter. " alt="" coords="257,81,400,108"/>
 <area shape="rect" id="node3" href="$flyweight_8c.html#a5a9bc49455819c7d07dc97e33d57de55" title="getter " alt="" coords="448,56,545,83"/>
 <area shape="rect" id="node6" href="$flyweight_8c.html#a8075a336e1a8cc72b3c57989e5d0f868" title="setter " alt="" coords="448,107,545,133"/>
 <area shape="rect" id="node4" href="$chain__of__responsibility_8c.html#a6017534fc738e5fe592bc5b70a62b760" title="call chain api " alt="" coords="630,5,697,32"/>

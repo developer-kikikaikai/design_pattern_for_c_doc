@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">design_pattern_for_c
-   &#160;<span id="projectnumber">0.01</span>
+   &#160;<span id="projectnumber">for 1.0.0 pre</span>
    </div>
   </td>
  </tr>
@@ -94,19 +94,23 @@ $(document).ready(function(){initNavTree('lower__layer__builder_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>This is API name definition for lower layer plugin library lower_layer_builder will load plugin defined this API.  
+<p><br />
+ This is API name definition for lower layer plugin library lower_layer_builder will load plugin defined this API.  
 <a href="#details">More...</a></p>
 <div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="lower__layer__builder_8h__dep__incl.png" border="0" usemap="#_d_1_2design__pattern__for__c_2builder_2include_2lower__layer__builder_8hdep" alt=""/></div>
 <map name="_d_1_2design__pattern__for__c_2builder_2include_2lower__layer__builder_8hdep" id="_d_1_2design__pattern__for__c_2builder_2include_2lower__layer__builder_8hdep">
-<area shape="rect" id="node2" href="lower__layer__director_8h.html" title="This is API for director class action as design petten In this case, Builder interface is included by..." alt="" coords="87,109,245,165"/>
-<area shape="rect" id="node5" href="lower__layer__director_8c.html" title="Implement of lower_layer_director (related to builder design petten) library API, defined in flyweigh..." alt="" coords="5,317,151,373"/>
-<area shape="rect" id="node6" href="builder__action_8h.html" title="This is API definition of builder action API. " alt="" coords="269,109,415,165"/>
-<area shape="rect" id="node3" href="director_8h.html" title="This is API definition of Director class. " alt="" coords="88,221,241,262"/>
-<area shape="rect" id="node4" href="director_8c.html" title="Implement of director API, defined in director.h. " alt="" coords="188,325,341,366"/>
-<area shape="rect" id="node7" href="builder__action_8c.html" title="Implement of builder_action, running construct on other thread. " alt="" coords="317,213,463,269"/>
+<area shape="rect" id="node2" href="lower__layer__director_8h.html" title="This is API for director class action as design petten In this case, Builder interface is included by..." alt="" coords="193,109,351,165"/>
+<area shape="rect" id="node5" href="lower__layer__director_8c.html" title="Implement of lower_layer_director (related to builder design petten) library API, defined in flyweigh..." alt="" coords="87,317,233,373"/>
+<area shape="rect" id="node7" href="builder__action_8h.html" title="This is API definition of builder action API. " alt="" coords="375,109,521,165"/>
+<area shape="rect" id="node9" href="ossupport__device__plugin_8c.html" title="D:/design_pattern_for\l_c/builder/sample_plugin\l/ossupport_device_plugin.c" alt="" coords="545,109,724,165"/>
+<area shape="rect" id="node10" href="usb__device__plugin_8c.html" title="D:/design_pattern_for\l_c/builder/sample_plugin\l/usb_device_plugin.c" alt="" coords="748,109,913,165"/>
+<area shape="rect" id="node3" href="director_8h.html" title="This is API definition of Director class. " alt="" coords="198,221,351,262"/>
+<area shape="rect" id="node6" href="main_8c.html" title="D:/design_pattern_for\l_c/builder/test/main.c" alt="" coords="27,221,173,262"/>
+<area shape="rect" id="node4" href="director_8c.html" title="Implement of director API, defined in director.h. " alt="" coords="313,325,466,366"/>
+<area shape="rect" id="node8" href="builder__action_8c.html" title="Implement of builder_action, running construct on other thread. " alt="" coords="375,213,521,269"/>
 </map>
 </div>
 </div>
@@ -115,8 +119,10 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a8450aa057357f1267c368fe8298bf65c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lower__layer__builder_8h.html#a8450aa057357f1267c368fe8298bf65c">LL_BUILDER_SUCCESS</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:a8450aa057357f1267c368fe8298bf65c"><td class="mdescLeft">&#160;</td><td class="mdescRight">result code : success  <a href="#a8450aa057357f1267c368fe8298bf65c">More...</a><br /></td></tr>
 <tr class="separator:a8450aa057357f1267c368fe8298bf65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f935199810ac6438ac3d3e5dc45e430"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lower__layer__builder_8h.html#a0f935199810ac6438ac3d3e5dc45e430">LL_BUILDER_FAILED</a>&#160;&#160;&#160;(-1)</td></tr>
+<tr class="memdesc:a0f935199810ac6438ac3d3e5dc45e430"><td class="mdescLeft">&#160;</td><td class="mdescRight">result code : error  <a href="#a0f935199810ac6438ac3d3e5dc45e430">More...</a><br /></td></tr>
 <tr class="separator:a0f935199810ac6438ac3d3e5dc45e430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0362fed7cb3dbedee6a1d8612a5cf568"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lower__layer__builder_8h.html#a0362fed7cb3dbedee6a1d8612a5cf568">LL_BUILDER_NEWNAME</a>&#160;&#160;&#160;&quot;lower_layer_builder_instance_new&quot;</td></tr>
 <tr class="memdesc:a0362fed7cb3dbedee6a1d8612a5cf568"><td class="mdescLeft">&#160;</td><td class="mdescRight">name definition of plugin interface "new"  <a href="#a0362fed7cb3dbedee6a1d8612a5cf568">More...</a><br /></td></tr>
@@ -135,7 +141,9 @@ Functions</h2></td></tr>
 <tr class="separator:a5c06b0c7848bb3d383d08d99df60ad80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is API name definition for lower layer plugin library lower_layer_builder will load plugin defined this API. </p>
+<div class="textblock"><p><br />
+ This is API name definition for lower layer plugin library lower_layer_builder will load plugin defined this API. </p>
+<p>(this API will load by libbuilder.so as dynamic library) </p>
 
 <p class="definition">Definition in file <a class="el" href="lower__layer__builder_8h_source.html">lower_layer_builder.h</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -150,6 +158,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>result code : error </p>
 
 <p class="definition">Definition at line <a class="el" href="lower__layer__builder_8h_source.html#l00011">11</a> of file <a class="el" href="lower__layer__builder_8h_source.html">lower_layer_builder.h</a>.</p>
@@ -203,6 +212,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>result code : success </p>
 
 <p class="definition">Definition at line <a class="el" href="lower__layer__builder_8h_source.html#l00009">9</a> of file <a class="el" href="lower__layer__builder_8h_source.html">lower_layer_builder.h</a>.</p>
@@ -234,6 +244,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="ossupport__device__plugin_8c_source.html#l00068">68</a> of file <a class="el" href="ossupport__device__plugin_8c_source.html">ossupport_device_plugin.c</a>.</p>
+
 </div>
 </div>
 <a id="a066b77605c421bf41cd1e07e015fef02"></a>
@@ -260,6 +272,19 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="ossupport__device__plugin_8c_source.html#l00053">53</a> of file <a class="el" href="ossupport__device__plugin_8c_source.html">ossupport_device_plugin.c</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="lower__layer__builder_8h_a066b77605c421bf41cd1e07e015fef02_cgraph.png" border="0" usemap="#lower__layer__builder_8h_a066b77605c421bf41cd1e07e015fef02_cgraph" alt=""/></div>
+<map name="lower__layer__builder_8h_a066b77605c421bf41cd1e07e015fef02_cgraph" id="lower__layer__builder_8h_a066b77605c421bf41cd1e07e015fef02_cgraph">
+<area shape="rect" id="node2" href="ossupport__device__plugin_8c.html#a3fcbbe245c83218e04ed1b5890c4650e" title="ossupport_device_connect" alt="" coords="194,5,369,32"/>
+<area shape="rect" id="node3" href="ossupport__device__plugin_8c.html#ad4c42eaa424737d22dc05942ec36975a" title="ossupport_device_disconnect" alt="" coords="185,56,377,83"/>
+<area shape="rect" id="node4" href="usb__device__plugin_8c.html#abb5cf2d35c7feca70619b0ef2c5ab60a" title="usd_device_connect" alt="" coords="212,107,351,133"/>
+<area shape="rect" id="node5" href="usb__device__plugin_8c.html#ae86f38cd6170f7b63d9c6552c9a4db30" title="usd_device_disconnect" alt="" coords="203,157,359,184"/>
+</map>
+</div>
 
 </div>
 </div>

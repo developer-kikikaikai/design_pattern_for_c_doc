@@ -1,6 +1,6 @@
 <map id="flyweight_factory_new" name="flyweight_factory_new">
-<area shape="rect" id="node2" href="$flyweight_8c.html#a37f67b7c44abcec77d903afa8acd5dac" title="flyweight_class_set\l_methods" alt="" coords="201,71,336,112"/>
-<area shape="rect" id="node3" href="$flyweight_8c.html#a9ead66ee5b686f57f15c5af423cc2739" title="flyweight_class_default\l_constructor" alt="" coords="384,5,539,47"/>
-<area shape="rect" id="node4" href="$flyweight_8c.html#a222109849a7f0ed96f0560437b645222" title="flyweight_class_default\l_equall_operand" alt="" coords="384,71,539,112"/>
-<area shape="rect" id="node5" href="$flyweight_8c.html#acad9e8853c11887076b57e1cc2fb7370" title="flyweight_class_default\l_setter" alt="" coords="384,136,539,177"/>
+<area shape="rect" id="node2" href="$flyweight_8c.html#a37f67b7c44abcec77d903afa8acd5dac" title="Set methods. " alt="" coords="201,71,336,112"/>
+<area shape="rect" id="node3" href="$flyweight_8c.html#a9ead66ee5b686f57f15c5af423cc2739" title="Default constructor. " alt="" coords="384,5,539,47"/>
+<area shape="rect" id="node4" href="$flyweight_8c.html#a222109849a7f0ed96f0560437b645222" title="Default equall operand. " alt="" coords="384,71,539,112"/>
+<area shape="rect" id="node5" href="$flyweight_8c.html#acad9e8853c11887076b57e1cc2fb7370" title="Default setter. " alt="" coords="384,136,539,177"/>
 </map>

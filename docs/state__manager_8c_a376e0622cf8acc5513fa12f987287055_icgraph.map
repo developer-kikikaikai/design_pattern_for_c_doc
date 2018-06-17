@@ -1,8 +1,8 @@
 <map id="state_manager_add_new_state" name="state_manager_add_new_state">
 <area shape="rect" id="node2" href="$state__manager_8c.html#abbb560e7b4099d256f4ca409be71de48" title="Create StateManager class. " alt="" coords="228,42,367,69"/>
 <area shape="rect" id="node7" href="$state__manager_8c.html#a9a87a52eaf532d35559c27f60b09c6df" title="update method related to state " alt="" coords="220,93,375,135"/>
-<area shape="rect" id="node3" href="$state__machine_8c.html#a527506b3af22d012c11d7f376705b87f" title="state_machine_manager\l_list_new" alt="" coords="423,5,587,47"/>
-<area shape="rect" id="node6" href="$state__machine_8c.html#aa08f232f59d5c60dd02f11c1c99107f9" title="update sate " alt="" coords="848,64,1001,105"/>
-<area shape="rect" id="node4" href="$state__machine_8c.html#aea35d3a855cf205cc2f35696b73bbb65" title="state_machine_add_new\l_states" alt="" coords="635,5,800,47"/>
-<area shape="rect" id="node5" href="$state__machine_8c.html#acc4adfef1263da6dc2d3dda61b3f0506" title="Create StateMachine class. " alt="" coords="856,13,993,39"/>
+<area shape="rect" id="node3" href="$state__machine_8c.html#a527506b3af22d012c11d7f376705b87f" title="Add new state. " alt="" coords="423,5,587,47"/>
+<area shape="rect" id="node6" href="$state__machine_8c.html#a9e228abeac323d037fde627e61b96864" title="update sate " alt="" coords="848,64,1001,105"/>
+<area shape="rect" id="node4" href="$state__machine_8c.html#aea35d3a855cf205cc2f35696b73bbb65" title="Add new state. " alt="" coords="635,5,800,47"/>
+<area shape="rect" id="node5" href="$state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="856,13,993,39"/>
 </map>

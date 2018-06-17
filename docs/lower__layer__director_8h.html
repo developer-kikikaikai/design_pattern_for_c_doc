@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">design_pattern_for_c
-   &#160;<span id="projectnumber">0.01</span>
+   &#160;<span id="projectnumber">for 1.0.0 pre</span>
    </div>
   </td>
  </tr>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('lower__layer__director_8h.html','');})
 </div><!--header-->
 <div class="contents">
 
-<p>This is API for director class action as design petten In this case, Builder interface is included by conf file, and interface implement class is dynamic library. Please see conf/sample.conf.  
+<p>This is API for director class action as design petten In this case, Builder interface is included by conf file, and interface implement class is dynamic library.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="lower__layer__builder_8h_source.html">lower_layer_builder.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -103,7 +103,7 @@ Include dependency graph for lower_layer_director.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="lower__layer__director_8h__incl.png" border="0" usemap="#_d_1_2design__pattern__for__c_2builder_2include_2lower__layer__director_8h" alt=""/></div>
 <map name="_d_1_2design__pattern__for__c_2builder_2include_2lower__layer__director_8h" id="_d_1_2design__pattern__for__c_2builder_2include_2lower__layer__director_8h">
-<area shape="rect" id="node2" href="lower__layer__builder_8h.html" title="This is API name definition for lower layer plugin library lower_layer_builder will load plugin defin..." alt="" coords="13,109,155,136"/>
+<area shape="rect" id="node2" href="lower__layer__builder_8h.html" title=" &#160;This is API name definition for lower layer plugin library lower_layer_builder will load plugin def..." alt="" coords="13,109,155,136"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -112,6 +112,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="center"><img src="lower__layer__director_8h__dep__incl.png" border="0" usemap="#_d_1_2design__pattern__for__c_2builder_2include_2lower__layer__director_8hdep" alt=""/></div>
 <map name="_d_1_2design__pattern__for__c_2builder_2include_2lower__layer__director_8hdep" id="_d_1_2design__pattern__for__c_2builder_2include_2lower__layer__director_8hdep">
 <area shape="rect" id="node2" href="director_8h.html" title="This is API definition of Director class. " alt="" coords="92,109,245,151"/>
+<area shape="rect" id="node5" href="main_8c.html" title="D:/design_pattern_for\l_c/builder/test/main.c" alt="" coords="270,109,417,151"/>
 <area shape="rect" id="node3" href="director_8c.html" title="Implement of director API, defined in director.h. " alt="" coords="5,206,159,247"/>
 <area shape="rect" id="node4" href="lower__layer__director_8c.html" title="Implement of lower_layer_director (related to builder design petten) library API, defined in flyweigh..." alt="" coords="183,199,328,255"/>
 </map>
@@ -141,7 +142,7 @@ Functions</h2></td></tr>
 <tr class="memitem:aac948f1e6c348c16a79e6277900e73a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lower__layer__director_8h.html#aa7d705d1c5eb68fd94f25083f9a926e7">LowerLayerDirector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lower__layer__director_8h.html#aac948f1e6c348c16a79e6277900e73a4">lower_layer_director_new</a> (char *builder_lib_name, char *builder_interface_conf)</td></tr>
 <tr class="memdesc:aac948f1e6c348c16a79e6277900e73a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">director new  <a href="#aac948f1e6c348c16a79e6277900e73a4">More...</a><br /></td></tr>
 <tr class="separator:aac948f1e6c348c16a79e6277900e73a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1078314d9c023186b9d5ebb53d36d894"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lower__layer__director_8h.html#a1078314d9c023186b9d5ebb53d36d894">lower_layer_director_construct</a> (<a class="el" href="lower__layer__director_8h.html#aa7d705d1c5eb68fd94f25083f9a926e7">LowerLayerDirector</a> director, void *initial_parameter, void(*initial_result)(int result))</td></tr>
+<tr class="memitem:a1078314d9c023186b9d5ebb53d36d894"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lower__layer__director_8h.html#a1078314d9c023186b9d5ebb53d36d894">lower_layer_director_construct</a> (<a class="el" href="lower__layer__director_8h.html#aa7d705d1c5eb68fd94f25083f9a926e7">LowerLayerDirector</a> director, void *initial_parameter, void(*<a class="el" href="main_8c.html#a559d036738458e8b865cb6d3feacaddd">initial_result</a>)(int result))</td></tr>
 <tr class="memdesc:a1078314d9c023186b9d5ebb53d36d894"><td class="mdescLeft">&#160;</td><td class="mdescRight">director cconstruct  <a href="#a1078314d9c023186b9d5ebb53d36d894">More...</a><br /></td></tr>
 <tr class="separator:a1078314d9c023186b9d5ebb53d36d894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61f3a62b29491948103e8824548c8da4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lower__layer__director_8h.html#a61f3a62b29491948103e8824548c8da4">lower_layer_director_free</a> (<a class="el" href="lower__layer__director_8h.html#aa7d705d1c5eb68fd94f25083f9a926e7">LowerLayerDirector</a> director)</td></tr>
@@ -149,7 +150,8 @@ Functions</h2></td></tr>
 <tr class="separator:a61f3a62b29491948103e8824548c8da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is API for director class action as design petten In this case, Builder interface is included by conf file, and interface implement class is dynamic library. Please see conf/sample.conf. </p>
+<div class="textblock"><p>This is API for director class action as design petten In this case, Builder interface is included by conf file, and interface implement class is dynamic library. </p>
+<p>Please see conf/sample.conf </p>
 
 <p class="definition">Definition in file <a class="el" href="lower__layer__director_8h_source.html">lower_layer_director.h</a>.</p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
@@ -256,9 +258,18 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="lower__layer__director_8h_a1078314d9c023186b9d5ebb53d36d894_cgraph.png" border="0" usemap="#lower__layer__director_8h_a1078314d9c023186b9d5ebb53d36d894_cgraph" alt=""/></div>
 <map name="lower__layer__director_8h_a1078314d9c023186b9d5ebb53d36d894_cgraph" id="lower__layer__director_8h_a1078314d9c023186b9d5ebb53d36d894_cgraph">
-<area shape="rect" id="node2" href="director_8c.html#a7f61b3ab0bad8a0beb3827db716acff8" title="director construct " alt="" coords="191,13,317,39"/>
-<area shape="rect" id="node3" href="builder__action_8c.html#a6b2442d74512cd32484c52acfd1ca0a5" title="construct action " alt="" coords="365,13,528,39"/>
-<area shape="rect" id="node4" href="builder__action_8c.html#a44d0d0e64238999c9cb67290ca925178" title="run action " alt="" coords="576,13,703,39"/>
+<area shape="rect" id="node2" href="director_8c.html#a7f61b3ab0bad8a0beb3827db716acff8" title="director construct " alt="" coords="191,31,317,58"/>
+<area shape="rect" id="node3" href="main_8c.html#a559d036738458e8b865cb6d3feacaddd" title="initial_result" alt="" coords="751,31,841,58"/>
+<area shape="rect" id="node4" href="builder__action_8c.html#a6b2442d74512cd32484c52acfd1ca0a5" title="construct action " alt="" coords="365,31,528,58"/>
+<area shape="rect" id="node5" href="builder__action_8c.html#a44d0d0e64238999c9cb67290ca925178" title="run action " alt="" coords="576,31,703,58"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="lower__layer__director_8h_a1078314d9c023186b9d5ebb53d36d894_icgraph.png" border="0" usemap="#lower__layer__director_8h_a1078314d9c023186b9d5ebb53d36d894_icgraph" alt=""/></div>
+<map name="lower__layer__director_8h_a1078314d9c023186b9d5ebb53d36d894_icgraph" id="lower__layer__director_8h_a1078314d9c023186b9d5ebb53d36d894_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#a0254953ab526b5c0a9245bd0a2f50bfc" title="main" alt="" coords="191,13,241,39"/>
 </map>
 </div>
 
@@ -306,6 +317,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="lower__layer__director_8h_a61f3a62b29491948103e8824548c8da4_icgraph.png" border="0" usemap="#lower__layer__director_8h_a61f3a62b29491948103e8824548c8da4_icgraph" alt=""/></div>
 <map name="lower__layer__director_8h_a61f3a62b29491948103e8824548c8da4_icgraph" id="lower__layer__director_8h_a61f3a62b29491948103e8824548c8da4_icgraph">
 <area shape="rect" id="node2" href="lower__layer__director_8c.html#aac948f1e6c348c16a79e6277900e73a4" title="director new " alt="" coords="219,5,385,32"/>
+<area shape="rect" id="node3" href="main_8c.html#a0254953ab526b5c0a9245bd0a2f50bfc" title="main" alt="" coords="433,31,484,57"/>
 </map>
 </div>
 
@@ -371,6 +383,14 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node11" href="director_8c.html#a4b8effb735ac41e085226c8c317b19b4" title="director destruct " alt="" coords="451,325,569,352"/>
 <area shape="rect" id="node13" href="director_8c.html#a47c1a53b57a08c78de3eef05eb951bb4" title="interface class free " alt="" coords="449,377,571,418"/>
 <area shape="rect" id="node12" href="builder__action_8c.html#a347d3c7f210f866ed236d577c562a51e" title="deconstruct action " alt="" coords="635,325,791,352"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="lower__layer__director_8h_aac948f1e6c348c16a79e6277900e73a4_icgraph.png" border="0" usemap="#lower__layer__director_8h_aac948f1e6c348c16a79e6277900e73a4_icgraph" alt=""/></div>
+<map name="lower__layer__director_8h_aac948f1e6c348c16a79e6277900e73a4_icgraph" id="lower__layer__director_8h_aac948f1e6c348c16a79e6277900e73a4_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#a0254953ab526b5c0a9245bd0a2f50bfc" title="main" alt="" coords="220,5,271,32"/>
 </map>
 </div>
 

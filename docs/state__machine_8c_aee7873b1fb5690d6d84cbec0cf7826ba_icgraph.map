@@ -1,5 +1,5 @@
 <map id="state_machine_manager_list_free" name="state_machine_manager_list_free">
-<area shape="rect" id="node2" href="$state__machine_8c.html#a36c95c8eeeee542fa348f50410944a15" title="state_machine_free\l_states_normally" alt="" coords="217,35,352,76"/>
-<area shape="rect" id="node3" href="$state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="state_machine_free\l_states_multithread" alt="" coords="400,5,536,47"/>
-<area shape="rect" id="node4" href="$state__machine_8c.html#acc4adfef1263da6dc2d3dda61b3f0506" title="Create StateMachine class. " alt="" coords="584,42,721,69"/>
+<area shape="rect" id="node2" href="$state__machine_8c.html#a36c95c8eeeee542fa348f50410944a15" title="free normally " alt="" coords="217,35,352,76"/>
+<area shape="rect" id="node3" href="$state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="400,5,536,47"/>
+<area shape="rect" id="node4" href="$state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="584,42,721,69"/>
 </map>
