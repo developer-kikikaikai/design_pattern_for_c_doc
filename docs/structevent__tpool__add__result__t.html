@@ -102,7 +102,14 @@ Collaboration diagram for event_tpool_add_result_t:</div>
 <div class="dyncontent">
 <div class="center"><img src="structevent__tpool__add__result__t__coll__graph.png" border="0" usemap="#event__tpool__add__result__t_coll__map" alt="Collaboration graph"/></div>
 <map name="event__tpool__add__result__t_coll__map" id="event__tpool__add__result__t_coll__map">
-<area shape="rect" id="node2" href="structevent__tpool__fd__data__t.html" title="used fd data list " alt="" coords="15,7,161,33"/>
+<area shape="rect" id="node2" href="structevent__tpool__thread__info__t.html" title="event_tpool_thread\l_info_t" alt="" coords="163,499,293,540"/>
+<area shape="rect" id="node3" href="structevent__tpool__thread__t.html" title="thread information " alt="" coords="157,409,299,436"/>
+<area shape="rect" id="node4" href="structevent__subscriber__data__t.html" title="subscriber information define " alt="" coords="5,304,168,331"/>
+<area shape="rect" id="node5" href="structevent__thread__msg__info__t.html" title="event_thread_msg_info_t" alt="" coords="244,304,409,331"/>
+<area shape="rect" id="node6" href="structevent__thread__msg__t.html" title="message struct definition " alt="" coords="257,199,396,225"/>
+<area shape="rect" id="node7" href="structevent__thread__msg__body__del__t.html" title="event_thread_msg_body\l_del_t" alt="" coords="187,95,349,136"/>
+<area shape="rect" id="node8" href="structevent__thread__msg__body__add__t.html" title="message definition for manage subscriber " alt="" coords="373,95,536,136"/>
+<area shape="rect" id="node9" href="structevent__subscriber__t.html" title="EventSubscriber class instance definition, this is storaged in any threads. " alt="" coords="389,5,520,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -110,27 +117,27 @@ Collaboration diagram for event_tpool_add_result_t:</div>
 Data Fields</h2></td></tr>
 <tr class="memitem:a8b2e13c78efca330f06b6ddcd7464b41"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structevent__tpool__add__result__t.html#a8b2e13c78efca330f06b6ddcd7464b41">result</a></td></tr>
 <tr class="separator:a8b2e13c78efca330f06b6ddcd7464b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ad568ec1c6b6b5cb8dcbfddc0c8dd61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="event__threadpool__data_8h.html#a3c7244c2cbda2f3787474a786afa294f">EventTPoolFDData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structevent__tpool__add__result__t.html#a7ad568ec1c6b6b5cb8dcbfddc0c8dd61">event_handle</a></td></tr>
-<tr class="separator:a7ad568ec1c6b6b5cb8dcbfddc0c8dd61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc6ff1ec6f80bc9dd261a1549c01ca59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="event__threadpool__data_8h.html#ad7c0af45373970a13eda82690e2083af">EventTPoolThreadInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structevent__tpool__add__result__t.html#acc6ff1ec6f80bc9dd261a1549c01ca59">event_handle</a></td></tr>
+<tr class="separator:acc6ff1ec6f80bc9dd261a1549c01ca59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>add result definition </p>
 
-<p class="definition">Definition at line <a class="el" href="event__threadpool__data_8h_source.html#l00040">40</a> of file <a class="el" href="event__threadpool__data_8h_source.html">event_threadpool_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__threadpool__data_8h_source.html#l00041">41</a> of file <a class="el" href="event__threadpool__data_8h_source.html">event_threadpool_data.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a7ad568ec1c6b6b5cb8dcbfddc0c8dd61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ad568ec1c6b6b5cb8dcbfddc0c8dd61">&#9670;&nbsp;</a></span>event_handle</h2>
+<a id="acc6ff1ec6f80bc9dd261a1549c01ca59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc6ff1ec6f80bc9dd261a1549c01ca59">&#9670;&nbsp;</a></span>event_handle</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="event__threadpool__data_8h.html#a3c7244c2cbda2f3787474a786afa294f">EventTPoolFDData</a> event_handle</td>
+          <td class="memname"><a class="el" href="event__threadpool__data_8h.html#ad7c0af45373970a13eda82690e2083af">EventTPoolThreadInfo</a> event_handle</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__threadpool__data_8h_source.html#l00042">42</a> of file <a class="el" href="event__threadpool__data_8h_source.html">event_threadpool_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__threadpool__data_8h_source.html#l00043">43</a> of file <a class="el" href="event__threadpool__data_8h_source.html">event_threadpool_data.h</a>.</p>
 
 </div>
 </div>
@@ -146,7 +153,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__threadpool__data_8h_source.html#l00041">41</a> of file <a class="el" href="event__threadpool__data_8h_source.html">event_threadpool_data.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__threadpool__data_8h_source.html#l00042">42</a> of file <a class="el" href="event__threadpool__data_8h_source.html">event_threadpool_data.h</a>.</p>
 
 </div>
 </div>

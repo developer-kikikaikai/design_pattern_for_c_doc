@@ -8,6 +8,7 @@ var state__machine_8h =
     [ "StateMachineInfo", "state__machine_8h.html#a9a0bae8342f680e2f25476bedc391031", null ],
     [ "state_machine_call_event", "state__machine_8h.html#a6b0b0b44643598e746e110500f292d31", null ],
     [ "state_machine_free", "state__machine_8h.html#a630a097f8c3fb7d16c581a01f69f9bcd", null ],
+    [ "state_machine_get_current_state", "state__machine_8h.html#a23ffb9d8b57aa2946dac4792b7134a19", null ],
     [ "state_machine_new", "state__machine_8h.html#a19b6eb0eb78ca26207289a0adb092ea3", null ],
     [ "state_machine_set_state", "state__machine_8h.html#a7a5094c9a7363da35fc3d6ce76780d61", null ],
     [ "state_machine_show", "state__machine_8h.html#aa0289bfb25a29c73c31536d40450917e", null ],

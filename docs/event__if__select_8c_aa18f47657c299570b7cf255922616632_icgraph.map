@@ -1,0 +1,15 @@
+<map id="event_if_del" name="event_if_del">
+<area shape="rect" id="node2" href="$event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="143,71,321,98"/>
+<area shape="rect" id="node12" href="$event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="161,123,303,164"/>
+<area shape="rect" id="node3" href="$event__thread_8c.html#aba5dc282f2df9b3b0664764d7150e637" title="new instance " alt="" coords="369,13,551,39"/>
+<area shape="rect" id="node5" href="$event__thread_8c.html#a873727f5dd62d6c5beaad98426202c4d" title="free thread instance, please call stop before calling it " alt="" coords="381,130,539,157"/>
+<area shape="rect" id="node11" href="$event__thread_8c.html#a0362cf7486b7259ef05efdb0dd065d71" title="for del " alt="" coords="395,64,525,105"/>
+<area shape="rect" id="node4" href="$event__thread_8c.html#a28448587d7a075b3c0e67fcaa81587c1" title="for add " alt="" coords="616,5,747,47"/>
+<area shape="rect" id="node6" href="$event__thread_8c.html#a49e9bbb821b0195b9ae31b14d93d589d" title="main thread " alt="" coords="599,127,764,154"/>
+<area shape="rect" id="node7" href="$event__thread_8h.html#a1ddb76c71f97fc644e1a85f56f106435" title="start thread " alt="" coords="827,120,957,161"/>
+<area shape="rect" id="node8" href="$event__tpool__manager_8c.html#a762bca81a6ac647786e364e0fe6f7d0e" title="start thread " alt="" coords="1020,120,1151,161"/>
+<area shape="rect" id="node9" href="$event__tpool__manager_8c.html#a67ac16d5d7417a3365bb9cf776ff7a07" title="new thread info " alt="" coords="1199,149,1329,191"/>
+<area shape="rect" id="node10" href="$event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="1377,157,1552,183"/>
+<area shape="rect" id="node13" href="$event__thread_8c.html#a32733e959c729cb360f17b65233de0d2" title="set event_base " alt="" coords="616,179,747,220"/>
+<area shape="rect" id="node14" href="$event__thread_8h.html#a434dd62b37638e31577b13671dee5976" title="create and thread instance " alt="" coords="812,186,972,213"/>
+</map>

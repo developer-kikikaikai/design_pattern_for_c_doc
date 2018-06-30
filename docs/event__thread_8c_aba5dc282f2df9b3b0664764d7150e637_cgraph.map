@@ -1,3 +1,8 @@
 <map id="event_subscriber_data_new" name="event_subscriber_data_new">
-<area shape="rect" id="node2" href="$event__thread_8c.html#a3a8420210f6d0bafd5a57b313996151d" title="free instance " alt="" coords="235,5,413,32"/>
+<area shape="rect" id="node2" href="$event__if_8h.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="277,56,371,83"/>
+<area shape="rect" id="node5" href="$event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="235,107,413,133"/>
+<area shape="rect" id="node3" href="$event__if__epoll_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="461,5,628,32"/>
+<area shape="rect" id="node4" href="$event__if__select_8c.html#a2cc4a722c88d92de302c94ad198258d7" title="event_select_set_fds" alt="" coords="473,56,616,83"/>
+<area shape="rect" id="node6" href="$event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="500,107,589,133"/>
+<area shape="rect" id="node7" href="$event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="676,107,833,133"/>
 </map>

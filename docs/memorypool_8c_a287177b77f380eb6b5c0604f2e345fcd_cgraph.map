@@ -1,0 +1,5 @@
+<map id="mpool_create" name="mpool_create">
+<area shape="rect" id="node2" href="$memorypool_8c.html#a5877ab18f18ecab080831d49559482e7" title="get minimum of x, which 2^x &gt; input_value " alt="" coords="153,5,284,47"/>
+<area shape="rect" id="node4" href="$memorypool_8c.html#ab29601425064eb136cd069075fb65811" title="mpool_list_push" alt="" coords="161,71,277,98"/>
+<area shape="rect" id="node3" href="$memorypool_8c.html#a14e200abd1e20c5ac095714d4d96d85a" title="get right bit index " alt="" coords="332,13,484,39"/>
+</map>

@@ -1,4 +1,7 @@
 <map id="event_tpool_thread_free" name="event_tpool_thread_free">
-<area shape="rect" id="node2" href="$event__thread_8c.html#a3a8420210f6d0bafd5a57b313996151d" title="free instance " alt="" coords="212,5,391,32"/>
-<area shape="rect" id="node3" href="$event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="230,57,373,98"/>
+<area shape="rect" id="node2" href="$event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="212,5,391,32"/>
+<area shape="rect" id="node5" href="$event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="230,57,373,98"/>
+<area shape="rect" id="node3" href="$event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="441,9,530,36"/>
+<area shape="rect" id="node4" href="$event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="580,9,737,36"/>
+<area shape="rect" id="node6" href="$event__if_8h.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="439,64,532,91"/>
 </map>

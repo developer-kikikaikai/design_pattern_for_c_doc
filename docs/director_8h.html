@@ -121,7 +121,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a76b3d7188f3d7d1d67313756285a329c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_director.html">Director</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="director_8h.html#a76b3d7188f3d7d1d67313756285a329c">director_new</a> (char *builder_lib_name, char *builder_interface_conf)</td></tr>
 <tr class="memdesc:a76b3d7188f3d7d1d67313756285a329c"><td class="mdescLeft">&#160;</td><td class="mdescRight">director new  <a href="#a76b3d7188f3d7d1d67313756285a329c">More...</a><br /></td></tr>
 <tr class="separator:a76b3d7188f3d7d1d67313756285a329c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f61b3ab0bad8a0beb3827db716acff8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="director_8h.html#a7f61b3ab0bad8a0beb3827db716acff8">director_construct</a> (<a class="el" href="struct_director.html">Director</a> director, void *initial_parameter, void(*<a class="el" href="main_8c.html#a559d036738458e8b865cb6d3feacaddd">initial_result</a>)(int result))</td></tr>
+<tr class="memitem:a7f61b3ab0bad8a0beb3827db716acff8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="director_8h.html#a7f61b3ab0bad8a0beb3827db716acff8">director_construct</a> (<a class="el" href="struct_director.html">Director</a> director, void *initial_parameter, void(*initial_result)(int result))</td></tr>
 <tr class="memdesc:a7f61b3ab0bad8a0beb3827db716acff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">director construct  <a href="#a7f61b3ab0bad8a0beb3827db716acff8">More...</a><br /></td></tr>
 <tr class="separator:a7f61b3ab0bad8a0beb3827db716acff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b8effb735ac41e085226c8c317b19b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="director_8h.html#a4b8effb735ac41e085226c8c317b19b4">director_destruct</a> (<a class="el" href="struct_director.html">Director</a> director)</td></tr>
@@ -182,9 +182,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="director_8h_a7f61b3ab0bad8a0beb3827db716acff8_cgraph.png" border="0" usemap="#director_8h_a7f61b3ab0bad8a0beb3827db716acff8_cgraph" alt=""/></div>
 <map name="director_8h_a7f61b3ab0bad8a0beb3827db716acff8_cgraph" id="director_8h_a7f61b3ab0bad8a0beb3827db716acff8_cgraph">
-<area shape="rect" id="node2" href="main_8c.html#a559d036738458e8b865cb6d3feacaddd" title="initial_result" alt="" coords="565,5,656,32"/>
-<area shape="rect" id="node3" href="builder__action_8c.html#a6b2442d74512cd32484c52acfd1ca0a5" title="construct action " alt="" coords="180,31,343,57"/>
-<area shape="rect" id="node4" href="builder__action_8c.html#a44d0d0e64238999c9cb67290ca925178" title="run action " alt="" coords="391,31,517,57"/>
+<area shape="rect" id="node2" href="builder__action_8c.html#a6b2442d74512cd32484c52acfd1ca0a5" title="construct action " alt="" coords="180,5,343,32"/>
+<area shape="rect" id="node3" href="builder__action_8c.html#a44d0d0e64238999c9cb67290ca925178" title="run action " alt="" coords="391,5,517,32"/>
 </map>
 </div>
 <div class="dynheader">
@@ -193,7 +192,6 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="director_8h_a7f61b3ab0bad8a0beb3827db716acff8_icgraph.png" border="0" usemap="#director_8h_a7f61b3ab0bad8a0beb3827db716acff8_icgraph" alt=""/></div>
 <map name="director_8h_a7f61b3ab0bad8a0beb3827db716acff8_icgraph" id="director_8h_a7f61b3ab0bad8a0beb3827db716acff8_icgraph">
 <area shape="rect" id="node2" href="lower__layer__director_8c.html#a3ffe988f57ceb9b56d4fbf09e0c2c787" title="director cconstruct " alt="" coords="180,5,317,47"/>
-<area shape="rect" id="node3" href="main_8c.html#a0254953ab526b5c0a9245bd0a2f50bfc" title="main" alt="" coords="365,13,416,39"/>
 </map>
 </div>
 
@@ -231,9 +229,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="director_8h_a4b8effb735ac41e085226c8c317b19b4_icgraph.png" border="0" usemap="#director_8h_a4b8effb735ac41e085226c8c317b19b4_icgraph" alt=""/></div>
 <map name="director_8h_a4b8effb735ac41e085226c8c317b19b4_icgraph" id="director_8h_a4b8effb735ac41e085226c8c317b19b4_icgraph">
-<area shape="rect" id="node2" href="lower__layer__director_8c.html#aa6e492c836d8e65c2ee98aa7b313b98d" title="director denstruct " alt="" coords="172,31,337,57"/>
+<area shape="rect" id="node2" href="lower__layer__director_8c.html#aa6e492c836d8e65c2ee98aa7b313b98d" title="director denstruct " alt="" coords="172,5,337,32"/>
 <area shape="rect" id="node3" href="lower__layer__director_8c.html#aac948f1e6c348c16a79e6277900e73a4" title="director new " alt="" coords="385,5,552,32"/>
-<area shape="rect" id="node4" href="main_8c.html#a0254953ab526b5c0a9245bd0a2f50bfc" title="main" alt="" coords="600,31,651,57"/>
 </map>
 </div>
 
@@ -264,9 +261,8 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="director_8h_a10f9c1bedf621357ea0abf6c8cb4f72d_icgraph.png" border="0" usemap="#director_8h_a10f9c1bedf621357ea0abf6c8cb4f72d_icgraph" alt=""/></div>
 <map name="director_8h_a10f9c1bedf621357ea0abf6c8cb4f72d_icgraph" id="director_8h_a10f9c1bedf621357ea0abf6c8cb4f72d_icgraph">
 <area shape="rect" id="node2" href="director_8h.html#a76b3d7188f3d7d1d67313756285a329c" title="director new " alt="" coords="182,5,277,32"/>
-<area shape="rect" id="node5" href="lower__layer__director_8c.html#aa6e492c836d8e65c2ee98aa7b313b98d" title="director denstruct " alt="" coords="147,56,312,83"/>
-<area shape="rect" id="node3" href="lower__layer__director_8c.html#aac948f1e6c348c16a79e6277900e73a4" title="director new " alt="" coords="360,5,527,32"/>
-<area shape="rect" id="node4" href="main_8c.html#a0254953ab526b5c0a9245bd0a2f50bfc" title="main" alt="" coords="575,31,625,57"/>
+<area shape="rect" id="node4" href="lower__layer__director_8c.html#aa6e492c836d8e65c2ee98aa7b313b98d" title="director denstruct " alt="" coords="147,56,312,83"/>
+<area shape="rect" id="node3" href="lower__layer__director_8c.html#aac948f1e6c348c16a79e6277900e73a4" title="director new " alt="" coords="360,31,527,57"/>
 </map>
 </div>
 
@@ -306,9 +302,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="director_8h_a47c1a53b57a08c78de3eef05eb951bb4_icgraph.png" border="0" usemap="#director_8h_a47c1a53b57a08c78de3eef05eb951bb4_icgraph" alt=""/></div>
 <map name="director_8h_a47c1a53b57a08c78de3eef05eb951bb4_icgraph" id="director_8h_a47c1a53b57a08c78de3eef05eb951bb4_icgraph">
-<area shape="rect" id="node2" href="lower__layer__director_8c.html#aa6e492c836d8e65c2ee98aa7b313b98d" title="director denstruct " alt="" coords="175,31,340,57"/>
-<area shape="rect" id="node3" href="lower__layer__director_8c.html#aac948f1e6c348c16a79e6277900e73a4" title="director new " alt="" coords="388,5,555,32"/>
-<area shape="rect" id="node4" href="main_8c.html#a0254953ab526b5c0a9245bd0a2f50bfc" title="main" alt="" coords="603,31,653,57"/>
+<area shape="rect" id="node2" href="lower__layer__director_8c.html#aa6e492c836d8e65c2ee98aa7b313b98d" title="director denstruct " alt="" coords="175,13,340,39"/>
+<area shape="rect" id="node3" href="lower__layer__director_8c.html#aac948f1e6c348c16a79e6277900e73a4" title="director new " alt="" coords="388,13,555,39"/>
 </map>
 </div>
 
@@ -339,7 +334,6 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="director_8h_a915ca3b4a45d0c55514ed964f06f9c17_icgraph.png" border="0" usemap="#director_8h_a915ca3b4a45d0c55514ed964f06f9c17_icgraph" alt=""/></div>
 <map name="director_8h_a915ca3b4a45d0c55514ed964f06f9c17_icgraph" id="director_8h_a915ca3b4a45d0c55514ed964f06f9c17_icgraph">
 <area shape="rect" id="node2" href="lower__layer__director_8c.html#aac948f1e6c348c16a79e6277900e73a4" title="director new " alt="" coords="175,13,341,39"/>
-<area shape="rect" id="node3" href="main_8c.html#a0254953ab526b5c0a9245bd0a2f50bfc" title="main" alt="" coords="389,13,440,39"/>
 </map>
 </div>
 
@@ -393,7 +387,6 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="director_8h_a76b3d7188f3d7d1d67313756285a329c_icgraph.png" border="0" usemap="#director_8h_a76b3d7188f3d7d1d67313756285a329c_icgraph" alt=""/></div>
 <map name="director_8h_a76b3d7188f3d7d1d67313756285a329c_icgraph" id="director_8h_a76b3d7188f3d7d1d67313756285a329c_icgraph">
 <area shape="rect" id="node2" href="lower__layer__director_8c.html#aac948f1e6c348c16a79e6277900e73a4" title="director new " alt="" coords="148,5,315,32"/>
-<area shape="rect" id="node3" href="main_8c.html#a0254953ab526b5c0a9245bd0a2f50bfc" title="main" alt="" coords="363,5,413,32"/>
 </map>
 </div>
 

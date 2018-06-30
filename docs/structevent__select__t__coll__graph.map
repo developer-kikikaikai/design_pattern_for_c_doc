@@ -1,0 +1,5 @@
+<map id="event_select_t" name="event_select_t">
+<area shape="rect" id="node2" href="$structevent__select__handler__t.html" title="event_select_handler_t" alt="" coords="5,96,160,123"/>
+<area shape="rect" id="node3" href="$structevent__subscriber__t.html" title="EventSubscriber class instance definition, this is storaged in any threads. " alt="" coords="17,5,148,32"/>
+<area shape="rect" id="node4" href="$structevent__select__fds__t.html" title="event_select_fds_t" alt="" coords="237,96,366,123"/>
+</map>

@@ -1,8 +1,6 @@
 <map id="event_tpool_thread_add" name="event_tpool_thread_add">
-<area shape="rect" id="node2" href="$event__tpool__manager_8c.html#a9fb46d9a8cd14cc1307479e7b2311427" title="insert new thread " alt="" coords="212,56,343,97"/>
-<area shape="rect" id="node3" href="$event__tpool__manager_8c.html#a834b504d9de1aa7d36b98308833c9268" title="add EventSubscriber to threadpool " alt="" coords="413,13,527,39"/>
-<area shape="rect" id="node6" href="$event__tpool__manager_8c.html#afe2e173e9f9b43adb4426431a568fc9e" title="add EventSubscriber to threadpool, if you want to choose thead, please use it. " alt="" coords="391,63,549,90"/>
-<area shape="rect" id="node7" href="$event__tpool__manager_8c.html#a38729b5c4c2ea0e0508b0def15ee509b" title="update EventSubscriber to threadpool. " alt="" coords="403,114,537,141"/>
-<area shape="rect" id="node4" href="$state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="597,5,741,47"/>
-<area shape="rect" id="node5" href="$state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="789,13,927,39"/>
+<area shape="rect" id="node2" href="$event__tpool__manager_8c.html#a834b504d9de1aa7d36b98308833c9268" title="add EventSubscriber to threadpool " alt="" coords="234,13,349,39"/>
+<area shape="rect" id="node5" href="$event__tpool__manager_8c.html#afe2e173e9f9b43adb4426431a568fc9e" title="add EventSubscriber to threadpool, if you want to choose thead, please use it. " alt="" coords="212,63,371,90"/>
+<area shape="rect" id="node3" href="$state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="419,5,563,47"/>
+<area shape="rect" id="node4" href="$state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="611,13,748,39"/>
 </map>

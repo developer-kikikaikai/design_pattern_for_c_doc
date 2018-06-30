@@ -1,0 +1,5 @@
+<map id="mpool_get_next_usedmem" name="mpool_get_next_usedmem">
+<area shape="rect" id="node2" href="$memorypool_8c.html#a35bbc3bda5ca4f03604a6801bec0b24e" title="mpool_is_not_ptr_in_buf" alt="" coords="235,5,397,32"/>
+<area shape="rect" id="node3" href="$memorypool_8c.html#a24a7559cfcfee224f2d1fb43e5764778" title="mpool_get_next_memory" alt="" coords="232,56,400,83"/>
+<area shape="rect" id="node4" href="$memorypool_8c.html#a35357d5118eb318e8293521ff934f9cf" title="mpool_get_buffer_place" alt="" coords="448,56,607,83"/>
+</map>

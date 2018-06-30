@@ -1,4 +1,15 @@
 <map id="event_tpool_thread_set_event_base" name="event_tpool_thread_set_event_base">
-<area shape="rect" id="node2" href="$event__thread_8c.html#a4c58da60de2ef196d0f86f40913986d3" title="callback main " alt="" coords="184,5,335,32"/>
-<area shape="rect" id="node3" href="$event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="188,57,331,98"/>
+<area shape="rect" id="node2" href="$event__if_8h.html#af8a56a181a4441abd338686d7c47768e" title="event new " alt="" coords="212,56,307,83"/>
+<area shape="rect" id="node5" href="$event__thread_8c.html#a58658c7e7bbf5ca5861d2192bfd93096" title="callback main " alt="" coords="184,119,335,145"/>
+<area shape="rect" id="node8" href="$event__if_8h.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="213,173,306,200"/>
+<area shape="rect" id="node11" href="$event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="188,267,331,309"/>
+<area shape="rect" id="node3" href="$event__if__epoll_8c.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="419,5,513,32"/>
+<area shape="rect" id="node4" href="$event__if__select_8c.html#a493269ac94c0f61f809283c2bb1a3f89" title="event_select_reset_fds" alt="" coords="389,56,543,83"/>
+<area shape="rect" id="node6" href="$event__thread_8c.html#a3aefda8125b91b18060424ceeb38fa1e" title="main messages caller " alt="" coords="401,107,531,149"/>
+<area shape="rect" id="node7" href="$event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="611,107,741,149"/>
+<area shape="rect" id="node9" href="$event__if__epoll_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="383,173,549,200"/>
+<area shape="rect" id="node10" href="$event__if__select_8c.html#a2cc4a722c88d92de302c94ad198258d7" title="event_select_set_fds" alt="" coords="395,224,537,251"/>
+<area shape="rect" id="node12" href="$event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="421,275,511,301"/>
+<area shape="rect" id="node14" href="$event__if_8h.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="419,325,513,352"/>
+<area shape="rect" id="node13" href="$event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="597,275,755,301"/>
 </map>

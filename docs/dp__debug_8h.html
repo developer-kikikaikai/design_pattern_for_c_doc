@@ -87,7 +87,10 @@ $(document).ready(function(){initNavTree('dp__debug_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">dp_debug.h File Reference</div>  </div>
 </div><!--header-->
@@ -100,31 +103,41 @@ $(document).ready(function(){initNavTree('dp__debug_8h.html','');});
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;errno.h&gt;</code><br />
+<code>#include &lt;pthread.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for dp_debug.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="dp__debug_8h__incl.png" border="0" usemap="#_d_1_2design__pattern__for__c_2design__pattern__util_2include_2dp__debug_8h" alt=""/></div>
+<map name="_d_1_2design__pattern__for__c_2design__pattern__util_2include_2dp__debug_8h" id="_d_1_2design__pattern__for__c_2design__pattern__util_2include_2dp__debug_8h">
+</map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="dp__debug_8h__dep__incl.png" border="0" usemap="#_d_1_2design__pattern__for__c_2design__pattern__util_2include_2dp__debug_8hdep" alt=""/></div>
 <map name="_d_1_2design__pattern__for__c_2design__pattern__util_2include_2dp__debug_8hdep" id="_d_1_2design__pattern__for__c_2design__pattern__util_2include_2dp__debug_8hdep">
-<area shape="rect" id="node2" href="builder__action_8c.html" title="Implement of builder_action, running construct on other thread. " alt="" coords="131,109,277,165"/>
-<area shape="rect" id="node3" href="director_8c.html" title="Implement of director API, defined in director.h. " alt="" coords="301,117,454,158"/>
-<area shape="rect" id="node4" href="lower__layer__director_8c.html" title="Implement of lower_layer_director (related to builder design petten) library API, defined in flyweigh..." alt="" coords="478,109,623,165"/>
-<area shape="rect" id="node5" href="dp__util_8h.html" title=" Utility headers " alt="" coords="648,109,797,165"/>
+<area shape="rect" id="node2" href="builder__action_8c.html" title="Implement of builder_action, running construct on other thread. " alt="" coords="426,109,571,165"/>
+<area shape="rect" id="node3" href="director_8c.html" title="Implement of director API, defined in director.h. " alt="" coords="595,117,749,158"/>
+<area shape="rect" id="node4" href="lower__layer__director_8c.html" title="Implement of lower_layer_director (related to builder design petten) library API, defined in flyweigh..." alt="" coords="773,109,918,165"/>
+<area shape="rect" id="node5" href="dp__util_8h.html" title=" Utility headers " alt="" coords="943,109,1092,165"/>
+<area shape="rect" id="node20" href="dp__timelog_8c.html" title="D:/design_pattern_for\l_c/design_pattern_util\l/lib/dp_timelog.c" alt="" coords="1116,109,1265,165"/>
+<area shape="rect" id="node21" href="event__if__epoll_8c.html" title="D:/design_pattern_for\l_c/threadpool/lib/event\l_if_epoll.c" alt="" coords="1290,109,1441,165"/>
+<area shape="rect" id="node22" href="event__if__libevent_8c.html" title="D:/design_pattern_for\l_c/threadpool/lib/event\l_if_libevent.c" alt="" coords="1465,109,1615,165"/>
 <area shape="rect" id="node6" href="chain__element_8c.html" title="Implement of ChainElement class. " alt="" coords="5,213,176,269"/>
 <area shape="rect" id="node7" href="chain__of__responsibility_8c.html" title="Implement of Chain of Responsibility design petten library API. " alt="" coords="161,317,346,373"/>
 <area shape="rect" id="node8" href="dp__util_8c.html" title="design pattern libraries utility API " alt="" coords="251,213,400,269"/>
 <area shape="rect" id="node9" href="flyweight_8h.html" title="This is API as Flyweight design petten. " alt="" coords="425,213,570,269"/>
 <area shape="rect" id="node10" href="flyweight_8c.html" title="Implement of Flyweight design petten library API, defined in flyweight.h. " alt="" coords="466,325,638,366"/>
-<area shape="rect" id="node11" href="publish__content_8c.html" title="Implement of Flyweight design petten library API, related to PublishContent class. " alt="" coords="645,213,800,269"/>
-<area shape="rect" id="node12" href="publisher_8c.html" title="Implement of Flyweight design petten library API, related to Publisher class. " alt="" coords="824,221,1000,262"/>
-<area shape="rect" id="node13" href="state__machine_8c.html" title="Implement of StateMachine library API, defined in state_machine.h. " alt="" coords="1024,221,1211,262"/>
-<area shape="rect" id="node14" href="state__manager_8c.html" title="Implement of State design petten library API, defined in state_manager.h, only care state_manager cla..." alt="" coords="1235,221,1421,262"/>
-<area shape="rect" id="node15" href="event__thread_8c.html" title="This is API implement for EventThread class. " alt="" coords="1446,213,1597,269"/>
-<area shape="rect" id="node16" href="event__tpool__manager_8c.html" title="This is API implement for EventTPoolManager class. " alt="" coords="1621,213,1771,269"/>
+<area shape="rect" id="node11" href="prototype__factory_8c.html" title="Implement of prototype_factory API, defined in prototype_factory.h. " alt="" coords="646,213,815,269"/>
+<area shape="rect" id="node12" href="prototype__manager_8c.html" title="Implement of Prototype library API, defined in prototype.h. " alt="" coords="839,213,1009,269"/>
+<area shape="rect" id="node13" href="publish__content_8c.html" title="Implement of Flyweight design petten library API, related to PublishContent class. " alt="" coords="1033,213,1188,269"/>
+<area shape="rect" id="node14" href="publisher_8c.html" title="Implement of Flyweight design petten library API, related to Publisher class. " alt="" coords="1212,221,1388,262"/>
+<area shape="rect" id="node15" href="state__machine_8c.html" title="Implement of StateMachine library API, defined in state_machine.h. " alt="" coords="1412,221,1599,262"/>
+<area shape="rect" id="node16" href="state__manager_8c.html" title="Implement of State design petten library API, defined in state_manager.h, only care state_manager cla..." alt="" coords="1623,221,1809,262"/>
+<area shape="rect" id="node17" href="event__if__select_8c.html" title="D:/design_pattern_for\l_c/threadpool/lib/event\l_if_select.c" alt="" coords="1834,213,1985,269"/>
+<area shape="rect" id="node18" href="event__thread_8c.html" title="This is API implement for EventThread class. " alt="" coords="2009,213,2159,269"/>
+<area shape="rect" id="node19" href="event__tpool__manager_8c.html" title="This is API implement for EventTPoolManager class. " alt="" coords="2183,213,2334,269"/>
 </map>
 </div>
 </div>
@@ -132,14 +145,65 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a58edb19b1cf8a0e3d55a86b24dae9acb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#a58edb19b1cf8a0e3d55a86b24dae9acb">DEBUG_ERRPRINT</a>(...)</td></tr>
+<tr class="memitem:a07f425e7292403a9291a9e6576e4d347"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#a07f425e7292403a9291a9e6576e4d347">DBGFLAG</a></td></tr>
+<tr class="separator:a07f425e7292403a9291a9e6576e4d347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58edb19b1cf8a0e3d55a86b24dae9acb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#a58edb19b1cf8a0e3d55a86b24dae9acb">DEBUG_ERRPRINT</a>(...)&#160;&#160;&#160;<a class="el" href="dp__debug_8h.html#a702ec5f4a6870f70fbd3f7fef888a33c">DEBUG_ERRPRINT_</a>(__VA_ARGS__, &quot;&quot;)</td></tr>
 <tr class="separator:a58edb19b1cf8a0e3d55a86b24dae9acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34f7442c329708a4d5a4be2835230eca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#a34f7442c329708a4d5a4be2835230eca">DEBUG_INIT</a>&#160;&#160;&#160;<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>=<a class="el" href="dp__timelog_8c.html#a47da78e7595a5c0e5e6624a3bafd81ed">dp_timelog_init</a>(&quot;,&quot;, 2048, 8192, 0); <a class="el" href="dp__timelog_8c.html#a963174e915b171b793c63eed54692e90">dp_timelog_print</a>(<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>,&quot;init\n&quot;);</td></tr>
+<tr class="separator:a34f7442c329708a4d5a4be2835230eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b6d09e0c9c0bd5e379374a68eccff4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#a90b6d09e0c9c0bd5e379374a68eccff4">DEBUG_INIT_THREDSAFE</a>&#160;&#160;&#160;<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>=<a class="el" href="dp__timelog_8c.html#a47da78e7595a5c0e5e6624a3bafd81ed">dp_timelog_init</a>(&quot;,&quot;, 2048, 8192, 1); <a class="el" href="dp__timelog_8c.html#a963174e915b171b793c63eed54692e90">dp_timelog_print</a>(<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>,&quot;init\n&quot;);</td></tr>
+<tr class="separator:a90b6d09e0c9c0bd5e379374a68eccff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702ec5f4a6870f70fbd3f7fef888a33c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#a702ec5f4a6870f70fbd3f7fef888a33c">DEBUG_ERRPRINT_</a>(fmt, ...)&#160;&#160;&#160;<a class="el" href="dp__timelog_8c.html#a963174e915b171b793c63eed54692e90">dp_timelog_print</a>(<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>, &quot;[%s(%s:%d)thread:%x]: &quot;fmt&quot;%s&quot;, __FUNCTION__,__FILE__,__LINE__,(unsigned int)pthread_self(), __VA_ARGS__)</td></tr>
+<tr class="separator:a702ec5f4a6870f70fbd3f7fef888a33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae840b20ad3a0d286b43ab640358b2aae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#ae840b20ad3a0d286b43ab640358b2aae">DEBUG_EXIT</a>&#160;&#160;&#160;<a class="el" href="dp__timelog_8c.html#a963174e915b171b793c63eed54692e90">dp_timelog_print</a>(<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>,&quot;exit\n&quot;);dp_timelog_exit(<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>);<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>=NULL;</td></tr>
+<tr class="separator:ae840b20ad3a0d286b43ab640358b2aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a3ce4f25456756439a1704708b39c49a0"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdp__timelog__t.html">dp_timelog_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#a3ce4f25456756439a1704708b39c49a0">dp_timelog_t</a></td></tr>
+<tr class="separator:a3ce4f25456756439a1704708b39c49a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ed19e44fbac15815b6b9840f393884"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdp__timelog__t.html">dp_timelog_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#a36ed19e44fbac15815b6b9840f393884">DPTimeLog</a></td></tr>
+<tr class="separator:a36ed19e44fbac15815b6b9840f393884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a47da78e7595a5c0e5e6624a3bafd81ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dp__debug_8h.html#a36ed19e44fbac15815b6b9840f393884">DPTimeLog</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#a47da78e7595a5c0e5e6624a3bafd81ed">dp_timelog_init</a> (const char *delimiter, size_t maxloglen, unsigned long maxstoresize, int is_threadsafe)</td></tr>
+<tr class="memdesc:a47da78e7595a5c0e5e6624a3bafd81ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init store log.  <a href="#a47da78e7595a5c0e5e6624a3bafd81ed">More...</a><br /></td></tr>
+<tr class="separator:a47da78e7595a5c0e5e6624a3bafd81ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64552d3dccd83388390b1128ad41bcbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#a64552d3dccd83388390b1128ad41bcbd">dp_timelog_print</a> (<a class="el" href="dp__debug_8h.html#a36ed19e44fbac15815b6b9840f393884">DPTimeLog</a> handle, const char *format,...)</td></tr>
+<tr class="memdesc:a64552d3dccd83388390b1128ad41bcbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store log.  <a href="#a64552d3dccd83388390b1128ad41bcbd">More...</a><br /></td></tr>
+<tr class="separator:a64552d3dccd83388390b1128ad41bcbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3f4111cb1c44189babd348f6662afde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#ab3f4111cb1c44189babd348f6662afde">dp_timelog_exit</a> (<a class="el" href="dp__debug_8h.html#a36ed19e44fbac15815b6b9840f393884">DPTimeLog</a> handle)</td></tr>
+<tr class="memdesc:ab3f4111cb1c44189babd348f6662afde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit stored log, and show stored log.  <a href="#ab3f4111cb1c44189babd348f6662afde">More...</a><br /></td></tr>
+<tr class="separator:ab3f4111cb1c44189babd348f6662afde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a51e44a6bea79ec5272f59bf4037e83f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dp__debug_8h.html#a36ed19e44fbac15815b6b9840f393884">DPTimeLog</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a></td></tr>
+<tr class="memdesc:a51e44a6bea79ec5272f59bf4037e83f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement of dp_timelog API, defined in <a class="el" href="dp__debug_8h.html" title="For using debug log. ">dp_debug.h</a>.  <a href="#a51e44a6bea79ec5272f59bf4037e83f5">More...</a><br /></td></tr>
+<tr class="separator:a51e44a6bea79ec5272f59bf4037e83f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>For using debug log. </p>
 
 <p class="definition">Definition in file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a07f425e7292403a9291a9e6576e4d347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07f425e7292403a9291a9e6576e4d347">&#9670;&nbsp;</a></span>DBGFLAG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBGFLAG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00055">55</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
+
+</div>
+</div>
 <a id="a58edb19b1cf8a0e3d55a86b24dae9acb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58edb19b1cf8a0e3d55a86b24dae9acb">&#9670;&nbsp;</a></span>DEBUG_ERRPRINT</h2>
 
@@ -151,12 +215,301 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>...</em></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="dp__debug_8h.html#a702ec5f4a6870f70fbd3f7fef888a33c">DEBUG_ERRPRINT_</a>(__VA_ARGS__, &quot;&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00058">58</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
+
+</div>
+</div>
+<a id="a702ec5f4a6870f70fbd3f7fef888a33c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a702ec5f4a6870f70fbd3f7fef888a33c">&#9670;&nbsp;</a></span>DEBUG_ERRPRINT_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUG_ERRPRINT_</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="dp__timelog_8c.html#a963174e915b171b793c63eed54692e90">dp_timelog_print</a>(<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>, &quot;[%s(%s:%d)thread:%x]: &quot;fmt&quot;%s&quot;, __FUNCTION__,__FILE__,__LINE__,(unsigned int)pthread_self(), __VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00063">63</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
+
+</div>
+</div>
+<a id="ae840b20ad3a0d286b43ab640358b2aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae840b20ad3a0d286b43ab640358b2aae">&#9670;&nbsp;</a></span>DEBUG_EXIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUG_EXIT&#160;&#160;&#160;<a class="el" href="dp__timelog_8c.html#a963174e915b171b793c63eed54692e90">dp_timelog_print</a>(<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>,&quot;exit\n&quot;);dp_timelog_exit(<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>);<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>=NULL;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00065">65</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
+
+</div>
+</div>
+<a id="a34f7442c329708a4d5a4be2835230eca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34f7442c329708a4d5a4be2835230eca">&#9670;&nbsp;</a></span>DEBUG_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUG_INIT&#160;&#160;&#160;<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>=<a class="el" href="dp__timelog_8c.html#a47da78e7595a5c0e5e6624a3bafd81ed">dp_timelog_init</a>(&quot;,&quot;, 2048, 8192, 0); <a class="el" href="dp__timelog_8c.html#a963174e915b171b793c63eed54692e90">dp_timelog_print</a>(<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>,&quot;init\n&quot;);</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00061">61</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
+
+</div>
+</div>
+<a id="a90b6d09e0c9c0bd5e379374a68eccff4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90b6d09e0c9c0bd5e379374a68eccff4">&#9670;&nbsp;</a></span>DEBUG_INIT_THREDSAFE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUG_INIT_THREDSAFE&#160;&#160;&#160;<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>=<a class="el" href="dp__timelog_8c.html#a47da78e7595a5c0e5e6624a3bafd81ed">dp_timelog_init</a>(&quot;,&quot;, 2048, 8192, 1); <a class="el" href="dp__timelog_8c.html#a963174e915b171b793c63eed54692e90">dp_timelog_print</a>(<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>,&quot;init\n&quot;);</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00062">62</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a3ce4f25456756439a1704708b39c49a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ce4f25456756439a1704708b39c49a0">&#9670;&nbsp;</a></span>dp_timelog_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdp__timelog__t.html">dp_timelog_t</a> <a class="el" href="structdp__timelog__t.html">dp_timelog_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00020">20</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
+
+</div>
+</div>
+<a id="a36ed19e44fbac15815b6b9840f393884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ed19e44fbac15815b6b9840f393884">&#9670;&nbsp;</a></span>DPTimeLog</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdp__timelog__t.html">dp_timelog_t</a> * <a class="el" href="dp__debug_8h.html#a36ed19e44fbac15815b6b9840f393884">DPTimeLog</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00020">20</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ab3f4111cb1c44189babd348f6662afde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f4111cb1c44189babd348f6662afde">&#9670;&nbsp;</a></span>dp_timelog_exit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dp_timelog_exit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dp__debug_8h.html#a36ed19e44fbac15815b6b9840f393884">DPTimeLog</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00023">23</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
+<p>Exit stored log, and show stored log. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>handle returned from timelog_init </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="dp__timelog_8c_source.html#l00162">162</a> of file <a class="el" href="dp__timelog_8c_source.html">dp_timelog.c</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="dp__debug_8h_ab3f4111cb1c44189babd348f6662afde_cgraph.png" border="0" usemap="#dp__debug_8h_ab3f4111cb1c44189babd348f6662afde_cgraph" alt=""/></div>
+<map name="dp__debug_8h_ab3f4111cb1c44189babd348f6662afde_cgraph" id="dp__debug_8h_ab3f4111cb1c44189babd348f6662afde_cgraph">
+<area shape="rect" id="node2" href="dp__timelog_8c.html#a378ef8294aba267abd1edc7b5d2d33f3" title="dp_timelog_show" alt="" coords="167,5,289,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a47da78e7595a5c0e5e6624a3bafd81ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47da78e7595a5c0e5e6624a3bafd81ed">&#9670;&nbsp;</a></span>dp_timelog_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dp__debug_8h.html#a36ed19e44fbac15815b6b9840f393884">DPTimeLog</a> dp_timelog_init </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>delimiter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>maxloglen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>maxstoresize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>is_threadsafe</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Init store log. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">delimiter</td><td>delimiter string if you want, default:" " </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxloglen</td><td>Max length of logs </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxstoresize</td><td>Storaged log size. If 0, always show log </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_threadsafe</td><td>threadsafe or not </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">!NULL</td><td>handle pointer to use other method </td></tr>
+    <tr><td class="paramname">NULL</td><td>error </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="dp__timelog_8c_source.html#l00085">85</a> of file <a class="el" href="dp__timelog_8c_source.html">dp_timelog.c</a>.</p>
+
+</div>
+</div>
+<a id="a64552d3dccd83388390b1128ad41bcbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64552d3dccd83388390b1128ad41bcbd">&#9670;&nbsp;</a></span>dp_timelog_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dp_timelog_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dp__debug_8h.html#a36ed19e44fbac15815b6b9840f393884">DPTimeLog</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Store log. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>handle returned from timelog_init </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>log format as printf </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0&lt;=val</td><td>success </td></tr>
+    <tr><td class="paramname">other</td><td>failed (same as prinf) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="dp__timelog_8c_source.html#l00139">139</a> of file <a class="el" href="dp__timelog_8c_source.html">dp_timelog.c</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="dp__debug_8h_a64552d3dccd83388390b1128ad41bcbd_cgraph.png" border="0" usemap="#dp__debug_8h_a64552d3dccd83388390b1128ad41bcbd_cgraph" alt=""/></div>
+<map name="dp__debug_8h_a64552d3dccd83388390b1128ad41bcbd_cgraph" id="dp__debug_8h_a64552d3dccd83388390b1128ad41bcbd_cgraph">
+<area shape="rect" id="node2" href="dp__timelog_8c.html#a80a1f154328895ebc38b8f9cd41f814b" title="for dp_timelog_data_t " alt="" coords="171,5,324,32"/>
+<area shape="rect" id="node3" href="dp__timelog_8c.html#a378ef8294aba267abd1edc7b5d2d33f3" title="dp_timelog_show" alt="" coords="186,56,309,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a51e44a6bea79ec5272f59bf4037e83f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e44a6bea79ec5272f59bf4037e83f5">&#9670;&nbsp;</a></span>timelog_g</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dp__debug_8h.html#a36ed19e44fbac15815b6b9840f393884">DPTimeLog</a> timelog_g</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implement of dp_timelog API, defined in <a class="el" href="dp__debug_8h.html" title="For using debug log. ">dp_debug.h</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="dp__timelog_8c_source.html#l00014">14</a> of file <a class="el" href="dp__timelog_8c_source.html">dp_timelog.c</a>.</p>
 
 </div>
 </div>

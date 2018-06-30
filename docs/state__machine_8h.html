@@ -151,6 +151,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7a5094c9a7363da35fc3d6ce76780d61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="state__machine_8h.html#a7a5094c9a7363da35fc3d6ce76780d61">state_machine_set_state</a> (<a class="el" href="state__machine_8h.html#a9a0bae8342f680e2f25476bedc391031">StateMachineInfo</a> this, int state)</td></tr>
 <tr class="memdesc:a7a5094c9a7363da35fc3d6ce76780d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">set state  <a href="#a7a5094c9a7363da35fc3d6ce76780d61">More...</a><br /></td></tr>
 <tr class="separator:a7a5094c9a7363da35fc3d6ce76780d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23ffb9d8b57aa2946dac4792b7134a19"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="state__machine_8h.html#a23ffb9d8b57aa2946dac4792b7134a19">state_machine_get_current_state</a> (<a class="el" href="state__machine_8h.html#a9a0bae8342f680e2f25476bedc391031">StateMachineInfo</a> this)</td></tr>
+<tr class="memdesc:a23ffb9d8b57aa2946dac4792b7134a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">get state  <a href="#a23ffb9d8b57aa2946dac4792b7134a19">More...</a><br /></td></tr>
+<tr class="separator:a23ffb9d8b57aa2946dac4792b7134a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b0b0b44643598e746e110500f292d31"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="state__machine_8h.html#a6b0b0b44643598e746e110500f292d31">state_machine_call_event</a> (<a class="el" href="state__machine_8h.html#a9a0bae8342f680e2f25476bedc391031">StateMachineInfo</a> this, int event, void *arg, int arglen, void(*response)(int result))</td></tr>
 <tr class="memdesc:a6b0b0b44643598e746e110500f292d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">call event trigger  <a href="#a6b0b0b44643598e746e110500f292d31">More...</a><br /></td></tr>
 <tr class="separator:a6b0b0b44643598e746e110500f292d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -290,7 +293,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00402">402</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00413">413</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
 
 </div>
 </div>
@@ -319,13 +322,50 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00427">427</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00438">438</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="state__machine_8h_a630a097f8c3fb7d16c581a01f69f9bcd_icgraph.png" border="0" usemap="#state__machine_8h_a630a097f8c3fb7d16c581a01f69f9bcd_icgraph" alt=""/></div>
 <map name="state__machine_8h_a630a097f8c3fb7d16c581a01f69f9bcd_icgraph" id="state__machine_8h_a630a097f8c3fb7d16c581a01f69f9bcd_icgraph">
 <area shape="rect" id="node2" href="state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="188,5,325,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a23ffb9d8b57aa2946dac4792b7134a19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23ffb9d8b57aa2946dac4792b7134a19">&#9670;&nbsp;</a></span>state_machine_get_current_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int state_machine_get_current_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="state__machine_8h.html#a9a0bae8342f680e2f25476bedc391031">StateMachineInfo</a>&#160;</td>
+          <td class="paramname"><em>this</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get state </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">this</td><td>StateMachineInfo class instance returned at state_machine_new </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>state </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00402">402</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="state__machine_8h_a23ffb9d8b57aa2946dac4792b7134a19_cgraph.png" border="0" usemap="#state__machine_8h_a23ffb9d8b57aa2946dac4792b7134a19_cgraph" alt=""/></div>
+<map name="state__machine_8h_a23ffb9d8b57aa2946dac4792b7134a19_cgraph" id="state__machine_8h_a23ffb9d8b57aa2946dac4792b7134a19_cgraph">
+<area shape="rect" id="node2" href="state__manager_8h.html#afb2940728135955e7f980722f418c992" title="get current state " alt="" coords="232,5,412,47"/>
 </map>
 </div>
 
@@ -386,44 +426,46 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="state__machine_8h_a19b6eb0eb78ca26207289a0adb092ea3_cgraph.png" border="0" usemap="#state__machine_8h_a19b6eb0eb78ca26207289a0adb092ea3_cgraph" alt=""/></div>
 <map name="state__machine_8h_a19b6eb0eb78ca26207289a0adb092ea3_cgraph" id="state__machine_8h_a19b6eb0eb78ca26207289a0adb092ea3_cgraph">
-<area shape="rect" id="node2" href="state__machine_8c.html#aea35d3a855cf205cc2f35696b73bbb65" title="Add new state. " alt="" coords="191,122,356,163"/>
-<area shape="rect" id="node10" href="state__machine_8c.html#a81664a812e29e9688c876babc5604a84" title="for multi thread, call event " alt="" coords="206,27,341,69"/>
-<area shape="rect" id="node12" href="state__machine_8c.html#a036a3a4094fcb1112a2ad408faa0152a" title="for single thread, call event " alt="" coords="206,459,341,501"/>
-<area shape="rect" id="node16" href="state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="205,307,341,349"/>
-<area shape="rect" id="node25" href="state__machine_8c.html#a36c95c8eeeee542fa348f50410944a15" title="free normally " alt="" coords="429,202,564,243"/>
-<area shape="rect" id="node28" href="state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="201,394,345,435"/>
-<area shape="rect" id="node39" href="state__machine_8c.html#a630a097f8c3fb7d16c581a01f69f9bcd" title="free StateMachine class " alt="" coords="206,525,341,552"/>
-<area shape="rect" id="node3" href="state__machine_8c.html#a527506b3af22d012c11d7f376705b87f" title="Add new state. " alt="" coords="415,122,579,163"/>
-<area shape="rect" id="node6" href="dp__list_8h.html#aacb8cf2643fa1e8153eb99e724a10e3c" title="list push " alt="" coords="1109,56,1221,83"/>
-<area shape="rect" id="node4" href="state__manager_8h.html#abbb560e7b4099d256f4ca409be71de48" title="Create StateManager class. " alt="" coords="650,129,789,156"/>
-<area shape="rect" id="node5" href="state__manager_8c.html#a376e0622cf8acc5513fa12f987287055" title="Add new state. " alt="" coords="852,107,1019,149"/>
-<area shape="rect" id="node7" href="state__manager_8c.html#a6a212d11f1218795fdd3f0d41e308214" title="free StateManager class " alt="" coords="867,173,1003,200"/>
-<area shape="rect" id="node8" href="dp__list_8h.html#af7b2ed26c7ad3b743389d842d9379391" title="list pop " alt="" coords="1112,249,1217,276"/>
-<area shape="rect" id="node9" href="dp__util_8c.html#a26471479b1060e936eef4872fc7acb4a" title="list pull " alt="" coords="1337,249,1441,276"/>
+<area shape="rect" id="node2" href="state__machine_8c.html#aea35d3a855cf205cc2f35696b73bbb65" title="Add new state. " alt="" coords="191,129,356,170"/>
+<area shape="rect" id="node10" href="state__machine_8c.html#a81664a812e29e9688c876babc5604a84" title="for multi thread, call event " alt="" coords="206,31,341,73"/>
+<area shape="rect" id="node12" href="state__machine_8c.html#a036a3a4094fcb1112a2ad408faa0152a" title="for single thread, call event " alt="" coords="206,327,341,369"/>
+<area shape="rect" id="node16" href="state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="205,393,341,434"/>
+<area shape="rect" id="node29" href="state__machine_8c.html#a36c95c8eeeee542fa348f50410944a15" title="free normally " alt="" coords="429,269,564,310"/>
+<area shape="rect" id="node32" href="state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="201,505,345,546"/>
+<area shape="rect" id="node41" href="state__machine_8c.html#a630a097f8c3fb7d16c581a01f69f9bcd" title="free StateMachine class " alt="" coords="206,571,341,597"/>
+<area shape="rect" id="node3" href="state__machine_8c.html#a527506b3af22d012c11d7f376705b87f" title="Add new state. " alt="" coords="415,129,579,170"/>
+<area shape="rect" id="node6" href="dp__list_8h.html#aacb8cf2643fa1e8153eb99e724a10e3c" title="list push " alt="" coords="1125,56,1237,83"/>
+<area shape="rect" id="node4" href="state__manager_8h.html#abbb560e7b4099d256f4ca409be71de48" title="Create StateManager class. " alt="" coords="650,136,789,163"/>
+<area shape="rect" id="node5" href="state__manager_8c.html#a376e0622cf8acc5513fa12f987287055" title="Add new state. " alt="" coords="861,107,1028,149"/>
+<area shape="rect" id="node7" href="state__manager_8c.html#a6a212d11f1218795fdd3f0d41e308214" title="free StateManager class " alt="" coords="877,173,1013,200"/>
+<area shape="rect" id="node8" href="dp__list_8h.html#af7b2ed26c7ad3b743389d842d9379391" title="list pop " alt="" coords="1129,249,1234,276"/>
+<area shape="rect" id="node9" href="dp__util_8c.html#a26471479b1060e936eef4872fc7acb4a" title="list pull " alt="" coords="1352,249,1456,276"/>
 <area shape="rect" id="node11" href="state__machine_8c.html#a5496aaebc5dd228659a40ee3b79f4cbd" title="for multi thread, write " alt="" coords="649,5,790,32"/>
-<area shape="rect" id="node13" href="state__machine_8c.html#a3566a4ded1b0f00ea6d6d8db2a474c90" title="state_machine_call\l_event_normal" alt="" coords="652,534,787,575"/>
-<area shape="rect" id="node14" href="state__machine_8c.html#a06dd32db130e7845676e2615343280a7" title="Find state. " alt="" coords="868,561,1003,602"/>
-<area shape="rect" id="node15" href="state__manager_8h.html#ae2728a286599f960be5e83d638db17c9" title="call state method " alt="" coords="868,509,1003,536"/>
-<area shape="rect" id="node17" href="event__threadpool_8h.html#a6b689e25ea84dbc7df10d970b330e086" title="delete EventSubscriber to threadapool. " alt="" coords="441,333,552,360"/>
-<area shape="rect" id="node23" href="state__machine_8c.html#aed29438c1fca55cf7b910a70b3ce35d9" title="for multi thread, get read sock " alt="" coords="415,384,579,411"/>
-<area shape="rect" id="node24" href="state__machine_8c.html#a57da8f358d1b9d7e2361d88dc50a22b9" title="for multi thread, close socket " alt="" coords="424,267,569,309"/>
-<area shape="rect" id="node18" href="event__tpool__manager_8c.html#a5cf33dc3f433da349f583f02071f0746" title="search insert place, to use event_tpool_thread_insert_thread " alt="" coords="644,443,795,485"/>
-<area shape="rect" id="node20" href="event__tpool__manager_8c.html#a93e051f15d474cf9122910acaac2a81c" title="delete thread " alt="" coords="654,326,785,367"/>
-<area shape="rect" id="node19" href="event__tpool__manager_8c.html#adbc37abfddfba5dfdf06db31f08c344c" title="search current setting " alt="" coords="849,443,1021,485"/>
-<area shape="rect" id="node21" href="event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="858,333,1013,360"/>
-<area shape="rect" id="node22" href="event__thread_8c.html#ab9f200e6f8c1c0da8ffc18717d139456" title="event_thread_msg_send_del" alt="" coords="1071,333,1258,360"/>
-<area shape="rect" id="node26" href="state__machine_8c.html#aee7873b1fb5690d6d84cbec0cf7826ba" title="state_machine_manager\l_list_free" alt="" coords="637,205,801,246"/>
-<area shape="rect" id="node27" href="state__manager_8h.html#a6a212d11f1218795fdd3f0d41e308214" title="free StateManager class " alt="" coords="867,224,1003,251"/>
-<area shape="rect" id="node29" href="state__machine_8c.html#ab712373292be68250906f6ff0a04bb23" title="for multi thread, open socket " alt="" coords="425,486,568,527"/>
-<area shape="rect" id="node30" href="state__machine_8c.html#a8af8cd5d3673984515e9c28d658666e8" title="for multi thread, thread main callback for threadpool " alt="" coords="404,435,589,461"/>
-<area shape="rect" id="node31" href="event__threadpool_8h.html#a834b504d9de1aa7d36b98308833c9268" title="add EventSubscriber to threadpool " alt="" coords="439,552,554,579"/>
-<area shape="rect" id="node32" href="event__tpool__manager_8c.html#a9fb46d9a8cd14cc1307479e7b2311427" title="insert new thread " alt="" coords="654,658,785,699"/>
-<area shape="rect" id="node33" href="event__tpool__manager_8c.html#a9db4e9e457a254b25a930cb554117165" title="event_tpool_thread\l_insert_fddata" alt="" coords="870,626,1001,667"/>
-<area shape="rect" id="node34" href="event__thread_8c.html#a2c4fc175c812100addbcb6d11907de42" title="add new subscriber " alt="" coords="856,757,1015,784"/>
-<area shape="rect" id="node37" href="event__thread_8c.html#ad022ff1199b96796268cc2abb51102d0" title="update subscriber " alt="" coords="870,691,1001,733"/>
-<area shape="rect" id="node35" href="event__thread_8c.html#aeb80a4d6c32595a36dd3ede1ba5fb7b6" title="event_thread_msg_send_add" alt="" coords="1069,757,1260,784"/>
-<area shape="rect" id="node36" href="event__thread_8c.html#a5b0f7a3536801462322b108a36851ec9" title="event_thread_msg_send\l_subscribe" alt="" coords="1308,721,1471,762"/>
-<area shape="rect" id="node38" href="event__thread_8c.html#ad78b7443bba255f29f6f80ba4b0d2667" title="event_thread_msg_send\l_update" alt="" coords="1083,691,1246,733"/>
+<area shape="rect" id="node13" href="state__machine_8c.html#a3566a4ded1b0f00ea6d6d8db2a474c90" title="state_machine_call\l_event_normal" alt="" coords="652,329,787,370"/>
+<area shape="rect" id="node14" href="state__machine_8c.html#a06dd32db130e7845676e2615343280a7" title="Find state. " alt="" coords="877,326,1012,367"/>
+<area shape="rect" id="node15" href="state__manager_8h.html#ae2728a286599f960be5e83d638db17c9" title="call state method " alt="" coords="877,392,1012,419"/>
+<area shape="rect" id="node17" href="event__threadpool_8h.html#a6b689e25ea84dbc7df10d970b330e086" title="delete EventSubscriber to threadapool. " alt="" coords="441,507,552,533"/>
+<area shape="rect" id="node27" href="state__machine_8c.html#aed29438c1fca55cf7b910a70b3ce35d9" title="for multi thread, get read sock " alt="" coords="415,557,579,584"/>
+<area shape="rect" id="node28" href="state__machine_8c.html#a57da8f358d1b9d7e2361d88dc50a22b9" title="for multi thread, close socket " alt="" coords="424,390,569,431"/>
+<area shape="rect" id="node18" href="event__tpool__manager_8c.html#a346db2ef971f4225c764d9f0520b4691" title="search insert place, to use event_tpool_thread_insert_thread " alt="" coords="644,611,795,653"/>
+<area shape="rect" id="node21" href="event__tpool__manager_8c.html#a9903ac9eba343bf59858e5fe200ef95f" title="delete thread " alt="" coords="654,443,785,485"/>
+<area shape="rect" id="node23" href="event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="642,560,797,587"/>
+<area shape="rect" id="node19" href="event__tpool__manager_8c.html#a5a5e3e76ce32af7695c02b18f7655316" title="search current setting " alt="" coords="879,611,1010,653"/>
+<area shape="rect" id="node20" href="event__tpool__manager_8c.html#a0f0e4c68c1fb23da311b990bafebf083" title="event_tpool_thread\l_is_set_fds" alt="" coords="1116,611,1247,653"/>
+<area shape="rect" id="node22" href="event__tpool__manager_8c.html#a13fab681db2100cd21adc02812df9f64" title="event_tpool_thread\l_unset_fds" alt="" coords="879,443,1010,485"/>
+<area shape="rect" id="node24" href="event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="1088,560,1275,587"/>
+<area shape="rect" id="node25" href="event__thread_8c.html#a214b6fb1d36c48d97608575991d3fc99" title="event_thread_msg_send" alt="" coords="1323,667,1485,693"/>
+<area shape="rect" id="node26" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="1339,585,1469,626"/>
+<area shape="rect" id="node30" href="state__machine_8c.html#aee7873b1fb5690d6d84cbec0cf7826ba" title="state_machine_manager\l_list_free" alt="" coords="637,209,801,250"/>
+<area shape="rect" id="node31" href="state__manager_8h.html#a6a212d11f1218795fdd3f0d41e308214" title="free StateManager class " alt="" coords="877,224,1013,251"/>
+<area shape="rect" id="node33" href="state__machine_8c.html#ab712373292be68250906f6ff0a04bb23" title="for multi thread, open socket " alt="" coords="425,670,568,711"/>
+<area shape="rect" id="node34" href="state__machine_8c.html#a8fd2f101ac62983620f5c255adea6bd8" title="for multi thread, thread main callback for threadpool " alt="" coords="404,456,589,483"/>
+<area shape="rect" id="node35" href="event__threadpool_8h.html#a834b504d9de1aa7d36b98308833c9268" title="add EventSubscriber to threadpool " alt="" coords="439,619,554,645"/>
+<area shape="rect" id="node36" href="event__tpool__manager_8c.html#a8b18d56328a59d77f6f6b052b4d2a8ca" title="event_tpool_thread\l_insert_fddata" alt="" coords="654,729,785,770"/>
+<area shape="rect" id="node38" href="event__thread_8c.html#a2c4fc175c812100addbcb6d11907de42" title="add new subscriber " alt="" coords="640,677,799,704"/>
+<area shape="rect" id="node37" href="event__tpool__manager_8c.html#a1d5451bcbbff33d75afbbdb8c823e354" title="event_tpool_thread\l_set_fds" alt="" coords="879,729,1010,770"/>
+<area shape="rect" id="node39" href="event__thread_8c.html#a5b12559eac99a129de44832c1dc9b077" title="event_thread_msg_send_add" alt="" coords="849,677,1040,704"/>
+<area shape="rect" id="node40" href="event__thread_8c.html#a29fc7e7d2086121de80e8d4a8c15fc4e" title="event_thread_msg_send\l_subscribe" alt="" coords="1100,677,1263,718"/>
 </map>
 </div>
 
@@ -503,7 +545,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00414">414</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="state__machine_8c_source.html#l00425">425</a> of file <a class="el" href="state__machine_8c_source.html">state_machine.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

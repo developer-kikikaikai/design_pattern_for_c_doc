@@ -102,10 +102,14 @@ Collaboration diagram for event_tpool_manager_t:</div>
 <div class="dyncontent">
 <div class="center"><img src="structevent__tpool__manager__t__coll__graph.png" border="0" usemap="#event__tpool__manager__t_coll__map" alt="Collaboration graph"/></div>
 <map name="event__tpool__manager__t_coll__map" id="event__tpool__manager__t_coll__map">
-<area shape="rect" id="node2" href="structevent__tpool__thread__info__t.html" title="thread instance and fd list " alt="" coords="141,219,272,260"/>
-<area shape="rect" id="node3" href="structevent__tpool__fd__data__t.html" title="used fd data list " alt="" coords="5,113,152,140"/>
-<area shape="rect" id="node4" href="structevent__tpool__thread__t.html" title="thread information " alt="" coords="228,113,369,140"/>
-<area shape="rect" id="node5" href="structevent__subscriber__data__t.html" title="subscriber information define " alt="" coords="217,7,380,33"/>
+<area shape="rect" id="node2" href="structevent__tpool__thread__info__t.html" title="event_tpool_thread\l_info_t" alt="" coords="163,499,293,540"/>
+<area shape="rect" id="node3" href="structevent__tpool__thread__t.html" title="thread information " alt="" coords="157,409,299,436"/>
+<area shape="rect" id="node4" href="structevent__subscriber__data__t.html" title="subscriber information define " alt="" coords="5,304,168,331"/>
+<area shape="rect" id="node5" href="structevent__thread__msg__info__t.html" title="event_thread_msg_info_t" alt="" coords="244,304,409,331"/>
+<area shape="rect" id="node6" href="structevent__thread__msg__t.html" title="message struct definition " alt="" coords="257,199,396,225"/>
+<area shape="rect" id="node7" href="structevent__thread__msg__body__del__t.html" title="event_thread_msg_body\l_del_t" alt="" coords="187,95,349,136"/>
+<area shape="rect" id="node8" href="structevent__thread__msg__body__add__t.html" title="message definition for manage subscriber " alt="" coords="373,95,536,136"/>
+<area shape="rect" id="node9" href="structevent__subscriber__t.html" title="EventSubscriber class instance definition, this is storaged in any threads. " alt="" coords="389,5,520,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -113,7 +117,7 @@ Collaboration diagram for event_tpool_manager_t:</div>
 Data Fields</h2></td></tr>
 <tr class="memitem:a6086acb5310bcf4993524972e96e4ced"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structevent__tpool__manager__t.html#a6086acb5310bcf4993524972e96e4ced">thread_size</a></td></tr>
 <tr class="separator:a6086acb5310bcf4993524972e96e4ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a183e183256cbf6de6b20f5392975f166"><td class="memItemLeft" align="right" valign="top"><a class="el" href="event__tpool__manager_8c.html#a9c796af2d56af236d5c413b9b0f41838">EventTPoolThreadInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structevent__tpool__manager__t.html#a183e183256cbf6de6b20f5392975f166">threads</a></td></tr>
+<tr class="memitem:a183e183256cbf6de6b20f5392975f166"><td class="memItemLeft" align="right" valign="top"><a class="el" href="event__threadpool__data_8h.html#ad7c0af45373970a13eda82690e2083af">EventTPoolThreadInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structevent__tpool__manager__t.html#a183e183256cbf6de6b20f5392975f166">threads</a></td></tr>
 <tr class="separator:a183e183256cbf6de6b20f5392975f166"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33586b4184d23f2b8f4df153ec23af13"><td class="memItemLeft" align="right" valign="top">pthread_mutex_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structevent__tpool__manager__t.html#a33586b4184d23f2b8f4df153ec23af13">lock</a></td></tr>
 <tr class="separator:a33586b4184d23f2b8f4df153ec23af13"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,7 +126,7 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p>EventTPoolManager class instance definition. </p>
 <p>EventTPoolManager class instance definition, member is defined in <a class="el" href="event__tpool__manager_8c.html" title="This is API implement for EventTPoolManager class. ">event_tpool_manager.c</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00071">71</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00059">59</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a33586b4184d23f2b8f4df153ec23af13"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33586b4184d23f2b8f4df153ec23af13">&#9670;&nbsp;</a></span>lock</h2>
@@ -136,7 +140,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00074">74</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00062">62</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 
 </div>
 </div>
@@ -152,7 +156,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00072">72</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00060">60</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 
 </div>
 </div>
@@ -163,12 +167,12 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="event__tpool__manager_8c.html#a9c796af2d56af236d5c413b9b0f41838">EventTPoolThreadInfo</a> threads</td>
+          <td class="memname"><a class="el" href="event__threadpool__data_8h.html#ad7c0af45373970a13eda82690e2083af">EventTPoolThreadInfo</a> threads</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00073">73</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00061">61</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 
 </div>
 </div>

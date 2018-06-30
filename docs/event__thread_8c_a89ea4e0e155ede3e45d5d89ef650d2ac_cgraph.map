@@ -1,4 +1,11 @@
 <map id="event_tpool_thread_msg_cb_update" name="event_tpool_thread_msg_cb_update">
-<area shape="rect" id="node2" href="$event__thread_8c.html#aaa5514a0ce6c490ee91af615c2d41f31" title="get subscriber " alt="" coords="184,5,315,47"/>
-<area shape="rect" id="node3" href="$event__thread_8c.html#a425c984e2437355893146600348ed020" title="get fd " alt="" coords="363,5,513,47"/>
+<area shape="rect" id="node2" href="$event__thread_8c.html#aaa5514a0ce6c490ee91af615c2d41f31" title="get subscriber " alt="" coords="184,31,315,72"/>
+<area shape="rect" id="node5" href="$event__if_8h.html#a8efe4fbd1ba72a0443ec626b8f14bac4" title="update registered event " alt="" coords="194,122,305,149"/>
+<area shape="rect" id="node3" href="$event__thread_8c.html#a425c984e2437355893146600348ed020" title="get fd " alt="" coords="371,5,521,47"/>
+<area shape="rect" id="node4" href="$event__if_8h.html#ab77635365c39241ca196b528c6a71df6" title="delete event " alt="" coords="611,13,711,39"/>
+<area shape="rect" id="node6" href="$event__if__epoll_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="363,71,529,98"/>
+<area shape="rect" id="node7" href="$event__if__libevent_8c.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="399,122,493,149"/>
+<area shape="rect" id="node9" href="$event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="367,173,525,199"/>
+<area shape="rect" id="node10" href="$event__if__select_8c.html#a2cc4a722c88d92de302c94ad198258d7" title="event_select_set_fds" alt="" coords="375,223,517,250"/>
+<area shape="rect" id="node8" href="$event__if__libevent_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="577,122,744,149"/>
 </map>

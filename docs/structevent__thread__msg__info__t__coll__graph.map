@@ -1,0 +1,6 @@
+<map id="event_thread_msg_info_t" name="event_thread_msg_info_t">
+<area shape="rect" id="node2" href="$structevent__thread__msg__t.html" title="message struct definition " alt="" coords="76,199,215,225"/>
+<area shape="rect" id="node3" href="$structevent__thread__msg__body__del__t.html" title="event_thread_msg_body\l_del_t" alt="" coords="5,95,168,136"/>
+<area shape="rect" id="node4" href="$structevent__thread__msg__body__add__t.html" title="message definition for manage subscriber " alt="" coords="192,95,355,136"/>
+<area shape="rect" id="node5" href="$structevent__subscriber__t.html" title="EventSubscriber class instance definition, this is storaged in any threads. " alt="" coords="208,5,339,32"/>
+</map>

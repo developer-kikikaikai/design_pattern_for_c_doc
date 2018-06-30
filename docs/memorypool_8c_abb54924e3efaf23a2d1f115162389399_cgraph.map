@@ -1,0 +1,8 @@
+<map id="mpool_release" name="mpool_release">
+<area shape="rect" id="node2" href="$memorypool_8c.html#a35bbc3bda5ca4f03604a6801bec0b24e" title="mpool_is_not_ptr_in_buf" alt="" coords="160,31,323,57"/>
+<area shape="rect" id="node3" href="$memorypool_8c.html#a4eafb591b34c7b94ccdce5593e12ce5a" title="mpool_unuse_memory" alt="" coords="165,81,318,108"/>
+<area shape="rect" id="node4" href="$memorypool_8c.html#a35357d5118eb318e8293521ff934f9cf" title="mpool_get_buffer_place" alt="" coords="371,5,529,32"/>
+<area shape="rect" id="node5" href="$memorypool_8c.html#a695aefe106a4bb7e25250cefe013ad14" title="mpool_list_pull" alt="" coords="396,56,504,83"/>
+<area shape="rect" id="node6" href="$memorypool_8c.html#af056d62dedcac92f0935945b2a2cca01" title="mpool_unset_memory" alt="" coords="375,107,525,133"/>
+<area shape="rect" id="node7" href="$memorypool_8c.html#aef4fbacf50655e1352febb20eb4e90b0" title="mpool_list_head" alt="" coords="392,157,508,184"/>
+</map>

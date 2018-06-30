@@ -1,5 +1,8 @@
 <map id="event_tpool_thread_msg_cb_del" name="event_tpool_thread_msg_cb_del">
 <area shape="rect" id="node2" href="$event__thread_8c.html#aaa5514a0ce6c490ee91af615c2d41f31" title="get subscriber " alt="" coords="208,5,339,47"/>
-<area shape="rect" id="node4" href="$event__thread_8c.html#a3a8420210f6d0bafd5a57b313996151d" title="free instance " alt="" coords="184,71,363,98"/>
+<area shape="rect" id="node5" href="$event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="184,71,363,98"/>
 <area shape="rect" id="node3" href="$event__thread_8c.html#a425c984e2437355893146600348ed020" title="get fd " alt="" coords="411,5,561,47"/>
+<area shape="rect" id="node4" href="$event__if_8h.html#ab77635365c39241ca196b528c6a71df6" title="delete event " alt="" coords="638,13,738,39"/>
+<area shape="rect" id="node6" href="$event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="441,71,531,98"/>
+<area shape="rect" id="node7" href="$event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="609,71,767,98"/>
 </map>

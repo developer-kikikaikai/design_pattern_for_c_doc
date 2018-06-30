@@ -1,5 +1,12 @@
 <map id="event_tpool_thread_main" name="event_tpool_thread_main">
-<area shape="rect" id="node2" href="$event__thread_8c.html#a873727f5dd62d6c5beaad98426202c4d" title="free thread instance, please call stop before calling it " alt="" coords="219,35,377,61"/>
-<area shape="rect" id="node3" href="$event__thread_8c.html#a3a8420210f6d0bafd5a57b313996151d" title="free instance " alt="" coords="425,5,604,32"/>
-<area shape="rect" id="node4" href="$event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="443,57,586,98"/>
+<area shape="rect" id="node2" href="$event__if_8h.html#aa903a0971a8264153461f01e9438f388" title="main loop of this event " alt="" coords="250,53,346,80"/>
+<area shape="rect" id="node5" href="$event__if_8h.html#a127eb84ce5fa16fcc7c995021b10308f" title="exit after main loop " alt="" coords="251,104,345,131"/>
+<area shape="rect" id="node6" href="$event__thread_8c.html#a873727f5dd62d6c5beaad98426202c4d" title="free thread instance, please call stop before calling it " alt="" coords="219,155,377,181"/>
+<area shape="rect" id="node3" href="$event__if__epoll_8c.html#aebef2021f7498da46220d30b1996552e" title="convert_etpoll_ownid2eve" alt="" coords="431,5,598,32"/>
+<area shape="rect" id="node4" href="$event__if__select_8c.html#a9babfed521c66c64ecd17f7ce84f1235" title="event_select_get_eventflag\l_from_fds" alt="" coords="427,57,603,98"/>
+<area shape="rect" id="node7" href="$event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="425,144,604,171"/>
+<area shape="rect" id="node10" href="$event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="443,195,586,237"/>
+<area shape="rect" id="node8" href="$event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="654,148,743,175"/>
+<area shape="rect" id="node9" href="$event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="793,148,951,175"/>
+<area shape="rect" id="node11" href="$event__if_8h.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="652,203,745,229"/>
 </map>

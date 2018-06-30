@@ -1,9 +1,10 @@
 var memorypool_8h =
 [
-    [ "mpool_calloc", "memorypool_8h.html#a9a37322ef0c146f77f18303d55490fdc", null ],
+    [ "FOR_ALL_USEDMEM", "memorypool_8h.html#a6b5b906644bbdf90af1473157351c67d", null ],
     [ "MemoryPool", "memorypool_8h.html#acf42d326402a72b2334973275c242386", null ],
-    [ "mpool_create", "memorypool_8h.html#a400f595e81bcbc19758025f071b4234a", null ],
-    [ "mpool_delete", "memorypool_8h.html#a6fe71f2d80a909d8fb3d3d06074f8820", null ],
-    [ "mpool_free", "memorypool_8h.html#a12df0c926dc2ebe48ff79f4f5f0c2e37", null ],
-    [ "mpool_malloc", "memorypool_8h.html#a269a48293b52aab6bc14878f91c0f603", null ]
+    [ "mpool_create", "memorypool_8h.html#a287177b77f380eb6b5c0604f2e345fcd", null ],
+    [ "mpool_delete", "memorypool_8h.html#ad39b7e7c3fea9c4026ecbf568efa3b8c", null ],
+    [ "mpool_get", "memorypool_8h.html#af2159cbaab9cd8ca788ad6504a8ba92c", null ],
+    [ "mpool_get_next_usedmem", "memorypool_8h.html#aadb9ab776a7bcfb64cd7dba2079ad3de", null ],
+    [ "mpool_release", "memorypool_8h.html#abb54924e3efaf23a2d1f115162389399", null ]
 ];
