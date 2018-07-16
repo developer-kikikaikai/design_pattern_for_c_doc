@@ -106,22 +106,22 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a32e2c42f0330e3fda7b73322825a90d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structevent__subscriber__t.html#a32e2c42f0330e3fda7b73322825a90d0">eventflag</a></td></tr>
 <tr class="memdesc:a32e2c42f0330e3fda7b73322825a90d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">OR value of EV_TPOOL_XXX definition.  <a href="#a32e2c42f0330e3fda7b73322825a90d0">More...</a><br /></td></tr>
 <tr class="separator:a32e2c42f0330e3fda7b73322825a90d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa70822480a9cfef60dd9c96b9b5eeb1c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structevent__subscriber__t.html#aa70822480a9cfef60dd9c96b9b5eeb1c">event_callback</a> )(int socketfd, short <a class="el" href="structevent__subscriber__t.html#a32e2c42f0330e3fda7b73322825a90d0">eventflag</a>, void *event_arg)</td></tr>
-<tr class="separator:aa70822480a9cfef60dd9c96b9b5eeb1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0faee62488ee19203df3b386fef7869"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structevent__subscriber__t.html#ad0faee62488ee19203df3b386fef7869">event_callback</a> )(int socketfd, int <a class="el" href="structevent__subscriber__t.html#a32e2c42f0330e3fda7b73322825a90d0">eventflag</a>, void *event_arg)</td></tr>
+<tr class="separator:ad0faee62488ee19203df3b386fef7869"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>EventSubscriber class instance definition, this is storaged in any threads. </p>
 
 <p class="definition">Definition at line <a class="el" href="event__threadpool__data_8h_source.html#l00025">25</a> of file <a class="el" href="event__threadpool__data_8h_source.html">event_threadpool_data.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="aa70822480a9cfef60dd9c96b9b5eeb1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa70822480a9cfef60dd9c96b9b5eeb1c">&#9670;&nbsp;</a></span>event_callback</h2>
+<a id="ad0faee62488ee19203df3b386fef7869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0faee62488ee19203df3b386fef7869">&#9670;&nbsp;</a></span>event_callback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* event_callback) (int socketfd, short <a class="el" href="structevent__subscriber__t.html#a32e2c42f0330e3fda7b73322825a90d0">eventflag</a>, void *event_arg)</td>
+          <td class="memname">void(* event_callback) (int socketfd, int <a class="el" href="structevent__subscriber__t.html#a32e2c42f0330e3fda7b73322825a90d0">eventflag</a>, void *event_arg)</td>
         </tr>
       </table>
 </div><div class="memdoc">

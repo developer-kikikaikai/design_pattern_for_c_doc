@@ -29,7 +29,7 @@ var state__machine_8c =
     [ "state_machine_open_socket", "state__machine_8c.html#ab712373292be68250906f6ff0a04bb23", null ],
     [ "state_machine_set_state", "state__machine_8c.html#a7a5094c9a7363da35fc3d6ce76780d61", null ],
     [ "state_machine_show", "state__machine_8c.html#aa0289bfb25a29c73c31536d40450917e", null ],
-    [ "state_machine_thread_main", "state__machine_8c.html#a8fd2f101ac62983620f5c255adea6bd8", null ],
+    [ "state_machine_thread_main", "state__machine_8c.html#a2a894ec531631a63b15d106272d16373", null ],
     [ "state_machine_update_machine", "state__machine_8c.html#a9e228abeac323d037fde627e61b96864", null ],
     [ "state_machine_write", "state__machine_8c.html#a5496aaebc5dd228659a40ee3b79f4cbd", null ]
 ];

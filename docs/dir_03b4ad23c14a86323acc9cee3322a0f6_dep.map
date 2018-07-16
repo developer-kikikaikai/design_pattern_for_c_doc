@@ -1,0 +1,8 @@
+<map id="D:/design_pattern_for_c/combination_sample/publisher_with_fd" name="D:/design_pattern_for_c/combination_sample/publisher_with_fd">
+<area shape="rect" id="node1" href="dir_03b4ad23c14a86323acc9cee3322a0f6.html" title="publisher_with_fd" alt="" coords="33,52,154,100"/>
+<area shape="rect" id="node2" href="dir_79932bf451af09d0052cf97d92105a1c.html" title="publisher" alt="" coords="5,148,80,196"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000009_000022.html" title="1" alt="" coords="67,129,75,143"/>
+<area shape="rect" id="node3" href="dir_e93cb3440fc22dafc509c5b71c87c6f4.html" title="threadpool" alt="" coords="104,148,187,196"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000009_000028.html" title="1" alt="" coords="127,121,135,135"/>
+<area shape="rect" id="clust1" href="dir_448a26cef6fa2c3fcbe2666529af13b8.html" title="combination_sample" alt="" coords="21,16,165,111"/>
+</map>

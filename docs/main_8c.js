@@ -1,9 +1,7 @@
 var main_8c =
 [
-    [ "CONFNAME", "main_8c.html#a955b34f5555abe394d947df4f3a12445", null ],
-    [ "OSSSUPPORT_PLUGIN_NAME", "main_8c.html#a2b5e3b1b3ee5d7077aa525c6a34609a7", null ],
-    [ "USBPLUGIN_NAME", "main_8c.html#a1c7707efac4217375377282a645bee55", null ],
-    [ "initial_result", "main_8c.html#a559d036738458e8b865cb6d3feacaddd", null ],
-    [ "main", "main_8c.html#a0254953ab526b5c0a9245bd0a2f50bfc", null ],
-    [ "result_g", "main_8c.html#a6c28c1bb82773e865b2ae00583b0e01c", null ]
+    [ "add_event_publisher", "main_8c.html#a2ae22c9da6ba8452a61ab4e69a4930e7", null ],
+    [ "event_publish", "main_8c.html#a842c0e2d73b61404c301f1b611d6beb3", null ],
+    [ "main", "main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],
+    [ "publisher_notify", "main_8c.html#a0523209603667add25389898a86fbcbf", null ]
 ];

@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['lower_5flayer_5fbuilder_5finstance_5ffree',['lower_layer_builder_instance_free',['../lower__layer__builder_8h.html#a5c06b0c7848bb3d383d08d99df60ad80',1,'lower_layer_builder.h']]],
-  ['lower_5flayer_5fbuilder_5finstance_5fnew',['lower_layer_builder_instance_new',['../lower__layer__builder_8h.html#a066b77605c421bf41cd1e07e015fef02',1,'lower_layer_builder.h']]],
-  ['lower_5flayer_5fdirector_5fconstruct',['lower_layer_director_construct',['../lower__layer__director_8h.html#a1078314d9c023186b9d5ebb53d36d894',1,'lower_layer_director_construct(LowerLayerDirector director, void *initial_parameter, void(*initial_result)(int result)):&#160;lower_layer_director.c'],['../lower__layer__director_8c.html#a3ffe988f57ceb9b56d4fbf09e0c2c787',1,'lower_layer_director_construct(LowerLayerDirector this, void *initial_parameter, void(*initial_result)(int result)):&#160;lower_layer_director.c']]],
-  ['lower_5flayer_5fdirector_5ffree',['lower_layer_director_free',['../lower__layer__director_8h.html#a61f3a62b29491948103e8824548c8da4',1,'lower_layer_director_free(LowerLayerDirector director):&#160;lower_layer_director.c'],['../lower__layer__director_8c.html#aa6e492c836d8e65c2ee98aa7b313b98d',1,'lower_layer_director_free(LowerLayerDirector this):&#160;lower_layer_director.c']]],
-  ['lower_5flayer_5fdirector_5fnew',['lower_layer_director_new',['../lower__layer__director_8h.html#aac948f1e6c348c16a79e6277900e73a4',1,'lower_layer_director_new(char *builder_lib_name, char *builder_interface_conf):&#160;lower_layer_director.c'],['../lower__layer__director_8c.html#aac948f1e6c348c16a79e6277900e73a4',1,'lower_layer_director_new(char *builder_lib_name, char *builder_interface_conf):&#160;lower_layer_director.c']]]
+  ['get_5fbit_5fdigit_5findex_5fover_5fsize',['get_bit_digit_index_over_size',['../memorypool_8c.html#a5877ab18f18ecab080831d49559482e7',1,'memorypool.c']]],
+  ['get_5ffar_5fright_5fbit_5findex',['get_far_right_bit_index',['../memorypool_8c.html#a14e200abd1e20c5ac095714d4d96d85a',1,'memorypool.c']]]
 ];

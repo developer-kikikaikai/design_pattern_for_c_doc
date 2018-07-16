@@ -2,6 +2,7 @@ var searchData=
 [
   ['event_5fepoll_5fhandler_5ft',['event_epoll_handler_t',['../structevent__epoll__handler__t.html',1,'']]],
   ['event_5fepoll_5ft',['event_epoll_t',['../structevent__epoll__t.html',1,'']]],
+  ['event_5flibevent_5fhandler_5ft',['event_libevent_handler_t',['../structevent__libevent__handler__t.html',1,'']]],
   ['event_5fselect_5ffds_5ft',['event_select_fds_t',['../structevent__select__fds__t.html',1,'']]],
   ['event_5fselect_5fhandler_5ft',['event_select_handler_t',['../structevent__select__handler__t.html',1,'']]],
   ['event_5fselect_5ft',['event_select_t',['../structevent__select__t.html',1,'']]],

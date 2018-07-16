@@ -1,4 +1,7 @@
 <map id="event_if_update" name="event_if_update">
-<area shape="rect" id="node2" href="$event__if__libevent_8c.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="164,5,257,32"/>
-<area shape="rect" id="node3" href="$event__if__libevent_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="305,5,472,32"/>
+<area shape="rect" id="node2" href="$event__if__libevent_8c.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="166,5,255,32"/>
+<area shape="rect" id="node3" href="$event__if__libevent_8c.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="164,56,257,83"/>
+<area shape="rect" id="node4" href="$event__if__libevent_8c.html#a9315b18d214c5c77aa9f0ad2c7bccfb5" title="convert_etpoll_eveid2own" alt="" coords="307,31,474,57"/>
+<area shape="rect" id="node5" href="$event__if__libevent_8c.html#a7612123e0f293e4b76e7a948d1e12060" title="event_if_libevent_callback" alt="" coords="305,81,476,108"/>
+<area shape="rect" id="node6" href="$event__if__libevent_8c.html#af6a4a73563d9ead4fd2f8a5a8484abb8" title="convert_etpoll_own2eveid" alt="" coords="524,81,691,108"/>
 </map>

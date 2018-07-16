@@ -1,9 +1,11 @@
 <map id="event_tpool_manager_search_insert_thread" name="event_tpool_manager_search_insert_thread">
 <area shape="rect" id="node2" href="$event__tpool__manager_8c.html#a834b504d9de1aa7d36b98308833c9268" title="add EventSubscriber to threadpool " alt="" coords="226,5,341,32"/>
-<area shape="rect" id="node5" href="$event__tpool__manager_8c.html#afe2e173e9f9b43adb4426431a568fc9e" title="add EventSubscriber to threadpool, if you want to choose thead, please use it. " alt="" coords="204,56,363,83"/>
-<area shape="rect" id="node6" href="$event__tpool__manager_8c.html#aca328e76b616e3e3ad400db7b16f3436" title="update EventSubscriber to threadpool. " alt="" coords="217,107,350,133"/>
-<area shape="rect" id="node7" href="$event__tpool__manager_8c.html#a6b689e25ea84dbc7df10d970b330e086" title="delete EventSubscriber to threadapool. " alt="" coords="228,157,339,184"/>
-<area shape="rect" id="node3" href="$state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="411,21,555,62"/>
-<area shape="rect" id="node4" href="$state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="603,72,740,99"/>
-<area shape="rect" id="node8" href="$state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="415,107,551,149"/>
+<area shape="rect" id="node7" href="$event__tpool__manager_8c.html#afe2e173e9f9b43adb4426431a568fc9e" title="add EventSubscriber to threadpool, if you want to choose thead, please use it. " alt="" coords="204,56,363,83"/>
+<area shape="rect" id="node8" href="$event__tpool__manager_8c.html#aca328e76b616e3e3ad400db7b16f3436" title="update EventSubscriber to threadpool. " alt="" coords="217,107,350,133"/>
+<area shape="rect" id="node9" href="$event__tpool__manager_8c.html#a6b689e25ea84dbc7df10d970b330e086" title="delete EventSubscriber to threadapool. " alt="" coords="228,157,339,184"/>
+<area shape="rect" id="node3" href="$main_8c.html#a2ae22c9da6ba8452a61ab4e69a4930e7" title="add_event_publisher" alt="" coords="413,5,552,32"/>
+<area shape="rect" id="node5" href="$state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="411,63,555,105"/>
+<area shape="rect" id="node4" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="646,5,697,32"/>
+<area shape="rect" id="node6" href="$state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="603,109,740,136"/>
+<area shape="rect" id="node10" href="$state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="415,142,551,183"/>
 </map>

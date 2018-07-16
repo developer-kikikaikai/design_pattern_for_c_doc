@@ -1,7 +1,9 @@
 <map id="event_tpool_free_fddata_list" name="event_tpool_free_fddata_list">
-<area shape="rect" id="node2" href="$event__tpool__manager_8c.html#a1686f655fde8aa6eca53bf038dca7b72" title="event_tpoll_get_far\l_right_bit_index" alt="" coords="247,5,377,47"/>
-<area shape="rect" id="node3" href="$event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="235,71,389,98"/>
-<area shape="rect" id="node4" href="$event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="437,71,624,98"/>
-<area shape="rect" id="node5" href="$event__thread_8c.html#a214b6fb1d36c48d97608575991d3fc99" title="event_thread_msg_send" alt="" coords="672,42,835,69"/>
-<area shape="rect" id="node6" href="$event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="688,93,819,135"/>
+<area shape="rect" id="node2" href="$event__tpool__manager_8c.html#a0551192cc3e2b7069c879d8431855dc4" title="event_tpool_free_fddata" alt="" coords="235,71,392,98"/>
+<area shape="rect" id="node3" href="$event__tpool__manager_8c.html#a9b7cda5e42c0a8d7cc3e233f91c90a52" title="event_tpoll_get_far\l_right_bit_index" alt="" coords="453,5,582,47"/>
+<area shape="rect" id="node4" href="$event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="440,71,595,98"/>
+<area shape="rect" id="node8" href="$event__tpool__manager_8c.html#a1df711f4e7aca3f56eb3ecaee3352b6f" title="event_tpool_thread\l_unset_fds" alt="" coords="452,123,583,164"/>
+<area shape="rect" id="node5" href="$event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="643,71,829,98"/>
+<area shape="rect" id="node6" href="$event__thread_8c.html#a62519e37130fbee3f3e58d95320400fe" title="event_thread_msg_send" alt="" coords="877,42,1040,69"/>
+<area shape="rect" id="node7" href="$event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="893,93,1024,135"/>
 </map>

@@ -10,6 +10,8 @@ var searchData=
   ['content_5fcnt',['content_cnt',['../structpublisher__mng__t.html#a49bd02ac4f769977e25d31cf0fca105d',1,'publisher_mng_t']]],
   ['contents',['contents',['../structpublisher__mng__t.html#ac0ba9e86b6107a58d74d4971b86b81e0',1,'publisher_mng_t']]],
   ['cor_5fmng_5fg',['cor_mng_g',['../chain__of__responsibility_8c.html#abd4e50e99df088813590f3b0b8eb0442',1,'chain_of_responsibility.c']]],
+  ['ctx',['ctx',['../structchain__element__data__t.html#a1f6d09b30c54854dfca659b7463ac207',1,'chain_element_data_t::ctx()'],['../structsubscriber__account__t.html#a1f6d09b30c54854dfca659b7463ac207',1,'subscriber_account_t::ctx()']]],
+  ['cur_5fcnt',['cur_cnt',['../structmemorypool__t.html#ad20331b6fe9525d1d7843dd86dc816ab',1,'memorypool_t']]],
   ['curevent_5fcnt',['curevent_cnt',['../structevent__epoll__t.html#a83bc1b51083a06e392b67f12c1c38cee',1,'event_epoll_t']]],
   ['current_5fnum',['current_num',['../structdp__timelog__t.html#abc0a42e45d4192a734ee53d58d0733d9',1,'dp_timelog_t']]],
   ['current_5fstate',['current_state',['../structstate__manager__t.html#aaecb32fd1fcbcaf1305ace5b4ac0421e',1,'state_manager_t']]]

@@ -1,9 +1,10 @@
 <map id="event_tpool_thread_info_t" name="event_tpool_thread_info_t">
-<area shape="rect" id="node2" href="$structevent__tpool__thread__t.html" title="thread information " alt="" coords="157,409,299,436"/>
+<area shape="rect" id="node2" href="$structevent__tpool__thread__t.html" title="thread information " alt="" coords="92,409,233,436"/>
 <area shape="rect" id="node3" href="$structevent__subscriber__data__t.html" title="subscriber information define " alt="" coords="5,304,168,331"/>
 <area shape="rect" id="node4" href="$structevent__thread__msg__info__t.html" title="event_thread_msg_info_t" alt="" coords="244,304,409,331"/>
 <area shape="rect" id="node5" href="$structevent__thread__msg__t.html" title="message struct definition " alt="" coords="257,199,396,225"/>
-<area shape="rect" id="node6" href="$structevent__thread__msg__body__del__t.html" title="event_thread_msg_body\l_del_t" alt="" coords="187,95,349,136"/>
-<area shape="rect" id="node7" href="$structevent__thread__msg__body__add__t.html" title="message definition for manage subscriber " alt="" coords="373,95,536,136"/>
-<area shape="rect" id="node8" href="$structevent__subscriber__t.html" title="EventSubscriber class instance definition, this is storaged in any threads. " alt="" coords="389,5,520,32"/>
+<area shape="rect" id="node6" href="$structevent__thread__msg__body__del__t.html" title="event_thread_msg_body\l_del_t" alt="" coords="220,95,383,136"/>
+<area shape="rect" id="node7" href="$structevent__thread__msg__body__add__t.html" title="message definition for manage subscriber " alt="" coords="407,95,569,136"/>
+<area shape="rect" id="node8" href="$structevent__subscriber__t.html" title="EventSubscriber class instance definition, this is storaged in any threads. " alt="" coords="423,5,553,32"/>
+<area shape="rect" id="node9" href="$unionevent__tpool__thread__info__t_1_1data__fds__u.html" title="data_fds_u" alt="" coords="257,409,343,436"/>
 </map>

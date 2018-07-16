@@ -87,6 +87,8 @@ $(document).ready(function(){initNavTree('event__if__libevent_8c.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">event_if_libevent.c File Reference</div>  </div>
@@ -109,10 +111,26 @@ Include dependency graph for event_if_libevent.c:</div>
 </div>
 <p><a href="event__if__libevent_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structevent__libevent__handler__t.html">event_libevent_handler_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:afdc90ee728dbac800201534f2d305e67"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structevent__libevent__handler__t.html">event_libevent_handler_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__libevent_8c.html#afdc90ee728dbac800201534f2d305e67">event_libevent_handler_t</a></td></tr>
+<tr class="separator:afdc90ee728dbac800201534f2d305e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e0196273b0c686d46ea437c7572f26"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structevent__libevent__handler__t.html">event_libevent_handler_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__libevent_8c.html#a37e0196273b0c686d46ea437c7572f26">EventLibeventHandler</a></td></tr>
+<tr class="separator:a37e0196273b0c686d46ea437c7572f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac779b9dbe2fa1081785e7918bceeb44a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__libevent_8c.html#ac779b9dbe2fa1081785e7918bceeb44a">convert_etpoll_eveid2own</a> (int eventflag)</td></tr>
-<tr class="separator:ac779b9dbe2fa1081785e7918bceeb44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9315b18d214c5c77aa9f0ad2c7bccfb5"><td class="memItemLeft" align="right" valign="top">static short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__libevent_8c.html#a9315b18d214c5c77aa9f0ad2c7bccfb5">convert_etpoll_eveid2own</a> (int eventflag)</td></tr>
+<tr class="separator:a9315b18d214c5c77aa9f0ad2c7bccfb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6a4a73563d9ead4fd2f8a5a8484abb8"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__libevent_8c.html#af6a4a73563d9ead4fd2f8a5a8484abb8">convert_etpoll_own2eveid</a> (short eventflag)</td></tr>
+<tr class="separator:af6a4a73563d9ead4fd2f8a5a8484abb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7612123e0f293e4b76e7a948d1e12060"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__libevent_8c.html#a7612123e0f293e4b76e7a948d1e12060">event_if_libevent_callback</a> (evutil_socket_t fd, short eventflag, void *arg)</td></tr>
+<tr class="separator:a7612123e0f293e4b76e7a948d1e12060"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">API for event if</div></td></tr>
 <tr class="memitem:af8a56a181a4441abd338686d7c47768e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__libevent_8c.html#af8a56a181a4441abd338686d7c47768e">event_if_new</a> (void)</td></tr>
 <tr class="memdesc:af8a56a181a4441abd338686d7c47768e"><td class="mdescLeft">&#160;</td><td class="mdescRight">event new  <a href="#af8a56a181a4441abd338686d7c47768e">More...</a><br /></td></tr>
@@ -142,9 +160,42 @@ Functions</h2></td></tr>
 <tr class="memdesc:a29248d04ab081760fecfe8459b5582cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">free event if instance  <a href="#a29248d04ab081760fecfe8459b5582cd">More...</a><br /></td></tr>
 <tr class="separator:a29248d04ab081760fecfe8459b5582cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="afdc90ee728dbac800201534f2d305e67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdc90ee728dbac800201534f2d305e67">&#9670;&nbsp;</a></span>event_libevent_handler_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structevent__libevent__handler__t.html">event_libevent_handler_t</a> <a class="el" href="structevent__libevent__handler__t.html">event_libevent_handler_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00012">12</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
+
+</div>
+</div>
+<a id="a37e0196273b0c686d46ea437c7572f26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37e0196273b0c686d46ea437c7572f26">&#9670;&nbsp;</a></span>EventLibeventHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structevent__libevent__handler__t.html">event_libevent_handler_t</a> * <a class="el" href="event__if__libevent_8c.html#a37e0196273b0c686d46ea437c7572f26">EventLibeventHandler</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00012">12</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ac779b9dbe2fa1081785e7918bceeb44a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac779b9dbe2fa1081785e7918bceeb44a">&#9670;&nbsp;</a></span>convert_etpoll_eveid2own()</h2>
+<a id="a9315b18d214c5c77aa9f0ad2c7bccfb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9315b18d214c5c77aa9f0ad2c7bccfb5">&#9670;&nbsp;</a></span>convert_etpoll_eveid2own()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,7 +204,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static int convert_etpoll_eveid2own </td>
+          <td class="memname">static short convert_etpoll_eveid2own </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>eventflag</em></td><td>)</td>
@@ -167,14 +218,52 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00006">6</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00014">14</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="event__if__libevent_8c_ac779b9dbe2fa1081785e7918bceeb44a_icgraph.png" border="0" usemap="#event__if__libevent_8c_ac779b9dbe2fa1081785e7918bceeb44a_icgraph" alt=""/></div>
-<map name="event__if__libevent_8c_ac779b9dbe2fa1081785e7918bceeb44a_icgraph" id="event__if__libevent_8c_ac779b9dbe2fa1081785e7918bceeb44a_icgraph">
+<div class="center"><img src="event__if__libevent_8c_a9315b18d214c5c77aa9f0ad2c7bccfb5_icgraph.png" border="0" usemap="#event__if__libevent_8c_a9315b18d214c5c77aa9f0ad2c7bccfb5_icgraph" alt=""/></div>
+<map name="event__if__libevent_8c_a9315b18d214c5c77aa9f0ad2c7bccfb5_icgraph" id="event__if__libevent_8c_a9315b18d214c5c77aa9f0ad2c7bccfb5_icgraph">
 <area shape="rect" id="node2" href="event__if__libevent_8c.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="220,5,313,32"/>
 <area shape="rect" id="node3" href="event__if__libevent_8c.html#a8efe4fbd1ba72a0443ec626b8f14bac4" title="update registered event " alt="" coords="361,5,472,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af6a4a73563d9ead4fd2f8a5a8484abb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6a4a73563d9ead4fd2f8a5a8484abb8">&#9670;&nbsp;</a></span>convert_etpoll_own2eveid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int convert_etpoll_own2eveid </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>eventflag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00022">22</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="event__if__libevent_8c_af6a4a73563d9ead4fd2f8a5a8484abb8_icgraph.png" border="0" usemap="#event__if__libevent_8c_af6a4a73563d9ead4fd2f8a5a8484abb8_icgraph" alt=""/></div>
+<map name="event__if__libevent_8c_af6a4a73563d9ead4fd2f8a5a8484abb8_icgraph" id="event__if__libevent_8c_af6a4a73563d9ead4fd2f8a5a8484abb8_icgraph">
+<area shape="rect" id="node2" href="event__if__libevent_8c.html#a7612123e0f293e4b76e7a948d1e12060" title="event_if_libevent_callback" alt="" coords="220,5,391,32"/>
+<area shape="rect" id="node3" href="event__if__libevent_8c.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="439,5,532,32"/>
+<area shape="rect" id="node4" href="event__if__libevent_8c.html#a8efe4fbd1ba72a0443ec626b8f14bac4" title="update registered event " alt="" coords="580,5,691,32"/>
 </map>
 </div>
 
@@ -214,13 +303,15 @@ Here is the caller graph for this function:</div>
 
 <p>add new event </p>
 
-<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00022">22</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00044">44</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__if__libevent_8c_acfff3396c4ebb44d7472e100b60c7742_cgraph.png" border="0" usemap="#event__if__libevent_8c_acfff3396c4ebb44d7472e100b60c7742_cgraph" alt=""/></div>
 <map name="event__if__libevent_8c_acfff3396c4ebb44d7472e100b60c7742_cgraph" id="event__if__libevent_8c_acfff3396c4ebb44d7472e100b60c7742_cgraph">
-<area shape="rect" id="node2" href="event__if__libevent_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="147,5,313,32"/>
+<area shape="rect" id="node2" href="event__if__libevent_8c.html#a9315b18d214c5c77aa9f0ad2c7bccfb5" title="convert_etpoll_eveid2own" alt="" coords="149,5,315,32"/>
+<area shape="rect" id="node3" href="event__if__libevent_8c.html#a7612123e0f293e4b76e7a948d1e12060" title="event_if_libevent_callback" alt="" coords="147,56,317,83"/>
+<area shape="rect" id="node4" href="event__if__libevent_8c.html#af6a4a73563d9ead4fd2f8a5a8484abb8" title="convert_etpoll_own2eveid" alt="" coords="365,56,532,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -262,7 +353,15 @@ Here is the caller graph for this function:</div>
 
 <p>delete event </p>
 
-<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00059">59</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00089">89</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="event__if__libevent_8c_aa18f47657c299570b7cf255922616632_icgraph.png" border="0" usemap="#event__if__libevent_8c_aa18f47657c299570b7cf255922616632_icgraph" alt=""/></div>
+<map name="event__if__libevent_8c_aa18f47657c299570b7cf255922616632_icgraph" id="event__if__libevent_8c_aa18f47657c299570b7cf255922616632_icgraph">
+<area shape="rect" id="node2" href="event__if__libevent_8c.html#a8efe4fbd1ba72a0443ec626b8f14bac4" title="update registered event " alt="" coords="143,5,253,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -284,7 +383,7 @@ Here is the caller graph for this function:</div>
 
 <p>exit after main loop </p>
 
-<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00081">81</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00113">113</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
 
 </div>
 </div>
@@ -306,7 +405,7 @@ Here is the caller graph for this function:</div>
 
 <p>free event if instance </p>
 
-<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00089">89</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00121">121</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
 
 </div>
 </div>
@@ -328,7 +427,68 @@ Here is the caller graph for this function:</div>
 
 <p>delete event </p>
 
-<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00065">65</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00096">96</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
+
+</div>
+</div>
+<a id="a7612123e0f293e4b76e7a948d1e12060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7612123e0f293e4b76e7a948d1e12060">&#9670;&nbsp;</a></span>event_if_libevent_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void event_if_libevent_callback </td>
+          <td>(</td>
+          <td class="paramtype">evutil_socket_t&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>eventflag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00030">30</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="event__if__libevent_8c_a7612123e0f293e4b76e7a948d1e12060_cgraph.png" border="0" usemap="#event__if__libevent_8c_a7612123e0f293e4b76e7a948d1e12060_cgraph" alt=""/></div>
+<map name="event__if__libevent_8c_a7612123e0f293e4b76e7a948d1e12060_cgraph" id="event__if__libevent_8c_a7612123e0f293e4b76e7a948d1e12060_cgraph">
+<area shape="rect" id="node2" href="event__if__libevent_8c.html#af6a4a73563d9ead4fd2f8a5a8484abb8" title="convert_etpoll_own2eveid" alt="" coords="224,5,391,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="event__if__libevent_8c_a7612123e0f293e4b76e7a948d1e12060_icgraph.png" border="0" usemap="#event__if__libevent_8c_a7612123e0f293e4b76e7a948d1e12060_icgraph" alt=""/></div>
+<map name="event__if__libevent_8c_a7612123e0f293e4b76e7a948d1e12060_icgraph" id="event__if__libevent_8c_a7612123e0f293e4b76e7a948d1e12060_icgraph">
+<area shape="rect" id="node2" href="event__if__libevent_8c.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="224,5,317,32"/>
+<area shape="rect" id="node3" href="event__if__libevent_8c.html#a8efe4fbd1ba72a0443ec626b8f14bac4" title="update registered event " alt="" coords="365,5,476,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -350,7 +510,7 @@ Here is the caller graph for this function:</div>
 
 <p>main loop of this event </p>
 
-<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00070">70</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00102">102</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
 
 </div>
 </div>
@@ -372,7 +532,7 @@ Here is the caller graph for this function:</div>
 
 <p>break event </p>
 
-<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00076">76</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00108">108</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
 
 </div>
 </div>
@@ -394,7 +554,7 @@ Here is the caller graph for this function:</div>
 
 <p>event new </p>
 
-<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00017">17</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00039">39</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
 
 </div>
 </div>
@@ -438,14 +598,17 @@ Here is the caller graph for this function:</div>
 
 <p>update registered event </p>
 
-<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00045">45</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__if__libevent_8c_source.html#l00073">73</a> of file <a class="el" href="event__if__libevent_8c_source.html">event_if_libevent.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__if__libevent_8c_a8efe4fbd1ba72a0443ec626b8f14bac4_cgraph.png" border="0" usemap="#event__if__libevent_8c_a8efe4fbd1ba72a0443ec626b8f14bac4_cgraph" alt=""/></div>
 <map name="event__if__libevent_8c_a8efe4fbd1ba72a0443ec626b8f14bac4_cgraph" id="event__if__libevent_8c_a8efe4fbd1ba72a0443ec626b8f14bac4_cgraph">
-<area shape="rect" id="node2" href="event__if__libevent_8c.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="164,5,257,32"/>
-<area shape="rect" id="node3" href="event__if__libevent_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="305,5,472,32"/>
+<area shape="rect" id="node2" href="event__if__libevent_8c.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="166,5,255,32"/>
+<area shape="rect" id="node3" href="event__if__libevent_8c.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="164,56,257,83"/>
+<area shape="rect" id="node4" href="event__if__libevent_8c.html#a9315b18d214c5c77aa9f0ad2c7bccfb5" title="convert_etpoll_eveid2own" alt="" coords="307,31,474,57"/>
+<area shape="rect" id="node5" href="event__if__libevent_8c.html#a7612123e0f293e4b76e7a948d1e12060" title="event_if_libevent_callback" alt="" coords="305,81,476,108"/>
+<area shape="rect" id="node6" href="event__if__libevent_8c.html#af6a4a73563d9ead4fd2f8a5a8484abb8" title="convert_etpoll_own2eveid" alt="" coords="524,81,691,108"/>
 </map>
 </div>
 

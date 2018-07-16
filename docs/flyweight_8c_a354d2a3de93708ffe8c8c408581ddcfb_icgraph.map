@@ -1,8 +1,9 @@
 <map id="flyweight_factory_instance_new" name="flyweight_factory_instance_new">
-<area shape="rect" id="node2" href="$flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="Getter. " alt="" coords="257,81,400,108"/>
-<area shape="rect" id="node3" href="$flyweight_8c.html#a5a9bc49455819c7d07dc97e33d57de55" title="getter " alt="" coords="448,56,545,83"/>
-<area shape="rect" id="node6" href="$flyweight_8c.html#a8075a336e1a8cc72b3c57989e5d0f868" title="setter " alt="" coords="448,107,545,133"/>
-<area shape="rect" id="node4" href="$chain__of__responsibility_8c.html#a6017534fc738e5fe592bc5b70a62b760" title="call chain api " alt="" coords="630,5,697,32"/>
-<area shape="rect" id="node5" href="$chain__of__responsibility_8c.html#a992ce77a62711a598b767610c282ccee" title="remove to chain api " alt="" coords="593,56,733,83"/>
-<area shape="rect" id="node7" href="$chain__of__responsibility_8c.html#a7ab8871578e2e5e3c79f7ccbebe53b3e" title="add to chain api " alt="" coords="603,107,723,133"/>
+<area shape="rect" id="node2" href="$flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="Getter. " alt="" coords="257,101,400,128"/>
+<area shape="rect" id="node3" href="$flyweight_8c.html#a5a9bc49455819c7d07dc97e33d57de55" title="getter " alt="" coords="448,69,545,96"/>
+<area shape="rect" id="node7" href="$flyweight_8c.html#a8075a336e1a8cc72b3c57989e5d0f868" title="setter " alt="" coords="448,132,545,159"/>
+<area shape="rect" id="node4" href="$chain__of__responsibility_8c.html#a20ef5a8b7d99bd6eb14e12a844238d82" title="call chain api " alt="" coords="664,5,731,32"/>
+<area shape="rect" id="node5" href="$chain__of__responsibility_8c.html#ae3e37775e62a141540c86752e349641b" title="remove to chain api " alt="" coords="627,56,767,83"/>
+<area shape="rect" id="node6" href="$chain__of__responsibility_8c.html#a8c15de431382f441eba394faf167f190" title="remove to chain api " alt="" coords="593,107,801,133"/>
+<area shape="rect" id="node8" href="$chain__of__responsibility_8c.html#abd93d1ebc36d517950985f6e65aab5cd" title="add to chain api " alt="" coords="637,157,757,184"/>
 </map>

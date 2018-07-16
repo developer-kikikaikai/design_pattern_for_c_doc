@@ -1,6 +1,7 @@
 var structmemorypool__t =
 [
     [ "buf", "structmemorypool__t.html#a2c5f4ef732286b78e31ec8d1cb238215", null ],
+    [ "cur_cnt", "structmemorypool__t.html#ad20331b6fe9525d1d7843dd86dc816ab", null ],
     [ "head", "structmemorypool__t.html#aa1d1bd1ed4d92f1737422eb7805c0b32", null ],
     [ "lock", "structmemorypool__t.html#a33586b4184d23f2b8f4df153ec23af13", null ],
     [ "max_cnt", "structmemorypool__t.html#a2e5047b25de5c591641e5b2c32791c68", null ],

@@ -100,6 +100,7 @@ $(document).ready(function(){initNavTree('event__tpool__manager_8c.html','');});
 <div class="textblock"><code>#include &lt;elf.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;sched.h&gt;</code><br />
+<code>#include &quot;config.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="event__threadpool_8h_source.html">event_threadpool.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="event__thread_8h_source.html">event_thread.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dp__util_8h_source.html">dp_util.h</a>&quot;</code><br />
@@ -108,13 +109,13 @@ Include dependency graph for event_tpool_manager.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__tpool__manager_8c__incl.png" border="0" usemap="#_d_1_2design__pattern__for__c_2threadpool_2lib_2event__tpool__manager_8c" alt=""/></div>
 <map name="_d_1_2design__pattern__for__c_2threadpool_2lib_2event__tpool__manager_8c" id="_d_1_2design__pattern__for__c_2threadpool_2lib_2event__tpool__manager_8c">
-<area shape="rect" id="node5" href="event__threadpool_8h.html" title="This is API as ThreadPool design petten by using libevent. " alt="" coords="580,109,711,136"/>
-<area shape="rect" id="node7" href="event__thread_8h.html" title="This is API of event thread. " alt="" coords="449,109,556,136"/>
-<area shape="rect" id="node9" href="dp__util_8h.html" title=" Utility headers " alt="" coords="339,109,410,136"/>
-<area shape="rect" id="node6" href="event__threadpool__data_8h.html" title="This is API as ThreadPool data definition for ThreadPooldesign petten by using libevent. " alt="" coords="580,184,743,211"/>
-<area shape="rect" id="node10" href="dp__list_8h.html" title="Utility list API for design pattern. " alt="" coords="206,184,277,211"/>
-<area shape="rect" id="node11" href="dp__mutex_8h.html" title="Utility mutex API for design pattern. " alt="" coords="415,184,505,211"/>
-<area shape="rect" id="node12" href="dp__debug_8h.html" title="For using debug log. " alt="" coords="301,184,390,211"/>
+<area shape="rect" id="node6" href="event__threadpool_8h.html" title="This is API as ThreadPool design petten by using libevent. " alt="" coords="580,109,711,136"/>
+<area shape="rect" id="node8" href="event__thread_8h.html" title="This is API of event thread. " alt="" coords="449,109,556,136"/>
+<area shape="rect" id="node10" href="dp__util_8h.html" title=" Utility headers " alt="" coords="339,109,410,136"/>
+<area shape="rect" id="node7" href="event__threadpool__data_8h.html" title="This is API as ThreadPool data definition for ThreadPooldesign petten by using libevent. " alt="" coords="580,184,743,211"/>
+<area shape="rect" id="node11" href="dp__list_8h.html" title="Utility list API for design pattern. " alt="" coords="206,184,277,211"/>
+<area shape="rect" id="node12" href="dp__mutex_8h.html" title="Utility mutex API for design pattern. " alt="" coords="415,184,505,211"/>
+<area shape="rect" id="node13" href="dp__debug_8h.html" title="For using debug log. " alt="" coords="301,184,390,211"/>
 </map>
 </div>
 </div>
@@ -124,6 +125,8 @@ Include dependency graph for event_tpool_manager.c:</div>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structevent__tpool__thread__info__t.html">event_tpool_thread_info_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionevent__tpool__thread__info__t_1_1data__fds__u.html">event_tpool_thread_info_t::data_fds_u</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structevent__tpool__manager__t.html">event_tpool_manager_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">EventTPoolManager class instance definition.  <a href="structevent__tpool__manager__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,11 +135,23 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a369266c24eacffb87046522897a570d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a369266c24eacffb87046522897a570d5">_GNU_SOURCE</a></td></tr>
 <tr class="separator:a369266c24eacffb87046522897a570d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a43dd4586ab1756890e2de566c7002"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a22a43dd4586ab1756890e2de566c7002">EV_TPOLL_FD_START</a>&#160;&#160;&#160;(3)</td></tr>
+<tr class="separator:a22a43dd4586ab1756890e2de566c7002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe0d7520bbed175b86477925d896728"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#aefe0d7520bbed175b86477925d896728">EV_TPOLL_FDSU64PLACE</a>(fd)&#160;&#160;&#160;(((fd)-<a class="el" href="event__tpool__manager_8c.html#a22a43dd4586ab1756890e2de566c7002">EV_TPOLL_FD_START</a>)/<a class="el" href="event__tpool__manager_8c.html#a492ec74ac4c8530d49b954189a0326b8">EV_TPOLL_U64_BITSIZE</a>)</td></tr>
+<tr class="separator:aefe0d7520bbed175b86477925d896728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a423aed9a7b7988fdcd0f906ea91af593"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a423aed9a7b7988fdcd0f906ea91af593">EV_TPOLL_FDINDEX</a>(fd,  place)&#160;&#160;&#160;((fd) - ((place)*<a class="el" href="event__tpool__manager_8c.html#aca292569acf58c052821537c13b3e204">EV_TPOLL_USABLE_BITSIZE</a>) - <a class="el" href="event__tpool__manager_8c.html#a22a43dd4586ab1756890e2de566c7002">EV_TPOLL_FD_START</a>)</td></tr>
+<tr class="separator:a423aed9a7b7988fdcd0f906ea91af593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85454d72ff54b44e85489116382abe0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a85454d72ff54b44e85489116382abe0d">EV_TPOLL_FDINDEX_U8</a>(fd,  place,  place_u8)&#160;&#160;&#160;(<a class="el" href="event__tpool__manager_8c.html#a423aed9a7b7988fdcd0f906ea91af593">EV_TPOLL_FDINDEX</a>(fd,place) - ((place_u8) * <a class="el" href="event__tpool__manager_8c.html#a2ad2848387e0b579025999472b123063">EV_TPOLL_U8_BITSIZE</a>))</td></tr>
+<tr class="separator:a85454d72ff54b44e85489116382abe0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fcff03bd36edc7cead9fd4914fd8828"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a2fcff03bd36edc7cead9fd4914fd8828">EV_TPOLL_FD</a>(place,  place_u8,  index)&#160;&#160;&#160;(index + ((place)*<a class="el" href="event__tpool__manager_8c.html#aca292569acf58c052821537c13b3e204">EV_TPOLL_USABLE_BITSIZE</a>) + ((place_u8) * <a class="el" href="event__tpool__manager_8c.html#a2ad2848387e0b579025999472b123063">EV_TPOLL_U8_BITSIZE</a>) + <a class="el" href="event__tpool__manager_8c.html#a22a43dd4586ab1756890e2de566c7002">EV_TPOLL_FD_START</a>)</td></tr>
+<tr class="separator:a2fcff03bd36edc7cead9fd4914fd8828"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1686f655fde8aa6eca53bf038dca7b72"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a1686f655fde8aa6eca53bf038dca7b72">event_tpoll_get_far_right_bit_index</a> (uint64_t data)</td></tr>
-<tr class="separator:a1686f655fde8aa6eca53bf038dca7b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b7cda5e42c0a8d7cc3e233f91c90a52"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a9b7cda5e42c0a8d7cc3e233f91c90a52">event_tpoll_get_far_right_bit_index</a> (uint8_t data)</td></tr>
+<tr class="separator:a9b7cda5e42c0a8d7cc3e233f91c90a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0551192cc3e2b7069c879d8431855dc4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a0551192cc3e2b7069c879d8431855dc4">event_tpool_free_fddata</a> (<a class="el" href="event__threadpool__data_8h.html#ad7c0af45373970a13eda82690e2083af">EventTPoolThreadInfo</a> this, int place)</td></tr>
+<tr class="separator:a0551192cc3e2b7069c879d8431855dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9903ac9eba343bf59858e5fe200ef95f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a9903ac9eba343bf59858e5fe200ef95f">event_tpool_thread_delete_thread</a> (<a class="el" href="event__threadpool__data_8h.html#ad7c0af45373970a13eda82690e2083af">EventTPoolThreadInfo</a> this, int fd)</td></tr>
 <tr class="memdesc:a9903ac9eba343bf59858e5fe200ef95f"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete thread  <a href="#a9903ac9eba343bf59858e5fe200ef95f">More...</a><br /></td></tr>
 <tr class="separator:a9903ac9eba343bf59858e5fe200ef95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,24 +197,32 @@ Functions</h2></td></tr>
 <tr class="memitem:a6b689e25ea84dbc7df10d970b330e086"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a6b689e25ea84dbc7df10d970b330e086">event_tpool_del</a> (<a class="el" href="event__threadpool__data_8h.html#a0e979d320ef1d4fba4793d03163067fb">EventTPoolManager</a> this, int fd)</td></tr>
 <tr class="memdesc:a6b689e25ea84dbc7df10d970b330e086"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete EventSubscriber to threadapool.  <a href="#a6b689e25ea84dbc7df10d970b330e086">More...</a><br /></td></tr>
 <tr class="separator:a6b689e25ea84dbc7df10d970b330e086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70de697715bd1be5aceab44d5025039b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a70de697715bd1be5aceab44d5025039b">event_tpool_atfork_child</a> (<a class="el" href="event__threadpool__data_8h.html#a0e979d320ef1d4fba4793d03163067fb">EventTPoolManager</a> this)</td></tr>
+<tr class="memdesc:a70de697715bd1be5aceab44d5025039b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update member at fork, please call this API on child process if you use fork.  <a href="#a70de697715bd1be5aceab44d5025039b">More...</a><br /></td></tr>
+<tr class="separator:a70de697715bd1be5aceab44d5025039b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad108840f3851594a1ef8e570147800c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#ad108840f3851594a1ef8e570147800c8">event_tpool_set_stack_size</a> (size_t stack_size)</td></tr>
+<tr class="memdesc:ad108840f3851594a1ef8e570147800c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set thread stack size.  <a href="#ad108840f3851594a1ef8e570147800c8">More...</a><br /></td></tr>
+<tr class="separator:ad108840f3851594a1ef8e570147800c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 thread information list definition.</h2></td></tr>
-<tr class="memitem:a47a24039001382d44f3d9cfba19823b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a47a24039001382d44f3d9cfba19823b9">EV_TPOLL_MAXFDS</a>&#160;&#160;&#160;(64)</td></tr>
-<tr class="memdesc:a47a24039001382d44f3d9cfba19823b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">thread instance and fd list  <a href="#a47a24039001382d44f3d9cfba19823b9">More...</a><br /></td></tr>
-<tr class="separator:a47a24039001382d44f3d9cfba19823b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a539a472415f37e1a44a65d9efaece027"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a539a472415f37e1a44a65d9efaece027">EV_TPOLL_UINT64_BITSIZE</a>&#160;&#160;&#160;(64)</td></tr>
-<tr class="separator:a539a472415f37e1a44a65d9efaece027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492ec74ac4c8530d49b954189a0326b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a492ec74ac4c8530d49b954189a0326b8">EV_TPOLL_U64_BITSIZE</a>&#160;&#160;&#160;(64)</td></tr>
+<tr class="memdesc:a492ec74ac4c8530d49b954189a0326b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">thread instance and fd list  <a href="#a492ec74ac4c8530d49b954189a0326b8">More...</a><br /></td></tr>
+<tr class="separator:a492ec74ac4c8530d49b954189a0326b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad2848387e0b579025999472b123063"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a2ad2848387e0b579025999472b123063">EV_TPOLL_U8_BITSIZE</a>&#160;&#160;&#160;(8)</td></tr>
+<tr class="separator:a2ad2848387e0b579025999472b123063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca292569acf58c052821537c13b3e204"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#aca292569acf58c052821537c13b3e204">EV_TPOLL_USABLE_BITSIZE</a>&#160;&#160;&#160;(64)</td></tr>
 <tr class="separator:aca292569acf58c052821537c13b3e204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80fbc5d92b333fc166e249ac3906fa92"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structevent__tpool__thread__info__t.html">event_tpool_thread_info_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a80fbc5d92b333fc166e249ac3906fa92">event_tpool_thread_info_t</a></td></tr>
 <tr class="separator:a80fbc5d92b333fc166e249ac3906fa92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d5451bcbbff33d75afbbdb8c823e354"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a1d5451bcbbff33d75afbbdb8c823e354">event_tpool_thread_set_fds</a> (uint64_t *fds, int fd)</td></tr>
-<tr class="separator:a1d5451bcbbff33d75afbbdb8c823e354"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13fab681db2100cd21adc02812df9f64"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a13fab681db2100cd21adc02812df9f64">event_tpool_thread_unset_fds</a> (uint64_t *fds, int fd)</td></tr>
-<tr class="separator:a13fab681db2100cd21adc02812df9f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f0e4c68c1fb23da311b990bafebf083"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a0f0e4c68c1fb23da311b990bafebf083">event_tpool_thread_is_set_fds</a> (uint64_t *fds, int fd)</td></tr>
-<tr class="separator:a0f0e4c68c1fb23da311b990bafebf083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86244ad20d71c69f7faee691bd321579"><td class="memItemLeft" align="right" valign="top">typedef union <a class="el" href="event__tpool__manager_8c.html#a86244ad20d71c69f7faee691bd321579">data_fds_u</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a86244ad20d71c69f7faee691bd321579">data_fds_u</a></td></tr>
+<tr class="separator:a86244ad20d71c69f7faee691bd321579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfcd31605ce33caaeb3bdb508a188d04"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#acfcd31605ce33caaeb3bdb508a188d04">event_tpool_thread_set_fds</a> (<a class="el" href="event__threadpool__data_8h.html#ad7c0af45373970a13eda82690e2083af">EventTPoolThreadInfo</a> this, int fd)</td></tr>
+<tr class="separator:acfcd31605ce33caaeb3bdb508a188d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1df711f4e7aca3f56eb3ecaee3352b6f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a1df711f4e7aca3f56eb3ecaee3352b6f">event_tpool_thread_unset_fds</a> (<a class="el" href="event__threadpool__data_8h.html#ad7c0af45373970a13eda82690e2083af">EventTPoolThreadInfo</a> this, int fd)</td></tr>
+<tr class="separator:a1df711f4e7aca3f56eb3ecaee3352b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af03f409cbb1a38310d4e4bf622d16380"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#af03f409cbb1a38310d4e4bf622d16380">event_tpool_thread_is_set_fds</a> (<a class="el" href="event__threadpool__data_8h.html#ad7c0af45373970a13eda82690e2083af">EventTPoolThreadInfo</a> this, int fd)</td></tr>
+<tr class="separator:af03f409cbb1a38310d4e4bf622d16380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b18d56328a59d77f6f6b052b4d2a8ca"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__tpool__manager_8c.html#a8b18d56328a59d77f6f6b052b4d2a8ca">event_tpool_thread_insert_fddata</a> (<a class="el" href="event__threadpool__data_8h.html#ad7c0af45373970a13eda82690e2083af">EventTPoolThreadInfo</a> this, int fd)</td></tr>
 <tr class="separator:a8b18d56328a59d77f6f6b052b4d2a8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -238,37 +261,175 @@ for EventTPoolManager private API definition .</h2></td></tr>
 
 </div>
 </div>
-<a id="a47a24039001382d44f3d9cfba19823b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47a24039001382d44f3d9cfba19823b9">&#9670;&nbsp;</a></span>EV_TPOLL_MAXFDS</h2>
+<a id="a2fcff03bd36edc7cead9fd4914fd8828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fcff03bd36edc7cead9fd4914fd8828">&#9670;&nbsp;</a></span>EV_TPOLL_FD</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define EV_TPOLL_MAXFDS&#160;&#160;&#160;(64)</td>
+          <td class="memname">#define EV_TPOLL_FD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">place, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">place_u8, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">index&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(index + ((place)*<a class="el" href="event__tpool__manager_8c.html#aca292569acf58c052821537c13b3e204">EV_TPOLL_USABLE_BITSIZE</a>) + ((place_u8) * <a class="el" href="event__tpool__manager_8c.html#a2ad2848387e0b579025999472b123063">EV_TPOLL_U8_BITSIZE</a>) + <a class="el" href="event__tpool__manager_8c.html#a22a43dd4586ab1756890e2de566c7002">EV_TPOLL_FD_START</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00101">101</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+
+</div>
+</div>
+<a id="a22a43dd4586ab1756890e2de566c7002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a43dd4586ab1756890e2de566c7002">&#9670;&nbsp;</a></span>EV_TPOLL_FD_START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EV_TPOLL_FD_START&#160;&#160;&#160;(3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00096">96</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+
+</div>
+</div>
+<a id="a423aed9a7b7988fdcd0f906ea91af593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a423aed9a7b7988fdcd0f906ea91af593">&#9670;&nbsp;</a></span>EV_TPOLL_FDINDEX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EV_TPOLL_FDINDEX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fd, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">place&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((fd) - ((place)*<a class="el" href="event__tpool__manager_8c.html#aca292569acf58c052821537c13b3e204">EV_TPOLL_USABLE_BITSIZE</a>) - <a class="el" href="event__tpool__manager_8c.html#a22a43dd4586ab1756890e2de566c7002">EV_TPOLL_FD_START</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00099">99</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+
+</div>
+</div>
+<a id="a85454d72ff54b44e85489116382abe0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85454d72ff54b44e85489116382abe0d">&#9670;&nbsp;</a></span>EV_TPOLL_FDINDEX_U8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EV_TPOLL_FDINDEX_U8</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fd, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">place, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">place_u8&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="event__tpool__manager_8c.html#a423aed9a7b7988fdcd0f906ea91af593">EV_TPOLL_FDINDEX</a>(fd,place) - ((place_u8) * <a class="el" href="event__tpool__manager_8c.html#a2ad2848387e0b579025999472b123063">EV_TPOLL_U8_BITSIZE</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00100">100</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+
+</div>
+</div>
+<a id="aefe0d7520bbed175b86477925d896728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe0d7520bbed175b86477925d896728">&#9670;&nbsp;</a></span>EV_TPOLL_FDSU64PLACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EV_TPOLL_FDSU64PLACE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fd</td><td>)</td>
+          <td>&#160;&#160;&#160;(((fd)-<a class="el" href="event__tpool__manager_8c.html#a22a43dd4586ab1756890e2de566c7002">EV_TPOLL_FD_START</a>)/<a class="el" href="event__tpool__manager_8c.html#a492ec74ac4c8530d49b954189a0326b8">EV_TPOLL_U64_BITSIZE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00098">98</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+
+</div>
+</div>
+<a id="a492ec74ac4c8530d49b954189a0326b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a492ec74ac4c8530d49b954189a0326b8">&#9670;&nbsp;</a></span>EV_TPOLL_U64_BITSIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EV_TPOLL_U64_BITSIZE&#160;&#160;&#160;(64)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>thread instance and fd list </p>
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00020">20</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00022">22</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 
 </div>
 </div>
-<a id="a539a472415f37e1a44a65d9efaece027"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a539a472415f37e1a44a65d9efaece027">&#9670;&nbsp;</a></span>EV_TPOLL_UINT64_BITSIZE</h2>
+<a id="a2ad2848387e0b579025999472b123063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ad2848387e0b579025999472b123063">&#9670;&nbsp;</a></span>EV_TPOLL_U8_BITSIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define EV_TPOLL_UINT64_BITSIZE&#160;&#160;&#160;(64)</td>
+          <td class="memname">#define EV_TPOLL_U8_BITSIZE&#160;&#160;&#160;(8)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00021">21</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00023">23</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 
 </div>
 </div>
@@ -284,7 +445,7 @@ for EventTPoolManager private API definition .</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00022">22</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00024">24</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 
 </div>
 </div>
@@ -304,7 +465,7 @@ for EventTPoolManager private API definition .</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00068">68</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00076">76</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 
 </div>
 </div>
@@ -320,11 +481,27 @@ for EventTPoolManager private API definition .</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00069">69</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00077">77</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="a86244ad20d71c69f7faee691bd321579"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86244ad20d71c69f7faee691bd321579">&#9670;&nbsp;</a></span>data_fds_u</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef union <a class="el" href="event__tpool__manager_8c.html#a86244ad20d71c69f7faee691bd321579">data_fds_u</a> <a class="el" href="event__tpool__manager_8c.html#a86244ad20d71c69f7faee691bd321579">data_fds_u</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00035">35</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+
+</div>
+</div>
 <a id="a80fbc5d92b333fc166e249ac3906fa92"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a80fbc5d92b333fc166e249ac3906fa92">&#9670;&nbsp;</a></span>event_tpool_thread_info_t</h2>
 
@@ -340,8 +517,8 @@ for EventTPoolManager private API definition .</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a1686f655fde8aa6eca53bf038dca7b72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1686f655fde8aa6eca53bf038dca7b72">&#9670;&nbsp;</a></span>event_tpoll_get_far_right_bit_index()</h2>
+<a id="a9b7cda5e42c0a8d7cc3e233f91c90a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b7cda5e42c0a8d7cc3e233f91c90a52">&#9670;&nbsp;</a></span>event_tpoll_get_far_right_bit_index()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,7 +529,7 @@ for EventTPoolManager private API definition .</h2></td></tr>
         <tr>
           <td class="memname">static int event_tpoll_get_far_right_bit_index </td>
           <td>(</td>
-          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>
@@ -364,18 +541,20 @@ for EventTPoolManager private API definition .</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00079">79</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00087">87</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="event__tpool__manager_8c_a1686f655fde8aa6eca53bf038dca7b72_icgraph.png" border="0" usemap="#event__tpool__manager_8c_a1686f655fde8aa6eca53bf038dca7b72_icgraph" alt=""/></div>
-<map name="event__tpool__manager_8c_a1686f655fde8aa6eca53bf038dca7b72_icgraph" id="event__tpool__manager_8c_a1686f655fde8aa6eca53bf038dca7b72_icgraph">
-<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a259c40f9059402226bac41ae81127bcb" title="free fddata " alt="" coords="183,31,364,57"/>
-<area shape="rect" id="node3" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="412,23,543,65"/>
-<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="591,23,721,65"/>
-<area shape="rect" id="node5" href="event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="769,23,913,65"/>
-<area shape="rect" id="node6" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="961,5,1136,32"/>
-<area shape="rect" id="node7" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="963,56,1135,83"/>
+<div class="center"><img src="event__tpool__manager_8c_a9b7cda5e42c0a8d7cc3e233f91c90a52_icgraph.png" border="0" usemap="#event__tpool__manager_8c_a9b7cda5e42c0a8d7cc3e233f91c90a52_icgraph" alt=""/></div>
+<map name="event__tpool__manager_8c_a9b7cda5e42c0a8d7cc3e233f91c90a52_icgraph" id="event__tpool__manager_8c_a9b7cda5e42c0a8d7cc3e233f91c90a52_icgraph">
+<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a0551192cc3e2b7069c879d8431855dc4" title="event_tpool_free_fddata" alt="" coords="183,31,340,57"/>
+<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a259c40f9059402226bac41ae81127bcb" title="free fddata " alt="" coords="388,31,569,57"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="617,23,748,65"/>
+<area shape="rect" id="node5" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="796,23,927,65"/>
+<area shape="rect" id="node6" href="event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="975,23,1119,65"/>
+<area shape="rect" id="node7" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="1167,5,1341,32"/>
+<area shape="rect" id="node9" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="1168,56,1340,83"/>
+<area shape="rect" id="node8" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1389,5,1440,32"/>
 </map>
 </div>
 
@@ -429,9 +608,9 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>if there already exist same fd's subscriber, it will override </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>if there already exist same fd's subscriber, it occur error </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00299">299</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00334">334</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -441,11 +620,11 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node5" href="event__tpool__manager_8c.html#a8b18d56328a59d77f6f6b052b4d2a8ca" title="event_tpool_thread\l_insert_fddata" alt="" coords="182,71,313,112"/>
 <area shape="rect" id="node7" href="event__thread_8c.html#a2c4fc175c812100addbcb6d11907de42" title="add new subscriber " alt="" coords="168,137,327,163"/>
 <area shape="rect" id="node3" href="event__tpool__manager_8c.html#a5a5e3e76ce32af7695c02b18f7655316" title="search current setting " alt="" coords="405,5,535,47"/>
-<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a0f0e4c68c1fb23da311b990bafebf083" title="event_tpool_thread\l_is_set_fds" alt="" coords="629,5,760,47"/>
-<area shape="rect" id="node6" href="event__tpool__manager_8c.html#a1d5451bcbbff33d75afbbdb8c823e354" title="event_tpool_thread\l_set_fds" alt="" coords="405,71,535,112"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#af03f409cbb1a38310d4e4bf622d16380" title="event_tpool_thread\l_is_set_fds" alt="" coords="629,5,760,47"/>
+<area shape="rect" id="node6" href="event__tpool__manager_8c.html#acfcd31605ce33caaeb3bdb508a188d04" title="event_tpool_thread\l_set_fds" alt="" coords="405,71,535,112"/>
 <area shape="rect" id="node8" href="event__thread_8c.html#a5b12559eac99a129de44832c1dc9b077" title="event_thread_msg_send_add" alt="" coords="375,137,565,163"/>
 <area shape="rect" id="node9" href="event__thread_8c.html#a29fc7e7d2086121de80e8d4a8c15fc4e" title="event_thread_msg_send\l_subscribe" alt="" coords="613,129,776,171"/>
-<area shape="rect" id="node10" href="event__thread_8c.html#a214b6fb1d36c48d97608575991d3fc99" title="event_thread_msg_send" alt="" coords="824,107,987,134"/>
+<area shape="rect" id="node10" href="event__thread_8c.html#a62519e37130fbee3f3e58d95320400fe" title="event_thread_msg_send" alt="" coords="824,107,987,134"/>
 <area shape="rect" id="node11" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="840,159,971,200"/>
 </map>
 </div>
@@ -454,8 +633,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__tpool__manager_8c_a834b504d9de1aa7d36b98308833c9268_icgraph.png" border="0" usemap="#event__tpool__manager_8c_a834b504d9de1aa7d36b98308833c9268_icgraph" alt=""/></div>
 <map name="event__tpool__manager_8c_a834b504d9de1aa7d36b98308833c9268_icgraph" id="event__tpool__manager_8c_a834b504d9de1aa7d36b98308833c9268_icgraph">
-<area shape="rect" id="node2" href="state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="168,5,312,47"/>
-<area shape="rect" id="node3" href="state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="360,13,497,39"/>
+<area shape="rect" id="node2" href="main_8c.html#a2ae22c9da6ba8452a61ab4e69a4930e7" title="add_event_publisher" alt="" coords="171,5,309,32"/>
+<area shape="rect" id="node4" href="state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="168,57,312,98"/>
+<area shape="rect" id="node3" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="403,5,454,32"/>
+<area shape="rect" id="node5" href="state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="360,64,497,91"/>
 </map>
 </div>
 
@@ -516,11 +697,9 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>if there already exist same fd's subscriber, it will override </dd>
-<dd>
-this API doesn't remove other thread's same fd setting. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>if there already exist same fd's subscriber, it occur error </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00328">328</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00364">364</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -530,12 +709,49 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node5" href="event__tpool__manager_8c.html#a8b18d56328a59d77f6f6b052b4d2a8ca" title="event_tpool_thread\l_insert_fddata" alt="" coords="226,71,357,112"/>
 <area shape="rect" id="node7" href="event__thread_8c.html#a2c4fc175c812100addbcb6d11907de42" title="add new subscriber " alt="" coords="212,137,371,163"/>
 <area shape="rect" id="node3" href="event__tpool__manager_8c.html#a5a5e3e76ce32af7695c02b18f7655316" title="search current setting " alt="" coords="449,5,579,47"/>
-<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a0f0e4c68c1fb23da311b990bafebf083" title="event_tpool_thread\l_is_set_fds" alt="" coords="673,5,804,47"/>
-<area shape="rect" id="node6" href="event__tpool__manager_8c.html#a1d5451bcbbff33d75afbbdb8c823e354" title="event_tpool_thread\l_set_fds" alt="" coords="449,71,579,112"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#af03f409cbb1a38310d4e4bf622d16380" title="event_tpool_thread\l_is_set_fds" alt="" coords="673,5,804,47"/>
+<area shape="rect" id="node6" href="event__tpool__manager_8c.html#acfcd31605ce33caaeb3bdb508a188d04" title="event_tpool_thread\l_set_fds" alt="" coords="449,71,579,112"/>
 <area shape="rect" id="node8" href="event__thread_8c.html#a5b12559eac99a129de44832c1dc9b077" title="event_thread_msg_send_add" alt="" coords="419,137,609,163"/>
 <area shape="rect" id="node9" href="event__thread_8c.html#a29fc7e7d2086121de80e8d4a8c15fc4e" title="event_thread_msg_send\l_subscribe" alt="" coords="657,129,820,171"/>
-<area shape="rect" id="node10" href="event__thread_8c.html#a214b6fb1d36c48d97608575991d3fc99" title="event_thread_msg_send" alt="" coords="868,107,1031,134"/>
+<area shape="rect" id="node10" href="event__thread_8c.html#a62519e37130fbee3f3e58d95320400fe" title="event_thread_msg_send" alt="" coords="868,107,1031,134"/>
 <area shape="rect" id="node11" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="884,159,1015,200"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a70de697715bd1be5aceab44d5025039b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70de697715bd1be5aceab44d5025039b">&#9670;&nbsp;</a></span>event_tpool_atfork_child()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void event_tpool_atfork_child </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="event__threadpool__data_8h.html#a0e979d320ef1d4fba4793d03163067fb">EventTPoolManager</a>&#160;</td>
+          <td class="paramname"><em>this</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update member at fork, please call this API on child process if you use fork. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">this</td><td>EventTPoolManager instance returned at event_tpool_new. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Please care "The child process is created with a single thread--the one that called fork()." at the child process, all of pooled threads don't copy. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00444">444</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="event__tpool__manager_8c_a70de697715bd1be5aceab44d5025039b_cgraph.png" border="0" usemap="#event__tpool__manager_8c_a70de697715bd1be5aceab44d5025039b_cgraph" alt=""/></div>
+<map name="event__tpool__manager_8c_a70de697715bd1be5aceab44d5025039b_cgraph" id="event__tpool__manager_8c_a70de697715bd1be5aceab44d5025039b_cgraph">
+<area shape="rect" id="node2" href="event__thread_8c.html#a52a138649b6a24236cdd29f8049f69a6" title="event_thread_atfork\l_child" alt="" coords="180,5,315,47"/>
 </map>
 </div>
 
@@ -578,7 +794,7 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>this API doesn't close fd, please close ownself. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00385">385</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00421">421</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -588,10 +804,10 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node5" href="event__tpool__manager_8c.html#a9903ac9eba343bf59858e5fe200ef95f" title="delete thread " alt="" coords="176,71,307,112"/>
 <area shape="rect" id="node7" href="event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="164,137,319,163"/>
 <area shape="rect" id="node3" href="event__tpool__manager_8c.html#a5a5e3e76ce32af7695c02b18f7655316" title="search current setting " alt="" coords="395,5,525,47"/>
-<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a0f0e4c68c1fb23da311b990bafebf083" title="event_tpool_thread\l_is_set_fds" alt="" coords="617,5,748,47"/>
-<area shape="rect" id="node6" href="event__tpool__manager_8c.html#a13fab681db2100cd21adc02812df9f64" title="event_tpool_thread\l_unset_fds" alt="" coords="395,71,525,112"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#af03f409cbb1a38310d4e4bf622d16380" title="event_tpool_thread\l_is_set_fds" alt="" coords="617,5,748,47"/>
+<area shape="rect" id="node6" href="event__tpool__manager_8c.html#a1df711f4e7aca3f56eb3ecaee3352b6f" title="event_tpool_thread\l_unset_fds" alt="" coords="395,71,525,112"/>
 <area shape="rect" id="node8" href="event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="367,137,553,163"/>
-<area shape="rect" id="node9" href="event__thread_8c.html#a214b6fb1d36c48d97608575991d3fc99" title="event_thread_msg_send" alt="" coords="601,107,764,134"/>
+<area shape="rect" id="node9" href="event__thread_8c.html#a62519e37130fbee3f3e58d95320400fe" title="event_thread_msg_send" alt="" coords="601,107,764,134"/>
 <area shape="rect" id="node10" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="617,159,748,200"/>
 </map>
 </div>
@@ -602,6 +818,71 @@ Here is the caller graph for this function:</div>
 <map name="event__tpool__manager_8c_a6b689e25ea84dbc7df10d970b330e086_icgraph" id="event__tpool__manager_8c_a6b689e25ea84dbc7df10d970b330e086_icgraph">
 <area shape="rect" id="node2" href="state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="164,5,300,47"/>
 <area shape="rect" id="node3" href="state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="348,13,485,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0551192cc3e2b7069c879d8431855dc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0551192cc3e2b7069c879d8431855dc4">&#9670;&nbsp;</a></span>event_tpool_free_fddata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void event_tpool_free_fddata </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="event__threadpool__data_8h.html#ad7c0af45373970a13eda82690e2083af">EventTPoolThreadInfo</a>&#160;</td>
+          <td class="paramname"><em>this</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>place</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00137">137</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="event__tpool__manager_8c_a0551192cc3e2b7069c879d8431855dc4_cgraph.png" border="0" usemap="#event__tpool__manager_8c_a0551192cc3e2b7069c879d8431855dc4_cgraph" alt=""/></div>
+<map name="event__tpool__manager_8c_a0551192cc3e2b7069c879d8431855dc4_cgraph" id="event__tpool__manager_8c_a0551192cc3e2b7069c879d8431855dc4_cgraph">
+<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a9b7cda5e42c0a8d7cc3e233f91c90a52" title="event_tpoll_get_far\l_right_bit_index" alt="" coords="223,5,353,47"/>
+<area shape="rect" id="node3" href="event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="211,71,365,98"/>
+<area shape="rect" id="node7" href="event__tpool__manager_8c.html#a1df711f4e7aca3f56eb3ecaee3352b6f" title="event_tpool_thread\l_unset_fds" alt="" coords="223,123,353,164"/>
+<area shape="rect" id="node4" href="event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="413,71,600,98"/>
+<area shape="rect" id="node5" href="event__thread_8c.html#a62519e37130fbee3f3e58d95320400fe" title="event_thread_msg_send" alt="" coords="648,42,811,69"/>
+<area shape="rect" id="node6" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="664,93,795,135"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="event__tpool__manager_8c_a0551192cc3e2b7069c879d8431855dc4_icgraph.png" border="0" usemap="#event__tpool__manager_8c_a0551192cc3e2b7069c879d8431855dc4_icgraph" alt=""/></div>
+<map name="event__tpool__manager_8c_a0551192cc3e2b7069c879d8431855dc4_icgraph" id="event__tpool__manager_8c_a0551192cc3e2b7069c879d8431855dc4_icgraph">
+<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a259c40f9059402226bac41ae81127bcb" title="free fddata " alt="" coords="211,31,392,57"/>
+<area shape="rect" id="node3" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="440,23,571,65"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="619,23,749,65"/>
+<area shape="rect" id="node5" href="event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="797,23,941,65"/>
+<area shape="rect" id="node6" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="989,5,1164,32"/>
+<area shape="rect" id="node8" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="991,56,1163,83"/>
+<area shape="rect" id="node7" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1212,5,1263,32"/>
 </map>
 </div>
 
@@ -633,17 +914,19 @@ Here is the caller graph for this function:</div>
 
 <p>free fddata </p>
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00110">110</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00154">154</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__tpool__manager_8c_a259c40f9059402226bac41ae81127bcb_cgraph.png" border="0" usemap="#event__tpool__manager_8c_a259c40f9059402226bac41ae81127bcb_cgraph" alt=""/></div>
 <map name="event__tpool__manager_8c_a259c40f9059402226bac41ae81127bcb_cgraph" id="event__tpool__manager_8c_a259c40f9059402226bac41ae81127bcb_cgraph">
-<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a1686f655fde8aa6eca53bf038dca7b72" title="event_tpoll_get_far\l_right_bit_index" alt="" coords="247,5,377,47"/>
-<area shape="rect" id="node3" href="event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="235,71,389,98"/>
-<area shape="rect" id="node4" href="event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="437,71,624,98"/>
-<area shape="rect" id="node5" href="event__thread_8c.html#a214b6fb1d36c48d97608575991d3fc99" title="event_thread_msg_send" alt="" coords="672,42,835,69"/>
-<area shape="rect" id="node6" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="688,93,819,135"/>
+<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a0551192cc3e2b7069c879d8431855dc4" title="event_tpool_free_fddata" alt="" coords="235,71,392,98"/>
+<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a9b7cda5e42c0a8d7cc3e233f91c90a52" title="event_tpoll_get_far\l_right_bit_index" alt="" coords="453,5,582,47"/>
+<area shape="rect" id="node4" href="event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="440,71,595,98"/>
+<area shape="rect" id="node8" href="event__tpool__manager_8c.html#a1df711f4e7aca3f56eb3ecaee3352b6f" title="event_tpool_thread\l_unset_fds" alt="" coords="452,123,583,164"/>
+<area shape="rect" id="node5" href="event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="643,71,829,98"/>
+<area shape="rect" id="node6" href="event__thread_8c.html#a62519e37130fbee3f3e58d95320400fe" title="event_thread_msg_send" alt="" coords="877,42,1040,69"/>
+<area shape="rect" id="node7" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="893,93,1024,135"/>
 </map>
 </div>
 <div class="dynheader">
@@ -655,7 +938,8 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node3" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="413,23,544,65"/>
 <area shape="rect" id="node4" href="event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="592,23,736,65"/>
 <area shape="rect" id="node5" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="784,5,959,32"/>
-<area shape="rect" id="node6" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="785,56,957,83"/>
+<area shape="rect" id="node7" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="785,56,957,83"/>
+<area shape="rect" id="node6" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1007,5,1057,32"/>
 </map>
 </div>
 
@@ -686,24 +970,26 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>when call it, stop all threads. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00275">275</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00310">310</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__tpool__manager_8c_a0069d43a4038c462a2bfb536831273dc_cgraph.png" border="0" usemap="#event__tpool__manager_8c_a0069d43a4038c462a2bfb536831273dc_cgraph" alt=""/></div>
 <map name="event__tpool__manager_8c_a0069d43a4038c462a2bfb536831273dc_cgraph" id="event__tpool__manager_8c_a0069d43a4038c462a2bfb536831273dc_cgraph">
-<area shape="rect" id="node2" href="event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="225,89,369,131"/>
-<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="417,89,548,131"/>
-<area shape="rect" id="node4" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="596,89,727,131"/>
-<area shape="rect" id="node5" href="event__tpool__manager_8c.html#a259c40f9059402226bac41ae81127bcb" title="free fddata " alt="" coords="775,71,956,98"/>
-<area shape="rect" id="node11" href="event__thread_8c.html#a0be047b5d8ab4bae6aba5d4df09a518d" title="stop thread " alt="" coords="784,122,947,149"/>
-<area shape="rect" id="node6" href="event__tpool__manager_8c.html#a1686f655fde8aa6eca53bf038dca7b72" title="event_tpoll_get_far\l_right_bit_index" alt="" coords="1037,5,1166,47"/>
-<area shape="rect" id="node7" href="event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="1024,71,1179,98"/>
-<area shape="rect" id="node8" href="event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="1247,71,1433,98"/>
-<area shape="rect" id="node9" href="event__thread_8c.html#a214b6fb1d36c48d97608575991d3fc99" title="event_thread_msg_send" alt="" coords="1481,63,1644,90"/>
-<area shape="rect" id="node10" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="1497,115,1628,156"/>
-<area shape="rect" id="node12" href="event__thread_8c.html#ac3f6d6b2a6ac043ef46afba66cae53be" title="event_thread_msg_send_stop" alt="" coords="1004,122,1199,149"/>
-<area shape="rect" id="node13" href="event__thread_8c.html#afadcb40d877e9fafd0f25d6bb59218c9" title="event_thread_msg_send\l_without_lock" alt="" coords="1259,173,1421,215"/>
+<area shape="rect" id="node2" href="event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="225,123,369,164"/>
+<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="417,123,548,164"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="596,123,727,164"/>
+<area shape="rect" id="node5" href="event__tpool__manager_8c.html#a259c40f9059402226bac41ae81127bcb" title="free fddata " alt="" coords="775,102,956,129"/>
+<area shape="rect" id="node13" href="event__thread_8c.html#a0be047b5d8ab4bae6aba5d4df09a518d" title="stop thread " alt="" coords="784,157,947,183"/>
+<area shape="rect" id="node6" href="event__tpool__manager_8c.html#a0551192cc3e2b7069c879d8431855dc4" title="event_tpool_free_fddata" alt="" coords="1023,101,1180,127"/>
+<area shape="rect" id="node7" href="event__tpool__manager_8c.html#a9b7cda5e42c0a8d7cc3e233f91c90a52" title="event_tpoll_get_far\l_right_bit_index" alt="" coords="1263,5,1393,47"/>
+<area shape="rect" id="node8" href="event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="1251,71,1405,98"/>
+<area shape="rect" id="node12" href="event__tpool__manager_8c.html#a1df711f4e7aca3f56eb3ecaee3352b6f" title="event_tpool_thread\l_unset_fds" alt="" coords="1263,123,1393,164"/>
+<area shape="rect" id="node9" href="event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="1457,86,1644,113"/>
+<area shape="rect" id="node10" href="event__thread_8c.html#a62519e37130fbee3f3e58d95320400fe" title="event_thread_msg_send" alt="" coords="1692,86,1855,113"/>
+<area shape="rect" id="node11" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="1708,152,1839,193"/>
+<area shape="rect" id="node14" href="event__thread_8c.html#ac3f6d6b2a6ac043ef46afba66cae53be" title="event_thread_msg_send_stop" alt="" coords="1004,189,1199,215"/>
+<area shape="rect" id="node15" href="event__thread_8c.html#a44ca7a55e1da5b4b0ce40260e13e94da" title="event_thread_msg_send\l_without_lock" alt="" coords="1247,240,1409,281"/>
 </map>
 </div>
 
@@ -733,23 +1019,25 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00193">193</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00228">228</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__tpool__manager_8c_ad70cd307522bccbd1c91bae67f3ada23_cgraph.png" border="0" usemap="#event__tpool__manager_8c_ad70cd307522bccbd1c91bae67f3ada23_cgraph" alt=""/></div>
 <map name="event__tpool__manager_8c_ad70cd307522bccbd1c91bae67f3ada23_cgraph" id="event__tpool__manager_8c_ad70cd307522bccbd1c91bae67f3ada23_cgraph">
-<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="197,89,328,131"/>
-<area shape="rect" id="node3" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="376,89,507,131"/>
-<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a259c40f9059402226bac41ae81127bcb" title="free fddata " alt="" coords="555,71,736,98"/>
-<area shape="rect" id="node10" href="event__thread_8c.html#a0be047b5d8ab4bae6aba5d4df09a518d" title="stop thread " alt="" coords="564,122,727,149"/>
-<area shape="rect" id="node5" href="event__tpool__manager_8c.html#a1686f655fde8aa6eca53bf038dca7b72" title="event_tpoll_get_far\l_right_bit_index" alt="" coords="817,5,946,47"/>
-<area shape="rect" id="node6" href="event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="804,71,959,98"/>
-<area shape="rect" id="node7" href="event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="1027,71,1213,98"/>
-<area shape="rect" id="node8" href="event__thread_8c.html#a214b6fb1d36c48d97608575991d3fc99" title="event_thread_msg_send" alt="" coords="1261,63,1424,90"/>
-<area shape="rect" id="node9" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="1277,115,1408,156"/>
-<area shape="rect" id="node11" href="event__thread_8c.html#ac3f6d6b2a6ac043ef46afba66cae53be" title="event_thread_msg_send_stop" alt="" coords="784,122,979,149"/>
-<area shape="rect" id="node12" href="event__thread_8c.html#afadcb40d877e9fafd0f25d6bb59218c9" title="event_thread_msg_send\l_without_lock" alt="" coords="1039,173,1201,215"/>
+<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="197,123,328,164"/>
+<area shape="rect" id="node3" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="376,123,507,164"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a259c40f9059402226bac41ae81127bcb" title="free fddata " alt="" coords="555,102,736,129"/>
+<area shape="rect" id="node12" href="event__thread_8c.html#a0be047b5d8ab4bae6aba5d4df09a518d" title="stop thread " alt="" coords="564,157,727,183"/>
+<area shape="rect" id="node5" href="event__tpool__manager_8c.html#a0551192cc3e2b7069c879d8431855dc4" title="event_tpool_free_fddata" alt="" coords="803,101,960,127"/>
+<area shape="rect" id="node6" href="event__tpool__manager_8c.html#a9b7cda5e42c0a8d7cc3e233f91c90a52" title="event_tpoll_get_far\l_right_bit_index" alt="" coords="1043,5,1173,47"/>
+<area shape="rect" id="node7" href="event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="1031,71,1185,98"/>
+<area shape="rect" id="node11" href="event__tpool__manager_8c.html#a1df711f4e7aca3f56eb3ecaee3352b6f" title="event_tpool_thread\l_unset_fds" alt="" coords="1043,123,1173,164"/>
+<area shape="rect" id="node8" href="event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="1237,86,1424,113"/>
+<area shape="rect" id="node9" href="event__thread_8c.html#a62519e37130fbee3f3e58d95320400fe" title="event_thread_msg_send" alt="" coords="1472,86,1635,113"/>
+<area shape="rect" id="node10" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="1488,152,1619,193"/>
+<area shape="rect" id="node13" href="event__thread_8c.html#ac3f6d6b2a6ac043ef46afba66cae53be" title="event_thread_msg_send_stop" alt="" coords="784,189,979,215"/>
+<area shape="rect" id="node14" href="event__thread_8c.html#a44ca7a55e1da5b4b0ce40260e13e94da" title="event_thread_msg_send\l_without_lock" alt="" coords="1027,240,1189,281"/>
 </map>
 </div>
 <div class="dynheader">
@@ -758,7 +1046,8 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="event__tpool__manager_8c_ad70cd307522bccbd1c91bae67f3ada23_icgraph.png" border="0" usemap="#event__tpool__manager_8c_ad70cd307522bccbd1c91bae67f3ada23_icgraph" alt=""/></div>
 <map name="event__tpool__manager_8c_ad70cd307522bccbd1c91bae67f3ada23_icgraph" id="event__tpool__manager_8c_ad70cd307522bccbd1c91bae67f3ada23_icgraph">
 <area shape="rect" id="node2" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="197,5,372,32"/>
-<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="199,56,371,83"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="199,56,371,83"/>
+<area shape="rect" id="node3" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="420,5,471,32"/>
 </map>
 </div>
 
@@ -788,13 +1077,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00199">199</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00234">234</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__tpool__manager_8c_a68eaf66eb7ba7d15f8f063a58a8a52e1_icgraph.png" border="0" usemap="#event__tpool__manager_8c_a68eaf66eb7ba7d15f8f063a58a8a52e1_icgraph" alt=""/></div>
 <map name="event__tpool__manager_8c_a68eaf66eb7ba7d15f8f063a58a8a52e1_icgraph" id="event__tpool__manager_8c_a68eaf66eb7ba7d15f8f063a58a8a52e1_icgraph">
 <area shape="rect" id="node2" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="207,13,381,39"/>
+<area shape="rect" id="node3" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="429,13,480,39"/>
 </map>
 </div>
 
@@ -831,7 +1121,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00287">287</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00322">322</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 
 </div>
 </div>
@@ -871,49 +1161,61 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>when call it, start thread which has event_base struct. Those threads pool event fd, and call event function. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00234">234</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00269">269</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__tpool__manager_8c_a69e71ca384843a4db2b755bd7913e3d6_cgraph.png" border="0" usemap="#event__tpool__manager_8c_a69e71ca384843a4db2b755bd7913e3d6_cgraph" alt=""/></div>
 <map name="event__tpool__manager_8c_a69e71ca384843a4db2b755bd7913e3d6_cgraph" id="event__tpool__manager_8c_a69e71ca384843a4db2b755bd7913e3d6_cgraph">
-<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a68eaf66eb7ba7d15f8f063a58a8a52e1" title="event_tpool_manager\l_get_default_thrednum" alt="" coords="228,203,381,245"/>
-<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a67ac16d5d7417a3365bb9cf776ff7a07" title="new thread info " alt="" coords="239,269,370,310"/>
-<area shape="rect" id="node28" href="event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="233,379,377,421"/>
-<area shape="rect" id="node4" href="event__thread_8c.html#a434dd62b37638e31577b13671dee5976" title="create and thread instance " alt="" coords="429,276,589,303"/>
-<area shape="rect" id="node19" href="event__tpool__manager_8c.html#a762bca81a6ac647786e364e0fe6f7d0e" title="start thread " alt="" coords="444,210,575,251"/>
-<area shape="rect" id="node5" href="event__thread_8c.html#a32733e959c729cb360f17b65233de0d2" title="set event_base " alt="" coords="841,269,972,310"/>
-<area shape="rect" id="node6" href="event__if_8h.html#af8a56a181a4441abd338686d7c47768e" title="event new " alt="" coords="1095,407,1190,433"/>
-<area shape="rect" id="node9" href="event__thread_8c.html#a58658c7e7bbf5ca5861d2192bfd93096" title="callback main " alt="" coords="1067,251,1218,277"/>
-<area shape="rect" id="node12" href="event__if_8h.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="1096,305,1189,332"/>
-<area shape="rect" id="node15" href="event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="1310,174,1453,215"/>
-<area shape="rect" id="node7" href="event__if__epoll_8c.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="1335,457,1428,484"/>
-<area shape="rect" id="node8" href="event__if__select_8c.html#a493269ac94c0f61f809283c2bb1a3f89" title="event_select_reset_fds" alt="" coords="1304,407,1459,433"/>
-<area shape="rect" id="node10" href="event__thread_8c.html#a3aefda8125b91b18060424ceeb38fa1e" title="main messages caller " alt="" coords="1316,239,1447,281"/>
-<area shape="rect" id="node11" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="1539,501,1669,542"/>
-<area shape="rect" id="node13" href="event__if__epoll_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="1298,305,1465,332"/>
-<area shape="rect" id="node14" href="event__if__select_8c.html#a2cc4a722c88d92de302c94ad198258d7" title="event_select_set_fds" alt="" coords="1310,356,1453,383"/>
-<area shape="rect" id="node16" href="event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="1559,127,1649,153"/>
-<area shape="rect" id="node18" href="event__if_8h.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="1557,181,1651,208"/>
-<area shape="rect" id="node17" href="event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="1733,127,1891,153"/>
-<area shape="rect" id="node20" href="event__thread_8c.html#a1ddb76c71f97fc644e1a85f56f106435" title="start thread " alt="" coords="637,149,768,190"/>
-<area shape="rect" id="node21" href="event__thread_8c.html#a49e9bbb821b0195b9ae31b14d93d589d" title="main thread " alt="" coords="824,93,989,120"/>
-<area shape="rect" id="node22" href="event__if_8h.html#aa903a0971a8264153461f01e9438f388" title="main loop of this event " alt="" coords="1095,68,1191,95"/>
-<area shape="rect" id="node25" href="event__if_8h.html#a127eb84ce5fa16fcc7c995021b10308f" title="exit after main loop " alt="" coords="1096,17,1189,44"/>
-<area shape="rect" id="node26" href="event__thread_8c.html#a873727f5dd62d6c5beaad98426202c4d" title="free thread instance, please call stop before calling it " alt="" coords="1063,123,1222,149"/>
-<area shape="rect" id="node23" href="event__if__epoll_8c.html#aebef2021f7498da46220d30b1996552e" title="convert_etpoll_ownid2eve" alt="" coords="1298,5,1465,32"/>
-<area shape="rect" id="node24" href="event__if__select_8c.html#a9babfed521c66c64ecd17f7ce84f1235" title="event_select_get_eventflag\l_from_fds" alt="" coords="1293,57,1469,98"/>
-<area shape="rect" id="node27" href="event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="1292,123,1471,149"/>
-<area shape="rect" id="node29" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="444,470,575,511"/>
-<area shape="rect" id="node30" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="637,517,768,558"/>
-<area shape="rect" id="node31" href="event__tpool__manager_8c.html#a259c40f9059402226bac41ae81127bcb" title="free fddata " alt="" coords="816,608,997,635"/>
-<area shape="rect" id="node36" href="event__thread_8c.html#a0be047b5d8ab4bae6aba5d4df09a518d" title="stop thread " alt="" coords="825,524,988,551"/>
-<area shape="rect" id="node32" href="event__tpool__manager_8c.html#a1686f655fde8aa6eca53bf038dca7b72" title="event_tpoll_get_far\l_right_bit_index" alt="" coords="1078,659,1207,701"/>
-<area shape="rect" id="node33" href="event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="1065,608,1220,635"/>
-<area shape="rect" id="node34" href="event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="1288,625,1475,652"/>
-<area shape="rect" id="node35" href="event__thread_8c.html#a214b6fb1d36c48d97608575991d3fc99" title="event_thread_msg_send" alt="" coords="1523,625,1685,652"/>
-<area shape="rect" id="node37" href="event__thread_8c.html#ac3f6d6b2a6ac043ef46afba66cae53be" title="event_thread_msg_send_stop" alt="" coords="1045,524,1240,551"/>
-<area shape="rect" id="node38" href="event__thread_8c.html#afadcb40d877e9fafd0f25d6bb59218c9" title="event_thread_msg_send\l_without_lock" alt="" coords="1300,559,1463,601"/>
+<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a68eaf66eb7ba7d15f8f063a58a8a52e1" title="event_tpool_manager\l_get_default_thrednum" alt="" coords="228,278,381,319"/>
+<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a67ac16d5d7417a3365bb9cf776ff7a07" title="new thread info " alt="" coords="239,343,370,385"/>
+<area shape="rect" id="node30" href="event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="233,447,377,489"/>
+<area shape="rect" id="node4" href="event__thread_8c.html#a434dd62b37638e31577b13671dee5976" title="create and thread instance " alt="" coords="429,351,589,377"/>
+<area shape="rect" id="node21" href="event__tpool__manager_8c.html#a762bca81a6ac647786e364e0fe6f7d0e" title="start thread " alt="" coords="444,267,575,309"/>
+<area shape="rect" id="node5" href="event__thread_8c.html#a32733e959c729cb360f17b65233de0d2" title="set event_base " alt="" coords="1077,343,1208,385"/>
+<area shape="rect" id="node6" href="event__if_8h.html#af8a56a181a4441abd338686d7c47768e" title="event new " alt="" coords="1330,376,1425,403"/>
+<area shape="rect" id="node9" href="event__thread_8c.html#a25cb5e69a065c9fc3409460cdb8f5324" title="callback main " alt="" coords="1302,456,1453,483"/>
+<area shape="rect" id="node12" href="event__if_8h.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="1331,300,1424,327"/>
+<area shape="rect" id="node17" href="event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="1306,174,1449,215"/>
+<area shape="rect" id="node7" href="event__if__epoll_8c.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="1561,376,1655,403"/>
+<area shape="rect" id="node8" href="event__if__select_8c.html#a493269ac94c0f61f809283c2bb1a3f89" title="event_select_reset_fds" alt="" coords="1531,427,1685,453"/>
+<area shape="rect" id="node10" href="event__thread_8c.html#a3aefda8125b91b18060424ceeb38fa1e" title="main messages caller " alt="" coords="1543,478,1673,519"/>
+<area shape="rect" id="node11" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="1767,537,1898,578"/>
+<area shape="rect" id="node13" href="event__if__epoll_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="1525,325,1691,352"/>
+<area shape="rect" id="node14" href="event__if__libevent_8c.html#a7612123e0f293e4b76e7a948d1e12060" title="event_if_libevent_callback" alt="" coords="1523,224,1693,251"/>
+<area shape="rect" id="node16" href="event__if__select_8c.html#a2cc4a722c88d92de302c94ad198258d7" title="event_select_set_fds" alt="" coords="1537,275,1679,301"/>
+<area shape="rect" id="node15" href="event__if__libevent_8c.html#af6a4a73563d9ead4fd2f8a5a8484abb8" title="convert_etpoll_own2eveid" alt="" coords="1749,224,1916,251"/>
+<area shape="rect" id="node18" href="event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="1563,123,1653,149"/>
+<area shape="rect" id="node20" href="event__if_8h.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="1561,173,1655,200"/>
+<area shape="rect" id="node19" href="event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="1754,123,1911,149"/>
+<area shape="rect" id="node22" href="event__thread_8c.html#a1ddb76c71f97fc644e1a85f56f106435" title="start thread " alt="" coords="637,149,768,190"/>
+<area shape="rect" id="node23" href="event__thread_8c.html#a49e9bbb821b0195b9ae31b14d93d589d" title="main thread " alt="" coords="824,148,989,175"/>
+<area shape="rect" id="node24" href="event__if_8h.html#aa903a0971a8264153461f01e9438f388" title="main loop of this event " alt="" coords="1095,64,1191,91"/>
+<area shape="rect" id="node27" href="event__if_8h.html#a127eb84ce5fa16fcc7c995021b10308f" title="exit after main loop " alt="" coords="1096,123,1189,149"/>
+<area shape="rect" id="node28" href="event__thread_8c.html#a873727f5dd62d6c5beaad98426202c4d" title="free thread instance, please call stop before calling it " alt="" coords="1063,173,1222,200"/>
+<area shape="rect" id="node25" href="event__if__epoll_8c.html#aebef2021f7498da46220d30b1996552e" title="convert_etpoll_ownid2eve" alt="" coords="1294,5,1461,32"/>
+<area shape="rect" id="node26" href="event__if__select_8c.html#a9babfed521c66c64ecd17f7ce84f1235" title="event_select_get_eventflag\l_from_fds" alt="" coords="1289,57,1465,98"/>
+<area shape="rect" id="node29" href="event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="1288,123,1467,149"/>
+<area shape="rect" id="node31" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="444,526,575,567"/>
+<area shape="rect" id="node32" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="637,566,768,607"/>
+<area shape="rect" id="node33" href="event__tpool__manager_8c.html#a259c40f9059402226bac41ae81127bcb" title="free fddata " alt="" coords="816,693,997,720"/>
+<area shape="rect" id="node40" href="event__thread_8c.html#a0be047b5d8ab4bae6aba5d4df09a518d" title="stop thread " alt="" coords="825,573,988,600"/>
+<area shape="rect" id="node34" href="event__tpool__manager_8c.html#a0551192cc3e2b7069c879d8431855dc4" title="event_tpool_free_fddata" alt="" coords="1064,713,1221,740"/>
+<area shape="rect" id="node35" href="event__tpool__manager_8c.html#a9b7cda5e42c0a8d7cc3e233f91c90a52" title="event_tpoll_get_far\l_right_bit_index" alt="" coords="1313,661,1442,702"/>
+<area shape="rect" id="node36" href="event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="1300,792,1455,819"/>
+<area shape="rect" id="node39" href="event__tpool__manager_8c.html#a1df711f4e7aca3f56eb3ecaee3352b6f" title="event_tpool_thread\l_unset_fds" alt="" coords="1312,726,1443,767"/>
+<area shape="rect" id="node37" href="event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="1515,697,1701,724"/>
+<area shape="rect" id="node38" href="event__thread_8c.html#a62519e37130fbee3f3e58d95320400fe" title="event_thread_msg_send" alt="" coords="1751,697,1914,724"/>
+<area shape="rect" id="node41" href="event__thread_8c.html#ac3f6d6b2a6ac043ef46afba66cae53be" title="event_thread_msg_send_stop" alt="" coords="1045,573,1240,600"/>
+<area shape="rect" id="node42" href="event__thread_8c.html#a44ca7a55e1da5b4b0ce40260e13e94da" title="event_thread_msg_send\l_without_lock" alt="" coords="1296,595,1459,637"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="event__tpool__manager_8c_a69e71ca384843a4db2b755bd7913e3d6_icgraph.png" border="0" usemap="#event__tpool__manager_8c_a69e71ca384843a4db2b755bd7913e3d6_icgraph" alt=""/></div>
+<map name="event__tpool__manager_8c_a69e71ca384843a4db2b755bd7913e3d6_icgraph" id="event__tpool__manager_8c_a69e71ca384843a4db2b755bd7913e3d6_icgraph">
+<area shape="rect" id="node2" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="228,5,279,32"/>
 </map>
 </div>
 
@@ -961,14 +1263,14 @@ Here is the call graph for this function:</div>
 
 <p>search insert place, to use event_tpool_thread_insert_thread </p>
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00206">206</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00241">241</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__tpool__manager_8c_a346db2ef971f4225c764d9f0520b4691_cgraph.png" border="0" usemap="#event__tpool__manager_8c_a346db2ef971f4225c764d9f0520b4691_cgraph" alt=""/></div>
 <map name="event__tpool__manager_8c_a346db2ef971f4225c764d9f0520b4691_cgraph" id="event__tpool__manager_8c_a346db2ef971f4225c764d9f0520b4691_cgraph">
 <area shape="rect" id="node2" href="event__tpool__manager_8c.html#a5a5e3e76ce32af7695c02b18f7655316" title="search current setting " alt="" coords="204,5,335,47"/>
-<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a0f0e4c68c1fb23da311b990bafebf083" title="event_tpool_thread\l_is_set_fds" alt="" coords="383,5,513,47"/>
+<area shape="rect" id="node3" href="event__tpool__manager_8c.html#af03f409cbb1a38310d4e4bf622d16380" title="event_tpool_thread\l_is_set_fds" alt="" coords="383,5,513,47"/>
 </map>
 </div>
 <div class="dynheader">
@@ -977,12 +1279,51 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="event__tpool__manager_8c_a346db2ef971f4225c764d9f0520b4691_icgraph.png" border="0" usemap="#event__tpool__manager_8c_a346db2ef971f4225c764d9f0520b4691_icgraph" alt=""/></div>
 <map name="event__tpool__manager_8c_a346db2ef971f4225c764d9f0520b4691_icgraph" id="event__tpool__manager_8c_a346db2ef971f4225c764d9f0520b4691_icgraph">
 <area shape="rect" id="node2" href="event__tpool__manager_8c.html#a834b504d9de1aa7d36b98308833c9268" title="add EventSubscriber to threadpool " alt="" coords="226,5,341,32"/>
-<area shape="rect" id="node5" href="event__tpool__manager_8c.html#afe2e173e9f9b43adb4426431a568fc9e" title="add EventSubscriber to threadpool, if you want to choose thead, please use it. " alt="" coords="204,56,363,83"/>
-<area shape="rect" id="node6" href="event__tpool__manager_8c.html#aca328e76b616e3e3ad400db7b16f3436" title="update EventSubscriber to threadpool. " alt="" coords="217,107,350,133"/>
-<area shape="rect" id="node7" href="event__tpool__manager_8c.html#a6b689e25ea84dbc7df10d970b330e086" title="delete EventSubscriber to threadapool. " alt="" coords="228,157,339,184"/>
-<area shape="rect" id="node3" href="state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="411,21,555,62"/>
-<area shape="rect" id="node4" href="state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="603,72,740,99"/>
-<area shape="rect" id="node8" href="state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="415,107,551,149"/>
+<area shape="rect" id="node7" href="event__tpool__manager_8c.html#afe2e173e9f9b43adb4426431a568fc9e" title="add EventSubscriber to threadpool, if you want to choose thead, please use it. " alt="" coords="204,56,363,83"/>
+<area shape="rect" id="node8" href="event__tpool__manager_8c.html#aca328e76b616e3e3ad400db7b16f3436" title="update EventSubscriber to threadpool. " alt="" coords="217,107,350,133"/>
+<area shape="rect" id="node9" href="event__tpool__manager_8c.html#a6b689e25ea84dbc7df10d970b330e086" title="delete EventSubscriber to threadapool. " alt="" coords="228,157,339,184"/>
+<area shape="rect" id="node3" href="main_8c.html#a2ae22c9da6ba8452a61ab4e69a4930e7" title="add_event_publisher" alt="" coords="413,5,552,32"/>
+<area shape="rect" id="node5" href="state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="411,63,555,105"/>
+<area shape="rect" id="node4" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="646,5,697,32"/>
+<area shape="rect" id="node6" href="state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="603,109,740,136"/>
+<area shape="rect" id="node10" href="state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="415,142,551,183"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad108840f3851594a1ef8e570147800c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad108840f3851594a1ef8e570147800c8">&#9670;&nbsp;</a></span>event_tpool_set_stack_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void event_tpool_set_stack_size </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>stack_size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set thread stack size. </p>
+<p>Default is 256 KByte. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">stack_size</td><td>stack size. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Please call it before calling event_tpool_manager_new. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00453">453</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="event__tpool__manager_8c_ad108840f3851594a1ef8e570147800c8_cgraph.png" border="0" usemap="#event__tpool__manager_8c_ad108840f3851594a1ef8e570147800c8_cgraph" alt=""/></div>
+<map name="event__tpool__manager_8c_ad108840f3851594a1ef8e570147800c8_cgraph" id="event__tpool__manager_8c_ad108840f3851594a1ef8e570147800c8_cgraph">
+<area shape="rect" id="node2" href="event__thread_8c.html#acff8e0f373b2a7a1e477fd1791e35f06" title="event_thread_set_stack_size" alt="" coords="236,5,427,32"/>
 </map>
 </div>
 
@@ -1024,13 +1365,13 @@ Here is the caller graph for this function:</div>
 
 <p>delete thread </p>
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00141">141</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00176">176</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__tpool__manager_8c_a9903ac9eba343bf59858e5fe200ef95f_cgraph.png" border="0" usemap="#event__tpool__manager_8c_a9903ac9eba343bf59858e5fe200ef95f_cgraph" alt=""/></div>
 <map name="event__tpool__manager_8c_a9903ac9eba343bf59858e5fe200ef95f_cgraph" id="event__tpool__manager_8c_a9903ac9eba343bf59858e5fe200ef95f_cgraph">
-<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a13fab681db2100cd21adc02812df9f64" title="event_tpool_thread\l_unset_fds" alt="" coords="184,5,315,47"/>
+<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a1df711f4e7aca3f56eb3ecaee3352b6f" title="event_tpool_thread\l_unset_fds" alt="" coords="184,5,315,47"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1082,13 +1423,13 @@ Here is the caller graph for this function:</div>
 
 <p>search current setting </p>
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00105">105</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00133">133</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__tpool__manager_8c_a5a5e3e76ce32af7695c02b18f7655316_cgraph.png" border="0" usemap="#event__tpool__manager_8c_a5a5e3e76ce32af7695c02b18f7655316_cgraph" alt=""/></div>
 <map name="event__tpool__manager_8c_a5a5e3e76ce32af7695c02b18f7655316_cgraph" id="event__tpool__manager_8c_a5a5e3e76ce32af7695c02b18f7655316_cgraph">
-<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a0f0e4c68c1fb23da311b990bafebf083" title="event_tpool_thread\l_is_set_fds" alt="" coords="184,5,315,47"/>
+<area shape="rect" id="node2" href="event__tpool__manager_8c.html#af03f409cbb1a38310d4e4bf622d16380" title="event_tpool_thread\l_is_set_fds" alt="" coords="184,5,315,47"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1098,12 +1439,14 @@ Here is the caller graph for this function:</div>
 <map name="event__tpool__manager_8c_a5a5e3e76ce32af7695c02b18f7655316_icgraph" id="event__tpool__manager_8c_a5a5e3e76ce32af7695c02b18f7655316_icgraph">
 <area shape="rect" id="node2" href="event__tpool__manager_8c.html#a346db2ef971f4225c764d9f0520b4691" title="search insert place, to use event_tpool_thread_insert_thread " alt="" coords="184,74,335,115"/>
 <area shape="rect" id="node3" href="event__tpool__manager_8c.html#a834b504d9de1aa7d36b98308833c9268" title="add EventSubscriber to threadpool " alt="" coords="405,5,519,32"/>
-<area shape="rect" id="node6" href="event__tpool__manager_8c.html#afe2e173e9f9b43adb4426431a568fc9e" title="add EventSubscriber to threadpool, if you want to choose thead, please use it. " alt="" coords="383,56,541,83"/>
-<area shape="rect" id="node7" href="event__tpool__manager_8c.html#aca328e76b616e3e3ad400db7b16f3436" title="update EventSubscriber to threadpool. " alt="" coords="395,107,529,133"/>
-<area shape="rect" id="node8" href="event__tpool__manager_8c.html#a6b689e25ea84dbc7df10d970b330e086" title="delete EventSubscriber to threadapool. " alt="" coords="407,157,517,184"/>
-<area shape="rect" id="node4" href="state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="589,21,733,62"/>
-<area shape="rect" id="node5" href="state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="781,72,919,99"/>
-<area shape="rect" id="node9" href="state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="593,107,729,149"/>
+<area shape="rect" id="node8" href="event__tpool__manager_8c.html#afe2e173e9f9b43adb4426431a568fc9e" title="add EventSubscriber to threadpool, if you want to choose thead, please use it. " alt="" coords="383,56,541,83"/>
+<area shape="rect" id="node9" href="event__tpool__manager_8c.html#aca328e76b616e3e3ad400db7b16f3436" title="update EventSubscriber to threadpool. " alt="" coords="395,107,529,133"/>
+<area shape="rect" id="node10" href="event__tpool__manager_8c.html#a6b689e25ea84dbc7df10d970b330e086" title="delete EventSubscriber to threadapool. " alt="" coords="407,157,517,184"/>
+<area shape="rect" id="node4" href="main_8c.html#a2ae22c9da6ba8452a61ab4e69a4930e7" title="add_event_publisher" alt="" coords="592,5,731,32"/>
+<area shape="rect" id="node6" href="state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="589,63,733,105"/>
+<area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="825,5,875,32"/>
+<area shape="rect" id="node7" href="state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="781,109,919,136"/>
+<area shape="rect" id="node11" href="state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="593,142,729,183"/>
 </map>
 </div>
 
@@ -1145,22 +1488,24 @@ Here is the caller graph for this function:</div>
 
 <p>free thread info </p>
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00183">183</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00218">218</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__tpool__manager_8c_a7cf93a5056058d80d6e4ccecc2a9adee_cgraph.png" border="0" usemap="#event__tpool__manager_8c_a7cf93a5056058d80d6e4ccecc2a9adee_cgraph" alt=""/></div>
 <map name="event__tpool__manager_8c_a7cf93a5056058d80d6e4ccecc2a9adee_cgraph" id="event__tpool__manager_8c_a7cf93a5056058d80d6e4ccecc2a9adee_cgraph">
-<area shape="rect" id="node2" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="184,89,315,131"/>
-<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a259c40f9059402226bac41ae81127bcb" title="free fddata " alt="" coords="363,71,544,98"/>
-<area shape="rect" id="node9" href="event__thread_8c.html#a0be047b5d8ab4bae6aba5d4df09a518d" title="stop thread " alt="" coords="372,122,535,149"/>
-<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a1686f655fde8aa6eca53bf038dca7b72" title="event_tpoll_get_far\l_right_bit_index" alt="" coords="625,5,754,47"/>
-<area shape="rect" id="node5" href="event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="612,71,767,98"/>
-<area shape="rect" id="node6" href="event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="835,71,1021,98"/>
-<area shape="rect" id="node7" href="event__thread_8c.html#a214b6fb1d36c48d97608575991d3fc99" title="event_thread_msg_send" alt="" coords="1069,63,1232,90"/>
-<area shape="rect" id="node8" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="1085,115,1216,156"/>
-<area shape="rect" id="node10" href="event__thread_8c.html#ac3f6d6b2a6ac043ef46afba66cae53be" title="event_thread_msg_send_stop" alt="" coords="592,122,787,149"/>
-<area shape="rect" id="node11" href="event__thread_8c.html#afadcb40d877e9fafd0f25d6bb59218c9" title="event_thread_msg_send\l_without_lock" alt="" coords="847,173,1009,215"/>
+<area shape="rect" id="node2" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="184,123,315,164"/>
+<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a259c40f9059402226bac41ae81127bcb" title="free fddata " alt="" coords="363,102,544,129"/>
+<area shape="rect" id="node11" href="event__thread_8c.html#a0be047b5d8ab4bae6aba5d4df09a518d" title="stop thread " alt="" coords="372,157,535,183"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a0551192cc3e2b7069c879d8431855dc4" title="event_tpool_free_fddata" alt="" coords="611,101,768,127"/>
+<area shape="rect" id="node5" href="event__tpool__manager_8c.html#a9b7cda5e42c0a8d7cc3e233f91c90a52" title="event_tpoll_get_far\l_right_bit_index" alt="" coords="851,5,981,47"/>
+<area shape="rect" id="node6" href="event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="839,71,993,98"/>
+<area shape="rect" id="node10" href="event__tpool__manager_8c.html#a1df711f4e7aca3f56eb3ecaee3352b6f" title="event_tpool_thread\l_unset_fds" alt="" coords="851,123,981,164"/>
+<area shape="rect" id="node7" href="event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="1045,86,1232,113"/>
+<area shape="rect" id="node8" href="event__thread_8c.html#a62519e37130fbee3f3e58d95320400fe" title="event_thread_msg_send" alt="" coords="1280,86,1443,113"/>
+<area shape="rect" id="node9" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="1296,152,1427,193"/>
+<area shape="rect" id="node12" href="event__thread_8c.html#ac3f6d6b2a6ac043ef46afba66cae53be" title="event_thread_msg_send_stop" alt="" coords="592,189,787,215"/>
+<area shape="rect" id="node13" href="event__thread_8c.html#a44ca7a55e1da5b4b0ce40260e13e94da" title="event_thread_msg_send\l_without_lock" alt="" coords="835,240,997,281"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1170,7 +1515,8 @@ Here is the caller graph for this function:</div>
 <map name="event__tpool__manager_8c_a7cf93a5056058d80d6e4ccecc2a9adee_icgraph" id="event__tpool__manager_8c_a7cf93a5056058d80d6e4ccecc2a9adee_icgraph">
 <area shape="rect" id="node2" href="event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="184,23,328,65"/>
 <area shape="rect" id="node3" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="376,5,551,32"/>
-<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="377,56,549,83"/>
+<area shape="rect" id="node5" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="377,56,549,83"/>
+<area shape="rect" id="node4" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="599,5,649,32"/>
 </map>
 </div>
 
@@ -1202,36 +1548,38 @@ Here is the caller graph for this function:</div>
 
 <p>new thread info </p>
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00149">149</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00184">184</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__tpool__manager_8c_a67ac16d5d7417a3365bb9cf776ff7a07_cgraph.png" border="0" usemap="#event__tpool__manager_8c_a67ac16d5d7417a3365bb9cf776ff7a07_cgraph" alt=""/></div>
 <map name="event__tpool__manager_8c_a67ac16d5d7417a3365bb9cf776ff7a07_cgraph" id="event__tpool__manager_8c_a67ac16d5d7417a3365bb9cf776ff7a07_cgraph">
-<area shape="rect" id="node2" href="event__thread_8c.html#a434dd62b37638e31577b13671dee5976" title="create and thread instance " alt="" coords="184,210,344,237"/>
-<area shape="rect" id="node17" href="event__tpool__manager_8c.html#a762bca81a6ac647786e364e0fe6f7d0e" title="start thread " alt="" coords="199,284,329,325"/>
-<area shape="rect" id="node3" href="event__thread_8c.html#a32733e959c729cb360f17b65233de0d2" title="set event_base " alt="" coords="392,165,523,207"/>
+<area shape="rect" id="node2" href="event__thread_8c.html#a434dd62b37638e31577b13671dee5976" title="create and thread instance " alt="" coords="184,269,344,295"/>
+<area shape="rect" id="node19" href="event__tpool__manager_8c.html#a762bca81a6ac647786e364e0fe6f7d0e" title="start thread " alt="" coords="199,343,329,384"/>
+<area shape="rect" id="node3" href="event__thread_8c.html#a32733e959c729cb360f17b65233de0d2" title="set event_base " alt="" coords="392,216,523,257"/>
 <area shape="rect" id="node4" href="event__if_8h.html#af8a56a181a4441abd338686d7c47768e" title="event new " alt="" coords="606,122,701,149"/>
-<area shape="rect" id="node7" href="event__thread_8c.html#a58658c7e7bbf5ca5861d2192bfd93096" title="callback main " alt="" coords="578,42,729,69"/>
+<area shape="rect" id="node7" href="event__thread_8c.html#a25cb5e69a065c9fc3409460cdb8f5324" title="callback main " alt="" coords="578,42,729,69"/>
 <area shape="rect" id="node10" href="event__if_8h.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="607,223,700,250"/>
-<area shape="rect" id="node13" href="event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="1017,259,1159,300"/>
-<area shape="rect" id="node5" href="event__if__epoll_8c.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="821,71,914,98"/>
-<area shape="rect" id="node6" href="event__if__select_8c.html#a493269ac94c0f61f809283c2bb1a3f89" title="event_select_reset_fds" alt="" coords="790,122,945,149"/>
-<area shape="rect" id="node8" href="event__thread_8c.html#a3aefda8125b91b18060424ceeb38fa1e" title="main messages caller " alt="" coords="802,5,933,47"/>
-<area shape="rect" id="node9" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="1023,5,1153,47"/>
-<area shape="rect" id="node11" href="event__if__epoll_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="784,223,951,250"/>
-<area shape="rect" id="node12" href="event__if__select_8c.html#a2cc4a722c88d92de302c94ad198258d7" title="event_select_set_fds" alt="" coords="796,274,939,301"/>
-<area shape="rect" id="node14" href="event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="1227,321,1317,347"/>
-<area shape="rect" id="node16" href="event__if_8h.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="1225,266,1319,293"/>
-<area shape="rect" id="node15" href="event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="1367,321,1524,347"/>
-<area shape="rect" id="node18" href="event__thread_8c.html#a1ddb76c71f97fc644e1a85f56f106435" title="start thread " alt="" coords="392,331,523,372"/>
-<area shape="rect" id="node19" href="event__thread_8c.html#a49e9bbb821b0195b9ae31b14d93d589d" title="main thread " alt="" coords="571,350,736,377"/>
-<area shape="rect" id="node20" href="event__if_8h.html#aa903a0971a8264153461f01e9438f388" title="main loop of this event " alt="" coords="819,426,915,453"/>
-<area shape="rect" id="node23" href="event__if_8h.html#a127eb84ce5fa16fcc7c995021b10308f" title="exit after main loop " alt="" coords="821,375,914,402"/>
-<area shape="rect" id="node24" href="event__thread_8c.html#a873727f5dd62d6c5beaad98426202c4d" title="free thread instance, please call stop before calling it " alt="" coords="788,325,947,351"/>
-<area shape="rect" id="node21" href="event__if__epoll_8c.html#aebef2021f7498da46220d30b1996552e" title="convert_etpoll_ownid2eve" alt="" coords="1005,463,1171,490"/>
-<area shape="rect" id="node22" href="event__if__select_8c.html#a9babfed521c66c64ecd17f7ce84f1235" title="event_select_get_eventflag\l_from_fds" alt="" coords="1000,397,1176,439"/>
-<area shape="rect" id="node25" href="event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="999,325,1177,351"/>
+<area shape="rect" id="node15" href="event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="1021,313,1163,355"/>
+<area shape="rect" id="node5" href="event__if__epoll_8c.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="823,122,916,149"/>
+<area shape="rect" id="node6" href="event__if__select_8c.html#a493269ac94c0f61f809283c2bb1a3f89" title="event_select_reset_fds" alt="" coords="792,71,947,98"/>
+<area shape="rect" id="node8" href="event__thread_8c.html#a3aefda8125b91b18060424ceeb38fa1e" title="main messages caller " alt="" coords="804,5,935,47"/>
+<area shape="rect" id="node9" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="1027,5,1157,47"/>
+<area shape="rect" id="node11" href="event__if__epoll_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="786,223,953,250"/>
+<area shape="rect" id="node12" href="event__if__libevent_8c.html#a7612123e0f293e4b76e7a948d1e12060" title="event_if_libevent_callback" alt="" coords="784,173,955,199"/>
+<area shape="rect" id="node14" href="event__if__select_8c.html#a2cc4a722c88d92de302c94ad198258d7" title="event_select_set_fds" alt="" coords="798,274,941,301"/>
+<area shape="rect" id="node13" href="event__if__libevent_8c.html#af6a4a73563d9ead4fd2f8a5a8484abb8" title="convert_etpoll_own2eveid" alt="" coords="1009,173,1175,199"/>
+<area shape="rect" id="node16" href="event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="1231,375,1321,402"/>
+<area shape="rect" id="node18" href="event__if_8h.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="1229,321,1323,347"/>
+<area shape="rect" id="node17" href="event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="1371,375,1528,402"/>
+<area shape="rect" id="node20" href="event__thread_8c.html#a1ddb76c71f97fc644e1a85f56f106435" title="start thread " alt="" coords="392,389,523,431"/>
+<area shape="rect" id="node21" href="event__thread_8c.html#a49e9bbb821b0195b9ae31b14d93d589d" title="main thread " alt="" coords="571,409,736,435"/>
+<area shape="rect" id="node22" href="event__if_8h.html#aa903a0971a8264153461f01e9438f388" title="main loop of this event " alt="" coords="821,434,917,461"/>
+<area shape="rect" id="node25" href="event__if_8h.html#a127eb84ce5fa16fcc7c995021b10308f" title="exit after main loop " alt="" coords="823,485,916,511"/>
+<area shape="rect" id="node26" href="event__thread_8c.html#a873727f5dd62d6c5beaad98426202c4d" title="free thread instance, please call stop before calling it " alt="" coords="790,379,949,406"/>
+<area shape="rect" id="node23" href="event__if__epoll_8c.html#aebef2021f7498da46220d30b1996552e" title="convert_etpoll_ownid2eve" alt="" coords="1009,497,1175,523"/>
+<area shape="rect" id="node24" href="event__if__select_8c.html#a9babfed521c66c64ecd17f7ce84f1235" title="event_select_get_eventflag\l_from_fds" alt="" coords="1004,431,1180,472"/>
+<area shape="rect" id="node27" href="event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="1003,379,1181,406"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1240,6 +1588,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="event__tpool__manager_8c_a67ac16d5d7417a3365bb9cf776ff7a07_icgraph.png" border="0" usemap="#event__tpool__manager_8c_a67ac16d5d7417a3365bb9cf776ff7a07_icgraph" alt=""/></div>
 <map name="event__tpool__manager_8c_a67ac16d5d7417a3365bb9cf776ff7a07_icgraph" id="event__tpool__manager_8c_a67ac16d5d7417a3365bb9cf776ff7a07_icgraph">
 <area shape="rect" id="node2" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="184,13,359,39"/>
+<area shape="rect" id="node3" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="407,13,457,39"/>
 </map>
 </div>
 
@@ -1271,7 +1620,7 @@ Here is the caller graph for this function:</div>
 
 <p>start thread </p>
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00128">128</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00163">163</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1298,6 +1647,7 @@ Here is the caller graph for this function:</div>
 <map name="event__tpool__manager_8c_a762bca81a6ac647786e364e0fe6f7d0e_icgraph" id="event__tpool__manager_8c_a762bca81a6ac647786e364e0fe6f7d0e_icgraph">
 <area shape="rect" id="node2" href="event__tpool__manager_8c.html#a67ac16d5d7417a3365bb9cf776ff7a07" title="new thread info " alt="" coords="184,5,315,47"/>
 <area shape="rect" id="node3" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="363,13,537,39"/>
+<area shape="rect" id="node4" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="585,13,636,39"/>
 </map>
 </div>
 
@@ -1329,21 +1679,23 @@ Here is the caller graph for this function:</div>
 
 <p>stop thread </p>
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00133">133</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00168">168</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__tpool__manager_8c_aae7d565f13186b2d3ee76d81f25108c0_cgraph.png" border="0" usemap="#event__tpool__manager_8c_aae7d565f13186b2d3ee76d81f25108c0_cgraph" alt=""/></div>
 <map name="event__tpool__manager_8c_aae7d565f13186b2d3ee76d81f25108c0_cgraph" id="event__tpool__manager_8c_aae7d565f13186b2d3ee76d81f25108c0_cgraph">
-<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a259c40f9059402226bac41ae81127bcb" title="free fddata " alt="" coords="184,71,365,98"/>
-<area shape="rect" id="node8" href="event__thread_8c.html#a0be047b5d8ab4bae6aba5d4df09a518d" title="stop thread " alt="" coords="193,122,356,149"/>
-<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a1686f655fde8aa6eca53bf038dca7b72" title="event_tpoll_get_far\l_right_bit_index" alt="" coords="446,5,575,47"/>
-<area shape="rect" id="node4" href="event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="433,71,588,98"/>
-<area shape="rect" id="node5" href="event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="656,71,843,98"/>
-<area shape="rect" id="node6" href="event__thread_8c.html#a214b6fb1d36c48d97608575991d3fc99" title="event_thread_msg_send" alt="" coords="891,63,1053,90"/>
-<area shape="rect" id="node7" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="907,115,1037,156"/>
-<area shape="rect" id="node9" href="event__thread_8c.html#ac3f6d6b2a6ac043ef46afba66cae53be" title="event_thread_msg_send_stop" alt="" coords="413,122,608,149"/>
-<area shape="rect" id="node10" href="event__thread_8c.html#afadcb40d877e9fafd0f25d6bb59218c9" title="event_thread_msg_send\l_without_lock" alt="" coords="668,173,831,215"/>
+<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a259c40f9059402226bac41ae81127bcb" title="free fddata " alt="" coords="184,102,365,129"/>
+<area shape="rect" id="node10" href="event__thread_8c.html#a0be047b5d8ab4bae6aba5d4df09a518d" title="stop thread " alt="" coords="193,157,356,183"/>
+<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a0551192cc3e2b7069c879d8431855dc4" title="event_tpool_free_fddata" alt="" coords="432,101,589,127"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a9b7cda5e42c0a8d7cc3e233f91c90a52" title="event_tpoll_get_far\l_right_bit_index" alt="" coords="673,5,802,47"/>
+<area shape="rect" id="node5" href="event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="660,71,815,98"/>
+<area shape="rect" id="node9" href="event__tpool__manager_8c.html#a1df711f4e7aca3f56eb3ecaee3352b6f" title="event_tpool_thread\l_unset_fds" alt="" coords="672,123,803,164"/>
+<area shape="rect" id="node6" href="event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="867,86,1053,113"/>
+<area shape="rect" id="node7" href="event__thread_8c.html#a62519e37130fbee3f3e58d95320400fe" title="event_thread_msg_send" alt="" coords="1101,86,1264,113"/>
+<area shape="rect" id="node8" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="1117,152,1248,193"/>
+<area shape="rect" id="node11" href="event__thread_8c.html#ac3f6d6b2a6ac043ef46afba66cae53be" title="event_thread_msg_send_stop" alt="" coords="413,189,608,215"/>
+<area shape="rect" id="node12" href="event__thread_8c.html#a44ca7a55e1da5b4b0ce40260e13e94da" title="event_thread_msg_send\l_without_lock" alt="" coords="656,240,819,281"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1354,7 +1706,8 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node2" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="184,23,315,65"/>
 <area shape="rect" id="node3" href="event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="363,23,507,65"/>
 <area shape="rect" id="node4" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="555,5,729,32"/>
-<area shape="rect" id="node5" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="556,56,728,83"/>
+<area shape="rect" id="node6" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="556,56,728,83"/>
+<area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="777,5,828,32"/>
 </map>
 </div>
 
@@ -1394,13 +1747,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00100">100</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00128">128</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__tpool__manager_8c_a8b18d56328a59d77f6f6b052b4d2a8ca_cgraph.png" border="0" usemap="#event__tpool__manager_8c_a8b18d56328a59d77f6f6b052b4d2a8ca_cgraph" alt=""/></div>
 <map name="event__tpool__manager_8c_a8b18d56328a59d77f6f6b052b4d2a8ca_cgraph" id="event__tpool__manager_8c_a8b18d56328a59d77f6f6b052b4d2a8ca_cgraph">
-<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a1d5451bcbbff33d75afbbdb8c823e354" title="event_tpool_thread\l_set_fds" alt="" coords="184,5,315,47"/>
+<area shape="rect" id="node2" href="event__tpool__manager_8c.html#acfcd31605ce33caaeb3bdb508a188d04" title="event_tpool_thread\l_set_fds" alt="" coords="184,5,315,47"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1408,17 +1761,19 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__tpool__manager_8c_a8b18d56328a59d77f6f6b052b4d2a8ca_icgraph.png" border="0" usemap="#event__tpool__manager_8c_a8b18d56328a59d77f6f6b052b4d2a8ca_icgraph" alt=""/></div>
 <map name="event__tpool__manager_8c_a8b18d56328a59d77f6f6b052b4d2a8ca_icgraph" id="event__tpool__manager_8c_a8b18d56328a59d77f6f6b052b4d2a8ca_icgraph">
-<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a834b504d9de1aa7d36b98308833c9268" title="add EventSubscriber to threadpool " alt="" coords="206,13,321,39"/>
-<area shape="rect" id="node5" href="event__tpool__manager_8c.html#afe2e173e9f9b43adb4426431a568fc9e" title="add EventSubscriber to threadpool, if you want to choose thead, please use it. " alt="" coords="184,63,343,90"/>
-<area shape="rect" id="node3" href="state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="391,5,535,47"/>
-<area shape="rect" id="node4" href="state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="583,13,720,39"/>
+<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a834b504d9de1aa7d36b98308833c9268" title="add EventSubscriber to threadpool " alt="" coords="206,35,321,61"/>
+<area shape="rect" id="node7" href="event__tpool__manager_8c.html#afe2e173e9f9b43adb4426431a568fc9e" title="add EventSubscriber to threadpool, if you want to choose thead, please use it. " alt="" coords="184,85,343,112"/>
+<area shape="rect" id="node3" href="main_8c.html#a2ae22c9da6ba8452a61ab4e69a4930e7" title="add_event_publisher" alt="" coords="393,5,532,32"/>
+<area shape="rect" id="node5" href="state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="391,57,535,98"/>
+<area shape="rect" id="node4" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="626,5,677,32"/>
+<area shape="rect" id="node6" href="state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="583,64,720,91"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a0f0e4c68c1fb23da311b990bafebf083"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f0e4c68c1fb23da311b990bafebf083">&#9670;&nbsp;</a></span>event_tpool_thread_is_set_fds()</h2>
+<a id="af03f409cbb1a38310d4e4bf622d16380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af03f409cbb1a38310d4e4bf622d16380">&#9670;&nbsp;</a></span>event_tpool_thread_is_set_fds()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1429,8 +1784,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">static int event_tpool_thread_is_set_fds </td>
           <td>(</td>
-          <td class="paramtype">uint64_t *&#160;</td>
-          <td class="paramname"><em>fds</em>, </td>
+          <td class="paramtype"><a class="el" href="event__threadpool__data_8h.html#ad7c0af45373970a13eda82690e2083af">EventTPoolThreadInfo</a>&#160;</td>
+          <td class="paramname"><em>this</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1451,28 +1806,30 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00095">95</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00118">118</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="event__tpool__manager_8c_a0f0e4c68c1fb23da311b990bafebf083_icgraph.png" border="0" usemap="#event__tpool__manager_8c_a0f0e4c68c1fb23da311b990bafebf083_icgraph" alt=""/></div>
-<map name="event__tpool__manager_8c_a0f0e4c68c1fb23da311b990bafebf083_icgraph" id="event__tpool__manager_8c_a0f0e4c68c1fb23da311b990bafebf083_icgraph">
+<div class="center"><img src="event__tpool__manager_8c_af03f409cbb1a38310d4e4bf622d16380_icgraph.png" border="0" usemap="#event__tpool__manager_8c_af03f409cbb1a38310d4e4bf622d16380_icgraph" alt=""/></div>
+<map name="event__tpool__manager_8c_af03f409cbb1a38310d4e4bf622d16380_icgraph" id="event__tpool__manager_8c_af03f409cbb1a38310d4e4bf622d16380_icgraph">
 <area shape="rect" id="node2" href="event__tpool__manager_8c.html#a5a5e3e76ce32af7695c02b18f7655316" title="search current setting " alt="" coords="184,74,315,115"/>
 <area shape="rect" id="node3" href="event__tpool__manager_8c.html#a346db2ef971f4225c764d9f0520b4691" title="search insert place, to use event_tpool_thread_insert_thread " alt="" coords="363,74,513,115"/>
 <area shape="rect" id="node4" href="event__tpool__manager_8c.html#a834b504d9de1aa7d36b98308833c9268" title="add EventSubscriber to threadpool " alt="" coords="583,5,698,32"/>
-<area shape="rect" id="node7" href="event__tpool__manager_8c.html#afe2e173e9f9b43adb4426431a568fc9e" title="add EventSubscriber to threadpool, if you want to choose thead, please use it. " alt="" coords="561,56,720,83"/>
-<area shape="rect" id="node8" href="event__tpool__manager_8c.html#aca328e76b616e3e3ad400db7b16f3436" title="update EventSubscriber to threadpool. " alt="" coords="574,107,707,133"/>
-<area shape="rect" id="node9" href="event__tpool__manager_8c.html#a6b689e25ea84dbc7df10d970b330e086" title="delete EventSubscriber to threadapool. " alt="" coords="585,157,696,184"/>
-<area shape="rect" id="node5" href="state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="768,21,912,62"/>
-<area shape="rect" id="node6" href="state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="960,72,1097,99"/>
-<area shape="rect" id="node10" href="state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="772,107,908,149"/>
+<area shape="rect" id="node9" href="event__tpool__manager_8c.html#afe2e173e9f9b43adb4426431a568fc9e" title="add EventSubscriber to threadpool, if you want to choose thead, please use it. " alt="" coords="561,56,720,83"/>
+<area shape="rect" id="node10" href="event__tpool__manager_8c.html#aca328e76b616e3e3ad400db7b16f3436" title="update EventSubscriber to threadpool. " alt="" coords="574,107,707,133"/>
+<area shape="rect" id="node11" href="event__tpool__manager_8c.html#a6b689e25ea84dbc7df10d970b330e086" title="delete EventSubscriber to threadapool. " alt="" coords="585,157,696,184"/>
+<area shape="rect" id="node5" href="main_8c.html#a2ae22c9da6ba8452a61ab4e69a4930e7" title="add_event_publisher" alt="" coords="771,5,909,32"/>
+<area shape="rect" id="node7" href="state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="768,63,912,105"/>
+<area shape="rect" id="node6" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1003,5,1054,32"/>
+<area shape="rect" id="node8" href="state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="960,109,1097,136"/>
+<area shape="rect" id="node12" href="state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="772,142,908,183"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a1d5451bcbbff33d75afbbdb8c823e354"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d5451bcbbff33d75afbbdb8c823e354">&#9670;&nbsp;</a></span>event_tpool_thread_set_fds()</h2>
+<a id="acfcd31605ce33caaeb3bdb508a188d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfcd31605ce33caaeb3bdb508a188d04">&#9670;&nbsp;</a></span>event_tpool_thread_set_fds()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1483,8 +1840,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">static void event_tpool_thread_set_fds </td>
           <td>(</td>
-          <td class="paramtype">uint64_t *&#160;</td>
-          <td class="paramname"><em>fds</em>, </td>
+          <td class="paramtype"><a class="el" href="event__threadpool__data_8h.html#ad7c0af45373970a13eda82690e2083af">EventTPoolThreadInfo</a>&#160;</td>
+          <td class="paramname"><em>this</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1505,24 +1862,26 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00087">87</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00103">103</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="event__tpool__manager_8c_a1d5451bcbbff33d75afbbdb8c823e354_icgraph.png" border="0" usemap="#event__tpool__manager_8c_a1d5451bcbbff33d75afbbdb8c823e354_icgraph" alt=""/></div>
-<map name="event__tpool__manager_8c_a1d5451bcbbff33d75afbbdb8c823e354_icgraph" id="event__tpool__manager_8c_a1d5451bcbbff33d75afbbdb8c823e354_icgraph">
-<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a8b18d56328a59d77f6f6b052b4d2a8ca" title="event_tpool_thread\l_insert_fddata" alt="" coords="184,31,315,72"/>
-<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a834b504d9de1aa7d36b98308833c9268" title="add EventSubscriber to threadpool " alt="" coords="385,13,499,39"/>
-<area shape="rect" id="node6" href="event__tpool__manager_8c.html#afe2e173e9f9b43adb4426431a568fc9e" title="add EventSubscriber to threadpool, if you want to choose thead, please use it. " alt="" coords="363,63,521,90"/>
-<area shape="rect" id="node4" href="state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="569,5,713,47"/>
-<area shape="rect" id="node5" href="state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="761,13,899,39"/>
+<div class="center"><img src="event__tpool__manager_8c_acfcd31605ce33caaeb3bdb508a188d04_icgraph.png" border="0" usemap="#event__tpool__manager_8c_acfcd31605ce33caaeb3bdb508a188d04_icgraph" alt=""/></div>
+<map name="event__tpool__manager_8c_acfcd31605ce33caaeb3bdb508a188d04_icgraph" id="event__tpool__manager_8c_acfcd31605ce33caaeb3bdb508a188d04_icgraph">
+<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a8b18d56328a59d77f6f6b052b4d2a8ca" title="event_tpool_thread\l_insert_fddata" alt="" coords="184,53,315,94"/>
+<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a834b504d9de1aa7d36b98308833c9268" title="add EventSubscriber to threadpool " alt="" coords="385,35,499,61"/>
+<area shape="rect" id="node8" href="event__tpool__manager_8c.html#afe2e173e9f9b43adb4426431a568fc9e" title="add EventSubscriber to threadpool, if you want to choose thead, please use it. " alt="" coords="363,85,521,112"/>
+<area shape="rect" id="node4" href="main_8c.html#a2ae22c9da6ba8452a61ab4e69a4930e7" title="add_event_publisher" alt="" coords="572,5,711,32"/>
+<area shape="rect" id="node6" href="state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="569,57,713,98"/>
+<area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="805,5,855,32"/>
+<area shape="rect" id="node7" href="state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="761,64,899,91"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a13fab681db2100cd21adc02812df9f64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13fab681db2100cd21adc02812df9f64">&#9670;&nbsp;</a></span>event_tpool_thread_unset_fds()</h2>
+<a id="a1df711f4e7aca3f56eb3ecaee3352b6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1df711f4e7aca3f56eb3ecaee3352b6f">&#9670;&nbsp;</a></span>event_tpool_thread_unset_fds()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1533,8 +1892,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">static void event_tpool_thread_unset_fds </td>
           <td>(</td>
-          <td class="paramtype">uint64_t *&#160;</td>
-          <td class="paramname"><em>fds</em>, </td>
+          <td class="paramtype"><a class="el" href="event__threadpool__data_8h.html#ad7c0af45373970a13eda82690e2083af">EventTPoolThreadInfo</a>&#160;</td>
+          <td class="paramname"><em>this</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1555,16 +1914,24 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00091">91</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00110">110</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="event__tpool__manager_8c_a13fab681db2100cd21adc02812df9f64_icgraph.png" border="0" usemap="#event__tpool__manager_8c_a13fab681db2100cd21adc02812df9f64_icgraph" alt=""/></div>
-<map name="event__tpool__manager_8c_a13fab681db2100cd21adc02812df9f64_icgraph" id="event__tpool__manager_8c_a13fab681db2100cd21adc02812df9f64_icgraph">
-<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a9903ac9eba343bf59858e5fe200ef95f" title="delete thread " alt="" coords="184,5,315,47"/>
-<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a6b689e25ea84dbc7df10d970b330e086" title="delete EventSubscriber to threadapool. " alt="" coords="363,13,473,39"/>
-<area shape="rect" id="node4" href="state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="521,5,657,47"/>
-<area shape="rect" id="node5" href="state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="705,13,843,39"/>
+<div class="center"><img src="event__tpool__manager_8c_a1df711f4e7aca3f56eb3ecaee3352b6f_icgraph.png" border="0" usemap="#event__tpool__manager_8c_a1df711f4e7aca3f56eb3ecaee3352b6f_icgraph" alt=""/></div>
+<map name="event__tpool__manager_8c_a1df711f4e7aca3f56eb3ecaee3352b6f_icgraph" id="event__tpool__manager_8c_a1df711f4e7aca3f56eb3ecaee3352b6f_icgraph">
+<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a0551192cc3e2b7069c879d8431855dc4" title="event_tpool_free_fddata" alt="" coords="184,33,341,60"/>
+<area shape="rect" id="node10" href="event__tpool__manager_8c.html#a9903ac9eba343bf59858e5fe200ef95f" title="delete thread " alt="" coords="197,85,328,126"/>
+<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a259c40f9059402226bac41ae81127bcb" title="free fddata " alt="" coords="389,32,571,59"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="621,23,752,65"/>
+<area shape="rect" id="node5" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="806,23,937,65"/>
+<area shape="rect" id="node6" href="event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="988,23,1132,65"/>
+<area shape="rect" id="node7" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="1180,5,1355,32"/>
+<area shape="rect" id="node9" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="1181,56,1353,83"/>
+<area shape="rect" id="node8" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1403,5,1453,32"/>
+<area shape="rect" id="node11" href="event__tpool__manager_8c.html#a6b689e25ea84dbc7df10d970b330e086" title="delete EventSubscriber to threadapool. " alt="" coords="425,93,535,120"/>
+<area shape="rect" id="node12" href="state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="619,89,755,130"/>
+<area shape="rect" id="node13" href="state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="803,96,940,123"/>
 </map>
 </div>
 
@@ -1631,7 +1998,7 @@ this API doesn't remove other thread's same fd setting. </dd>
 <dd>
 handle will update </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00358">358</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__tpool__manager_8c_source.html#l00394">394</a> of file <a class="el" href="event__tpool__manager_8c_source.html">event_tpool_manager.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1640,10 +2007,10 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node2" href="event__tpool__manager_8c.html#a346db2ef971f4225c764d9f0520b4691" title="search insert place, to use event_tpool_thread_insert_thread " alt="" coords="187,5,337,47"/>
 <area shape="rect" id="node5" href="event__thread_8c.html#ad022ff1199b96796268cc2abb51102d0" title="update subscriber " alt="" coords="197,71,327,112"/>
 <area shape="rect" id="node3" href="event__tpool__manager_8c.html#a5a5e3e76ce32af7695c02b18f7655316" title="search current setting " alt="" coords="401,5,532,47"/>
-<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a0f0e4c68c1fb23da311b990bafebf083" title="event_tpool_thread\l_is_set_fds" alt="" coords="612,5,743,47"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#af03f409cbb1a38310d4e4bf622d16380" title="event_tpool_thread\l_is_set_fds" alt="" coords="612,5,743,47"/>
 <area shape="rect" id="node6" href="event__thread_8c.html#aaf63eb889e0ff85313b5753f59dec3be" title="event_thread_msg_send\l_update" alt="" coords="385,71,548,112"/>
 <area shape="rect" id="node7" href="event__thread_8c.html#a29fc7e7d2086121de80e8d4a8c15fc4e" title="event_thread_msg_send\l_subscribe" alt="" coords="596,71,759,112"/>
-<area shape="rect" id="node8" href="event__thread_8c.html#a214b6fb1d36c48d97608575991d3fc99" title="event_thread_msg_send" alt="" coords="807,49,969,75"/>
+<area shape="rect" id="node8" href="event__thread_8c.html#a62519e37130fbee3f3e58d95320400fe" title="event_thread_msg_send" alt="" coords="807,49,969,75"/>
 <area shape="rect" id="node9" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="823,100,953,141"/>
 </map>
 </div>

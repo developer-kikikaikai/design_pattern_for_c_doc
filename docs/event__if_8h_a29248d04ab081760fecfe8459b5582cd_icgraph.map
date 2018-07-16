@@ -2,11 +2,12 @@
 <area shape="rect" id="node2" href="$event__if__epoll_8c.html#af8a56a181a4441abd338686d7c47768e" title="event new " alt="" coords="171,5,265,32"/>
 <area shape="rect" id="node3" href="$event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="147,57,289,98"/>
 <area shape="rect" id="node4" href="$event__thread_8c.html#a32733e959c729cb360f17b65233de0d2" title="set event_base " alt="" coords="351,27,482,69"/>
-<area shape="rect" id="node8" href="$event__thread_8c.html#a873727f5dd62d6c5beaad98426202c4d" title="free thread instance, please call stop before calling it " alt="" coords="337,93,496,120"/>
+<area shape="rect" id="node9" href="$event__thread_8c.html#a873727f5dd62d6c5beaad98426202c4d" title="free thread instance, please call stop before calling it " alt="" coords="337,93,496,120"/>
 <area shape="rect" id="node5" href="$event__thread_8h.html#a434dd62b37638e31577b13671dee5976" title="create and thread instance " alt="" coords="757,35,917,61"/>
 <area shape="rect" id="node6" href="$event__tpool__manager_8c.html#a67ac16d5d7417a3365bb9cf776ff7a07" title="new thread info " alt="" coords="1144,57,1275,98"/>
 <area shape="rect" id="node7" href="$event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="1323,64,1497,91"/>
-<area shape="rect" id="node9" href="$event__thread_8c.html#a49e9bbb821b0195b9ae31b14d93d589d" title="main thread " alt="" coords="544,93,709,120"/>
-<area shape="rect" id="node10" href="$event__thread_8h.html#a1ddb76c71f97fc644e1a85f56f106435" title="start thread " alt="" coords="772,86,903,127"/>
-<area shape="rect" id="node11" href="$event__tpool__manager_8c.html#a762bca81a6ac647786e364e0fe6f7d0e" title="start thread " alt="" coords="965,86,1096,127"/>
+<area shape="rect" id="node8" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1545,64,1596,91"/>
+<area shape="rect" id="node10" href="$event__thread_8c.html#a49e9bbb821b0195b9ae31b14d93d589d" title="main thread " alt="" coords="544,93,709,120"/>
+<area shape="rect" id="node11" href="$event__thread_8h.html#a1ddb76c71f97fc644e1a85f56f106435" title="start thread " alt="" coords="772,86,903,127"/>
+<area shape="rect" id="node12" href="$event__tpool__manager_8c.html#a762bca81a6ac647786e364e0fe6f7d0e" title="start thread " alt="" coords="965,86,1096,127"/>
 </map>

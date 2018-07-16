@@ -1,7 +1,9 @@
 var searchData=
 [
   ['chain_5felement',['chain_element',['../structchain__element.html',1,'']]],
+  ['chain_5felement_5fdata_5ft',['chain_element_data_t',['../structchain__element__data__t.html',1,'']]],
   ['chain_5felement_5fpart',['chain_element_part',['../structchain__element__part.html',1,'']]],
+  ['chain_5felement_5freq_5ft',['chain_element_req_t',['../structchain__element__req__t.html',1,'']]],
   ['chain_5felement_5ft',['chain_element_t',['../structchain__element__t.html',1,'']]],
   ['chain_5fof_5fresp_5fmng_5ft',['chain_of_resp_mng_t',['../structchain__of__resp__mng__t.html',1,'']]],
   ['chain_5fof_5fresp_5ft',['chain_of_resp_t',['../structchain__of__resp__t.html',1,'']]],

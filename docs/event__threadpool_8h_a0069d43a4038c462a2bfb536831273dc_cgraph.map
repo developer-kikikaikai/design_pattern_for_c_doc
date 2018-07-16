@@ -1,14 +1,16 @@
 <map id="event_tpool_manager_free" name="event_tpool_manager_free">
-<area shape="rect" id="node2" href="$event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="225,89,369,131"/>
-<area shape="rect" id="node3" href="$event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="417,89,548,131"/>
-<area shape="rect" id="node4" href="$event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="596,89,727,131"/>
-<area shape="rect" id="node5" href="$event__tpool__manager_8c.html#a259c40f9059402226bac41ae81127bcb" title="free fddata " alt="" coords="775,71,956,98"/>
-<area shape="rect" id="node11" href="$event__thread_8c.html#a0be047b5d8ab4bae6aba5d4df09a518d" title="stop thread " alt="" coords="784,122,947,149"/>
-<area shape="rect" id="node6" href="$event__tpool__manager_8c.html#a1686f655fde8aa6eca53bf038dca7b72" title="event_tpoll_get_far\l_right_bit_index" alt="" coords="1037,5,1166,47"/>
-<area shape="rect" id="node7" href="$event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="1024,71,1179,98"/>
-<area shape="rect" id="node8" href="$event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="1247,71,1433,98"/>
-<area shape="rect" id="node9" href="$event__thread_8c.html#a214b6fb1d36c48d97608575991d3fc99" title="event_thread_msg_send" alt="" coords="1481,63,1644,90"/>
-<area shape="rect" id="node10" href="$event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="1497,115,1628,156"/>
-<area shape="rect" id="node12" href="$event__thread_8c.html#ac3f6d6b2a6ac043ef46afba66cae53be" title="event_thread_msg_send_stop" alt="" coords="1004,122,1199,149"/>
-<area shape="rect" id="node13" href="$event__thread_8c.html#afadcb40d877e9fafd0f25d6bb59218c9" title="event_thread_msg_send\l_without_lock" alt="" coords="1259,173,1421,215"/>
+<area shape="rect" id="node2" href="$event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="225,123,369,164"/>
+<area shape="rect" id="node3" href="$event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="417,123,548,164"/>
+<area shape="rect" id="node4" href="$event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="596,123,727,164"/>
+<area shape="rect" id="node5" href="$event__tpool__manager_8c.html#a259c40f9059402226bac41ae81127bcb" title="free fddata " alt="" coords="775,102,956,129"/>
+<area shape="rect" id="node13" href="$event__thread_8c.html#a0be047b5d8ab4bae6aba5d4df09a518d" title="stop thread " alt="" coords="784,157,947,183"/>
+<area shape="rect" id="node6" href="$event__tpool__manager_8c.html#a0551192cc3e2b7069c879d8431855dc4" title="event_tpool_free_fddata" alt="" coords="1023,101,1180,127"/>
+<area shape="rect" id="node7" href="$event__tpool__manager_8c.html#a9b7cda5e42c0a8d7cc3e233f91c90a52" title="event_tpoll_get_far\l_right_bit_index" alt="" coords="1263,5,1393,47"/>
+<area shape="rect" id="node8" href="$event__thread_8c.html#aecf6f0b9b1aab74c6d6073b786269bc6" title="delete subscriber " alt="" coords="1251,71,1405,98"/>
+<area shape="rect" id="node12" href="$event__tpool__manager_8c.html#a1df711f4e7aca3f56eb3ecaee3352b6f" title="event_tpool_thread\l_unset_fds" alt="" coords="1263,123,1393,164"/>
+<area shape="rect" id="node9" href="$event__thread_8c.html#a6a67831cc84e660a2c0fb87ae22c85fd" title="event_thread_msg_send_del" alt="" coords="1457,86,1644,113"/>
+<area shape="rect" id="node10" href="$event__thread_8c.html#a62519e37130fbee3f3e58d95320400fe" title="event_thread_msg_send" alt="" coords="1692,86,1855,113"/>
+<area shape="rect" id="node11" href="$event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="1708,152,1839,193"/>
+<area shape="rect" id="node14" href="$event__thread_8c.html#ac3f6d6b2a6ac043ef46afba66cae53be" title="event_thread_msg_send_stop" alt="" coords="1004,189,1199,215"/>
+<area shape="rect" id="node15" href="$event__thread_8c.html#a44ca7a55e1da5b4b0ce40260e13e94da" title="event_thread_msg_send\l_without_lock" alt="" coords="1247,240,1409,281"/>
 </map>

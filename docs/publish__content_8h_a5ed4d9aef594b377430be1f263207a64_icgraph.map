@@ -1,3 +1,6 @@
 <map id="publish_content_publish" name="publish_content_publish">
 <area shape="rect" id="node2" href="$publisher_8c.html#a59fb7a935a9e8dfb338ddd144366e6c2" title="publish, Publisher call subscriber&#39;s notify if type is same " alt="" coords="215,5,337,32"/>
+<area shape="rect" id="node3" href="$main_8c.html#a842c0e2d73b61404c301f1b611d6beb3" title="event_publish" alt="" coords="385,5,485,32"/>
+<area shape="rect" id="node4" href="$main_8c.html#a2ae22c9da6ba8452a61ab4e69a4930e7" title="add_event_publisher" alt="" coords="533,5,672,32"/>
+<area shape="rect" id="node5" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="720,5,771,32"/>
 </map>

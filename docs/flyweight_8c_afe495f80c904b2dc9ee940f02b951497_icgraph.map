@@ -1,7 +1,8 @@
 <map id="flyweight_factory_get" name="flyweight_factory_get">
-<area shape="rect" id="node2" href="$flyweight_8c.html#a5a9bc49455819c7d07dc97e33d57de55" title="getter " alt="" coords="196,56,293,83"/>
-<area shape="rect" id="node5" href="$flyweight_8c.html#a8075a336e1a8cc72b3c57989e5d0f868" title="setter " alt="" coords="196,107,293,133"/>
-<area shape="rect" id="node3" href="$chain__of__responsibility_8c.html#a6017534fc738e5fe592bc5b70a62b760" title="call chain api " alt="" coords="378,5,445,32"/>
-<area shape="rect" id="node4" href="$chain__of__responsibility_8c.html#a992ce77a62711a598b767610c282ccee" title="remove to chain api " alt="" coords="341,56,481,83"/>
-<area shape="rect" id="node6" href="$chain__of__responsibility_8c.html#a7ab8871578e2e5e3c79f7ccbebe53b3e" title="add to chain api " alt="" coords="351,107,471,133"/>
+<area shape="rect" id="node2" href="$flyweight_8c.html#a5a9bc49455819c7d07dc97e33d57de55" title="getter " alt="" coords="196,69,293,96"/>
+<area shape="rect" id="node6" href="$flyweight_8c.html#a8075a336e1a8cc72b3c57989e5d0f868" title="setter " alt="" coords="196,132,293,159"/>
+<area shape="rect" id="node3" href="$chain__of__responsibility_8c.html#a20ef5a8b7d99bd6eb14e12a844238d82" title="call chain api " alt="" coords="412,5,479,32"/>
+<area shape="rect" id="node4" href="$chain__of__responsibility_8c.html#ae3e37775e62a141540c86752e349641b" title="remove to chain api " alt="" coords="375,56,515,83"/>
+<area shape="rect" id="node5" href="$chain__of__responsibility_8c.html#a8c15de431382f441eba394faf167f190" title="remove to chain api " alt="" coords="341,107,549,133"/>
+<area shape="rect" id="node7" href="$chain__of__responsibility_8c.html#abd93d1ebc36d517950985f6e65aab5cd" title="add to chain api " alt="" coords="385,157,505,184"/>
 </map>

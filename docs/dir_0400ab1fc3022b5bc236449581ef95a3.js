@@ -2,6 +2,7 @@ var dir_0400ab1fc3022b5bc236449581ef95a3 =
 [
     [ "builder", "dir_cc984ddb33d12d393cc7e72c97c42258.html", "dir_cc984ddb33d12d393cc7e72c97c42258" ],
     [ "chain_of_responsibility", "dir_e2e02e7522ea0895b67b7fcbe17ddbf8.html", "dir_e2e02e7522ea0895b67b7fcbe17ddbf8" ],
+    [ "combination_sample", "dir_448a26cef6fa2c3fcbe2666529af13b8.html", "dir_448a26cef6fa2c3fcbe2666529af13b8" ],
     [ "design_pattern_util", "dir_5e445490b9e8d5de7114794f3092a481.html", "dir_5e445490b9e8d5de7114794f3092a481" ],
     [ "flyweight", "dir_0c74047a488f6a0eef8ec0cd0b551950.html", "dir_0c74047a488f6a0eef8ec0cd0b551950" ],
     [ "memorypool", "dir_68f3bdcf3bbc21f02599e742475a082a.html", "dir_68f3bdcf3bbc21f02599e742475a082a" ],

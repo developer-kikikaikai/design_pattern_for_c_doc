@@ -122,9 +122,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a287177b77f380eb6b5c0604f2e345fcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="memorypool_8h.html#acf42d326402a72b2334973275c242386">MemoryPool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memorypool_8h.html#a287177b77f380eb6b5c0604f2e345fcd">mpool_create</a> (size_t max_size, size_t max_cnt, int is_multithread, void(*constructor)(void *))</td></tr>
-<tr class="memdesc:a287177b77f380eb6b5c0604f2e345fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">create MemoryPool class  <a href="#a287177b77f380eb6b5c0604f2e345fcd">More...</a><br /></td></tr>
-<tr class="separator:a287177b77f380eb6b5c0604f2e345fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e073bae929cd8a3d8055512e1da86da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="memorypool_8h.html#acf42d326402a72b2334973275c242386">MemoryPool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memorypool_8h.html#a4e073bae929cd8a3d8055512e1da86da">mpool_create</a> (size_t max_size, size_t max_cnt, int is_multithread, void(*constructor)(void *this, void *constructor_parameter), void *constructor_parameter)</td></tr>
+<tr class="memdesc:a4e073bae929cd8a3d8055512e1da86da"><td class="mdescLeft">&#160;</td><td class="mdescRight">create MemoryPool class  <a href="#a4e073bae929cd8a3d8055512e1da86da">More...</a><br /></td></tr>
+<tr class="separator:a4e073bae929cd8a3d8055512e1da86da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad39b7e7c3fea9c4026ecbf568efa3b8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memorypool_8h.html#ad39b7e7c3fea9c4026ecbf568efa3b8c">mpool_delete</a> (<a class="el" href="memorypool_8h.html#acf42d326402a72b2334973275c242386">MemoryPool</a> this, void(*destructor)(void *))</td></tr>
 <tr class="memdesc:ad39b7e7c3fea9c4026ecbf568efa3b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">free MemoryPool class  <a href="#ad39b7e7c3fea9c4026ecbf568efa3b8c">More...</a><br /></td></tr>
 <tr class="separator:ad39b7e7c3fea9c4026ecbf568efa3b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +134,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aadb9ab776a7bcfb64cd7dba2079ad3de"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memorypool_8h.html#aadb9ab776a7bcfb64cd7dba2079ad3de">mpool_get_next_usedmem</a> (<a class="el" href="memorypool_8h.html#acf42d326402a72b2334973275c242386">MemoryPool</a> this, void *ptr)</td></tr>
 <tr class="memdesc:aadb9ab776a7bcfb64cd7dba2079ad3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">get used memory  <a href="#aadb9ab776a7bcfb64cd7dba2079ad3de">More...</a><br /></td></tr>
 <tr class="separator:aadb9ab776a7bcfb64cd7dba2079ad3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4e0eec93d446c6f5a49c58f639c77c8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memorypool_8h.html#af4e0eec93d446c6f5a49c58f639c77c8">mpool_get_usedcnt</a> (<a class="el" href="memorypool_8h.html#acf42d326402a72b2334973275c242386">MemoryPool</a> this)</td></tr>
+<tr class="memdesc:af4e0eec93d446c6f5a49c58f639c77c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">get used cnt  <a href="#af4e0eec93d446c6f5a49c58f639c77c8">More...</a><br /></td></tr>
+<tr class="separator:af4e0eec93d446c6f5a49c58f639c77c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb54924e3efaf23a2d1f115162389399"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memorypool_8h.html#abb54924e3efaf23a2d1f115162389399">mpool_release</a> (<a class="el" href="memorypool_8h.html#acf42d326402a72b2334973275c242386">MemoryPool</a> this, void *ptr)</td></tr>
 <tr class="memdesc:abb54924e3efaf23a2d1f115162389399"><td class="mdescLeft">&#160;</td><td class="mdescRight">release memory to pool  <a href="#abb54924e3efaf23a2d1f115162389399">More...</a><br /></td></tr>
 <tr class="separator:abb54924e3efaf23a2d1f115162389399"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,7 +174,7 @@ Functions</h2></td></tr>
 
 <p>define for used loop </p>
 
-<p class="definition">Definition at line <a class="el" href="memorypool_8h_source.html#l00054">54</a> of file <a class="el" href="memorypool_8h_source.html">memorypool.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="memorypool_8h_source.html#l00055">55</a> of file <a class="el" href="memorypool_8h_source.html">memorypool.h</a>.</p>
 
 </div>
 </div>
@@ -195,8 +198,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a287177b77f380eb6b5c0604f2e345fcd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a287177b77f380eb6b5c0604f2e345fcd">&#9670;&nbsp;</a></span>mpool_create()</h2>
+<a id="a4e073bae929cd8a3d8055512e1da86da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e073bae929cd8a3d8055512e1da86da">&#9670;&nbsp;</a></span>mpool_create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,8 +225,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(void *)&#160;</td>
-          <td class="paramname"><em>constructor</em>&#160;</td>
+          <td class="paramtype">void(*)(void *this, void *constructor_parameter)&#160;</td>
+          <td class="paramname"><em>constructor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>constructor_parameter</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -240,6 +249,7 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">max_cnt</td><td>number of allocated memory </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">is_multithread</td><td>threadsafe flag. If you want to use it on multi thread, please set 1. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">constructor</td><td>if you want to initialize memory first. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">constructor_parameter</td><td>constructor parameter if you want to initialize memory first. </td></tr>
   </table>
   </dd>
 </dl>
@@ -250,18 +260,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="memorypool_8c_source.html#l00174">174</a> of file <a class="el" href="memorypool_8c_source.html">memorypool.c</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="memorypool_8h_a287177b77f380eb6b5c0604f2e345fcd_cgraph.png" border="0" usemap="#memorypool_8h_a287177b77f380eb6b5c0604f2e345fcd_cgraph" alt=""/></div>
-<map name="memorypool_8h_a287177b77f380eb6b5c0604f2e345fcd_cgraph" id="memorypool_8h_a287177b77f380eb6b5c0604f2e345fcd_cgraph">
-<area shape="rect" id="node2" href="memorypool_8c.html#a5877ab18f18ecab080831d49559482e7" title="get minimum of x, which 2^x &gt; input_value " alt="" coords="153,5,284,47"/>
-<area shape="rect" id="node4" href="memorypool_8c.html#ab29601425064eb136cd069075fb65811" title="mpool_list_push" alt="" coords="161,71,277,98"/>
-<area shape="rect" id="node3" href="memorypool_8c.html#a14e200abd1e20c5ac095714d4d96d85a" title="get right bit index " alt="" coords="332,13,484,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -301,7 +299,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="memorypool_8c_source.html#l00226">226</a> of file <a class="el" href="memorypool_8c_source.html">memorypool.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="memorypool_8c_source.html#l00221">221</a> of file <a class="el" href="memorypool_8c_source.html">memorypool.c</a>.</p>
 
 </div>
 </div>
@@ -337,16 +335,15 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>If already get all allocated pointer, return NULL </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="memorypool_8c_source.html#l00239">239</a> of file <a class="el" href="memorypool_8c_source.html">memorypool.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="memorypool_8c_source.html#l00234">234</a> of file <a class="el" href="memorypool_8c_source.html">memorypool.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="memorypool_8h_af2159cbaab9cd8ca788ad6504a8ba92c_cgraph.png" border="0" usemap="#memorypool_8h_af2159cbaab9cd8ca788ad6504a8ba92c_cgraph" alt=""/></div>
 <map name="memorypool_8h_af2159cbaab9cd8ca788ad6504a8ba92c_cgraph" id="memorypool_8h_af2159cbaab9cd8ca788ad6504a8ba92c_cgraph">
-<area shape="rect" id="node2" href="memorypool_8c.html#aee75689833a25e14c579f3305c7ef1e3" title="mpool_get_memory" alt="" coords="136,56,272,83"/>
-<area shape="rect" id="node3" href="memorypool_8c.html#a695aefe106a4bb7e25250cefe013ad14" title="mpool_list_pull" alt="" coords="341,5,449,32"/>
-<area shape="rect" id="node4" href="memorypool_8c.html#af056d62dedcac92f0935945b2a2cca01" title="mpool_unset_memory" alt="" coords="320,56,471,83"/>
-<area shape="rect" id="node5" href="memorypool_8c.html#ab29601425064eb136cd069075fb65811" title="mpool_list_push" alt="" coords="337,107,453,133"/>
+<area shape="rect" id="node2" href="memorypool_8c.html#aee75689833a25e14c579f3305c7ef1e3" title="mpool_get_memory" alt="" coords="136,31,272,57"/>
+<area shape="rect" id="node3" href="memorypool_8c.html#a695aefe106a4bb7e25250cefe013ad14" title="mpool_list_pull" alt="" coords="324,5,432,32"/>
+<area shape="rect" id="node4" href="memorypool_8c.html#ab29601425064eb136cd069075fb65811" title="mpool_list_push" alt="" coords="320,56,436,83"/>
 </map>
 </div>
 
@@ -394,7 +391,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="memorypool_8c_source.html#l00247">247</a> of file <a class="el" href="memorypool_8c_source.html">memorypool.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="memorypool_8c_source.html#l00243">243</a> of file <a class="el" href="memorypool_8c_source.html">memorypool.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -405,6 +402,35 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node4" href="memorypool_8c.html#a35357d5118eb318e8293521ff934f9cf" title="mpool_get_buffer_place" alt="" coords="448,56,607,83"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="af4e0eec93d446c6f5a49c58f639c77c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4e0eec93d446c6f5a49c58f639c77c8">&#9670;&nbsp;</a></span>mpool_get_usedcnt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t mpool_get_usedcnt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="memorypool_8h.html#acf42d326402a72b2334973275c242386">MemoryPool</a>&#160;</td>
+          <td class="paramname"><em>this</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get used cnt </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">this</td><td>MemoryPool instance return, </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>used count </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="memorypool_8c_source.html#l00255">255</a> of file <a class="el" href="memorypool_8c_source.html">memorypool.c</a>.</p>
 
 </div>
 </div>
@@ -445,18 +471,17 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>not initialize memory </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="memorypool_8c_source.html#l00260">260</a> of file <a class="el" href="memorypool_8c_source.html">memorypool.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="memorypool_8c_source.html#l00264">264</a> of file <a class="el" href="memorypool_8c_source.html">memorypool.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="memorypool_8h_abb54924e3efaf23a2d1f115162389399_cgraph.png" border="0" usemap="#memorypool_8h_abb54924e3efaf23a2d1f115162389399_cgraph" alt=""/></div>
 <map name="memorypool_8h_abb54924e3efaf23a2d1f115162389399_cgraph" id="memorypool_8h_abb54924e3efaf23a2d1f115162389399_cgraph">
-<area shape="rect" id="node2" href="memorypool_8c.html#a35bbc3bda5ca4f03604a6801bec0b24e" title="mpool_is_not_ptr_in_buf" alt="" coords="160,31,323,57"/>
-<area shape="rect" id="node3" href="memorypool_8c.html#a4eafb591b34c7b94ccdce5593e12ce5a" title="mpool_unuse_memory" alt="" coords="165,81,318,108"/>
+<area shape="rect" id="node2" href="memorypool_8c.html#a35bbc3bda5ca4f03604a6801bec0b24e" title="mpool_is_not_ptr_in_buf" alt="" coords="160,5,323,32"/>
+<area shape="rect" id="node3" href="memorypool_8c.html#a4eafb591b34c7b94ccdce5593e12ce5a" title="mpool_unuse_memory" alt="" coords="165,56,318,83"/>
 <area shape="rect" id="node4" href="memorypool_8c.html#a35357d5118eb318e8293521ff934f9cf" title="mpool_get_buffer_place" alt="" coords="371,5,529,32"/>
 <area shape="rect" id="node5" href="memorypool_8c.html#a695aefe106a4bb7e25250cefe013ad14" title="mpool_list_pull" alt="" coords="396,56,504,83"/>
-<area shape="rect" id="node6" href="memorypool_8c.html#af056d62dedcac92f0935945b2a2cca01" title="mpool_unset_memory" alt="" coords="375,107,525,133"/>
-<area shape="rect" id="node7" href="memorypool_8c.html#aef4fbacf50655e1352febb20eb4e90b0" title="mpool_list_head" alt="" coords="392,157,508,184"/>
+<area shape="rect" id="node6" href="memorypool_8c.html#aef4fbacf50655e1352febb20eb4e90b0" title="mpool_list_head" alt="" coords="392,107,508,133"/>
 </map>
 </div>
 

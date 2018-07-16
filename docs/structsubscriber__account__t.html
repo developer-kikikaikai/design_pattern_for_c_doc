@@ -111,8 +111,10 @@ Data Fields</h2></td></tr>
 <tr class="separator:ab5be486659324c674e5f339577a33a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba40999bae3455f7b9a3fe4359ca6f07"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsubscriber__account__t.html#aba40999bae3455f7b9a3fe4359ca6f07">publish_type</a></td></tr>
 <tr class="separator:aba40999bae3455f7b9a3fe4359ca6f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24415180b212d19e845626658b17f26c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsubscriber__account__t.html#a24415180b212d19e845626658b17f26c">notify</a> )(int <a class="el" href="structsubscriber__account__t.html#aba40999bae3455f7b9a3fe4359ca6f07">publish_type</a>, void *detail)</td></tr>
-<tr class="separator:a24415180b212d19e845626658b17f26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38efd5d6cb8edd2f79a25c46058d9d2a"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsubscriber__account__t.html#a38efd5d6cb8edd2f79a25c46058d9d2a">notify</a> )(int <a class="el" href="structsubscriber__account__t.html#aba40999bae3455f7b9a3fe4359ca6f07">publish_type</a>, void *detail, void *<a class="el" href="structsubscriber__account__t.html#a1f6d09b30c54854dfca659b7463ac207">ctx</a>)</td></tr>
+<tr class="separator:a38efd5d6cb8edd2f79a25c46058d9d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f6d09b30c54854dfca659b7463ac207"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsubscriber__account__t.html#a1f6d09b30c54854dfca659b7463ac207">ctx</a></td></tr>
+<tr class="separator:a1f6d09b30c54854dfca659b7463ac207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SubscriberAccount class member definition, to get by publisher_subscribe. </p>
@@ -120,6 +122,22 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="publish__content_8c_source.html#l00009">9</a> of file <a class="el" href="publish__content_8c_source.html">publish_content.c</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="a1f6d09b30c54854dfca659b7463ac207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f6d09b30c54854dfca659b7463ac207">&#9670;&nbsp;</a></span>ctx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* ctx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="publish__content_8c_source.html#l00014">14</a> of file <a class="el" href="publish__content_8c_source.html">publish_content.c</a>.</p>
+
+</div>
+</div>
 <a id="a4b760cd833ed8db8c0504c50706f9a76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b760cd833ed8db8c0504c50706f9a76">&#9670;&nbsp;</a></span>next</h2>
 
@@ -136,14 +154,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a24415180b212d19e845626658b17f26c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24415180b212d19e845626658b17f26c">&#9670;&nbsp;</a></span>notify</h2>
+<a id="a38efd5d6cb8edd2f79a25c46058d9d2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38efd5d6cb8edd2f79a25c46058d9d2a">&#9670;&nbsp;</a></span>notify</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* notify) (int <a class="el" href="structsubscriber__account__t.html#aba40999bae3455f7b9a3fe4359ca6f07">publish_type</a>, void *detail)</td>
+          <td class="memname">void(* notify) (int <a class="el" href="structsubscriber__account__t.html#aba40999bae3455f7b9a3fe4359ca6f07">publish_type</a>, void *detail, void *<a class="el" href="structsubscriber__account__t.html#a1f6d09b30c54854dfca659b7463ac207">ctx</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">

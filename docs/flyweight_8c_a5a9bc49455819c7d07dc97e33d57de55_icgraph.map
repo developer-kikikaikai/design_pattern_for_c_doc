@@ -1,4 +1,5 @@
 <map id="flyweight_get" name="flyweight_get">
-<area shape="rect" id="node2" href="$chain__of__responsibility_8c.html#a6017534fc738e5fe592bc5b70a62b760" title="call chain api " alt="" coords="187,5,254,32"/>
-<area shape="rect" id="node3" href="$chain__of__responsibility_8c.html#a992ce77a62711a598b767610c282ccee" title="remove to chain api " alt="" coords="151,56,291,83"/>
+<area shape="rect" id="node2" href="$chain__of__responsibility_8c.html#a20ef5a8b7d99bd6eb14e12a844238d82" title="call chain api " alt="" coords="221,5,288,32"/>
+<area shape="rect" id="node3" href="$chain__of__responsibility_8c.html#ae3e37775e62a141540c86752e349641b" title="remove to chain api " alt="" coords="185,56,325,83"/>
+<area shape="rect" id="node4" href="$chain__of__responsibility_8c.html#a8c15de431382f441eba394faf167f190" title="remove to chain api " alt="" coords="151,107,359,133"/>
 </map>

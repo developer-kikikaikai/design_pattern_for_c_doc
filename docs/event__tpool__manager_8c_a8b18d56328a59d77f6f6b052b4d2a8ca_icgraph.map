@@ -1,6 +1,8 @@
 <map id="event_tpool_thread_insert_fddata" name="event_tpool_thread_insert_fddata">
-<area shape="rect" id="node2" href="$event__tpool__manager_8c.html#a834b504d9de1aa7d36b98308833c9268" title="add EventSubscriber to threadpool " alt="" coords="206,13,321,39"/>
-<area shape="rect" id="node5" href="$event__tpool__manager_8c.html#afe2e173e9f9b43adb4426431a568fc9e" title="add EventSubscriber to threadpool, if you want to choose thead, please use it. " alt="" coords="184,63,343,90"/>
-<area shape="rect" id="node3" href="$state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="391,5,535,47"/>
-<area shape="rect" id="node4" href="$state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="583,13,720,39"/>
+<area shape="rect" id="node2" href="$event__tpool__manager_8c.html#a834b504d9de1aa7d36b98308833c9268" title="add EventSubscriber to threadpool " alt="" coords="206,35,321,61"/>
+<area shape="rect" id="node7" href="$event__tpool__manager_8c.html#afe2e173e9f9b43adb4426431a568fc9e" title="add EventSubscriber to threadpool, if you want to choose thead, please use it. " alt="" coords="184,85,343,112"/>
+<area shape="rect" id="node3" href="$main_8c.html#a2ae22c9da6ba8452a61ab4e69a4930e7" title="add_event_publisher" alt="" coords="393,5,532,32"/>
+<area shape="rect" id="node5" href="$state__machine_8c.html#ade1f369cf37a9d9659afb1f806df3daf" title="for multi thread, initialize " alt="" coords="391,57,535,98"/>
+<area shape="rect" id="node4" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="626,5,677,32"/>
+<area shape="rect" id="node6" href="$state__machine_8c.html#a19b6eb0eb78ca26207289a0adb092ea3" title="Create StateMachineInfo class. " alt="" coords="583,64,720,91"/>
 </map>

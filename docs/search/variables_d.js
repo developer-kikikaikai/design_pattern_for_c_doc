@@ -11,5 +11,5 @@ var searchData=
   ['store_5fmsg_5fcnt',['store_msg_cnt',['../structevent__thread__msg__info__t.html#a37e5aedcb2732d98f974b769612938eb',1,'event_thread_msg_info_t']]],
   ['store_5fmsgs',['store_msgs',['../structevent__thread__msg__info__t.html#ad2775d33a0a88069631da123b93691ff',1,'event_thread_msg_info_t']]],
   ['storefds',['storefds',['../structevent__select__t.html#a092ccd5ae0215bb55166ca251d163c2d',1,'event_select_t']]],
-  ['subscriber',['subscriber',['../structevent__epoll__handler__t.html#abbf6ce35bc22f2ac9fc71a85d70e9647',1,'event_epoll_handler_t::subscriber()'],['../structevent__select__handler__t.html#abbf6ce35bc22f2ac9fc71a85d70e9647',1,'event_select_handler_t::subscriber()'],['../structevent__thread__msg__body__add__t.html#abbf6ce35bc22f2ac9fc71a85d70e9647',1,'event_thread_msg_body_add_t::subscriber()']]]
+  ['subscriber',['subscriber',['../structevent__epoll__handler__t.html#abbf6ce35bc22f2ac9fc71a85d70e9647',1,'event_epoll_handler_t::subscriber()'],['../structevent__libevent__handler__t.html#abbf6ce35bc22f2ac9fc71a85d70e9647',1,'event_libevent_handler_t::subscriber()'],['../structevent__select__handler__t.html#abbf6ce35bc22f2ac9fc71a85d70e9647',1,'event_select_handler_t::subscriber()'],['../structevent__thread__msg__body__add__t.html#abbf6ce35bc22f2ac9fc71a85d70e9647',1,'event_thread_msg_body_add_t::subscriber()']]]
 ];

@@ -110,19 +110,14 @@ This graph shows which files directly or indirectly include this file:</div>
 </div>
 <p><a href="chain__of__responsibility_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader">CoR result</div></td></tr>
-<tr class="memitem:a0bdf7aa097184001ff2e0e6dcf005664"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__of__responsibility_8h.html#a0bdf7aa097184001ff2e0e6dcf005664">COR_SUCCESS</a>&#160;&#160;&#160;(0)</td></tr>
-<tr class="separator:a0bdf7aa097184001ff2e0e6dcf005664"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a50f86f40bfbffc1a8e26cc5a8f2874"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__of__responsibility_8h.html#a3a50f86f40bfbffc1a8e26cc5a8f2874">COR_FAILED</a>&#160;&#160;&#160;(-1)</td></tr>
-<tr class="separator:a3a50f86f40bfbffc1a8e26cc5a8f2874"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a733b83375fbe7a213908831d92901cc6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="chain__of__responsibility_8h.html#a6d5dc8299fdfaa93cef94b6f41b42af7">cor_result_e</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__of__responsibility_8h.html#a733b83375fbe7a213908831d92901cc6">chain_func</a>) (void *arg)</td></tr>
-<tr class="memdesc:a733b83375fbe7a213908831d92901cc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">chain func  <a href="#a733b83375fbe7a213908831d92901cc6">More...</a><br /></td></tr>
-<tr class="separator:a733b83375fbe7a213908831d92901cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade026efa873ce4fbed6a3b9b8f918ac6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structchain__element__part.html">chain_element_part</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__of__responsibility_8h.html#ade026efa873ce4fbed6a3b9b8f918ac6">ChainElementPart</a></td></tr>
+<tr class="memdesc:ade026efa873ce4fbed6a3b9b8f918ac6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_chain_element_part.html" title="chain function element part class instance definition ">ChainElementPart</a> class definition.  <a href="#ade026efa873ce4fbed6a3b9b8f918ac6">More...</a><br /></td></tr>
+<tr class="separator:ade026efa873ce4fbed6a3b9b8f918ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1709283877eb035d2f1624765bc09621"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="chain__of__responsibility_8h.html#a6d5dc8299fdfaa93cef94b6f41b42af7">cor_result_e</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__of__responsibility_8h.html#a1709283877eb035d2f1624765bc09621">chain_func</a>) (void *arg, void *ctx)</td></tr>
+<tr class="memdesc:a1709283877eb035d2f1624765bc09621"><td class="mdescLeft">&#160;</td><td class="mdescRight">chain func  <a href="#a1709283877eb035d2f1624765bc09621">More...</a><br /></td></tr>
+<tr class="separator:a1709283877eb035d2f1624765bc09621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -134,15 +129,21 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7ab8871578e2e5e3c79f7ccbebe53b3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__of__responsibility_8h.html#a7ab8871578e2e5e3c79f7ccbebe53b3e">cor_add_function</a> (const char *name, <a class="el" href="chain__of__responsibility_8h.html#a733b83375fbe7a213908831d92901cc6">chain_func</a> func)</td></tr>
-<tr class="memdesc:a7ab8871578e2e5e3c79f7ccbebe53b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">add to chain api  <a href="#a7ab8871578e2e5e3c79f7ccbebe53b3e">More...</a><br /></td></tr>
-<tr class="separator:a7ab8871578e2e5e3c79f7ccbebe53b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6017534fc738e5fe592bc5b70a62b760"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__of__responsibility_8h.html#a6017534fc738e5fe592bc5b70a62b760">cor_call</a> (const char *name, void *arg)</td></tr>
-<tr class="memdesc:a6017534fc738e5fe592bc5b70a62b760"><td class="mdescLeft">&#160;</td><td class="mdescRight">call chain api  <a href="#a6017534fc738e5fe592bc5b70a62b760">More...</a><br /></td></tr>
-<tr class="separator:a6017534fc738e5fe592bc5b70a62b760"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a992ce77a62711a598b767610c282ccee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__of__responsibility_8h.html#a992ce77a62711a598b767610c282ccee">cor_remove_function</a> (const char *name, <a class="el" href="chain__of__responsibility_8h.html#a733b83375fbe7a213908831d92901cc6">chain_func</a> func)</td></tr>
-<tr class="memdesc:a992ce77a62711a598b767610c282ccee"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove to chain api  <a href="#a992ce77a62711a598b767610c282ccee">More...</a><br /></td></tr>
-<tr class="separator:a992ce77a62711a598b767610c282ccee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d2d60343aa96250db104ed6406b8a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__of__responsibility_8h.html#a65d2d60343aa96250db104ed6406b8a6">cor_set_threadsafe</a> (int is_threadsafe)</td></tr>
+<tr class="memdesc:a65d2d60343aa96250db104ed6406b8a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">set thredsafe  <a href="#a65d2d60343aa96250db104ed6406b8a6">More...</a><br /></td></tr>
+<tr class="separator:a65d2d60343aa96250db104ed6406b8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd93d1ebc36d517950985f6e65aab5cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_chain_element_part.html">ChainElementPart</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__of__responsibility_8h.html#abd93d1ebc36d517950985f6e65aab5cd">cor_add_function</a> (const int id, <a class="el" href="chain__of__responsibility_8h.html#a1709283877eb035d2f1624765bc09621">chain_func</a> func, void *ctx)</td></tr>
+<tr class="memdesc:abd93d1ebc36d517950985f6e65aab5cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">add to chain api  <a href="#abd93d1ebc36d517950985f6e65aab5cd">More...</a><br /></td></tr>
+<tr class="separator:abd93d1ebc36d517950985f6e65aab5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ef5a8b7d99bd6eb14e12a844238d82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__of__responsibility_8h.html#a20ef5a8b7d99bd6eb14e12a844238d82">cor_call</a> (const int id, void *arg)</td></tr>
+<tr class="memdesc:a20ef5a8b7d99bd6eb14e12a844238d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">call chain api  <a href="#a20ef5a8b7d99bd6eb14e12a844238d82">More...</a><br /></td></tr>
+<tr class="separator:a20ef5a8b7d99bd6eb14e12a844238d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e37775e62a141540c86752e349641b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__of__responsibility_8h.html#ae3e37775e62a141540c86752e349641b">cor_remove_function</a> (const int id, <a class="el" href="chain__of__responsibility_8h.html#a1709283877eb035d2f1624765bc09621">chain_func</a> func)</td></tr>
+<tr class="memdesc:ae3e37775e62a141540c86752e349641b"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove to chain api  <a href="#ae3e37775e62a141540c86752e349641b">More...</a><br /></td></tr>
+<tr class="separator:ae3e37775e62a141540c86752e349641b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c15de431382f441eba394faf167f190"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__of__responsibility_8h.html#a8c15de431382f441eba394faf167f190">cor_remove_chain_element_part</a> (const int id, <a class="el" href="struct_chain_element_part.html">ChainElementPart</a> element)</td></tr>
+<tr class="memdesc:a8c15de431382f441eba394faf167f190"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove to chain api  <a href="#a8c15de431382f441eba394faf167f190">More...</a><br /></td></tr>
+<tr class="separator:a8c15de431382f441eba394faf167f190"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7214f3ee33fd193ad8bc6ff19da970b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__of__responsibility_8h.html#af7214f3ee33fd193ad8bc6ff19da970b">cor_clear</a> (void)</td></tr>
 <tr class="memdesc:af7214f3ee33fd193ad8bc6ff19da970b"><td class="mdescLeft">&#160;</td><td class="mdescRight">clear all list  <a href="#af7214f3ee33fd193ad8bc6ff19da970b">More...</a><br /></td></tr>
 <tr class="separator:af7214f3ee33fd193ad8bc6ff19da970b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,48 +152,15 @@ Functions</h2></td></tr>
 <div class="textblock"><p>This is API for Chain of Responsibility design pettern class. </p>
 
 <p class="definition">Definition in file <a class="el" href="chain__of__responsibility_8h_source.html">chain_of_responsibility.h</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a3a50f86f40bfbffc1a8e26cc5a8f2874"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a50f86f40bfbffc1a8e26cc5a8f2874">&#9670;&nbsp;</a></span>COR_FAILED</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a1709283877eb035d2f1624765bc09621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1709283877eb035d2f1624765bc09621">&#9670;&nbsp;</a></span>chain_func</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COR_FAILED&#160;&#160;&#160;(-1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="chain__of__responsibility_8h_source.html#l00011">11</a> of file <a class="el" href="chain__of__responsibility_8h_source.html">chain_of_responsibility.h</a>.</p>
-
-</div>
-</div>
-<a id="a0bdf7aa097184001ff2e0e6dcf005664"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bdf7aa097184001ff2e0e6dcf005664">&#9670;&nbsp;</a></span>COR_SUCCESS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define COR_SUCCESS&#160;&#160;&#160;(0)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="chain__of__responsibility_8h_source.html#l00010">10</a> of file <a class="el" href="chain__of__responsibility_8h_source.html">chain_of_responsibility.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="a733b83375fbe7a213908831d92901cc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a733b83375fbe7a213908831d92901cc6">&#9670;&nbsp;</a></span>chain_func</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="chain__of__responsibility_8h.html#a6d5dc8299fdfaa93cef94b6f41b42af7">cor_result_e</a>(* chain_func) (void *arg)</td>
+          <td class="memname">typedef <a class="el" href="chain__of__responsibility_8h.html#a6d5dc8299fdfaa93cef94b6f41b42af7">cor_result_e</a>(* chain_func) (void *arg, void *ctx)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -201,6 +169,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>input parameter pointer, related to function </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>context information registered at cor_add_function </td></tr>
   </table>
   </dd>
 </dl>
@@ -212,7 +181,25 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="chain__of__responsibility_8h_source.html#l00029">29</a> of file <a class="el" href="chain__of__responsibility_8h_source.html">chain_of_responsibility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chain__of__responsibility_8h_source.html#l00031">31</a> of file <a class="el" href="chain__of__responsibility_8h_source.html">chain_of_responsibility.h</a>.</p>
+
+</div>
+</div>
+<a id="ade026efa873ce4fbed6a3b9b8f918ac6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade026efa873ce4fbed6a3b9b8f918ac6">&#9670;&nbsp;</a></span>ChainElementPart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structchain__element__part.html">chain_element_part</a>* <a class="el" href="struct_chain_element_part.html">ChainElementPart</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="struct_chain_element_part.html" title="chain function element part class instance definition ">ChainElementPart</a> class definition. </p>
+
+<p class="definition">Definition at line <a class="el" href="chain__of__responsibility_8h_source.html#l00021">21</a> of file <a class="el" href="chain__of__responsibility_8h_source.html">chain_of_responsibility.h</a>.</p>
 
 </div>
 </div>
@@ -237,28 +224,34 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="chain__of__responsibility_8h_source.html#l00017">17</a> of file <a class="el" href="chain__of__responsibility_8h_source.html">chain_of_responsibility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chain__of__responsibility_8h_source.html#l00011">11</a> of file <a class="el" href="chain__of__responsibility_8h_source.html">chain_of_responsibility.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a7ab8871578e2e5e3c79f7ccbebe53b3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ab8871578e2e5e3c79f7ccbebe53b3e">&#9670;&nbsp;</a></span>cor_add_function()</h2>
+<a id="abd93d1ebc36d517950985f6e65aab5cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd93d1ebc36d517950985f6e65aab5cd">&#9670;&nbsp;</a></span>cor_add_function()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int cor_add_function </td>
+          <td class="memname"><a class="el" href="struct_chain_element_part.html">ChainElementPart</a> cor_add_function </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="chain__of__responsibility_8h.html#a733b83375fbe7a213908831d92901cc6">chain_func</a>&#160;</td>
-          <td class="paramname"><em>func</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="chain__of__responsibility_8h.html#a1709283877eb035d2f1624765bc09621">chain_func</a>&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -271,15 +264,16 @@ Functions</h2></td></tr>
 <p>add to chain api </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>key name related to chain api </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>key id related to chain api </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>chain func </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>user defined context information </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">COR_SUCCESS</td><td>-&gt; Success to add </td></tr>
-    <tr><td class="paramname">COR_FAILED</td><td>-&gt; Faled to add </td></tr>
+    <tr><td class="paramname">!=NULL</td><td>-&gt; Success to add, if you want to remove element, please keep it. </td></tr>
+    <tr><td class="paramname">NULL</td><td>-&gt; Faled to add </td></tr>
   </table>
   </dd>
 </dl>
@@ -288,8 +282,8 @@ Functions</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="chain__of__responsibility_8h_a7ab8871578e2e5e3c79f7ccbebe53b3e_cgraph.png" border="0" usemap="#chain__of__responsibility_8h_a7ab8871578e2e5e3c79f7ccbebe53b3e_cgraph" alt=""/></div>
-<map name="chain__of__responsibility_8h_a7ab8871578e2e5e3c79f7ccbebe53b3e_cgraph" id="chain__of__responsibility_8h_a7ab8871578e2e5e3c79f7ccbebe53b3e_cgraph">
+<div class="center"><img src="chain__of__responsibility_8h_abd93d1ebc36d517950985f6e65aab5cd_cgraph.png" border="0" usemap="#chain__of__responsibility_8h_abd93d1ebc36d517950985f6e65aab5cd_cgraph" alt=""/></div>
+<map name="chain__of__responsibility_8h_abd93d1ebc36d517950985f6e65aab5cd_cgraph" id="chain__of__responsibility_8h_abd93d1ebc36d517950985f6e65aab5cd_cgraph">
 <area shape="rect" id="node2" href="flyweight_8h.html#abb713f29f7f40898f65a8d809e52eb4a" title="define class for flyweight " alt="" coords="173,125,321,151"/>
 <area shape="rect" id="node7" href="flyweight_8h.html#a8075a336e1a8cc72b3c57989e5d0f868" title="setter " alt="" coords="199,202,296,229"/>
 <area shape="rect" id="node3" href="flyweight_8c.html#a37f67b7c44abcec77d903afa8acd5dac" title="Set methods. " alt="" coords="373,104,508,145"/>
@@ -306,8 +300,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a6017534fc738e5fe592bc5b70a62b760"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6017534fc738e5fe592bc5b70a62b760">&#9670;&nbsp;</a></span>cor_call()</h2>
+<a id="a20ef5a8b7d99bd6eb14e12a844238d82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20ef5a8b7d99bd6eb14e12a844238d82">&#9670;&nbsp;</a></span>cor_call()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -315,8 +309,8 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void cor_call </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -335,19 +329,19 @@ Here is the call graph for this function:</div>
 <p>call chain api </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>key name related to chain api </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>key id related to chain api </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>input parameter pointer, related to function </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none. If you want to get result, please define input parameter to know result </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="chain__of__responsibility_8c_source.html#l00106">106</a> of file <a class="el" href="chain__of__responsibility_8c_source.html">chain_of_responsibility.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chain__of__responsibility_8c_source.html#l00112">112</a> of file <a class="el" href="chain__of__responsibility_8c_source.html">chain_of_responsibility.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="chain__of__responsibility_8h_a6017534fc738e5fe592bc5b70a62b760_cgraph.png" border="0" usemap="#chain__of__responsibility_8h_a6017534fc738e5fe592bc5b70a62b760_cgraph" alt=""/></div>
-<map name="chain__of__responsibility_8h_a6017534fc738e5fe592bc5b70a62b760_cgraph" id="chain__of__responsibility_8h_a6017534fc738e5fe592bc5b70a62b760_cgraph">
+<div class="center"><img src="chain__of__responsibility_8h_a20ef5a8b7d99bd6eb14e12a844238d82_cgraph.png" border="0" usemap="#chain__of__responsibility_8h_a20ef5a8b7d99bd6eb14e12a844238d82_cgraph" alt=""/></div>
+<map name="chain__of__responsibility_8h_a20ef5a8b7d99bd6eb14e12a844238d82_cgraph" id="chain__of__responsibility_8h_a20ef5a8b7d99bd6eb14e12a844238d82_cgraph">
 <area shape="rect" id="node2" href="flyweight_8h.html#a5a9bc49455819c7d07dc97e33d57de55" title="getter " alt="" coords="138,71,235,98"/>
 <area shape="rect" id="node8" href="chain__element_8c.html#a8678b3aceb812df8d4b44f77b76193b1" title="chain_element_call" alt="" coords="120,122,253,149"/>
 <area shape="rect" id="node3" href="flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="Getter. " alt="" coords="301,71,444,98"/>
@@ -379,7 +373,7 @@ Here is the call graph for this function:</div>
 <p>clear all list </p>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="chain__of__responsibility_8c_source.html#l00123">123</a> of file <a class="el" href="chain__of__responsibility_8c_source.html">chain_of_responsibility.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chain__of__responsibility_8c_source.html#l00144">144</a> of file <a class="el" href="chain__of__responsibility_8c_source.html">chain_of_responsibility.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -393,8 +387,67 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a992ce77a62711a598b767610c282ccee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a992ce77a62711a598b767610c282ccee">&#9670;&nbsp;</a></span>cor_remove_function()</h2>
+<a id="a8c15de431382f441eba394faf167f190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c15de431382f441eba394faf167f190">&#9670;&nbsp;</a></span>cor_remove_chain_element_part()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cor_remove_chain_element_part </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_chain_element_part.html">ChainElementPart</a>&#160;</td>
+          <td class="paramname"><em>element</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>remove to chain api </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>key id related to chain api </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">element</td><td>chain element returned at cor_add_function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function only remove element. So if you want to register same functions, and remove only one element, please use it. </dd>
+<dd>
+This function "NOT" free ctx </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="chain__of__responsibility_8c_source.html#l00133">133</a> of file <a class="el" href="chain__of__responsibility_8c_source.html">chain_of_responsibility.c</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="chain__of__responsibility_8h_a8c15de431382f441eba394faf167f190_cgraph.png" border="0" usemap="#chain__of__responsibility_8h_a8c15de431382f441eba394faf167f190_cgraph" alt=""/></div>
+<map name="chain__of__responsibility_8h_a8c15de431382f441eba394faf167f190_cgraph" id="chain__of__responsibility_8h_a8c15de431382f441eba394faf167f190_cgraph">
+<area shape="rect" id="node2" href="flyweight_8h.html#a5a9bc49455819c7d07dc97e33d57de55" title="getter " alt="" coords="290,71,387,98"/>
+<area shape="rect" id="node8" href="chain__element_8c.html#a4b277f858b1465f8b606a3616aab6911" title="chain_element_remove\l_element_part" alt="" coords="261,123,416,164"/>
+<area shape="rect" id="node3" href="flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="Getter. " alt="" coords="474,71,617,98"/>
+<area shape="rect" id="node4" href="flyweight_8c.html#a9a5ace54e0a77643698d26d57cc031e5" title="Check has instance. " alt="" coords="705,5,848,47"/>
+<area shape="rect" id="node5" href="flyweight_8c.html#a354d2a3de93708ffe8c8c408581ddcfb" title="allocate. " alt="" coords="675,71,879,98"/>
+<area shape="rect" id="node7" href="flyweight_8c.html#adc94ba02ebd59ec314dcaa4f564b75fb" title="push instance into list. " alt="" coords="700,123,853,164"/>
+<area shape="rect" id="node6" href="flyweight_8c.html#aad881aca76ab55a56d9508d419edeb77" title="flyweight_instance_new" alt="" coords="927,71,1085,98"/>
+<area shape="rect" id="node9" href="dp__list_8h.html#a26471479b1060e936eef4872fc7acb4a" title="list pull " alt="" coords="493,126,597,153"/>
+<area shape="rect" id="node10" href="chain__element_8c.html#a6e9dd8dd0fc11752d41e3271707c421d" title="free ChainElementPart " alt="" coords="464,177,627,203"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae3e37775e62a141540c86752e349641b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3e37775e62a141540c86752e349641b">&#9670;&nbsp;</a></span>cor_remove_function()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -402,13 +455,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void cor_remove_function </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="chain__of__responsibility_8h.html#a733b83375fbe7a213908831d92901cc6">chain_func</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="chain__of__responsibility_8h.html#a1709283877eb035d2f1624765bc09621">chain_func</a>&#160;</td>
           <td class="paramname"><em>func</em>&#160;</td>
         </tr>
         <tr>
@@ -422,19 +475,22 @@ Here is the call graph for this function:</div>
 <p>remove to chain api </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>key name related to chain api </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>key id related to chain api </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>chain api func </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function remove all functions which is same address. So if you set same function by cor_add_function, all of them will remove. </dd>
+<dd>
+This function "NOT" free ctx </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="chain__of__responsibility_8c_source.html#l00114">114</a> of file <a class="el" href="chain__of__responsibility_8c_source.html">chain_of_responsibility.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chain__of__responsibility_8c_source.html#l00122">122</a> of file <a class="el" href="chain__of__responsibility_8c_source.html">chain_of_responsibility.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="chain__of__responsibility_8h_a992ce77a62711a598b767610c282ccee_cgraph.png" border="0" usemap="#chain__of__responsibility_8h_a992ce77a62711a598b767610c282ccee_cgraph" alt=""/></div>
-<map name="chain__of__responsibility_8h_a992ce77a62711a598b767610c282ccee_cgraph" id="chain__of__responsibility_8h_a992ce77a62711a598b767610c282ccee_cgraph">
+<div class="center"><img src="chain__of__responsibility_8h_ae3e37775e62a141540c86752e349641b_cgraph.png" border="0" usemap="#chain__of__responsibility_8h_ae3e37775e62a141540c86752e349641b_cgraph" alt=""/></div>
+<map name="chain__of__responsibility_8h_ae3e37775e62a141540c86752e349641b_cgraph" id="chain__of__responsibility_8h_ae3e37775e62a141540c86752e349641b_cgraph">
 <area shape="rect" id="node2" href="flyweight_8h.html#a5a9bc49455819c7d07dc97e33d57de55" title="getter " alt="" coords="222,71,319,98"/>
 <area shape="rect" id="node8" href="chain__element_8c.html#ac77db7177de1c0e80c29b9fe437f99e3" title="chain_element_remove\l_function" alt="" coords="193,123,348,164"/>
 <area shape="rect" id="node3" href="flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="Getter. " alt="" coords="406,71,549,98"/>
@@ -446,6 +502,35 @@ Here is the call graph for this function:</div>
 <area shape="rect" id="node10" href="chain__element_8c.html#a6e9dd8dd0fc11752d41e3271707c421d" title="free ChainElementPart " alt="" coords="396,177,559,203"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a65d2d60343aa96250db104ed6406b8a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65d2d60343aa96250db104ed6406b8a6">&#9670;&nbsp;</a></span>cor_set_threadsafe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cor_set_threadsafe </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>is_threadsafe</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set thredsafe </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_threadsafe</td><td>1 if you want to use threadsafe. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="chain__of__responsibility_8c_source.html#l00086">86</a> of file <a class="el" href="chain__of__responsibility_8c_source.html">chain_of_responsibility.c</a>.</p>
 
 </div>
 </div>

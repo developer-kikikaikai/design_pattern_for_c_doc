@@ -1,0 +1,3 @@
+<map id="event_thread_atfork_child" name="event_thread_atfork_child">
+<area shape="rect" id="node2" href="$event__tpool__manager_8c.html#a70de697715bd1be5aceab44d5025039b" title="Update member at fork, please call this API on child process if you use fork. " alt="" coords="188,5,315,47"/>
+</map>

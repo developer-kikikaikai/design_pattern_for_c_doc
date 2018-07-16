@@ -1,9 +1,10 @@
 <map id="flyweight_instance_new" name="flyweight_instance_new">
-<area shape="rect" id="node2" href="$flyweight_8c.html#a354d2a3de93708ffe8c8c408581ddcfb" title="allocate. " alt="" coords="212,81,416,108"/>
-<area shape="rect" id="node3" href="$flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="Getter. " alt="" coords="464,81,607,108"/>
-<area shape="rect" id="node4" href="$flyweight_8c.html#a5a9bc49455819c7d07dc97e33d57de55" title="getter " alt="" coords="655,56,752,83"/>
-<area shape="rect" id="node7" href="$flyweight_8c.html#a8075a336e1a8cc72b3c57989e5d0f868" title="setter " alt="" coords="655,107,752,133"/>
-<area shape="rect" id="node5" href="$chain__of__responsibility_8c.html#a6017534fc738e5fe592bc5b70a62b760" title="call chain api " alt="" coords="837,5,903,32"/>
-<area shape="rect" id="node6" href="$chain__of__responsibility_8c.html#a992ce77a62711a598b767610c282ccee" title="remove to chain api " alt="" coords="800,56,940,83"/>
-<area shape="rect" id="node8" href="$chain__of__responsibility_8c.html#a7ab8871578e2e5e3c79f7ccbebe53b3e" title="add to chain api " alt="" coords="810,107,930,133"/>
+<area shape="rect" id="node2" href="$flyweight_8c.html#a354d2a3de93708ffe8c8c408581ddcfb" title="allocate. " alt="" coords="212,101,416,128"/>
+<area shape="rect" id="node3" href="$flyweight_8c.html#afe495f80c904b2dc9ee940f02b951497" title="Getter. " alt="" coords="464,101,607,128"/>
+<area shape="rect" id="node4" href="$flyweight_8c.html#a5a9bc49455819c7d07dc97e33d57de55" title="getter " alt="" coords="655,69,752,96"/>
+<area shape="rect" id="node8" href="$flyweight_8c.html#a8075a336e1a8cc72b3c57989e5d0f868" title="setter " alt="" coords="655,132,752,159"/>
+<area shape="rect" id="node5" href="$chain__of__responsibility_8c.html#a20ef5a8b7d99bd6eb14e12a844238d82" title="call chain api " alt="" coords="871,5,937,32"/>
+<area shape="rect" id="node6" href="$chain__of__responsibility_8c.html#ae3e37775e62a141540c86752e349641b" title="remove to chain api " alt="" coords="834,56,974,83"/>
+<area shape="rect" id="node7" href="$chain__of__responsibility_8c.html#a8c15de431382f441eba394faf167f190" title="remove to chain api " alt="" coords="800,107,1008,133"/>
+<area shape="rect" id="node9" href="$chain__of__responsibility_8c.html#abd93d1ebc36d517950985f6e65aab5cd" title="add to chain api " alt="" coords="844,157,964,184"/>
 </map>

@@ -1,6 +1,8 @@
 <map id="chain_element_part_free" name="chain_element_part_free">
 <area shape="rect" id="node2" href="$chain__element_8h.html#ac77db7177de1c0e80c29b9fe437f99e3" title="chain_element_remove\l_function" alt="" coords="216,5,371,47"/>
-<area shape="rect" id="node4" href="$chain__element_8h.html#a15caa19089d0de19d8e66eee36004029" title="chain_element_delete" alt="" coords="219,71,367,98"/>
-<area shape="rect" id="node3" href="$chain__of__responsibility_8c.html#a992ce77a62711a598b767610c282ccee" title="remove to chain api " alt="" coords="419,13,559,39"/>
-<area shape="rect" id="node5" href="$chain__of__responsibility_8c.html#aa8a4392d7fb74e770a7ab3d57b57fb53" title="free member resource " alt="" coords="423,71,554,98"/>
+<area shape="rect" id="node4" href="$chain__element_8h.html#a4b277f858b1465f8b606a3616aab6911" title="chain_element_remove\l_element_part" alt="" coords="216,71,371,112"/>
+<area shape="rect" id="node6" href="$chain__element_8h.html#a15caa19089d0de19d8e66eee36004029" title="chain_element_delete" alt="" coords="219,137,367,163"/>
+<area shape="rect" id="node3" href="$chain__of__responsibility_8c.html#ae3e37775e62a141540c86752e349641b" title="remove to chain api " alt="" coords="453,13,593,39"/>
+<area shape="rect" id="node5" href="$chain__of__responsibility_8c.html#a8c15de431382f441eba394faf167f190" title="remove to chain api " alt="" coords="419,78,627,105"/>
+<area shape="rect" id="node7" href="$chain__of__responsibility_8c.html#aa8a4392d7fb74e770a7ab3d57b57fb53" title="free member resource " alt="" coords="457,137,588,163"/>
 </map>

@@ -124,19 +124,21 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aae81e8efa5594efe114d1e587481bd3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__element_8c.html#aae81e8efa5594efe114d1e587481bd3e">CHAIN_ELEMENT_LOCK</a>(instance)&#160;&#160;&#160;<a class="el" href="dp__mutex_8h.html#a3e3b4f255683d248f8c9d1d1dd0723d4">DPUTIL_LOCK</a>(&amp;instance-&gt;lock)</td></tr>
+<tr class="memitem:aae81e8efa5594efe114d1e587481bd3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__element_8c.html#aae81e8efa5594efe114d1e587481bd3e">CHAIN_ELEMENT_LOCK</a>(instance)&#160;&#160;&#160;<a class="el" href="dp__mutex_8h.html#a3e3b4f255683d248f8c9d1d1dd0723d4">DPUTIL_LOCK</a>(instance-&gt;lock)</td></tr>
 <tr class="separator:aae81e8efa5594efe114d1e587481bd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14840eb796e7773975db79386075f412"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__element_8c.html#a14840eb796e7773975db79386075f412">CHAIN_ELEMENT_UNLOCK</a>&#160;&#160;&#160;<a class="el" href="dp__mutex_8h.html#a5c33541ab9909d5e4431adb8353f8328">DPUTIL_UNLOCK</a></td></tr>
 <tr class="separator:a14840eb796e7773975db79386075f412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a33279dd8899c75afc3f6faac745431f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="chain__element_8h.html#a517cf71a5420729e23ed3a04cc8fd72d">ChainElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__element_8c.html#a33279dd8899c75afc3f6faac745431f5">chain_element_new</a> (void)</td></tr>
-<tr class="separator:a33279dd8899c75afc3f6faac745431f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade8ca11201581ce7c756b8135b0f4c30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__element_8c.html#ade8ca11201581ce7c756b8135b0f4c30">chain_element_add_function</a> (<a class="el" href="chain__element_8h.html#a517cf71a5420729e23ed3a04cc8fd72d">ChainElement</a> this, <a class="el" href="chain__of__responsibility_8h.html#a733b83375fbe7a213908831d92901cc6">chain_func</a> func)</td></tr>
-<tr class="separator:ade8ca11201581ce7c756b8135b0f4c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac77db7177de1c0e80c29b9fe437f99e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__element_8c.html#ac77db7177de1c0e80c29b9fe437f99e3">chain_element_remove_function</a> (<a class="el" href="chain__element_8h.html#a517cf71a5420729e23ed3a04cc8fd72d">ChainElement</a> this, <a class="el" href="chain__of__responsibility_8h.html#a733b83375fbe7a213908831d92901cc6">chain_func</a> func)</td></tr>
+<tr class="memitem:a4e6af81a673f8815130a81b2136a4b50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="chain__element_8h.html#a517cf71a5420729e23ed3a04cc8fd72d">ChainElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__element_8c.html#a4e6af81a673f8815130a81b2136a4b50">chain_element_new</a> (int is_threadsafe)</td></tr>
+<tr class="separator:a4e6af81a673f8815130a81b2136a4b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac54355fddf651560502c3c07298e398c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__element_8c.html#ac54355fddf651560502c3c07298e398c">chain_element_add_function</a> (<a class="el" href="chain__element_8h.html#a517cf71a5420729e23ed3a04cc8fd72d">ChainElement</a> this, <a class="el" href="structchain__element__req__t.html">chain_element_req_t</a> *elemnt_data)</td></tr>
+<tr class="separator:ac54355fddf651560502c3c07298e398c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac77db7177de1c0e80c29b9fe437f99e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__element_8c.html#ac77db7177de1c0e80c29b9fe437f99e3">chain_element_remove_function</a> (<a class="el" href="chain__element_8h.html#a517cf71a5420729e23ed3a04cc8fd72d">ChainElement</a> this, <a class="el" href="chain__of__responsibility_8h.html#a1709283877eb035d2f1624765bc09621">chain_func</a> func)</td></tr>
 <tr class="separator:ac77db7177de1c0e80c29b9fe437f99e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b277f858b1465f8b606a3616aab6911"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__element_8c.html#a4b277f858b1465f8b606a3616aab6911">chain_element_remove_element_part</a> (<a class="el" href="chain__element_8h.html#a517cf71a5420729e23ed3a04cc8fd72d">ChainElement</a> this, <a class="el" href="struct_chain_element_part.html">ChainElementPart</a> element)</td></tr>
+<tr class="separator:a4b277f858b1465f8b606a3616aab6911"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8678b3aceb812df8d4b44f77b76193b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__element_8c.html#a8678b3aceb812df8d4b44f77b76193b1">chain_element_call</a> (<a class="el" href="chain__element_8h.html#a517cf71a5420729e23ed3a04cc8fd72d">ChainElement</a> this, void *arg)</td></tr>
 <tr class="separator:a8678b3aceb812df8d4b44f77b76193b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15caa19089d0de19d8e66eee36004029"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__element_8c.html#a15caa19089d0de19d8e66eee36004029">chain_element_delete</a> (<a class="el" href="chain__element_8h.html#a517cf71a5420729e23ed3a04cc8fd72d">ChainElement</a> this)</td></tr>
@@ -146,9 +148,9 @@ Functions</h2></td></tr>
 ChainElementPart class</h2></td></tr>
 <tr class="memitem:ade026efa873ce4fbed6a3b9b8f918ac6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structchain__element__part.html">chain_element_part</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__element_8c.html#ade026efa873ce4fbed6a3b9b8f918ac6">ChainElementPart</a></td></tr>
 <tr class="separator:ade026efa873ce4fbed6a3b9b8f918ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d47cc99f50d14eeb34b75f34eeb5f5e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_chain_element_part.html">ChainElementPart</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__element_8c.html#a9d47cc99f50d14eeb34b75f34eeb5f5e">chain_element_part_new</a> (<a class="el" href="chain__of__responsibility_8h.html#a733b83375fbe7a213908831d92901cc6">chain_func</a> func)</td></tr>
-<tr class="memdesc:a9d47cc99f50d14eeb34b75f34eeb5f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">new <a class="el" href="struct_chain_element_part.html" title="chain function element part class instance definition ">ChainElementPart</a>  <a href="#a9d47cc99f50d14eeb34b75f34eeb5f5e">More...</a><br /></td></tr>
-<tr class="separator:a9d47cc99f50d14eeb34b75f34eeb5f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e7cac94b16b2026628645bed197bdb8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_chain_element_part.html">ChainElementPart</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__element_8c.html#a9e7cac94b16b2026628645bed197bdb8">chain_element_part_new</a> (<a class="el" href="structchain__element__data__t.html">chain_element_data_t</a> *element_data)</td></tr>
+<tr class="memdesc:a9e7cac94b16b2026628645bed197bdb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">new <a class="el" href="struct_chain_element_part.html" title="chain function element part class instance definition ">ChainElementPart</a>  <a href="#a9e7cac94b16b2026628645bed197bdb8">More...</a><br /></td></tr>
+<tr class="separator:a9e7cac94b16b2026628645bed197bdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e9dd8dd0fc11752d41e3271707c421d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chain__element_8c.html#a6e9dd8dd0fc11752d41e3271707c421d">chain_element_part_free</a> (<a class="el" href="struct_chain_element_part.html">ChainElementPart</a> this)</td></tr>
 <tr class="memdesc:a6e9dd8dd0fc11752d41e3271707c421d"><td class="mdescLeft">&#160;</td><td class="mdescRight">free <a class="el" href="struct_chain_element_part.html" title="chain function element part class instance definition ">ChainElementPart</a>  <a href="#a6e9dd8dd0fc11752d41e3271707c421d">More...</a><br /></td></tr>
 <tr class="separator:a6e9dd8dd0fc11752d41e3271707c421d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,7 +171,7 @@ ChainElementPart class</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">instance</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="dp__mutex_8h.html#a3e3b4f255683d248f8c9d1d1dd0723d4">DPUTIL_LOCK</a>(&amp;instance-&gt;lock)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="dp__mutex_8h.html#a3e3b4f255683d248f8c9d1d1dd0723d4">DPUTIL_LOCK</a>(instance-&gt;lock)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -212,8 +214,8 @@ ChainElementPart class</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ade8ca11201581ce7c756b8135b0f4c30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade8ca11201581ce7c756b8135b0f4c30">&#9670;&nbsp;</a></span>chain_element_add_function()</h2>
+<a id="ac54355fddf651560502c3c07298e398c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac54355fddf651560502c3c07298e398c">&#9670;&nbsp;</a></span>chain_element_add_function()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,8 +229,8 @@ ChainElementPart class</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="chain__of__responsibility_8h.html#a733b83375fbe7a213908831d92901cc6">chain_func</a>&#160;</td>
-          <td class="paramname"><em>func</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structchain__element__req__t.html">chain_element_req_t</a> *&#160;</td>
+          <td class="paramname"><em>elemnt_data</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -238,21 +240,21 @@ ChainElementPart class</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chain__element_8c_source.html#l00070">70</a> of file <a class="el" href="chain__element_8c_source.html">chain_element.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chain__element_8c_source.html#l00073">73</a> of file <a class="el" href="chain__element_8c_source.html">chain_element.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="chain__element_8c_ade8ca11201581ce7c756b8135b0f4c30_cgraph.png" border="0" usemap="#chain__element_8c_ade8ca11201581ce7c756b8135b0f4c30_cgraph" alt=""/></div>
-<map name="chain__element_8c_ade8ca11201581ce7c756b8135b0f4c30_cgraph" id="chain__element_8c_ade8ca11201581ce7c756b8135b0f4c30_cgraph">
-<area shape="rect" id="node2" href="chain__element_8c.html#a9d47cc99f50d14eeb34b75f34eeb5f5e" title="new ChainElementPart " alt="" coords="240,5,405,32"/>
+<div class="center"><img src="chain__element_8c_ac54355fddf651560502c3c07298e398c_cgraph.png" border="0" usemap="#chain__element_8c_ac54355fddf651560502c3c07298e398c_cgraph" alt=""/></div>
+<map name="chain__element_8c_ac54355fddf651560502c3c07298e398c_cgraph" id="chain__element_8c_ac54355fddf651560502c3c07298e398c_cgraph">
+<area shape="rect" id="node2" href="chain__element_8c.html#a9e7cac94b16b2026628645bed197bdb8" title="new ChainElementPart " alt="" coords="240,5,405,32"/>
 <area shape="rect" id="node3" href="dp__list_8h.html#aacb8cf2643fa1e8153eb99e724a10e3c" title="list push " alt="" coords="267,56,379,83"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="chain__element_8c_ade8ca11201581ce7c756b8135b0f4c30_icgraph.png" border="0" usemap="#chain__element_8c_ade8ca11201581ce7c756b8135b0f4c30_icgraph" alt=""/></div>
-<map name="chain__element_8c_ade8ca11201581ce7c756b8135b0f4c30_icgraph" id="chain__element_8c_ade8ca11201581ce7c756b8135b0f4c30_icgraph">
+<div class="center"><img src="chain__element_8c_ac54355fddf651560502c3c07298e398c_icgraph.png" border="0" usemap="#chain__element_8c_ac54355fddf651560502c3c07298e398c_icgraph" alt=""/></div>
+<map name="chain__element_8c_ac54355fddf651560502c3c07298e398c_icgraph" id="chain__element_8c_ac54355fddf651560502c3c07298e398c_icgraph">
 <area shape="rect" id="node2" href="chain__of__responsibility_8c.html#a4d9eb406c779289894155316b5efebbe" title="setter, add function to ChainElement " alt="" coords="240,5,383,32"/>
 </map>
 </div>
@@ -285,13 +287,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chain__element_8c_source.html#l00099">99</a> of file <a class="el" href="chain__element_8c_source.html">chain_element.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chain__element_8c_source.html#l00110">110</a> of file <a class="el" href="chain__element_8c_source.html">chain_element.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="chain__element_8c_a8678b3aceb812df8d4b44f77b76193b1_icgraph.png" border="0" usemap="#chain__element_8c_a8678b3aceb812df8d4b44f77b76193b1_icgraph" alt=""/></div>
 <map name="chain__element_8c_a8678b3aceb812df8d4b44f77b76193b1_icgraph" id="chain__element_8c_a8678b3aceb812df8d4b44f77b76193b1_icgraph">
-<area shape="rect" id="node2" href="chain__of__responsibility_8c.html#a6017534fc738e5fe592bc5b70a62b760" title="call chain api " alt="" coords="187,5,253,32"/>
+<area shape="rect" id="node2" href="chain__of__responsibility_8c.html#a20ef5a8b7d99bd6eb14e12a844238d82" title="call chain api " alt="" coords="187,5,253,32"/>
 </map>
 </div>
 
@@ -313,7 +315,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chain__element_8c_source.html#l00112">112</a> of file <a class="el" href="chain__element_8c_source.html">chain_element.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chain__element_8c_source.html#l00123">123</a> of file <a class="el" href="chain__element_8c_source.html">chain_element.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -335,8 +337,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a33279dd8899c75afc3f6faac745431f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33279dd8899c75afc3f6faac745431f5">&#9670;&nbsp;</a></span>chain_element_new()</h2>
+<a id="a4e6af81a673f8815130a81b2136a4b50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e6af81a673f8815130a81b2136a4b50">&#9670;&nbsp;</a></span>chain_element_new()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -344,8 +346,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname"><a class="el" href="chain__element_8h.html#a517cf71a5420729e23ed3a04cc8fd72d">ChainElement</a> chain_element_new </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>is_threadsafe</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -355,8 +357,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="chain__element_8c_a33279dd8899c75afc3f6faac745431f5_icgraph.png" border="0" usemap="#chain__element_8c_a33279dd8899c75afc3f6faac745431f5_icgraph" alt=""/></div>
-<map name="chain__element_8c_a33279dd8899c75afc3f6faac745431f5_icgraph" id="chain__element_8c_a33279dd8899c75afc3f6faac745431f5_icgraph">
+<div class="center"><img src="chain__element_8c_a4e6af81a673f8815130a81b2136a4b50_icgraph.png" border="0" usemap="#chain__element_8c_a4e6af81a673f8815130a81b2136a4b50_icgraph" alt=""/></div>
+<map name="chain__element_8c_a4e6af81a673f8815130a81b2136a4b50_icgraph" id="chain__element_8c_a4e6af81a673f8815130a81b2136a4b50_icgraph">
 <area shape="rect" id="node2" href="chain__of__responsibility_8c.html#a5d749f06ce1682aa09a4b1602df47aab" title="new API " alt="" coords="189,5,321,32"/>
 </map>
 </div>
@@ -396,16 +398,18 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="chain__element_8c_a6e9dd8dd0fc11752d41e3271707c421d_icgraph.png" border="0" usemap="#chain__element_8c_a6e9dd8dd0fc11752d41e3271707c421d_icgraph" alt=""/></div>
 <map name="chain__element_8c_a6e9dd8dd0fc11752d41e3271707c421d_icgraph" id="chain__element_8c_a6e9dd8dd0fc11752d41e3271707c421d_icgraph">
 <area shape="rect" id="node2" href="chain__element_8h.html#ac77db7177de1c0e80c29b9fe437f99e3" title="chain_element_remove\l_function" alt="" coords="216,5,371,47"/>
-<area shape="rect" id="node4" href="chain__element_8h.html#a15caa19089d0de19d8e66eee36004029" title="chain_element_delete" alt="" coords="219,71,367,98"/>
-<area shape="rect" id="node3" href="chain__of__responsibility_8c.html#a992ce77a62711a598b767610c282ccee" title="remove to chain api " alt="" coords="419,13,559,39"/>
-<area shape="rect" id="node5" href="chain__of__responsibility_8c.html#aa8a4392d7fb74e770a7ab3d57b57fb53" title="free member resource " alt="" coords="423,71,554,98"/>
+<area shape="rect" id="node4" href="chain__element_8h.html#a4b277f858b1465f8b606a3616aab6911" title="chain_element_remove\l_element_part" alt="" coords="216,71,371,112"/>
+<area shape="rect" id="node6" href="chain__element_8h.html#a15caa19089d0de19d8e66eee36004029" title="chain_element_delete" alt="" coords="219,137,367,163"/>
+<area shape="rect" id="node3" href="chain__of__responsibility_8c.html#ae3e37775e62a141540c86752e349641b" title="remove to chain api " alt="" coords="453,13,593,39"/>
+<area shape="rect" id="node5" href="chain__of__responsibility_8c.html#a8c15de431382f441eba394faf167f190" title="remove to chain api " alt="" coords="419,78,627,105"/>
+<area shape="rect" id="node7" href="chain__of__responsibility_8c.html#aa8a4392d7fb74e770a7ab3d57b57fb53" title="free member resource " alt="" coords="457,137,588,163"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a9d47cc99f50d14eeb34b75f34eeb5f5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d47cc99f50d14eeb34b75f34eeb5f5e">&#9670;&nbsp;</a></span>chain_element_part_new()</h2>
+<a id="a9e7cac94b16b2026628645bed197bdb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e7cac94b16b2026628645bed197bdb8">&#9670;&nbsp;</a></span>chain_element_part_new()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -416,8 +420,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">static <a class="el" href="struct_chain_element_part.html">ChainElementPart</a> chain_element_part_new </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="chain__of__responsibility_8h.html#a733b83375fbe7a213908831d92901cc6">chain_func</a>&#160;</td>
-          <td class="paramname"><em>func</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structchain__element__data__t.html">chain_element_data_t</a> *&#160;</td>
+          <td class="paramname"><em>element_data</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -434,10 +438,57 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="chain__element_8c_a9d47cc99f50d14eeb34b75f34eeb5f5e_icgraph.png" border="0" usemap="#chain__element_8c_a9d47cc99f50d14eeb34b75f34eeb5f5e_icgraph" alt=""/></div>
-<map name="chain__element_8c_a9d47cc99f50d14eeb34b75f34eeb5f5e_icgraph" id="chain__element_8c_a9d47cc99f50d14eeb34b75f34eeb5f5e_icgraph">
-<area shape="rect" id="node2" href="chain__element_8h.html#ade8ca11201581ce7c756b8135b0f4c30" title="chain_element_add_function" alt="" coords="219,5,405,32"/>
+<div class="center"><img src="chain__element_8c_a9e7cac94b16b2026628645bed197bdb8_icgraph.png" border="0" usemap="#chain__element_8c_a9e7cac94b16b2026628645bed197bdb8_icgraph" alt=""/></div>
+<map name="chain__element_8c_a9e7cac94b16b2026628645bed197bdb8_icgraph" id="chain__element_8c_a9e7cac94b16b2026628645bed197bdb8_icgraph">
+<area shape="rect" id="node2" href="chain__element_8h.html#ac54355fddf651560502c3c07298e398c" title="chain_element_add_function" alt="" coords="219,5,405,32"/>
 <area shape="rect" id="node3" href="chain__of__responsibility_8c.html#a4d9eb406c779289894155316b5efebbe" title="setter, add function to ChainElement " alt="" coords="453,5,596,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4b277f858b1465f8b606a3616aab6911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b277f858b1465f8b606a3616aab6911">&#9670;&nbsp;</a></span>chain_element_remove_element_part()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chain_element_remove_element_part </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="chain__element_8h.html#a517cf71a5420729e23ed3a04cc8fd72d">ChainElement</a>&#160;</td>
+          <td class="paramname"><em>this</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_chain_element_part.html">ChainElementPart</a>&#160;</td>
+          <td class="paramname"><em>element</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="chain__element_8c_source.html#l00103">103</a> of file <a class="el" href="chain__element_8c_source.html">chain_element.c</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="chain__element_8c_a4b277f858b1465f8b606a3616aab6911_cgraph.png" border="0" usemap="#chain__element_8c_a4b277f858b1465f8b606a3616aab6911_cgraph" alt=""/></div>
+<map name="chain__element_8c_a4b277f858b1465f8b606a3616aab6911_cgraph" id="chain__element_8c_a4b277f858b1465f8b606a3616aab6911_cgraph">
+<area shape="rect" id="node2" href="dp__list_8h.html#a26471479b1060e936eef4872fc7acb4a" title="list pull " alt="" coords="237,5,341,32"/>
+<area shape="rect" id="node3" href="chain__element_8c.html#a6e9dd8dd0fc11752d41e3271707c421d" title="free ChainElementPart " alt="" coords="208,56,371,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="chain__element_8c_a4b277f858b1465f8b606a3616aab6911_icgraph.png" border="0" usemap="#chain__element_8c_a4b277f858b1465f8b606a3616aab6911_icgraph" alt=""/></div>
+<map name="chain__element_8c_a4b277f858b1465f8b606a3616aab6911_icgraph" id="chain__element_8c_a4b277f858b1465f8b606a3616aab6911_icgraph">
+<area shape="rect" id="node2" href="chain__of__responsibility_8c.html#a8c15de431382f441eba394faf167f190" title="remove to chain api " alt="" coords="208,13,416,39"/>
 </map>
 </div>
 
@@ -458,7 +509,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="chain__of__responsibility_8h.html#a733b83375fbe7a213908831d92901cc6">chain_func</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="chain__of__responsibility_8h.html#a1709283877eb035d2f1624765bc09621">chain_func</a>&#160;</td>
           <td class="paramname"><em>func</em>&#160;</td>
         </tr>
         <tr>
@@ -469,7 +520,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="chain__element_8c_source.html#l00082">82</a> of file <a class="el" href="chain__element_8c_source.html">chain_element.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="chain__element_8c_source.html#l00086">86</a> of file <a class="el" href="chain__element_8c_source.html">chain_element.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -484,7 +535,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="chain__element_8c_ac77db7177de1c0e80c29b9fe437f99e3_icgraph.png" border="0" usemap="#chain__element_8c_ac77db7177de1c0e80c29b9fe437f99e3_icgraph" alt=""/></div>
 <map name="chain__element_8c_ac77db7177de1c0e80c29b9fe437f99e3_icgraph" id="chain__element_8c_ac77db7177de1c0e80c29b9fe437f99e3_icgraph">
-<area shape="rect" id="node2" href="chain__of__responsibility_8c.html#a992ce77a62711a598b767610c282ccee" title="remove to chain api " alt="" coords="208,13,348,39"/>
+<area shape="rect" id="node2" href="chain__of__responsibility_8c.html#ae3e37775e62a141540c86752e349641b" title="remove to chain api " alt="" coords="208,13,348,39"/>
 </map>
 </div>
 
