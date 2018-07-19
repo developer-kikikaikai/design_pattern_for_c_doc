@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>design_pattern_for_c: D:/design_pattern_for_c/threadpool/lib/event_if_epoll.c File Reference</title>
+<title>design_pattern_for_c: D:/design_pattern_for_c/threadpool/event_if/event_if_epoll.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">design_pattern_for_c
-   &#160;<span id="projectnumber">for 1.0.0 pre</span>
+   &#160;<span id="projectnumber">for 1.0.0</span>
    </div>
   </td>
  </tr>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('event__if__epoll_8c.html','');});
 <div class="title">event_if_epoll.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="event__if_8h_source.html">event_if.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="tpool__event__if_8h_source.html">tpool_event_if.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>&quot;</code><br />
 <code>#include &lt;sys/epoll.h&gt;</code><br />
 <code>#include &lt;sys/eventfd.h&gt;</code><br />
@@ -104,9 +104,9 @@ $(document).ready(function(){initNavTree('event__if__epoll_8c.html','');});
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for event_if_epoll.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="event__if__epoll_8c__incl.png" border="0" usemap="#_d_1_2design__pattern__for__c_2threadpool_2lib_2event__if__epoll_8c" alt=""/></div>
-<map name="_d_1_2design__pattern__for__c_2threadpool_2lib_2event__if__epoll_8c" id="_d_1_2design__pattern__for__c_2threadpool_2lib_2event__if__epoll_8c">
-<area shape="rect" id="node2" href="event__if_8h.html" title="This is API of event wrapper. " alt="" coords="201,109,277,136"/>
+<div class="center"><img src="event__if__epoll_8c__incl.png" border="0" usemap="#_d_1_2design__pattern__for__c_2threadpool_2event__if_2event__if__epoll_8c" alt=""/></div>
+<map name="_d_1_2design__pattern__for__c_2threadpool_2event__if_2event__if__epoll_8c" id="_d_1_2design__pattern__for__c_2threadpool_2event__if_2event__if__epoll_8c">
+<area shape="rect" id="node2" href="tpool__event__if_8h.html" title="tpool_event_if.h" alt="" coords="174,109,285,136"/>
 <area shape="rect" id="node4" href="dp__debug_8h.html" title="For using debug log. " alt="" coords="451,109,541,136"/>
 <area shape="rect" id="node3" href="event__threadpool__data_8h.html" title="This is API as ThreadPool data definition for ThreadPooldesign petten by using libevent. " alt="" coords="5,184,168,211"/>
 </map>
@@ -146,31 +146,31 @@ Functions</h2></td></tr>
 <tr class="memitem:aebef2021f7498da46220d30b1996552e"><td class="memItemLeft" align="right" valign="top">static short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#aebef2021f7498da46220d30b1996552e">convert_etpoll_ownid2eve</a> (int eventflag)</td></tr>
 <tr class="separator:aebef2021f7498da46220d30b1996552e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">API for event if</div></td></tr>
-<tr class="memitem:af8a56a181a4441abd338686d7c47768e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#af8a56a181a4441abd338686d7c47768e">event_if_new</a> (void)</td></tr>
+<tr class="memitem:af8a56a181a4441abd338686d7c47768e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#af8a56a181a4441abd338686d7c47768e">event_if_new</a> (void)</td></tr>
 <tr class="memdesc:af8a56a181a4441abd338686d7c47768e"><td class="mdescLeft">&#160;</td><td class="mdescRight">event new  <a href="#af8a56a181a4441abd338686d7c47768e">More...</a><br /></td></tr>
 <tr class="separator:af8a56a181a4441abd338686d7c47768e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfff3396c4ebb44d7472e100b60c7742"><td class="memItemLeft" align="right" valign="top"><a class="el" href="event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#acfff3396c4ebb44d7472e100b60c7742">event_if_add</a> (<a class="el" href="event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this, <a class="el" href="event__threadpool__data_8h.html#a8accf85063361af19ac78e3644e9419a">EventSubscriber</a> subscriber, void *arg)</td></tr>
+<tr class="memitem:acfff3396c4ebb44d7472e100b60c7742"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tpool__event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#acfff3396c4ebb44d7472e100b60c7742">event_if_add</a> (<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this, <a class="el" href="event__threadpool__data_8h.html#a8accf85063361af19ac78e3644e9419a">EventSubscriber</a> subscriber, void *arg)</td></tr>
 <tr class="memdesc:acfff3396c4ebb44d7472e100b60c7742"><td class="mdescLeft">&#160;</td><td class="mdescRight">add new event  <a href="#acfff3396c4ebb44d7472e100b60c7742">More...</a><br /></td></tr>
 <tr class="separator:acfff3396c4ebb44d7472e100b60c7742"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8efe4fbd1ba72a0443ec626b8f14bac4"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#a8efe4fbd1ba72a0443ec626b8f14bac4">event_if_update</a> (<a class="el" href="event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this, <a class="el" href="event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a> handler, <a class="el" href="event__threadpool__data_8h.html#a8accf85063361af19ac78e3644e9419a">EventSubscriber</a> subscriber, void *arg)</td></tr>
+<tr class="memitem:a8efe4fbd1ba72a0443ec626b8f14bac4"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#a8efe4fbd1ba72a0443ec626b8f14bac4">event_if_update</a> (<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this, <a class="el" href="tpool__event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a> handler, <a class="el" href="event__threadpool__data_8h.html#a8accf85063361af19ac78e3644e9419a">EventSubscriber</a> subscriber, void *arg)</td></tr>
 <tr class="memdesc:a8efe4fbd1ba72a0443ec626b8f14bac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">update registered event  <a href="#a8efe4fbd1ba72a0443ec626b8f14bac4">More...</a><br /></td></tr>
 <tr class="separator:a8efe4fbd1ba72a0443ec626b8f14bac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa18f47657c299570b7cf255922616632"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#aa18f47657c299570b7cf255922616632">event_if_del</a> (<a class="el" href="event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this, <a class="el" href="event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a> handler)</td></tr>
+<tr class="memitem:aa18f47657c299570b7cf255922616632"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#aa18f47657c299570b7cf255922616632">event_if_del</a> (<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this, <a class="el" href="tpool__event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a> handler)</td></tr>
 <tr class="memdesc:aa18f47657c299570b7cf255922616632"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete event  <a href="#aa18f47657c299570b7cf255922616632">More...</a><br /></td></tr>
 <tr class="separator:aa18f47657c299570b7cf255922616632"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab77635365c39241ca196b528c6a71df6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#ab77635365c39241ca196b528c6a71df6">event_if_getfd</a> (<a class="el" href="event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a> handler)</td></tr>
-<tr class="memdesc:ab77635365c39241ca196b528c6a71df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">delete event  <a href="#ab77635365c39241ca196b528c6a71df6">More...</a><br /></td></tr>
+<tr class="memitem:ab77635365c39241ca196b528c6a71df6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#ab77635365c39241ca196b528c6a71df6">event_if_getfd</a> (<a class="el" href="tpool__event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a> handler)</td></tr>
+<tr class="memdesc:ab77635365c39241ca196b528c6a71df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">get fd related to handler  <a href="#ab77635365c39241ca196b528c6a71df6">More...</a><br /></td></tr>
 <tr class="separator:ab77635365c39241ca196b528c6a71df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa903a0971a8264153461f01e9438f388"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#aa903a0971a8264153461f01e9438f388">event_if_loop</a> (<a class="el" href="event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this)</td></tr>
+<tr class="memitem:aa903a0971a8264153461f01e9438f388"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#aa903a0971a8264153461f01e9438f388">event_if_loop</a> (<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this)</td></tr>
 <tr class="memdesc:aa903a0971a8264153461f01e9438f388"><td class="mdescLeft">&#160;</td><td class="mdescRight">main loop of this event  <a href="#aa903a0971a8264153461f01e9438f388">More...</a><br /></td></tr>
 <tr class="separator:aa903a0971a8264153461f01e9438f388"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8343693c8b70e81e82960389e7dac8db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#a8343693c8b70e81e82960389e7dac8db">event_if_loopbreak</a> (<a class="el" href="event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this)</td></tr>
+<tr class="memitem:a8343693c8b70e81e82960389e7dac8db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#a8343693c8b70e81e82960389e7dac8db">event_if_loopbreak</a> (<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this)</td></tr>
 <tr class="memdesc:a8343693c8b70e81e82960389e7dac8db"><td class="mdescLeft">&#160;</td><td class="mdescRight">break event  <a href="#a8343693c8b70e81e82960389e7dac8db">More...</a><br /></td></tr>
 <tr class="separator:a8343693c8b70e81e82960389e7dac8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a127eb84ce5fa16fcc7c995021b10308f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#a127eb84ce5fa16fcc7c995021b10308f">event_if_exit</a> (<a class="el" href="event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this)</td></tr>
+<tr class="memitem:a127eb84ce5fa16fcc7c995021b10308f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#a127eb84ce5fa16fcc7c995021b10308f">event_if_exit</a> (<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this)</td></tr>
 <tr class="memdesc:a127eb84ce5fa16fcc7c995021b10308f"><td class="mdescLeft">&#160;</td><td class="mdescRight">exit after main loop  <a href="#a127eb84ce5fa16fcc7c995021b10308f">More...</a><br /></td></tr>
 <tr class="separator:a127eb84ce5fa16fcc7c995021b10308f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29248d04ab081760fecfe8459b5582cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#a29248d04ab081760fecfe8459b5582cd">event_if_free</a> (<a class="el" href="event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this)</td></tr>
+<tr class="memitem:a29248d04ab081760fecfe8459b5582cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__if__epoll_8c.html#a29248d04ab081760fecfe8459b5582cd">event_if_free</a> (<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this)</td></tr>
 <tr class="memdesc:a29248d04ab081760fecfe8459b5582cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">free event if instance  <a href="#a29248d04ab081760fecfe8459b5582cd">More...</a><br /></td></tr>
 <tr class="separator:a29248d04ab081760fecfe8459b5582cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -303,8 +303,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__if__epoll_8c_ac779b9dbe2fa1081785e7918bceeb44a_icgraph.png" border="0" usemap="#event__if__epoll_8c_ac779b9dbe2fa1081785e7918bceeb44a_icgraph" alt=""/></div>
 <map name="event__if__epoll_8c_ac779b9dbe2fa1081785e7918bceeb44a_icgraph" id="event__if__epoll_8c_ac779b9dbe2fa1081785e7918bceeb44a_icgraph">
-<area shape="rect" id="node2" href="event__if__epoll_8c.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="229,5,322,32"/>
-<area shape="rect" id="node3" href="event__if__epoll_8c.html#a8efe4fbd1ba72a0443ec626b8f14bac4" title="update registered event " alt="" coords="220,56,331,83"/>
+<area shape="rect" id="node2" href="tpool__event__if_8h.html#acfff3396c4ebb44d7472e100b60c7742" title="add event handler related to fd " alt="" coords="229,5,322,32"/>
+<area shape="rect" id="node4" href="tpool__event__if_8h.html#a4192dbad284ba285945a53c52aeed636" title="update event handler related to fd " alt="" coords="220,56,331,83"/>
+<area shape="rect" id="node3" href="event__if__libevent_8c.html#a8efe4fbd1ba72a0443ec626b8f14bac4" title="update registered event " alt="" coords="379,5,489,32"/>
 </map>
 </div>
 
@@ -340,7 +341,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__if__epoll_8c_aebef2021f7498da46220d30b1996552e_icgraph.png" border="0" usemap="#event__if__epoll_8c_aebef2021f7498da46220d30b1996552e_icgraph" alt=""/></div>
 <map name="event__if__epoll_8c_aebef2021f7498da46220d30b1996552e_icgraph" id="event__if__epoll_8c_aebef2021f7498da46220d30b1996552e_icgraph">
-<area shape="rect" id="node2" href="event__if__epoll_8c.html#aa903a0971a8264153461f01e9438f388" title="main loop of this event " alt="" coords="220,5,316,32"/>
+<area shape="rect" id="node2" href="tpool__event__if_8h.html#aa903a0971a8264153461f01e9438f388" title="main loop, start to watch event " alt="" coords="220,5,316,32"/>
 </map>
 </div>
 
@@ -353,9 +354,9 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a> event_if_add </td>
+          <td class="memname"><a class="el" href="tpool__event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a> event_if_add </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>&#160;</td>
           <td class="paramname"><em>this</em>, </td>
         </tr>
         <tr>
@@ -379,16 +380,9 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>add new event </p>
+<p>add event handler related to fd </p>
 
 <p class="definition">Definition at line <a class="el" href="event__if__epoll_8c_source.html#l00067">67</a> of file <a class="el" href="event__if__epoll_8c_source.html">event_if_epoll.c</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="event__if__epoll_8c_acfff3396c4ebb44d7472e100b60c7742_cgraph.png" border="0" usemap="#event__if__epoll_8c_acfff3396c4ebb44d7472e100b60c7742_cgraph" alt=""/></div>
-<map name="event__if__epoll_8c_acfff3396c4ebb44d7472e100b60c7742_cgraph" id="event__if__epoll_8c_acfff3396c4ebb44d7472e100b60c7742_cgraph">
-<area shape="rect" id="node2" href="event__if__epoll_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="147,5,313,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -401,13 +395,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void event_if_del </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>&#160;</td>
           <td class="paramname"><em>this</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="tpool__event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a>&#160;</td>
           <td class="paramname"><em>handler</em>&#160;</td>
         </tr>
         <tr>
@@ -419,6 +413,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>delete event </p>
+<p>delete event handler related to fd </p>
 
 <p class="definition">Definition at line <a class="el" href="event__if__epoll_8c_source.html#l00128">128</a> of file <a class="el" href="event__if__epoll_8c_source.html">event_if_epoll.c</a>.</p>
 
@@ -433,7 +428,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void event_if_exit </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>&#160;</td>
           <td class="paramname"><em>this</em></td><td>)</td>
           <td></td>
         </tr>
@@ -441,6 +436,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>exit after main loop </p>
+<p>exit instances for loop, if plugin want. </p>
 
 <p class="definition">Definition at line <a class="el" href="event__if__epoll_8c_source.html#l00190">190</a> of file <a class="el" href="event__if__epoll_8c_source.html">event_if_epoll.c</a>.</p>
 
@@ -455,7 +451,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void event_if_free </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>&#160;</td>
           <td class="paramname"><em>this</em></td><td>)</td>
           <td></td>
         </tr>
@@ -463,6 +459,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>free event if instance </p>
+<p>free instances </p>
 
 <p class="definition">Definition at line <a class="el" href="event__if__epoll_8c_source.html#l00195">195</a> of file <a class="el" href="event__if__epoll_8c_source.html">event_if_epoll.c</a>.</p>
 <div class="dynheader">
@@ -470,7 +467,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__if__epoll_8c_a29248d04ab081760fecfe8459b5582cd_icgraph.png" border="0" usemap="#event__if__epoll_8c_a29248d04ab081760fecfe8459b5582cd_icgraph" alt=""/></div>
 <map name="event__if__epoll_8c_a29248d04ab081760fecfe8459b5582cd_icgraph" id="event__if__epoll_8c_a29248d04ab081760fecfe8459b5582cd_icgraph">
-<area shape="rect" id="node2" href="event__if__epoll_8c.html#af8a56a181a4441abd338686d7c47768e" title="event new " alt="" coords="147,5,241,32"/>
+<area shape="rect" id="node2" href="tpool__event__if_8h.html#af8a56a181a4441abd338686d7c47768e" title="new event instance " alt="" coords="147,5,241,32"/>
 </map>
 </div>
 
@@ -485,14 +482,21 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">int event_if_getfd </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="tpool__event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a>&#160;</td>
           <td class="paramname"><em>handler</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>delete event </p>
+<p>get fd related to handler </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>EventHandler instance returned at event_if_add. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>fd </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="event__if__epoll_8c_source.html#l00139">139</a> of file <a class="el" href="event__if__epoll_8c_source.html">event_if_epoll.c</a>.</p>
 
@@ -507,7 +511,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">int event_if_loop </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>&#160;</td>
           <td class="paramname"><em>this</em></td><td>)</td>
           <td></td>
         </tr>
@@ -515,16 +519,9 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>main loop of this event </p>
+<p>main loop, start to watch event </p>
 
 <p class="definition">Definition at line <a class="el" href="event__if__epoll_8c_source.html#l00144">144</a> of file <a class="el" href="event__if__epoll_8c_source.html">event_if_epoll.c</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="event__if__epoll_8c_aa903a0971a8264153461f01e9438f388_cgraph.png" border="0" usemap="#event__if__epoll_8c_aa903a0971a8264153461f01e9438f388_cgraph" alt=""/></div>
-<map name="event__if__epoll_8c_aa903a0971a8264153461f01e9438f388_cgraph" id="event__if__epoll_8c_aa903a0971a8264153461f01e9438f388_cgraph">
-<area shape="rect" id="node2" href="event__if__epoll_8c.html#aebef2021f7498da46220d30b1996552e" title="convert_etpoll_ownid2eve" alt="" coords="149,5,316,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -537,7 +534,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void event_if_loopbreak </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>&#160;</td>
           <td class="paramname"><em>this</em></td><td>)</td>
           <td></td>
         </tr>
@@ -545,6 +542,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>break event </p>
+<p>break main loop </p>
 
 <p class="definition">Definition at line <a class="el" href="event__if__epoll_8c_source.html#l00184">184</a> of file <a class="el" href="event__if__epoll_8c_source.html">event_if_epoll.c</a>.</p>
 
@@ -557,7 +555,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> event_if_new </td>
+          <td class="memname"><a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> event_if_new </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -567,16 +565,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>event new </p>
+<p>new event instance </p>
 
 <p class="definition">Definition at line <a class="el" href="event__if__epoll_8c_source.html#l00046">46</a> of file <a class="el" href="event__if__epoll_8c_source.html">event_if_epoll.c</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="event__if__epoll_8c_af8a56a181a4441abd338686d7c47768e_cgraph.png" border="0" usemap="#event__if__epoll_8c_af8a56a181a4441abd338686d7c47768e_cgraph" alt=""/></div>
-<map name="event__if__epoll_8c_af8a56a181a4441abd338686d7c47768e_cgraph" id="event__if__epoll_8c_af8a56a181a4441abd338686d7c47768e_cgraph">
-<area shape="rect" id="node2" href="event__if__epoll_8c.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="148,5,241,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -589,13 +580,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void* event_if_update </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>&#160;</td>
           <td class="paramname"><em>this</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="tpool__event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a>&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
         </tr>
         <tr>
@@ -619,16 +610,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>update registered event </p>
+<p>update event handler related to fd </p>
 
 <p class="definition">Definition at line <a class="el" href="event__if__epoll_8c_source.html#l00105">105</a> of file <a class="el" href="event__if__epoll_8c_source.html">event_if_epoll.c</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="event__if__epoll_8c_a8efe4fbd1ba72a0443ec626b8f14bac4_cgraph.png" border="0" usemap="#event__if__epoll_8c_a8efe4fbd1ba72a0443ec626b8f14bac4_cgraph" alt=""/></div>
-<map name="event__if__epoll_8c_a8efe4fbd1ba72a0443ec626b8f14bac4_cgraph" id="event__if__epoll_8c_a8efe4fbd1ba72a0443ec626b8f14bac4_cgraph">
-<area shape="rect" id="node2" href="event__if__epoll_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="164,5,331,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -637,7 +621,7 @@ Here is the call graph for this function:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_0400ab1fc3022b5bc236449581ef95a3.html">design_pattern_for_c</a></li><li class="navelem"><a class="el" href="dir_e93cb3440fc22dafc509c5b71c87c6f4.html">threadpool</a></li><li class="navelem"><a class="el" href="dir_ee925148ed42e9e5efafd2c0e9a3ddb9.html">lib</a></li><li class="navelem"><a class="el" href="event__if__epoll_8c.html">event_if_epoll.c</a></li>
+    <li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_0400ab1fc3022b5bc236449581ef95a3.html">design_pattern_for_c</a></li><li class="navelem"><a class="el" href="dir_e93cb3440fc22dafc509c5b71c87c6f4.html">threadpool</a></li><li class="navelem"><a class="el" href="dir_7869805f70c749feee627a40a56e4ae6.html">event_if</a></li><li class="navelem"><a class="el" href="event__if__epoll_8c.html">event_if_epoll.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>

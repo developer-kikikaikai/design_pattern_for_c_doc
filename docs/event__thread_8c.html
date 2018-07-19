@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">design_pattern_for_c
-   &#160;<span id="projectnumber">for 1.0.0 pre</span>
+   &#160;<span id="projectnumber">for 1.0.0</span>
    </div>
   </td>
  </tr>
@@ -104,21 +104,24 @@ $(document).ready(function(){initNavTree('event__thread_8c.html','');});
 <code>#include &lt;sys/types.h&gt;</code><br />
 <code>#include &lt;sys/eventfd.h&gt;</code><br />
 <code>#include &lt;errno.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="event__if_8h_source.html">event_if.h</a>&quot;</code><br />
+<code>#include &lt;sys/stat.h&gt;</code><br />
+<code>#include &lt;dlfcn.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="event__thread_8h_source.html">event_thread.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="tpool__event__if_8h_source.html">tpool_event_if.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dp__util_8h_source.html">dp_util.h</a>&quot;</code><br />
+<code>#include &quot;config.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for event_thread.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__thread_8c__incl.png" border="0" usemap="#_d_1_2design__pattern__for__c_2threadpool_2lib_2event__thread_8c" alt=""/></div>
 <map name="_d_1_2design__pattern__for__c_2threadpool_2lib_2event__thread_8c" id="_d_1_2design__pattern__for__c_2threadpool_2lib_2event__thread_8c">
-<area shape="rect" id="node9" href="event__if_8h.html" title="This is API of event wrapper. " alt="" coords="430,109,506,136"/>
-<area shape="rect" id="node11" href="event__thread_8h.html" title="This is API of event thread. " alt="" coords="531,109,637,136"/>
-<area shape="rect" id="node12" href="dp__util_8h.html" title=" Utility headers " alt="" coords="662,109,733,136"/>
-<area shape="rect" id="node10" href="event__threadpool__data_8h.html" title="This is API as ThreadPool data definition for ThreadPooldesign petten by using libevent. " alt="" coords="257,184,420,211"/>
-<area shape="rect" id="node13" href="dp__list_8h.html" title="Utility list API for design pattern. " alt="" coords="610,184,681,211"/>
-<area shape="rect" id="node14" href="dp__mutex_8h.html" title="Utility mutex API for design pattern. " alt="" coords="495,184,585,211"/>
-<area shape="rect" id="node15" href="dp__debug_8h.html" title="For using debug log. " alt="" coords="705,184,794,211"/>
+<area shape="rect" id="node11" href="event__thread_8h.html" title="This is API of event thread. " alt="" coords="506,109,613,136"/>
+<area shape="rect" id="node13" href="tpool__event__if_8h.html" title="tpool_event_if.h" alt="" coords="42,109,152,136"/>
+<area shape="rect" id="node14" href="dp__util_8h.html" title=" Utility headers " alt="" coords="878,109,948,136"/>
+<area shape="rect" id="node12" href="event__threadpool__data_8h.html" title="This is API as ThreadPool data definition for ThreadPooldesign petten by using libevent. " alt="" coords="200,184,362,211"/>
+<area shape="rect" id="node15" href="dp__list_8h.html" title="Utility list API for design pattern. " alt="" coords="868,184,939,211"/>
+<area shape="rect" id="node16" href="dp__mutex_8h.html" title="Utility mutex API for design pattern. " alt="" coords="753,184,844,211"/>
+<area shape="rect" id="node17" href="dp__debug_8h.html" title="For using debug log. " alt="" coords="963,184,1052,211"/>
 </map>
 </div>
 </div>
@@ -174,6 +177,10 @@ Functions</h2></td></tr>
 <tr class="separator:a52a138649b6a24236cdd29f8049f69a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acff8e0f373b2a7a1e477fd1791e35f06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__thread_8c.html#acff8e0f373b2a7a1e477fd1791e35f06">event_thread_set_stack_size</a> (size_t stack_size)</td></tr>
 <tr class="separator:acff8e0f373b2a7a1e477fd1791e35f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fc6608dd6ff1ea34878ca72a23708a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__thread_8c.html#a8fc6608dd6ff1ea34878ca72a23708a4">event_tpool_thread_load_plugin</a> (const char *plugin_path)</td></tr>
+<tr class="separator:a8fc6608dd6ff1ea34878ca72a23708a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add7766577e8b7b28601ee6363139e6ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__thread_8c.html#add7766577e8b7b28601ee6363139e6ee">event_tpool_thread_unload_plugin</a> (void)</td></tr>
+<tr class="separator:add7766577e8b7b28601ee6363139e6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">API for EventSubscriberData.</div></td></tr>
 <tr class="memitem:aba5dc282f2df9b3b0664764d7150e637"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="event__thread_8c.html#a2813bd38975f2d8092da682cac627124">EventSubscriberData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__thread_8c.html#aba5dc282f2df9b3b0664764d7150e637">event_subscriber_data_new</a> (<a class="el" href="event__thread_8h.html#a78278dc9f4ceacd240099102053c2417">EventTPoolThread</a> this, <a class="el" href="event__threadpool__data_8h.html#a8accf85063361af19ac78e3644e9419a">EventSubscriber</a> subscriber, void *arg)</td></tr>
 <tr class="memdesc:aba5dc282f2df9b3b0664764d7150e637"><td class="mdescLeft">&#160;</td><td class="mdescRight">new instance  <a href="#aba5dc282f2df9b3b0664764d7150e637">More...</a><br /></td></tr>
@@ -223,9 +230,45 @@ event_tpool_thread_t definition.</h2></td></tr>
 <tr class="memitem:a2813bd38975f2d8092da682cac627124"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structevent__subscriber__data__t.html">event_subscriber_data_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__thread_8c.html#a2813bd38975f2d8092da682cac627124">EventSubscriberData</a></td></tr>
 <tr class="memdesc:a2813bd38975f2d8092da682cac627124"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscriber information define  <a href="#a2813bd38975f2d8092da682cac627124">More...</a><br /></td></tr>
 <tr class="separator:a2813bd38975f2d8092da682cac627124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ce7589c1ae46597a92fb566c10881ed"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:a81011b79683fab64ce3aff71114f8fdd"><td class="memItemLeft" >&#160;&#160;&#160;void *&#160;&#160;&#160;<a class="el" href="event__thread_8c.html#a81011b79683fab64ce3aff71114f8fdd">handle</a></td></tr>
+<tr class="separator:a81011b79683fab64ce3aff71114f8fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9ea0e50796e254c50eb8f17e62e736"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>(*&#160;&#160;&#160;<a class="el" href="event__thread_8c.html#a2a9ea0e50796e254c50eb8f17e62e736">new</a> )(void)</td></tr>
+<tr class="separator:a2a9ea0e50796e254c50eb8f17e62e736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99766137138c48da648b05631b21f1c6"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="tpool__event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a>(*&#160;&#160;&#160;<a class="el" href="event__thread_8c.html#a99766137138c48da648b05631b21f1c6">add</a> )(<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this, <br class="typebreak" />
+&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="event__threadpool__data_8h.html#a8accf85063361af19ac78e3644e9419a">EventSubscriber</a> subscriber, <br class="typebreak" />
+&#160;&#160;&#160;&#160;&#160;&#160;void *arg)</td></tr>
+<tr class="separator:a99766137138c48da648b05631b21f1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e2f75a63f87c0e866ac4e099e8f629"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="tpool__event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a>(*&#160;&#160;&#160;<a class="el" href="event__thread_8c.html#ad6e2f75a63f87c0e866ac4e099e8f629">update</a> )(<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this, <br class="typebreak" />
+&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="tpool__event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a> handler, <br class="typebreak" />
+&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="event__threadpool__data_8h.html#a8accf85063361af19ac78e3644e9419a">EventSubscriber</a> subscriber, <br class="typebreak" />
+&#160;&#160;&#160;&#160;&#160;&#160;void *arg)</td></tr>
+<tr class="separator:ad6e2f75a63f87c0e866ac4e099e8f629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4000a056ec0df3bb2f4d6696f8eaba2"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="event__thread_8c.html#ad4000a056ec0df3bb2f4d6696f8eaba2">del</a> )(<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this, <br class="typebreak" />
+&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="tpool__event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a> handler)</td></tr>
+<tr class="separator:ad4000a056ec0df3bb2f4d6696f8eaba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a550f93cd982af5f61e3f882f1f4d64d5"><td class="memItemLeft" >&#160;&#160;&#160;int(*&#160;&#160;&#160;<a class="el" href="event__thread_8c.html#a550f93cd982af5f61e3f882f1f4d64d5">getfd</a> )(<a class="el" href="tpool__event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a> handler)</td></tr>
+<tr class="separator:a550f93cd982af5f61e3f882f1f4d64d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa60124a56e91e27e0bdf8fabc82ebd6e"><td class="memItemLeft" >&#160;&#160;&#160;int(*&#160;&#160;&#160;<a class="el" href="event__thread_8c.html#aa60124a56e91e27e0bdf8fabc82ebd6e">loop</a> )(<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this)</td></tr>
+<tr class="separator:aa60124a56e91e27e0bdf8fabc82ebd6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2fd23c772da6e5c89059f3910620c70"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="event__thread_8c.html#ab2fd23c772da6e5c89059f3910620c70">loopbreak</a> )(<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this)</td></tr>
+<tr class="separator:ab2fd23c772da6e5c89059f3910620c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4db40c7229194a2da00b5f46757e8ac"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="event__thread_8c.html#ab4db40c7229194a2da00b5f46757e8ac">exit</a> )(<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this)</td></tr>
+<tr class="separator:ab4db40c7229194a2da00b5f46757e8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a7dae8eee6452d1ae26122fd99d5b2"><td class="memItemLeft" >&#160;&#160;&#160;void(*&#160;&#160;&#160;<a class="el" href="event__thread_8c.html#a32a7dae8eee6452d1ae26122fd99d5b2">free</a> )(<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this)</td></tr>
+<tr class="separator:a32a7dae8eee6452d1ae26122fd99d5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ce7589c1ae46597a92fb566c10881ed"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__thread_8c.html#a3ce7589c1ae46597a92fb566c10881ed">event_if_instance_g</a></td></tr>
+<tr class="memdesc:a3ce7589c1ae46597a92fb566c10881ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface definition  <a href="#a3ce7589c1ae46597a92fb566c10881ed">More...</a><br /></td></tr>
+<tr class="separator:a3ce7589c1ae46597a92fb566c10881ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3d0146113aa579ddbb85969d4342394"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__thread_8c.html#ac3d0146113aa579ddbb85969d4342394">event_thread_stack_size_g</a> = <a class="el" href="event__thread_8c.html#ad209b1c47de355ac33fe60131871dc48">EVENT_THREAD_STACKSIZE</a></td></tr>
 <tr class="memdesc:ac3d0146113aa579ddbb85969d4342394"><td class="mdescLeft">&#160;</td><td class="mdescRight">thread stack size, user can change it by using event_tpool_set_stack_size  <a href="#ac3d0146113aa579ddbb85969d4342394">More...</a><br /></td></tr>
 <tr class="separator:ac3d0146113aa579ddbb85969d4342394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb95ccca09c02208fc61e005a9f1727a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__thread_8c.html#acb95ccca09c02208fc61e005a9f1727a">event_thread_set_func</a> (void *<a class="el" href="event__thread_8c.html#a81011b79683fab64ce3aff71114f8fdd">handle</a>, const char *func_name, void **func)</td></tr>
+<tr class="separator:acb95ccca09c02208fc61e005a9f1727a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee50083bfbe38493d5d3c33d6d7fef89"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__thread_8c.html#aee50083bfbe38493d5d3c33d6d7fef89">event_tpool_thread_load_all_fun</a> (void)</td></tr>
+<tr class="separator:aee50083bfbe38493d5d3c33d6d7fef89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a832cd90a003e1aeb1b2ef18c37a72abf"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event__thread_8c.html#a832cd90a003e1aeb1b2ef18c37a72abf">event_tpool_thread_get_defaullt_plugin</a> (void)</td></tr>
+<tr class="separator:a832cd90a003e1aeb1b2ef18c37a72abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 API for message.</h2></td></tr>
@@ -297,7 +340,7 @@ API for EventTPoolThread msg callback</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00080">80</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00100">100</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 
 </div>
 </div>
@@ -327,7 +370,7 @@ API for EventTPoolThread msg callback</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00081">81</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00101">101</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 
 </div>
 </div>
@@ -357,7 +400,7 @@ API for EventTPoolThread msg callback</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00082">82</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00102">102</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 
 </div>
 </div>
@@ -373,7 +416,7 @@ API for EventTPoolThread msg callback</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00018">18</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00021">21</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 
 </div>
 </div>
@@ -389,7 +432,7 @@ API for EventTPoolThread msg callback</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00016">16</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00019">19</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 
 </div>
 </div>
@@ -409,7 +452,7 @@ API for EventTPoolThread msg callback</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00102">102</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00122">122</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 
 </div>
 </div>
@@ -425,7 +468,7 @@ API for EventTPoolThread msg callback</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00103">103</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00123">123</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 
 </div>
 </div>
@@ -486,7 +529,7 @@ API for EventTPoolThread msg callback</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00041">41</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00061">61</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 
 </div>
 </div>
@@ -502,7 +545,7 @@ API for EventTPoolThread msg callback</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00136">136</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00156">156</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 
 </div>
 </div>
@@ -520,7 +563,7 @@ API for EventTPoolThread msg callback</h2></td></tr>
 
 <p>subscriber information define </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00072">72</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00092">92</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 
 </div>
 </div>
@@ -536,7 +579,7 @@ API for EventTPoolThread msg callback</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00041">41</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00061">61</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 
 </div>
 </div>
@@ -577,16 +620,7 @@ API for EventTPoolThread msg callback</h2></td></tr>
 
 <p>free instance </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00296">296</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="event__thread_8c_a914e60d8a3a3d121c079a022d320168c_cgraph.png" border="0" usemap="#event__thread_8c_a914e60d8a3a3d121c079a022d320168c_cgraph" alt=""/></div>
-<map name="event__thread_8c_a914e60d8a3a3d121c079a022d320168c_cgraph" id="event__thread_8c_a914e60d8a3a3d121c079a022d320168c_cgraph">
-<area shape="rect" id="node2" href="event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="232,5,321,32"/>
-<area shape="rect" id="node3" href="event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="369,5,527,32"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00316">316</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -599,8 +633,8 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node5" href="event__thread_8c.html#a49e9bbb821b0195b9ae31b14d93d589d" title="main thread " alt="" coords="461,71,627,98"/>
 <area shape="rect" id="node6" href="event__thread_8h.html#a1ddb76c71f97fc644e1a85f56f106435" title="start thread " alt="" coords="675,64,805,105"/>
 <area shape="rect" id="node7" href="event__tpool__manager_8c.html#a762bca81a6ac647786e364e0fe6f7d0e" title="start thread " alt="" coords="853,64,984,105"/>
-<area shape="rect" id="node8" href="event__tpool__manager_8c.html#a67ac16d5d7417a3365bb9cf776ff7a07" title="new thread info " alt="" coords="1032,64,1163,105"/>
-<area shape="rect" id="node9" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="1211,71,1385,98"/>
+<area shape="rect" id="node8" href="event__tpool__manager_8c.html#a43ba8f1c766653d9dbac3daaaf85e58c" title="new thread info " alt="" coords="1032,64,1163,105"/>
+<area shape="rect" id="node9" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="1211,71,1385,98"/>
 <area shape="rect" id="node10" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1433,71,1484,98"/>
 </map>
 </div>
@@ -633,15 +667,7 @@ Here is the caller graph for this function:</div>
 
 <p>get fd </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00303">303</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="event__thread_8c_a425c984e2437355893146600348ed020_cgraph.png" border="0" usemap="#event__thread_8c_a425c984e2437355893146600348ed020_cgraph" alt=""/></div>
-<map name="event__thread_8c_a425c984e2437355893146600348ed020_cgraph" id="event__thread_8c_a425c984e2437355893146600348ed020_cgraph">
-<area shape="rect" id="node2" href="event__if_8h.html#ab77635365c39241ca196b528c6a71df6" title="delete event " alt="" coords="204,13,304,39"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00323">323</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -697,20 +723,13 @@ Here is the caller graph for this function:</div>
 
 <p>new instance </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00275">275</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00295">295</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__thread_8c_aba5dc282f2df9b3b0664764d7150e637_cgraph.png" border="0" usemap="#event__thread_8c_aba5dc282f2df9b3b0664764d7150e637_cgraph" alt=""/></div>
 <map name="event__thread_8c_aba5dc282f2df9b3b0664764d7150e637_cgraph" id="event__thread_8c_aba5dc282f2df9b3b0664764d7150e637_cgraph">
-<area shape="rect" id="node2" href="event__if_8h.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="277,69,371,96"/>
-<area shape="rect" id="node7" href="event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="235,145,413,172"/>
-<area shape="rect" id="node3" href="event__if__epoll_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="463,5,630,32"/>
-<area shape="rect" id="node4" href="event__if__libevent_8c.html#a7612123e0f293e4b76e7a948d1e12060" title="event_if_libevent_callback" alt="" coords="461,56,632,83"/>
-<area shape="rect" id="node6" href="event__if__select_8c.html#a2cc4a722c88d92de302c94ad198258d7" title="event_select_set_fds" alt="" coords="475,107,618,133"/>
-<area shape="rect" id="node5" href="event__if__libevent_8c.html#af6a4a73563d9ead4fd2f8a5a8484abb8" title="convert_etpoll_own2eveid" alt="" coords="680,56,847,83"/>
-<area shape="rect" id="node8" href="event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="502,157,591,184"/>
-<area shape="rect" id="node9" href="event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="685,157,842,184"/>
+<area shape="rect" id="node2" href="event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="235,5,413,32"/>
 </map>
 </div>
 <div class="dynheader">
@@ -740,7 +759,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00543">543</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00615">615</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -786,7 +805,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00164">164</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00184">184</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -812,7 +831,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node18" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="1132,217,1263,259"/>
 <area shape="rect" id="node19" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="1321,181,1451,223"/>
 <area shape="rect" id="node20" href="event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="1503,156,1647,197"/>
-<area shape="rect" id="node21" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="1695,163,1869,190"/>
+<area shape="rect" id="node21" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="1695,163,1869,190"/>
 <area shape="rect" id="node22" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="1696,113,1868,139"/>
 <area shape="rect" id="node24" href="state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="1129,152,1265,193"/>
 </map>
@@ -860,7 +879,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00212">212</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00232">232</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -922,7 +941,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00222">222</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00242">242</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -944,7 +963,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node5" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="881,23,1011,65"/>
 <area shape="rect" id="node6" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="1063,23,1193,65"/>
 <area shape="rect" id="node7" href="event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="1241,23,1385,65"/>
-<area shape="rect" id="node8" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="1433,5,1608,32"/>
+<area shape="rect" id="node8" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="1433,5,1608,32"/>
 <area shape="rect" id="node10" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="1435,56,1607,83"/>
 <area shape="rect" id="node9" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1656,5,1707,32"/>
 <area shape="rect" id="node12" href="state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="671,82,807,123"/>
@@ -978,7 +997,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00245">245</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00265">265</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -997,7 +1016,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node3" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="459,23,589,65"/>
 <area shape="rect" id="node4" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="637,23,768,65"/>
 <area shape="rect" id="node5" href="event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="816,23,960,65"/>
-<area shape="rect" id="node6" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="1008,5,1183,32"/>
+<area shape="rect" id="node6" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="1008,5,1183,32"/>
 <area shape="rect" id="node8" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="1009,56,1181,83"/>
 <area shape="rect" id="node7" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1231,5,1281,32"/>
 </map>
@@ -1051,7 +1070,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00191">191</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00211">211</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1122,7 +1141,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00218">218</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00238">238</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1179,7 +1198,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00187">187</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00207">207</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1190,11 +1209,53 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node4" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="669,23,800,65"/>
 <area shape="rect" id="node5" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="848,23,979,65"/>
 <area shape="rect" id="node6" href="event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="1027,23,1171,65"/>
-<area shape="rect" id="node7" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="1219,5,1393,32"/>
+<area shape="rect" id="node7" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="1219,5,1393,32"/>
 <area shape="rect" id="node9" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="1220,56,1392,83"/>
 <area shape="rect" id="node8" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1441,5,1492,32"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="acb95ccca09c02208fc61e005a9f1727a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb95ccca09c02208fc61e005a9f1727a">&#9670;&nbsp;</a></span>event_thread_set_func()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void event_thread_set_func </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>func_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1214,7 +1275,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00550">550</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00622">622</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1260,7 +1321,7 @@ Here is the caller graph for this function:</div>
 
 <p>add new subscriber </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00532">532</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00604">604</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1324,7 +1385,7 @@ Here is the caller graph for this function:</div>
 
 <p>main messages caller </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00437">437</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00457">457</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1341,8 +1402,8 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node2" href="event__thread_8c.html#a25cb5e69a065c9fc3409460cdb8f5324" title="callback main " alt="" coords="184,13,335,39"/>
 <area shape="rect" id="node3" href="event__thread_8c.html#a32733e959c729cb360f17b65233de0d2" title="set event_base " alt="" coords="383,5,513,47"/>
 <area shape="rect" id="node4" href="event__thread_8h.html#a434dd62b37638e31577b13671dee5976" title="create and thread instance " alt="" coords="561,13,721,39"/>
-<area shape="rect" id="node5" href="event__tpool__manager_8c.html#a67ac16d5d7417a3365bb9cf776ff7a07" title="new thread info " alt="" coords="769,5,900,47"/>
-<area shape="rect" id="node6" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="948,13,1123,39"/>
+<area shape="rect" id="node5" href="event__tpool__manager_8c.html#a43ba8f1c766653d9dbac3daaaf85e58c" title="new thread info " alt="" coords="769,5,900,47"/>
+<area shape="rect" id="node6" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="948,13,1123,39"/>
 <area shape="rect" id="node7" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1171,13,1221,39"/>
 </map>
 </div>
@@ -1391,7 +1452,7 @@ Here is the caller graph for this function:</div>
 
 <p>callback main </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00452">452</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00472">472</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1408,8 +1469,8 @@ Here is the caller graph for this function:</div>
 <map name="event__thread_8c_a25cb5e69a065c9fc3409460cdb8f5324_icgraph" id="event__thread_8c_a25cb5e69a065c9fc3409460cdb8f5324_icgraph">
 <area shape="rect" id="node2" href="event__thread_8c.html#a32733e959c729cb360f17b65233de0d2" title="set event_base " alt="" coords="204,5,335,47"/>
 <area shape="rect" id="node3" href="event__thread_8h.html#a434dd62b37638e31577b13671dee5976" title="create and thread instance " alt="" coords="383,13,543,39"/>
-<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a67ac16d5d7417a3365bb9cf776ff7a07" title="new thread info " alt="" coords="591,5,721,47"/>
-<area shape="rect" id="node5" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="769,13,944,39"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a43ba8f1c766653d9dbac3daaaf85e58c" title="new thread info " alt="" coords="591,5,721,47"/>
+<area shape="rect" id="node5" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="769,13,944,39"/>
 <area shape="rect" id="node6" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="992,13,1043,39"/>
 </map>
 </div>
@@ -1444,7 +1505,7 @@ Here is the caller graph for this function:</div>
 
 <p>delete subscriber </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00540">540</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00612">612</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1466,7 +1527,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node4" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="646,23,777,65"/>
 <area shape="rect" id="node5" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="828,23,959,65"/>
 <area shape="rect" id="node6" href="event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="1007,23,1151,65"/>
-<area shape="rect" id="node7" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="1199,5,1373,32"/>
+<area shape="rect" id="node7" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="1199,5,1373,32"/>
 <area shape="rect" id="node9" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="1200,56,1372,83"/>
 <area shape="rect" id="node8" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1421,5,1472,32"/>
 <area shape="rect" id="node11" href="state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="436,82,572,123"/>
@@ -1502,17 +1563,14 @@ Here is the caller graph for this function:</div>
 
 <p>free thread instance, please call stop before calling it </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00344">344</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00364">364</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__thread_8c_a873727f5dd62d6c5beaad98426202c4d_cgraph.png" border="0" usemap="#event__thread_8c_a873727f5dd62d6c5beaad98426202c4d_cgraph" alt=""/></div>
 <map name="event__thread_8c_a873727f5dd62d6c5beaad98426202c4d_cgraph" id="event__thread_8c_a873727f5dd62d6c5beaad98426202c4d_cgraph">
 <area shape="rect" id="node2" href="event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="212,5,391,32"/>
-<area shape="rect" id="node5" href="event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="230,57,373,98"/>
-<area shape="rect" id="node3" href="event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="441,9,530,36"/>
-<area shape="rect" id="node4" href="event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="580,9,737,36"/>
-<area shape="rect" id="node6" href="event__if_8h.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="439,64,532,91"/>
+<area shape="rect" id="node3" href="event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="230,57,373,98"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1523,9 +1581,48 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node2" href="event__thread_8c.html#a49e9bbb821b0195b9ae31b14d93d589d" title="main thread " alt="" coords="212,13,377,39"/>
 <area shape="rect" id="node3" href="event__thread_8h.html#a1ddb76c71f97fc644e1a85f56f106435" title="start thread " alt="" coords="425,5,556,47"/>
 <area shape="rect" id="node4" href="event__tpool__manager_8c.html#a762bca81a6ac647786e364e0fe6f7d0e" title="start thread " alt="" coords="604,5,735,47"/>
-<area shape="rect" id="node5" href="event__tpool__manager_8c.html#a67ac16d5d7417a3365bb9cf776ff7a07" title="new thread info " alt="" coords="783,5,913,47"/>
-<area shape="rect" id="node6" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="961,13,1136,39"/>
+<area shape="rect" id="node5" href="event__tpool__manager_8c.html#a43ba8f1c766653d9dbac3daaaf85e58c" title="new thread info " alt="" coords="783,5,913,47"/>
+<area shape="rect" id="node6" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="961,13,1136,39"/>
 <area shape="rect" id="node7" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1184,13,1235,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a832cd90a003e1aeb1b2ef18c37a72abf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a832cd90a003e1aeb1b2ef18c37a72abf">&#9670;&nbsp;</a></span>event_tpool_thread_get_defaullt_plugin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const char * event_tpool_thread_get_defaullt_plugin </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00484">484</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="event__thread_8c_a832cd90a003e1aeb1b2ef18c37a72abf_icgraph.png" border="0" usemap="#event__thread_8c_a832cd90a003e1aeb1b2ef18c37a72abf_icgraph" alt=""/></div>
+<map name="event__thread_8c_a832cd90a003e1aeb1b2ef18c37a72abf_icgraph" id="event__thread_8c_a832cd90a003e1aeb1b2ef18c37a72abf_icgraph">
+<area shape="rect" id="node2" href="event__thread_8h.html#a8fc6608dd6ff1ea34878ca72a23708a4" title="event_tpool_thread\l_load_plugin" alt="" coords="189,5,320,47"/>
+<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a43ba8f1c766653d9dbac3daaaf85e58c" title="new thread info " alt="" coords="368,5,499,47"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="547,13,721,39"/>
+<area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="769,13,820,39"/>
 </map>
 </div>
 
@@ -1567,14 +1664,13 @@ Here is the caller graph for this function:</div>
 
 <p>get subscriber </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00355">355</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00375">375</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__thread_8c_aaa5514a0ce6c490ee91af615c2d41f31_cgraph.png" border="0" usemap="#event__thread_8c_aaa5514a0ce6c490ee91af615c2d41f31_cgraph" alt=""/></div>
 <map name="event__thread_8c_aaa5514a0ce6c490ee91af615c2d41f31_cgraph" id="event__thread_8c_aaa5514a0ce6c490ee91af615c2d41f31_cgraph">
 <area shape="rect" id="node2" href="event__thread_8c.html#a425c984e2437355893146600348ed020" title="get fd " alt="" coords="184,5,335,47"/>
-<area shape="rect" id="node3" href="event__if_8h.html#ab77635365c39241ca196b528c6a71df6" title="delete event " alt="" coords="383,13,483,39"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1584,6 +1680,84 @@ Here is the caller graph for this function:</div>
 <map name="event__thread_8c_aaa5514a0ce6c490ee91af615c2d41f31_icgraph" id="event__thread_8c_aaa5514a0ce6c490ee91af615c2d41f31_icgraph">
 <area shape="rect" id="node2" href="event__thread_8c.html#a89ea4e0e155ede3e45d5d89ef650d2ac" title="for update " alt="" coords="184,5,315,47"/>
 <area shape="rect" id="node3" href="event__thread_8c.html#a0362cf7486b7259ef05efdb0dd065d71" title="for del " alt="" coords="184,71,315,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aee50083bfbe38493d5d3c33d6d7fef89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee50083bfbe38493d5d3c33d6d7fef89">&#9670;&nbsp;</a></span>event_tpool_thread_load_all_fun()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int event_tpool_thread_load_all_fun </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00504">504</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="event__thread_8c_aee50083bfbe38493d5d3c33d6d7fef89_icgraph.png" border="0" usemap="#event__thread_8c_aee50083bfbe38493d5d3c33d6d7fef89_icgraph" alt=""/></div>
+<map name="event__thread_8c_aee50083bfbe38493d5d3c33d6d7fef89_icgraph" id="event__thread_8c_aee50083bfbe38493d5d3c33d6d7fef89_icgraph">
+<area shape="rect" id="node2" href="event__thread_8h.html#a8fc6608dd6ff1ea34878ca72a23708a4" title="event_tpool_thread\l_load_plugin" alt="" coords="184,5,315,47"/>
+<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a43ba8f1c766653d9dbac3daaaf85e58c" title="new thread info " alt="" coords="363,5,493,47"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="541,13,716,39"/>
+<area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="764,13,815,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8fc6608dd6ff1ea34878ca72a23708a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fc6608dd6ff1ea34878ca72a23708a4">&#9670;&nbsp;</a></span>event_tpool_thread_load_plugin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int event_tpool_thread_load_plugin </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>plugin_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00626">626</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="event__thread_8c_a8fc6608dd6ff1ea34878ca72a23708a4_cgraph.png" border="0" usemap="#event__thread_8c_a8fc6608dd6ff1ea34878ca72a23708a4_cgraph" alt=""/></div>
+<map name="event__thread_8c_a8fc6608dd6ff1ea34878ca72a23708a4_cgraph" id="event__thread_8c_a8fc6608dd6ff1ea34878ca72a23708a4_cgraph">
+<area shape="rect" id="node2" href="event__thread_8c.html#a832cd90a003e1aeb1b2ef18c37a72abf" title="event_tpool_thread\l_get_defaullt_plugin" alt="" coords="184,5,320,47"/>
+<area shape="rect" id="node3" href="event__thread_8c.html#aee50083bfbe38493d5d3c33d6d7fef89" title="event_tpool_thread\l_load_all_fun" alt="" coords="187,71,317,112"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="event__thread_8c_a8fc6608dd6ff1ea34878ca72a23708a4_icgraph.png" border="0" usemap="#event__thread_8c_a8fc6608dd6ff1ea34878ca72a23708a4_icgraph" alt=""/></div>
+<map name="event__thread_8c_a8fc6608dd6ff1ea34878ca72a23708a4_icgraph" id="event__thread_8c_a8fc6608dd6ff1ea34878ca72a23708a4_icgraph">
+<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a43ba8f1c766653d9dbac3daaaf85e58c" title="new thread info " alt="" coords="184,5,315,47"/>
+<area shape="rect" id="node3" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="363,13,537,39"/>
+<area shape="rect" id="node4" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="585,13,636,39"/>
 </map>
 </div>
 
@@ -1615,22 +1789,15 @@ Here is the caller graph for this function:</div>
 
 <p>main thread </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00367">367</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00387">387</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__thread_8c_a49e9bbb821b0195b9ae31b14d93d589d_cgraph.png" border="0" usemap="#event__thread_8c_a49e9bbb821b0195b9ae31b14d93d589d_cgraph" alt=""/></div>
 <map name="event__thread_8c_a49e9bbb821b0195b9ae31b14d93d589d_cgraph" id="event__thread_8c_a49e9bbb821b0195b9ae31b14d93d589d_cgraph">
-<area shape="rect" id="node2" href="event__if_8h.html#aa903a0971a8264153461f01e9438f388" title="main loop of this event " alt="" coords="250,53,346,80"/>
-<area shape="rect" id="node5" href="event__if_8h.html#a127eb84ce5fa16fcc7c995021b10308f" title="exit after main loop " alt="" coords="251,104,345,131"/>
-<area shape="rect" id="node6" href="event__thread_8c.html#a873727f5dd62d6c5beaad98426202c4d" title="free thread instance, please call stop before calling it " alt="" coords="219,155,377,181"/>
-<area shape="rect" id="node3" href="event__if__epoll_8c.html#aebef2021f7498da46220d30b1996552e" title="convert_etpoll_ownid2eve" alt="" coords="431,5,598,32"/>
-<area shape="rect" id="node4" href="event__if__select_8c.html#a9babfed521c66c64ecd17f7ce84f1235" title="event_select_get_eventflag\l_from_fds" alt="" coords="427,57,603,98"/>
-<area shape="rect" id="node7" href="event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="425,144,604,171"/>
-<area shape="rect" id="node10" href="event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="443,195,586,237"/>
-<area shape="rect" id="node8" href="event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="654,148,743,175"/>
-<area shape="rect" id="node9" href="event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="793,148,951,175"/>
-<area shape="rect" id="node11" href="event__if_8h.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="652,203,745,229"/>
+<area shape="rect" id="node2" href="event__thread_8c.html#a873727f5dd62d6c5beaad98426202c4d" title="free thread instance, please call stop before calling it " alt="" coords="219,35,377,61"/>
+<area shape="rect" id="node3" href="event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="425,5,604,32"/>
+<area shape="rect" id="node4" href="event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="443,57,586,98"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1640,8 +1807,8 @@ Here is the caller graph for this function:</div>
 <map name="event__thread_8c_a49e9bbb821b0195b9ae31b14d93d589d_icgraph" id="event__thread_8c_a49e9bbb821b0195b9ae31b14d93d589d_icgraph">
 <area shape="rect" id="node2" href="event__thread_8h.html#a1ddb76c71f97fc644e1a85f56f106435" title="start thread " alt="" coords="219,5,349,47"/>
 <area shape="rect" id="node3" href="event__tpool__manager_8c.html#a762bca81a6ac647786e364e0fe6f7d0e" title="start thread " alt="" coords="397,5,528,47"/>
-<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a67ac16d5d7417a3365bb9cf776ff7a07" title="new thread info " alt="" coords="576,5,707,47"/>
-<area shape="rect" id="node5" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="755,13,929,39"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a43ba8f1c766653d9dbac3daaaf85e58c" title="new thread info " alt="" coords="576,5,707,47"/>
+<area shape="rect" id="node5" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="755,13,929,39"/>
 <area shape="rect" id="node6" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="977,13,1028,39"/>
 </map>
 </div>
@@ -1684,21 +1851,14 @@ Here is the caller graph for this function:</div>
 
 <p>for add </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00390">390</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00410">410</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__thread_8c_a28448587d7a075b3c0e67fcaa81587c1_cgraph.png" border="0" usemap="#event__thread_8c_a28448587d7a075b3c0e67fcaa81587c1_cgraph" alt=""/></div>
 <map name="event__thread_8c_a28448587d7a075b3c0e67fcaa81587c1_cgraph" id="event__thread_8c_a28448587d7a075b3c0e67fcaa81587c1_cgraph">
-<area shape="rect" id="node2" href="event__thread_8c.html#aba5dc282f2df9b3b0664764d7150e637" title="new instance " alt="" coords="184,108,365,135"/>
-<area shape="rect" id="node3" href="event__if_8h.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="456,69,549,96"/>
-<area shape="rect" id="node8" href="event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="413,145,592,172"/>
-<area shape="rect" id="node4" href="event__if__epoll_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="642,5,809,32"/>
-<area shape="rect" id="node5" href="event__if__libevent_8c.html#a7612123e0f293e4b76e7a948d1e12060" title="event_if_libevent_callback" alt="" coords="640,56,811,83"/>
-<area shape="rect" id="node7" href="event__if__select_8c.html#a2cc4a722c88d92de302c94ad198258d7" title="event_select_set_fds" alt="" coords="654,107,797,133"/>
-<area shape="rect" id="node6" href="event__if__libevent_8c.html#af6a4a73563d9ead4fd2f8a5a8484abb8" title="convert_etpoll_own2eveid" alt="" coords="859,56,1025,83"/>
-<area shape="rect" id="node9" href="event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="681,157,770,184"/>
-<area shape="rect" id="node10" href="event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="863,157,1021,184"/>
+<area shape="rect" id="node2" href="event__thread_8c.html#aba5dc282f2df9b3b0664764d7150e637" title="new instance " alt="" coords="184,13,365,39"/>
+<area shape="rect" id="node3" href="event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="413,13,592,39"/>
 </map>
 </div>
 
@@ -1738,7 +1898,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00269">269</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00289">289</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1766,14 +1926,14 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node18" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="1116,232,1247,273"/>
 <area shape="rect" id="node19" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="1313,232,1443,273"/>
 <area shape="rect" id="node20" href="event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="1495,232,1639,273"/>
-<area shape="rect" id="node21" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="1687,271,1861,298"/>
+<area shape="rect" id="node21" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="1687,271,1861,298"/>
 <area shape="rect" id="node22" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="1688,221,1860,247"/>
 <area shape="rect" id="node24" href="state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="1113,164,1249,205"/>
 <area shape="rect" id="node26" href="event__thread_8h.html#a0be047b5d8ab4bae6aba5d4df09a518d" title="stop thread, and remove resource " alt="" coords="441,261,603,287"/>
 <area shape="rect" id="node28" href="event__thread_8c.html#a25cb5e69a065c9fc3409460cdb8f5324" title="callback main " alt="" coords="669,319,820,346"/>
 <area shape="rect" id="node29" href="event__thread_8c.html#a32733e959c729cb360f17b65233de0d2" title="set event_base " alt="" coords="897,312,1028,353"/>
 <area shape="rect" id="node30" href="event__thread_8h.html#a434dd62b37638e31577b13671dee5976" title="create and thread instance " alt="" coords="1101,317,1261,343"/>
-<area shape="rect" id="node31" href="event__tpool__manager_8c.html#a67ac16d5d7417a3365bb9cf776ff7a07" title="new thread info " alt="" coords="1313,305,1443,347"/>
+<area shape="rect" id="node31" href="event__tpool__manager_8c.html#a43ba8f1c766653d9dbac3daaaf85e58c" title="new thread info " alt="" coords="1313,305,1443,347"/>
 </map>
 </div>
 
@@ -1815,18 +1975,15 @@ Here is the caller graph for this function:</div>
 
 <p>for del </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00418">418</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00438">438</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__thread_8c_a0362cf7486b7259ef05efdb0dd065d71_cgraph.png" border="0" usemap="#event__thread_8c_a0362cf7486b7259ef05efdb0dd065d71_cgraph" alt=""/></div>
 <map name="event__thread_8c_a0362cf7486b7259ef05efdb0dd065d71_cgraph" id="event__thread_8c_a0362cf7486b7259ef05efdb0dd065d71_cgraph">
 <area shape="rect" id="node2" href="event__thread_8c.html#aaa5514a0ce6c490ee91af615c2d41f31" title="get subscriber " alt="" coords="208,5,339,47"/>
-<area shape="rect" id="node5" href="event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="184,71,363,98"/>
+<area shape="rect" id="node4" href="event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="184,71,363,98"/>
 <area shape="rect" id="node3" href="event__thread_8c.html#a425c984e2437355893146600348ed020" title="get fd " alt="" coords="411,5,561,47"/>
-<area shape="rect" id="node4" href="event__if_8h.html#ab77635365c39241ca196b528c6a71df6" title="delete event " alt="" coords="638,13,738,39"/>
-<area shape="rect" id="node6" href="event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="441,71,531,98"/>
-<area shape="rect" id="node7" href="event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="609,71,767,98"/>
 </map>
 </div>
 
@@ -1868,15 +2025,7 @@ Here is the call graph for this function:</div>
 
 <p>for stop </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00431">431</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="event__thread_8c_a7baf938eeda132bf43737e5ff8ca2fc1_cgraph.png" border="0" usemap="#event__thread_8c_a7baf938eeda132bf43737e5ff8ca2fc1_cgraph" alt=""/></div>
-<map name="event__thread_8c_a7baf938eeda132bf43737e5ff8ca2fc1_cgraph" id="event__thread_8c_a7baf938eeda132bf43737e5ff8ca2fc1_cgraph">
-<area shape="rect" id="node2" href="event__if_8h.html#a8343693c8b70e81e82960389e7dac8db" title="break event " alt="" coords="184,13,312,39"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00451">451</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 
 </div>
 </div>
@@ -1916,24 +2065,14 @@ Here is the call graph for this function:</div>
 
 <p>for update </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00404">404</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00424">424</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__thread_8c_a89ea4e0e155ede3e45d5d89ef650d2ac_cgraph.png" border="0" usemap="#event__thread_8c_a89ea4e0e155ede3e45d5d89ef650d2ac_cgraph" alt=""/></div>
 <map name="event__thread_8c_a89ea4e0e155ede3e45d5d89ef650d2ac_cgraph" id="event__thread_8c_a89ea4e0e155ede3e45d5d89ef650d2ac_cgraph">
-<area shape="rect" id="node2" href="event__thread_8c.html#aaa5514a0ce6c490ee91af615c2d41f31" title="get subscriber " alt="" coords="184,31,315,72"/>
-<area shape="rect" id="node5" href="event__if_8h.html#a8efe4fbd1ba72a0443ec626b8f14bac4" title="update registered event " alt="" coords="194,147,305,174"/>
-<area shape="rect" id="node3" href="event__thread_8c.html#a425c984e2437355893146600348ed020" title="get fd " alt="" coords="371,5,521,47"/>
-<area shape="rect" id="node4" href="event__if_8h.html#ab77635365c39241ca196b528c6a71df6" title="delete event " alt="" coords="613,13,713,39"/>
-<area shape="rect" id="node6" href="event__if__epoll_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="363,71,529,98"/>
-<area shape="rect" id="node7" href="event__if__libevent_8c.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="401,122,491,149"/>
-<area shape="rect" id="node8" href="event__if__libevent_8c.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="399,173,493,199"/>
-<area shape="rect" id="node12" href="event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="367,223,525,250"/>
-<area shape="rect" id="node13" href="event__if__select_8c.html#a2cc4a722c88d92de302c94ad198258d7" title="event_select_set_fds" alt="" coords="375,274,517,301"/>
-<area shape="rect" id="node9" href="event__if__libevent_8c.html#a9315b18d214c5c77aa9f0ad2c7bccfb5" title="convert_etpoll_eveid2own" alt="" coords="579,147,746,174"/>
-<area shape="rect" id="node10" href="event__if__libevent_8c.html#a7612123e0f293e4b76e7a948d1e12060" title="event_if_libevent_callback" alt="" coords="577,198,748,225"/>
-<area shape="rect" id="node11" href="event__if__libevent_8c.html#af6a4a73563d9ead4fd2f8a5a8484abb8" title="convert_etpoll_own2eveid" alt="" coords="796,198,963,225"/>
+<area shape="rect" id="node2" href="event__thread_8c.html#aaa5514a0ce6c490ee91af615c2d41f31" title="get subscriber " alt="" coords="184,5,315,47"/>
+<area shape="rect" id="node3" href="event__thread_8c.html#a425c984e2437355893146600348ed020" title="get fd " alt="" coords="363,5,513,47"/>
 </map>
 </div>
 
@@ -1957,28 +2096,17 @@ Here is the call graph for this function:</div>
 
 <p>create and thread instance </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00468">468</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00540">540</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__thread_8c_a434dd62b37638e31577b13671dee5976_cgraph.png" border="0" usemap="#event__thread_8c_a434dd62b37638e31577b13671dee5976_cgraph" alt=""/></div>
 <map name="event__thread_8c_a434dd62b37638e31577b13671dee5976_cgraph" id="event__thread_8c_a434dd62b37638e31577b13671dee5976_cgraph">
-<area shape="rect" id="node2" href="event__thread_8c.html#a32733e959c729cb360f17b65233de0d2" title="set event_base " alt="" coords="213,170,344,211"/>
-<area shape="rect" id="node3" href="event__if_8h.html#af8a56a181a4441abd338686d7c47768e" title="event new " alt="" coords="420,56,515,83"/>
-<area shape="rect" id="node6" href="event__thread_8c.html#a25cb5e69a065c9fc3409460cdb8f5324" title="callback main " alt="" coords="392,144,543,171"/>
-<area shape="rect" id="node9" href="event__if_8h.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="421,209,514,236"/>
-<area shape="rect" id="node14" href="event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="396,318,539,359"/>
-<area shape="rect" id="node4" href="event__if__epoll_8c.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="629,5,723,32"/>
-<area shape="rect" id="node5" href="event__if__select_8c.html#a493269ac94c0f61f809283c2bb1a3f89" title="event_select_reset_fds" alt="" coords="599,56,753,83"/>
-<area shape="rect" id="node7" href="event__thread_8c.html#a3aefda8125b91b18060424ceeb38fa1e" title="main messages caller " alt="" coords="611,107,741,149"/>
-<area shape="rect" id="node8" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="827,107,958,149"/>
-<area shape="rect" id="node10" href="event__if__epoll_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="593,173,759,200"/>
-<area shape="rect" id="node11" href="event__if__libevent_8c.html#a7612123e0f293e4b76e7a948d1e12060" title="event_if_libevent_callback" alt="" coords="591,224,761,251"/>
-<area shape="rect" id="node13" href="event__if__select_8c.html#a2cc4a722c88d92de302c94ad198258d7" title="event_select_set_fds" alt="" coords="605,275,747,301"/>
-<area shape="rect" id="node12" href="event__if__libevent_8c.html#af6a4a73563d9ead4fd2f8a5a8484abb8" title="convert_etpoll_own2eveid" alt="" coords="809,224,976,251"/>
-<area shape="rect" id="node15" href="event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="631,325,721,352"/>
-<area shape="rect" id="node17" href="event__if_8h.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="629,376,723,403"/>
-<area shape="rect" id="node16" href="event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="814,325,971,352"/>
+<area shape="rect" id="node2" href="event__thread_8c.html#a32733e959c729cb360f17b65233de0d2" title="set event_base " alt="" coords="213,35,344,76"/>
+<area shape="rect" id="node3" href="event__thread_8c.html#a25cb5e69a065c9fc3409460cdb8f5324" title="callback main " alt="" coords="392,13,543,39"/>
+<area shape="rect" id="node6" href="event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="396,64,539,105"/>
+<area shape="rect" id="node4" href="event__thread_8c.html#a3aefda8125b91b18060424ceeb38fa1e" title="main messages caller " alt="" coords="591,5,721,47"/>
+<area shape="rect" id="node5" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="769,5,900,47"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1986,8 +2114,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__thread_8c_a434dd62b37638e31577b13671dee5976_icgraph.png" border="0" usemap="#event__thread_8c_a434dd62b37638e31577b13671dee5976_icgraph" alt=""/></div>
 <map name="event__thread_8c_a434dd62b37638e31577b13671dee5976_icgraph" id="event__thread_8c_a434dd62b37638e31577b13671dee5976_icgraph">
-<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a67ac16d5d7417a3365bb9cf776ff7a07" title="new thread info " alt="" coords="213,5,344,47"/>
-<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="392,13,567,39"/>
+<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a43ba8f1c766653d9dbac3daaaf85e58c" title="new thread info " alt="" coords="213,5,344,47"/>
+<area shape="rect" id="node3" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="392,13,567,39"/>
 <area shape="rect" id="node4" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="615,13,665,39"/>
 </map>
 </div>
@@ -2020,17 +2148,7 @@ Here is the caller graph for this function:</div>
 
 <p>remove event_base </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00334">334</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="event__thread_8c_aa3fd9205045c0af99a49e57c16f45106_cgraph.png" border="0" usemap="#event__thread_8c_aa3fd9205045c0af99a49e57c16f45106_cgraph" alt=""/></div>
-<map name="event__thread_8c_aa3fd9205045c0af99a49e57c16f45106_cgraph" id="event__thread_8c_aa3fd9205045c0af99a49e57c16f45106_cgraph">
-<area shape="rect" id="node2" href="event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="198,5,287,32"/>
-<area shape="rect" id="node4" href="event__if_8h.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="196,56,289,83"/>
-<area shape="rect" id="node3" href="event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="337,5,495,32"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00354">354</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -2039,8 +2157,8 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node2" href="event__thread_8c.html#a32733e959c729cb360f17b65233de0d2" title="set event_base " alt="" coords="210,5,341,47"/>
 <area shape="rect" id="node7" href="event__thread_8c.html#a873727f5dd62d6c5beaad98426202c4d" title="free thread instance, please call stop before calling it " alt="" coords="196,71,355,98"/>
 <area shape="rect" id="node3" href="event__thread_8h.html#a434dd62b37638e31577b13671dee5976" title="create and thread instance " alt="" coords="616,13,776,39"/>
-<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a67ac16d5d7417a3365bb9cf776ff7a07" title="new thread info " alt="" coords="1003,35,1133,76"/>
-<area shape="rect" id="node5" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="1181,42,1356,69"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a43ba8f1c766653d9dbac3daaaf85e58c" title="new thread info " alt="" coords="1003,35,1133,76"/>
+<area shape="rect" id="node5" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="1181,42,1356,69"/>
 <area shape="rect" id="node6" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1404,42,1455,69"/>
 <area shape="rect" id="node8" href="event__thread_8c.html#a49e9bbb821b0195b9ae31b14d93d589d" title="main thread " alt="" coords="403,71,568,98"/>
 <area shape="rect" id="node9" href="event__thread_8h.html#a1ddb76c71f97fc644e1a85f56f106435" title="start thread " alt="" coords="631,64,761,105"/>
@@ -2076,27 +2194,16 @@ Here is the caller graph for this function:</div>
 
 <p>set event_base </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00312">312</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00332">332</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__thread_8c_a32733e959c729cb360f17b65233de0d2_cgraph.png" border="0" usemap="#event__thread_8c_a32733e959c729cb360f17b65233de0d2_cgraph" alt=""/></div>
 <map name="event__thread_8c_a32733e959c729cb360f17b65233de0d2_cgraph" id="event__thread_8c_a32733e959c729cb360f17b65233de0d2_cgraph">
-<area shape="rect" id="node2" href="event__if_8h.html#af8a56a181a4441abd338686d7c47768e" title="event new " alt="" coords="212,56,307,83"/>
-<area shape="rect" id="node5" href="event__thread_8c.html#a25cb5e69a065c9fc3409460cdb8f5324" title="callback main " alt="" coords="184,144,335,171"/>
-<area shape="rect" id="node8" href="event__if_8h.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="213,209,306,236"/>
-<area shape="rect" id="node13" href="event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="188,318,331,359"/>
-<area shape="rect" id="node3" href="event__if__epoll_8c.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="421,5,515,32"/>
-<area shape="rect" id="node4" href="event__if__select_8c.html#a493269ac94c0f61f809283c2bb1a3f89" title="event_select_reset_fds" alt="" coords="391,56,545,83"/>
-<area shape="rect" id="node6" href="event__thread_8c.html#a3aefda8125b91b18060424ceeb38fa1e" title="main messages caller " alt="" coords="403,107,533,149"/>
-<area shape="rect" id="node7" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="619,107,750,149"/>
-<area shape="rect" id="node9" href="event__if__epoll_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="385,173,551,200"/>
-<area shape="rect" id="node10" href="event__if__libevent_8c.html#a7612123e0f293e4b76e7a948d1e12060" title="event_if_libevent_callback" alt="" coords="383,224,553,251"/>
-<area shape="rect" id="node12" href="event__if__select_8c.html#a2cc4a722c88d92de302c94ad198258d7" title="event_select_set_fds" alt="" coords="397,275,539,301"/>
-<area shape="rect" id="node11" href="event__if__libevent_8c.html#af6a4a73563d9ead4fd2f8a5a8484abb8" title="convert_etpoll_own2eveid" alt="" coords="601,224,768,251"/>
-<area shape="rect" id="node14" href="event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="423,325,513,352"/>
-<area shape="rect" id="node16" href="event__if_8h.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="421,376,515,403"/>
-<area shape="rect" id="node15" href="event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="606,325,763,352"/>
+<area shape="rect" id="node2" href="event__thread_8c.html#a25cb5e69a065c9fc3409460cdb8f5324" title="callback main " alt="" coords="184,13,335,39"/>
+<area shape="rect" id="node5" href="event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="188,64,331,105"/>
+<area shape="rect" id="node3" href="event__thread_8c.html#a3aefda8125b91b18060424ceeb38fa1e" title="main messages caller " alt="" coords="383,5,513,47"/>
+<area shape="rect" id="node4" href="event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="561,5,692,47"/>
 </map>
 </div>
 <div class="dynheader">
@@ -2105,8 +2212,8 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="event__thread_8c_a32733e959c729cb360f17b65233de0d2_icgraph.png" border="0" usemap="#event__thread_8c_a32733e959c729cb360f17b65233de0d2_icgraph" alt=""/></div>
 <map name="event__thread_8c_a32733e959c729cb360f17b65233de0d2_icgraph" id="event__thread_8c_a32733e959c729cb360f17b65233de0d2_icgraph">
 <area shape="rect" id="node2" href="event__thread_8h.html#a434dd62b37638e31577b13671dee5976" title="create and thread instance " alt="" coords="184,13,344,39"/>
-<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a67ac16d5d7417a3365bb9cf776ff7a07" title="new thread info " alt="" coords="392,5,523,47"/>
-<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="571,13,745,39"/>
+<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a43ba8f1c766653d9dbac3daaaf85e58c" title="new thread info " alt="" coords="392,5,523,47"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="571,13,745,39"/>
 <area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="793,13,844,39"/>
 </map>
 </div>
@@ -2131,23 +2238,16 @@ Here is the caller graph for this function:</div>
 
 <p>start thread </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00500">500</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00572">572</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="event__thread_8c_a1ddb76c71f97fc644e1a85f56f106435_cgraph.png" border="0" usemap="#event__thread_8c_a1ddb76c71f97fc644e1a85f56f106435_cgraph" alt=""/></div>
 <map name="event__thread_8c_a1ddb76c71f97fc644e1a85f56f106435_cgraph" id="event__thread_8c_a1ddb76c71f97fc644e1a85f56f106435_cgraph">
-<area shape="rect" id="node2" href="event__thread_8c.html#a49e9bbb821b0195b9ae31b14d93d589d" title="main thread " alt="" coords="184,104,349,131"/>
-<area shape="rect" id="node3" href="event__if_8h.html#aa903a0971a8264153461f01e9438f388" title="main loop of this event " alt="" coords="429,53,525,80"/>
-<area shape="rect" id="node6" href="event__if_8h.html#a127eb84ce5fa16fcc7c995021b10308f" title="exit after main loop " alt="" coords="430,104,523,131"/>
-<area shape="rect" id="node7" href="event__thread_8c.html#a873727f5dd62d6c5beaad98426202c4d" title="free thread instance, please call stop before calling it " alt="" coords="397,155,556,181"/>
-<area shape="rect" id="node4" href="event__if__epoll_8c.html#aebef2021f7498da46220d30b1996552e" title="convert_etpoll_ownid2eve" alt="" coords="610,5,777,32"/>
-<area shape="rect" id="node5" href="event__if__select_8c.html#a9babfed521c66c64ecd17f7ce84f1235" title="event_select_get_eventflag\l_from_fds" alt="" coords="605,57,781,98"/>
-<area shape="rect" id="node8" href="event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="604,144,783,171"/>
-<area shape="rect" id="node11" href="event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="622,195,765,237"/>
-<area shape="rect" id="node9" href="event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="833,148,922,175"/>
-<area shape="rect" id="node10" href="event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="972,148,1129,175"/>
-<area shape="rect" id="node12" href="event__if_8h.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="831,203,924,229"/>
+<area shape="rect" id="node2" href="event__thread_8c.html#a49e9bbb821b0195b9ae31b14d93d589d" title="main thread " alt="" coords="184,35,349,61"/>
+<area shape="rect" id="node3" href="event__thread_8c.html#a873727f5dd62d6c5beaad98426202c4d" title="free thread instance, please call stop before calling it " alt="" coords="397,35,556,61"/>
+<area shape="rect" id="node4" href="event__thread_8c.html#a914e60d8a3a3d121c079a022d320168c" title="free instance " alt="" coords="604,5,783,32"/>
+<area shape="rect" id="node5" href="event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="622,57,765,98"/>
 </map>
 </div>
 <div class="dynheader">
@@ -2156,8 +2256,8 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="event__thread_8c_a1ddb76c71f97fc644e1a85f56f106435_icgraph.png" border="0" usemap="#event__thread_8c_a1ddb76c71f97fc644e1a85f56f106435_icgraph" alt=""/></div>
 <map name="event__thread_8c_a1ddb76c71f97fc644e1a85f56f106435_icgraph" id="event__thread_8c_a1ddb76c71f97fc644e1a85f56f106435_icgraph">
 <area shape="rect" id="node2" href="event__tpool__manager_8c.html#a762bca81a6ac647786e364e0fe6f7d0e" title="start thread " alt="" coords="184,5,315,47"/>
-<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a67ac16d5d7417a3365bb9cf776ff7a07" title="new thread info " alt="" coords="363,5,493,47"/>
-<area shape="rect" id="node4" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="541,13,716,39"/>
+<area shape="rect" id="node3" href="event__tpool__manager_8c.html#a43ba8f1c766653d9dbac3daaaf85e58c" title="new thread info " alt="" coords="363,5,493,47"/>
+<area shape="rect" id="node4" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="541,13,716,39"/>
 <area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="764,13,815,39"/>
 </map>
 </div>
@@ -2183,7 +2283,7 @@ Here is the caller graph for this function:</div>
 <p>stop thread </p>
 <p>stop thread, and remove resource </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00516">516</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00588">588</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2202,9 +2302,39 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node2" href="event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="216,23,347,65"/>
 <area shape="rect" id="node3" href="event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="395,23,525,65"/>
 <area shape="rect" id="node4" href="event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="573,23,717,65"/>
-<area shape="rect" id="node5" href="event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="765,5,940,32"/>
+<area shape="rect" id="node5" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="765,5,940,32"/>
 <area shape="rect" id="node7" href="event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="767,56,939,83"/>
 <area shape="rect" id="node6" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="988,5,1039,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="add7766577e8b7b28601ee6363139e6ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add7766577e8b7b28601ee6363139e6ee">&#9670;&nbsp;</a></span>event_tpool_thread_unload_plugin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int event_tpool_thread_unload_plugin </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00652">652</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="event__thread_8c_add7766577e8b7b28601ee6363139e6ee_icgraph.png" border="0" usemap="#event__thread_8c_add7766577e8b7b28601ee6363139e6ee_icgraph" alt=""/></div>
+<map name="event__thread_8c_add7766577e8b7b28601ee6363139e6ee_icgraph" id="event__thread_8c_add7766577e8b7b28601ee6363139e6ee_icgraph">
+<area shape="rect" id="node2" href="event__tpool__manager_8c.html#a43ba8f1c766653d9dbac3daaaf85e58c" title="new thread info " alt="" coords="184,5,315,47"/>
+<area shape="rect" id="node3" href="event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="363,13,537,39"/>
+<area shape="rect" id="node4" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="585,13,636,39"/>
 </map>
 </div>
 
@@ -2244,7 +2374,7 @@ Here is the caller graph for this function:</div>
 
 <p>update subscriber </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00535">535</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00607">607</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2268,6 +2398,54 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a99766137138c48da648b05631b21f1c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99766137138c48da648b05631b21f1c6">&#9670;&nbsp;</a></span>add</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tpool__event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a>(* add) (<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this, <a class="el" href="event__threadpool__data_8h.html#a8accf85063361af19ac78e3644e9419a">EventSubscriber</a> subscriber, void *arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00032">32</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+
+</div>
+</div>
+<a id="ad4000a056ec0df3bb2f4d6696f8eaba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4000a056ec0df3bb2f4d6696f8eaba2">&#9670;&nbsp;</a></span>del</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* del) (<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this, <a class="el" href="tpool__event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a> handler)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00034">34</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+
+</div>
+</div>
+<a id="a3ce7589c1ae46597a92fb566c10881ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ce7589c1ae46597a92fb566c10881ed">&#9670;&nbsp;</a></span>event_if_instance_g</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }   event_if_instance_g</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>interface definition </p>
+
+</div>
+</div>
 <a id="ac3d0146113aa579ddbb85969d4342394"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3d0146113aa579ddbb85969d4342394">&#9670;&nbsp;</a></span>event_thread_stack_size_g</h2>
 
@@ -2290,7 +2468,7 @@ Here is the caller graph for this function:</div>
 
 <p>thread stack size, user can change it by using event_tpool_set_stack_size </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00027">27</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00047">47</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 
 </div>
 </div>
@@ -2313,14 +2491,142 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">={</div><div class="line">    <a class="code" href="event__thread_8c.html#a28448587d7a075b3c0e67fcaa81587c1">event_tpool_thread_msg_cb_add</a>,</div><div class="line">    <a class="code" href="event__thread_8c.html#a89ea4e0e155ede3e45d5d89ef650d2ac">event_tpool_thread_msg_cb_update</a>,</div><div class="line">    <a class="code" href="event__thread_8c.html#a0362cf7486b7259ef05efdb0dd065d71">event_tpool_thread_msg_cb_del</a>,</div><div class="line">    <a class="code" href="event__thread_8c.html#a7baf938eeda132bf43737e5ff8ca2fc1">event_tpool_thread_msg_cb_stop</a>,</div><div class="line">}</div><div class="ttc" id="event__thread_8c_html_a28448587d7a075b3c0e67fcaa81587c1"><div class="ttname"><a href="event__thread_8c.html#a28448587d7a075b3c0e67fcaa81587c1">event_tpool_thread_msg_cb_add</a></div><div class="ttdeci">static void event_tpool_thread_msg_cb_add(EventTPoolThread this, event_thread_msg_t *msg)</div><div class="ttdoc">for add </div><div class="ttdef"><b>Definition:</b> <a href="event__thread_8c_source.html#l00390">event_thread.c:390</a></div></div>
-<div class="ttc" id="event__thread_8c_html_a7baf938eeda132bf43737e5ff8ca2fc1"><div class="ttname"><a href="event__thread_8c.html#a7baf938eeda132bf43737e5ff8ca2fc1">event_tpool_thread_msg_cb_stop</a></div><div class="ttdeci">static void event_tpool_thread_msg_cb_stop(EventTPoolThread this, event_thread_msg_t *msg)</div><div class="ttdoc">for stop </div><div class="ttdef"><b>Definition:</b> <a href="event__thread_8c_source.html#l00431">event_thread.c:431</a></div></div>
-<div class="ttc" id="event__thread_8c_html_a0362cf7486b7259ef05efdb0dd065d71"><div class="ttname"><a href="event__thread_8c.html#a0362cf7486b7259ef05efdb0dd065d71">event_tpool_thread_msg_cb_del</a></div><div class="ttdeci">static void event_tpool_thread_msg_cb_del(EventTPoolThread this, event_thread_msg_t *msg)</div><div class="ttdoc">for del </div><div class="ttdef"><b>Definition:</b> <a href="event__thread_8c_source.html#l00418">event_thread.c:418</a></div></div>
-<div class="ttc" id="event__thread_8c_html_a89ea4e0e155ede3e45d5d89ef650d2ac"><div class="ttname"><a href="event__thread_8c.html#a89ea4e0e155ede3e45d5d89ef650d2ac">event_tpool_thread_msg_cb_update</a></div><div class="ttdeci">static void event_tpool_thread_msg_cb_update(EventTPoolThread this, event_thread_msg_t *msg)</div><div class="ttdoc">for update </div><div class="ttdef"><b>Definition:</b> <a href="event__thread_8c_source.html#l00404">event_thread.c:404</a></div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">={</div><div class="line">    <a class="code" href="event__thread_8c.html#a28448587d7a075b3c0e67fcaa81587c1">event_tpool_thread_msg_cb_add</a>,</div><div class="line">    <a class="code" href="event__thread_8c.html#a89ea4e0e155ede3e45d5d89ef650d2ac">event_tpool_thread_msg_cb_update</a>,</div><div class="line">    <a class="code" href="event__thread_8c.html#a0362cf7486b7259ef05efdb0dd065d71">event_tpool_thread_msg_cb_del</a>,</div><div class="line">    <a class="code" href="event__thread_8c.html#a7baf938eeda132bf43737e5ff8ca2fc1">event_tpool_thread_msg_cb_stop</a>,</div><div class="line">}</div><div class="ttc" id="event__thread_8c_html_a28448587d7a075b3c0e67fcaa81587c1"><div class="ttname"><a href="event__thread_8c.html#a28448587d7a075b3c0e67fcaa81587c1">event_tpool_thread_msg_cb_add</a></div><div class="ttdeci">static void event_tpool_thread_msg_cb_add(EventTPoolThread this, event_thread_msg_t *msg)</div><div class="ttdoc">for add </div><div class="ttdef"><b>Definition:</b> <a href="event__thread_8c_source.html#l00410">event_thread.c:410</a></div></div>
+<div class="ttc" id="event__thread_8c_html_a7baf938eeda132bf43737e5ff8ca2fc1"><div class="ttname"><a href="event__thread_8c.html#a7baf938eeda132bf43737e5ff8ca2fc1">event_tpool_thread_msg_cb_stop</a></div><div class="ttdeci">static void event_tpool_thread_msg_cb_stop(EventTPoolThread this, event_thread_msg_t *msg)</div><div class="ttdoc">for stop </div><div class="ttdef"><b>Definition:</b> <a href="event__thread_8c_source.html#l00451">event_thread.c:451</a></div></div>
+<div class="ttc" id="event__thread_8c_html_a0362cf7486b7259ef05efdb0dd065d71"><div class="ttname"><a href="event__thread_8c.html#a0362cf7486b7259ef05efdb0dd065d71">event_tpool_thread_msg_cb_del</a></div><div class="ttdeci">static void event_tpool_thread_msg_cb_del(EventTPoolThread this, event_thread_msg_t *msg)</div><div class="ttdoc">for del </div><div class="ttdef"><b>Definition:</b> <a href="event__thread_8c_source.html#l00438">event_thread.c:438</a></div></div>
+<div class="ttc" id="event__thread_8c_html_a89ea4e0e155ede3e45d5d89ef650d2ac"><div class="ttname"><a href="event__thread_8c.html#a89ea4e0e155ede3e45d5d89ef650d2ac">event_tpool_thread_msg_cb_update</a></div><div class="ttdeci">static void event_tpool_thread_msg_cb_update(EventTPoolThread this, event_thread_msg_t *msg)</div><div class="ttdoc">for update </div><div class="ttdef"><b>Definition:</b> <a href="event__thread_8c_source.html#l00424">event_thread.c:424</a></div></div>
 </div><!-- fragment -->
 <p>callback table </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00146">146</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00166">166</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+
+</div>
+</div>
+<a id="ab4db40c7229194a2da00b5f46757e8ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4db40c7229194a2da00b5f46757e8ac">&#9670;&nbsp;</a></span>exit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* exit) (<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00038">38</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+
+</div>
+</div>
+<a id="a32a7dae8eee6452d1ae26122fd99d5b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a7dae8eee6452d1ae26122fd99d5b2">&#9670;&nbsp;</a></span>free</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* free) (<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00039">39</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+
+</div>
+</div>
+<a id="a550f93cd982af5f61e3f882f1f4d64d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a550f93cd982af5f61e3f882f1f4d64d5">&#9670;&nbsp;</a></span>getfd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* getfd) (<a class="el" href="tpool__event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a> handler)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00035">35</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+
+</div>
+</div>
+<a id="a81011b79683fab64ce3aff71114f8fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81011b79683fab64ce3aff71114f8fdd">&#9670;&nbsp;</a></span>handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* handle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00030">30</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+
+</div>
+</div>
+<a id="aa60124a56e91e27e0bdf8fabc82ebd6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa60124a56e91e27e0bdf8fabc82ebd6e">&#9670;&nbsp;</a></span>loop</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* loop) (<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00036">36</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+
+</div>
+</div>
+<a id="ab2fd23c772da6e5c89059f3910620c70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2fd23c772da6e5c89059f3910620c70">&#9670;&nbsp;</a></span>loopbreak</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* loopbreak) (<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00037">37</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+
+</div>
+</div>
+<a id="a2a9ea0e50796e254c50eb8f17e62e736"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a9ea0e50796e254c50eb8f17e62e736">&#9670;&nbsp;</a></span>new</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a>(* new) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00031">31</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+
+</div>
+</div>
+<a id="ad6e2f75a63f87c0e866ac4e099e8f629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6e2f75a63f87c0e866ac4e099e8f629">&#9670;&nbsp;</a></span>update</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tpool__event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a>(* update) (<a class="el" href="tpool__event__if_8h.html#abee901efb9b6d569a7a0e602b98bc357">EventInstance</a> this, <a class="el" href="tpool__event__if_8h.html#a951682ee9ecf791ece925a6c26f53bf4">EventHandler</a> handler, <a class="el" href="event__threadpool__data_8h.html#a8accf85063361af19ac78e3644e9419a">EventSubscriber</a> subscriber, void *arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00033">33</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 
 </div>
 </div>

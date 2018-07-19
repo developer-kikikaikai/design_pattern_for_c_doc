@@ -1,8 +1,9 @@
 <map id="publisher_get_content" name="publisher_get_content">
 <area shape="rect" id="node2" href="$publisher_8c.html#a4a58d95d58cc75d6a45f2d4e25c5ea3f" title="subscribe " alt="" coords="401,5,539,32"/>
-<area shape="rect" id="node4" href="$publisher_8c.html#a19233984adcb851a6441ac76467fc2c5" title="unsubscribe, if you want to stop subscribe, please call it " alt="" coords="203,52,353,79"/>
-<area shape="rect" id="node5" href="$publisher_8c.html#a59fb7a935a9e8dfb338ddd144366e6c2" title="publish, Publisher call subscriber&#39;s notify if type is same " alt="" coords="217,103,339,129"/>
-<area shape="rect" id="node3" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="773,47,824,73"/>
-<area shape="rect" id="node6" href="$main_8c.html#a842c0e2d73b61404c301f1b611d6beb3" title="event_publish" alt="" coords="420,77,520,104"/>
-<area shape="rect" id="node7" href="$main_8c.html#a2ae22c9da6ba8452a61ab4e69a4930e7" title="add_event_publisher" alt="" coords="587,75,725,101"/>
+<area shape="rect" id="node4" href="$publisher_8c.html#a9c566795c3fb9f2e98629fd46ec92536" title="subscribe only oneshot " alt="" coords="209,49,347,90"/>
+<area shape="rect" id="node5" href="$publisher_8c.html#a19233984adcb851a6441ac76467fc2c5" title="unsubscribe, if you want to stop subscribe, please call it " alt="" coords="203,115,353,141"/>
+<area shape="rect" id="node6" href="$publisher_8c.html#a59fb7a935a9e8dfb338ddd144366e6c2" title="publish, Publisher call subscriber&#39;s notify if type is same " alt="" coords="217,165,339,192"/>
+<area shape="rect" id="node3" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="773,68,824,95"/>
+<area shape="rect" id="node7" href="$main_8c.html#a842c0e2d73b61404c301f1b611d6beb3" title="event_publish" alt="" coords="420,107,520,133"/>
+<area shape="rect" id="node8" href="$main_8c.html#a2ae22c9da6ba8452a61ab4e69a4930e7" title="add_event_publisher" alt="" coords="587,100,725,127"/>
 </map>

@@ -1,5 +1,7 @@
 <map id="publish_content_push_subscriber" name="publish_content_push_subscriber">
-<area shape="rect" id="node2" href="$publish__content_8h.html#a9140393911925b01e25b82f99c1e1eb3" title="publish_content_subscribe" alt="" coords="201,13,377,39"/>
-<area shape="rect" id="node3" href="$publisher_8c.html#a4a58d95d58cc75d6a45f2d4e25c5ea3f" title="subscribe " alt="" coords="425,13,563,39"/>
-<area shape="rect" id="node4" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="611,13,661,39"/>
+<area shape="rect" id="node2" href="$publish__content_8h.html#a9140393911925b01e25b82f99c1e1eb3" title="publish_content_subscribe" alt="" coords="201,5,377,32"/>
+<area shape="rect" id="node5" href="$publish__content_8h.html#a12de5b8a87dc77145164929caa5597f5" title="publish_content_subscribe\l_oneshot" alt="" coords="201,57,377,98"/>
+<area shape="rect" id="node3" href="$publisher_8c.html#a4a58d95d58cc75d6a45f2d4e25c5ea3f" title="subscribe " alt="" coords="425,5,563,32"/>
+<area shape="rect" id="node4" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="611,5,661,32"/>
+<area shape="rect" id="node6" href="$publisher_8c.html#a9c566795c3fb9f2e98629fd46ec92536" title="subscribe only oneshot " alt="" coords="425,57,563,98"/>
 </map>

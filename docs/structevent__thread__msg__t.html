@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">design_pattern_for_c
-   &#160;<span id="projectnumber">for 1.0.0 pre</span>
+   &#160;<span id="projectnumber">for 1.0.0</span>
    </div>
   </td>
  </tr>
@@ -109,34 +109,34 @@ Collaboration diagram for event_thread_msg_t:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a06fc87d81c62e9abb8790b6e5713c55b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="structevent__thread__msg__t.html#a06fc87d81c62e9abb8790b6e5713c55baac8cc16c665f5994ea65da6129d3a68e">EVE_THREAD_MSG_TYPE_ADD</a>, 
-<a class="el" href="structevent__thread__msg__t.html#a06fc87d81c62e9abb8790b6e5713c55bae610bfa024dc6d34a6d63cdbc5ce9dc9">EVE_THREAD_MSG_TYPE_UPDATE</a>, 
-<a class="el" href="structevent__thread__msg__t.html#a06fc87d81c62e9abb8790b6e5713c55baddeb29ffcdc5eb59cf8b0a278fb70bcb">EVE_THREAD_MSG_TYPE_DEL</a>, 
-<a class="el" href="structevent__thread__msg__t.html#a06fc87d81c62e9abb8790b6e5713c55ba634f1ee42ab9264d058bcd70dc494c94">EVE_THREAD_MSG_TYPE_STOP</a>
+<tr class="memitem:adf764cbdea00d65edcd07bb9953ad2b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="structevent__thread__msg__t.html#adf764cbdea00d65edcd07bb9953ad2b7aac8cc16c665f5994ea65da6129d3a68e">EVE_THREAD_MSG_TYPE_ADD</a>, 
+<a class="el" href="structevent__thread__msg__t.html#adf764cbdea00d65edcd07bb9953ad2b7ae610bfa024dc6d34a6d63cdbc5ce9dc9">EVE_THREAD_MSG_TYPE_UPDATE</a>, 
+<a class="el" href="structevent__thread__msg__t.html#adf764cbdea00d65edcd07bb9953ad2b7addeb29ffcdc5eb59cf8b0a278fb70bcb">EVE_THREAD_MSG_TYPE_DEL</a>, 
+<a class="el" href="structevent__thread__msg__t.html#adf764cbdea00d65edcd07bb9953ad2b7a634f1ee42ab9264d058bcd70dc494c94">EVE_THREAD_MSG_TYPE_STOP</a>
  }</td></tr>
-<tr class="separator:a06fc87d81c62e9abb8790b6e5713c55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:adf764cbdea00d65edcd07bb9953ad2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a24c99e90f95a77e0d7b7ccf066f41464"><td class="memItemLeft" align="right" valign="top">enum event_thread_msg_t:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structevent__thread__msg__t.html#a24c99e90f95a77e0d7b7ccf066f41464">type</a></td></tr>
-<tr class="separator:a24c99e90f95a77e0d7b7ccf066f41464"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7706368ef24e304c0741ec45435ff96"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a35df9b1bae699ccf7428a12d8ed4c00b"><td class="memItemLeft" align="right" valign="top">enum event_thread_msg_t:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structevent__thread__msg__t.html#a35df9b1bae699ccf7428a12d8ed4c00b">type</a></td></tr>
+<tr class="separator:a35df9b1bae699ccf7428a12d8ed4c00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955be418c259ab393107af527f884041"><td class="memItemLeft" >union {</td></tr>
 <tr class="memitem:ab6edd4431ea6546c4bb20915c412dc11"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structevent__thread__msg__body__add__t.html">event_thread_msg_body_add_t</a>&#160;&#160;&#160;<a class="el" href="structevent__thread__msg__t.html#ab6edd4431ea6546c4bb20915c412dc11">add</a></td></tr>
 <tr class="memdesc:ab6edd4431ea6546c4bb20915c412dc11"><td class="mdescLeft">&#160;</td><td class="mdescRight">when msg is update, body is subscribe  <a href="#ab6edd4431ea6546c4bb20915c412dc11">More...</a><br /></td></tr>
 <tr class="separator:ab6edd4431ea6546c4bb20915c412dc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a900bdd46484d07b2e594f45274b9004a"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="structevent__thread__msg__body__del__t.html">event_thread_msg_body_del_t</a>&#160;&#160;&#160;<a class="el" href="structevent__thread__msg__t.html#a900bdd46484d07b2e594f45274b9004a">del</a></td></tr>
 <tr class="memdesc:a900bdd46484d07b2e594f45274b9004a"><td class="mdescLeft">&#160;</td><td class="mdescRight">when msg is del, body is fd  <a href="#a900bdd46484d07b2e594f45274b9004a">More...</a><br /></td></tr>
 <tr class="separator:a900bdd46484d07b2e594f45274b9004a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7706368ef24e304c0741ec45435ff96"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structevent__thread__msg__t.html#ae7706368ef24e304c0741ec45435ff96">data</a></td></tr>
-<tr class="separator:ae7706368ef24e304c0741ec45435ff96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955be418c259ab393107af527f884041"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structevent__thread__msg__t.html#a955be418c259ab393107af527f884041">data</a></td></tr>
+<tr class="separator:a955be418c259ab393107af527f884041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>message struct definition </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00044">44</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00064">64</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a06fc87d81c62e9abb8790b6e5713c55b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06fc87d81c62e9abb8790b6e5713c55b">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="adf764cbdea00d65edcd07bb9953ad2b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf764cbdea00d65edcd07bb9953ad2b7">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -147,13 +147,13 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baac8cc16c665f5994ea65da6129d3a68e"></a>EVE_THREAD_MSG_TYPE_ADD&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bae610bfa024dc6d34a6d63cdbc5ce9dc9"></a>EVE_THREAD_MSG_TYPE_UPDATE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baddeb29ffcdc5eb59cf8b0a278fb70bcb"></a>EVE_THREAD_MSG_TYPE_DEL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba634f1ee42ab9264d058bcd70dc494c94"></a>EVE_THREAD_MSG_TYPE_STOP&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adf764cbdea00d65edcd07bb9953ad2b7aac8cc16c665f5994ea65da6129d3a68e"></a>EVE_THREAD_MSG_TYPE_ADD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adf764cbdea00d65edcd07bb9953ad2b7ae610bfa024dc6d34a6d63cdbc5ce9dc9"></a>EVE_THREAD_MSG_TYPE_UPDATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adf764cbdea00d65edcd07bb9953ad2b7addeb29ffcdc5eb59cf8b0a278fb70bcb"></a>EVE_THREAD_MSG_TYPE_DEL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adf764cbdea00d65edcd07bb9953ad2b7a634f1ee42ab9264d058bcd70dc494c94"></a>EVE_THREAD_MSG_TYPE_STOP&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00045">45</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00065">65</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 
 </div>
 </div>
@@ -172,12 +172,12 @@ Data Fields</h2></td></tr>
 
 <p>when msg is update, body is subscribe </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00052">52</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00072">72</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 
 </div>
 </div>
-<a id="ae7706368ef24e304c0741ec45435ff96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7706368ef24e304c0741ec45435ff96">&#9670;&nbsp;</a></span>data</h2>
+<a id="a955be418c259ab393107af527f884041"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a955be418c259ab393107af527f884041">&#9670;&nbsp;</a></span>data</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,12 +204,12 @@ Data Fields</h2></td></tr>
 
 <p>when msg is del, body is fd </p>
 
-<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00053">53</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="event__thread_8c_source.html#l00073">73</a> of file <a class="el" href="event__thread_8c_source.html">event_thread.c</a>.</p>
 
 </div>
 </div>
-<a id="a24c99e90f95a77e0d7b7ccf066f41464"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24c99e90f95a77e0d7b7ccf066f41464">&#9670;&nbsp;</a></span>type</h2>
+<a id="a35df9b1bae699ccf7428a12d8ed4c00b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35df9b1bae699ccf7428a12d8ed4c00b">&#9670;&nbsp;</a></span>type</h2>
 
 <div class="memitem">
 <div class="memproto">

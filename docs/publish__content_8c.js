@@ -11,5 +11,6 @@ var publish__content_8c =
     [ "publish_content_pull_subscriber", "publish__content_8c.html#a5aa5eca411b7ea8eb68005e0513bb3d6", null ],
     [ "publish_content_push_subscriber", "publish__content_8c.html#a023abdcbfc55b1eee56ac69dd00627d3", null ],
     [ "publish_content_subscribe", "publish__content_8c.html#a9140393911925b01e25b82f99c1e1eb3", null ],
+    [ "publish_content_subscribe_oneshot", "publish__content_8c.html#a12de5b8a87dc77145164929caa5597f5", null ],
     [ "publish_content_unsubscribe", "publish__content_8c.html#abe6cb501e94a2c20f79c49f79e54f7e8", null ]
 ];

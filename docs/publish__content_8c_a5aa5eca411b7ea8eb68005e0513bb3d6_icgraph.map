@@ -1,4 +1,9 @@
 <map id="publish_content_pull_subscriber" name="publish_content_pull_subscriber">
-<area shape="rect" id="node2" href="$publish__content_8h.html#abe6cb501e94a2c20f79c49f79e54f7e8" title="publish_content_unsubscribe" alt="" coords="193,13,384,39"/>
-<area shape="rect" id="node3" href="$publisher_8c.html#a19233984adcb851a6441ac76467fc2c5" title="unsubscribe, if you want to stop subscribe, please call it " alt="" coords="432,13,583,39"/>
+<area shape="rect" id="node2" href="$publish__content_8h.html#abe6cb501e94a2c20f79c49f79e54f7e8" title="publish_content_unsubscribe" alt="" coords="193,5,384,32"/>
+<area shape="rect" id="node4" href="$publish__content_8h.html#a5ed4d9aef594b377430be1f263207a64" title="publish_content_publish" alt="" coords="208,56,369,83"/>
+<area shape="rect" id="node3" href="$publisher_8c.html#a19233984adcb851a6441ac76467fc2c5" title="unsubscribe, if you want to stop subscribe, please call it " alt="" coords="432,5,583,32"/>
+<area shape="rect" id="node5" href="$publisher_8c.html#a59fb7a935a9e8dfb338ddd144366e6c2" title="publish, Publisher call subscriber&#39;s notify if type is same " alt="" coords="446,56,569,83"/>
+<area shape="rect" id="node6" href="$main_8c.html#a842c0e2d73b61404c301f1b611d6beb3" title="event_publish" alt="" coords="631,56,731,83"/>
+<area shape="rect" id="node7" href="$main_8c.html#a2ae22c9da6ba8452a61ab4e69a4930e7" title="add_event_publisher" alt="" coords="779,56,917,83"/>
+<area shape="rect" id="node8" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="965,56,1016,83"/>
 </map>

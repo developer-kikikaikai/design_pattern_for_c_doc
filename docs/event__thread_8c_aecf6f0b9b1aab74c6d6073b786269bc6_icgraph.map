@@ -5,7 +5,7 @@
 <area shape="rect" id="node4" href="$event__tpool__manager_8c.html#aae7d565f13186b2d3ee76d81f25108c0" title="stop thread " alt="" coords="646,23,777,65"/>
 <area shape="rect" id="node5" href="$event__tpool__manager_8c.html#a7cf93a5056058d80d6e4ccecc2a9adee" title="free thread info " alt="" coords="828,23,959,65"/>
 <area shape="rect" id="node6" href="$event__tpool__manager_8c.html#ad70cd307522bccbd1c91bae67f3ada23" title="event_tpool_manager\l_free_without_lock" alt="" coords="1007,23,1151,65"/>
-<area shape="rect" id="node7" href="$event__tpool__manager_8c.html#a69e71ca384843a4db2b755bd7913e3d6" title="constructor of EventTPoolManager " alt="" coords="1199,5,1373,32"/>
+<area shape="rect" id="node7" href="$event__tpool__manager_8c.html#acb2f4c11b70ac66857c996dfbd7d7a7e" title="new EventTPoolManager " alt="" coords="1199,5,1373,32"/>
 <area shape="rect" id="node9" href="$event__tpool__manager_8c.html#a0069d43a4038c462a2bfb536831273dc" title="destructor of EventTPoolManager " alt="" coords="1200,56,1372,83"/>
 <area shape="rect" id="node8" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1421,5,1472,32"/>
 <area shape="rect" id="node11" href="$state__machine_8c.html#a7d3b2f341ae674ae33ba439f952cf3fe" title="for multi thread, free " alt="" coords="436,82,572,123"/>

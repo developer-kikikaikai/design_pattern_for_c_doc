@@ -1,4 +1,5 @@
 <map id="convert_etpoll_eveid2own" name="convert_etpoll_eveid2own">
-<area shape="rect" id="node2" href="$event__if__epoll_8c.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="229,5,322,32"/>
-<area shape="rect" id="node3" href="$event__if__epoll_8c.html#a8efe4fbd1ba72a0443ec626b8f14bac4" title="update registered event " alt="" coords="220,56,331,83"/>
+<area shape="rect" id="node2" href="$tpool__event__if_8h.html#acfff3396c4ebb44d7472e100b60c7742" title="add event handler related to fd " alt="" coords="229,5,322,32"/>
+<area shape="rect" id="node4" href="$tpool__event__if_8h.html#a4192dbad284ba285945a53c52aeed636" title="update event handler related to fd " alt="" coords="220,56,331,83"/>
+<area shape="rect" id="node3" href="$event__if__libevent_8c.html#a8efe4fbd1ba72a0443ec626b8f14bac4" title="update registered event " alt="" coords="379,5,489,32"/>
 </map>

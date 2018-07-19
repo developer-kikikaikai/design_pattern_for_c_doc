@@ -1,17 +1,6 @@
 <map id="event_tpool_thread_set_event_base" name="event_tpool_thread_set_event_base">
-<area shape="rect" id="node2" href="$event__if_8h.html#af8a56a181a4441abd338686d7c47768e" title="event new " alt="" coords="212,56,307,83"/>
-<area shape="rect" id="node5" href="$event__thread_8c.html#a25cb5e69a065c9fc3409460cdb8f5324" title="callback main " alt="" coords="184,144,335,171"/>
-<area shape="rect" id="node8" href="$event__if_8h.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="213,209,306,236"/>
-<area shape="rect" id="node13" href="$event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="188,318,331,359"/>
-<area shape="rect" id="node3" href="$event__if__epoll_8c.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="421,5,515,32"/>
-<area shape="rect" id="node4" href="$event__if__select_8c.html#a493269ac94c0f61f809283c2bb1a3f89" title="event_select_reset_fds" alt="" coords="391,56,545,83"/>
-<area shape="rect" id="node6" href="$event__thread_8c.html#a3aefda8125b91b18060424ceeb38fa1e" title="main messages caller " alt="" coords="403,107,533,149"/>
-<area shape="rect" id="node7" href="$event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="619,107,750,149"/>
-<area shape="rect" id="node9" href="$event__if__epoll_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="385,173,551,200"/>
-<area shape="rect" id="node10" href="$event__if__libevent_8c.html#a7612123e0f293e4b76e7a948d1e12060" title="event_if_libevent_callback" alt="" coords="383,224,553,251"/>
-<area shape="rect" id="node12" href="$event__if__select_8c.html#a2cc4a722c88d92de302c94ad198258d7" title="event_select_set_fds" alt="" coords="397,275,539,301"/>
-<area shape="rect" id="node11" href="$event__if__libevent_8c.html#af6a4a73563d9ead4fd2f8a5a8484abb8" title="convert_etpoll_own2eveid" alt="" coords="601,224,768,251"/>
-<area shape="rect" id="node14" href="$event__if_8h.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="423,325,513,352"/>
-<area shape="rect" id="node16" href="$event__if_8h.html#a29248d04ab081760fecfe8459b5582cd" title="free event if instance " alt="" coords="421,376,515,403"/>
-<area shape="rect" id="node15" href="$event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="606,325,763,352"/>
+<area shape="rect" id="node2" href="$event__thread_8c.html#a25cb5e69a065c9fc3409460cdb8f5324" title="callback main " alt="" coords="184,13,335,39"/>
+<area shape="rect" id="node5" href="$event__thread_8c.html#aa3fd9205045c0af99a49e57c16f45106" title="remove event_base " alt="" coords="188,64,331,105"/>
+<area shape="rect" id="node3" href="$event__thread_8c.html#a3aefda8125b91b18060424ceeb38fa1e" title="main messages caller " alt="" coords="383,5,513,47"/>
+<area shape="rect" id="node4" href="$event__thread_8c.html#a9e62ce73150c1d2ec9db174d2a07394f" title="event_tpool_thread\l_msg_cb_call" alt="" coords="561,5,692,47"/>
 </map>

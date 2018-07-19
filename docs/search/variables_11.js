@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['update',['update',['../structevent__thread__msg__header__t.html#ab2e0c0cc80eb0f3d3097bb93c7f4122d',1,'event_thread_msg_header_t']]],
-  ['usb_5fdp_5finterface_5fg',['usb_dp_interface_g',['../usb__device__plugin_8c.html#a5aea63c4f026b432c77905235f778f12',1,'usb_device_plugin.c']]],
-  ['used',['used',['../structmaloc__data__t.html#a5810b6407672b8e7aeba609b4bb649de',1,'maloc_data_t']]],
-  ['user_5fbuf',['user_buf',['../structmemorypool__t.html#a20a7ae966cb37bfc1537972ad2d3cef8',1,'memorypool_t']]]
+  ['waitfds',['waitfds',['../structevent__select__t.html#a26d005af464867e5b0c78ccc6f2f5270',1,'event_select_t']]],
+  ['watch',['watch',['../structevent__libev__handler__t.html#abb9a939257c872c9ceca5fd4a11bb012',1,'event_libev_handler_t']]],
+  ['writefds',['writefds',['../structevent__select__fds__t.html#a78cbf6862fcdb8dd7c2d9eb1dd0f6cdd',1,'event_select_fds_t']]]
 ];

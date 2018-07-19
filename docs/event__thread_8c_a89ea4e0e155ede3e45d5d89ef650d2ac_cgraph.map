@@ -1,14 +1,4 @@
 <map id="event_tpool_thread_msg_cb_update" name="event_tpool_thread_msg_cb_update">
-<area shape="rect" id="node2" href="$event__thread_8c.html#aaa5514a0ce6c490ee91af615c2d41f31" title="get subscriber " alt="" coords="184,31,315,72"/>
-<area shape="rect" id="node5" href="$event__if_8h.html#a8efe4fbd1ba72a0443ec626b8f14bac4" title="update registered event " alt="" coords="194,147,305,174"/>
-<area shape="rect" id="node3" href="$event__thread_8c.html#a425c984e2437355893146600348ed020" title="get fd " alt="" coords="371,5,521,47"/>
-<area shape="rect" id="node4" href="$event__if_8h.html#ab77635365c39241ca196b528c6a71df6" title="delete event " alt="" coords="613,13,713,39"/>
-<area shape="rect" id="node6" href="$event__if__epoll_8c.html#ac779b9dbe2fa1081785e7918bceeb44a" title="convert_etpoll_eveid2own" alt="" coords="363,71,529,98"/>
-<area shape="rect" id="node7" href="$event__if__libevent_8c.html#aa18f47657c299570b7cf255922616632" title="delete event " alt="" coords="401,122,491,149"/>
-<area shape="rect" id="node8" href="$event__if__libevent_8c.html#acfff3396c4ebb44d7472e100b60c7742" title="add new event " alt="" coords="399,173,493,199"/>
-<area shape="rect" id="node12" href="$event__if__select_8c.html#a5ac65d57a89cacf29b9f980096a4b5e3" title="event_select_unset_fds" alt="" coords="367,223,525,250"/>
-<area shape="rect" id="node13" href="$event__if__select_8c.html#a2cc4a722c88d92de302c94ad198258d7" title="event_select_set_fds" alt="" coords="375,274,517,301"/>
-<area shape="rect" id="node9" href="$event__if__libevent_8c.html#a9315b18d214c5c77aa9f0ad2c7bccfb5" title="convert_etpoll_eveid2own" alt="" coords="579,147,746,174"/>
-<area shape="rect" id="node10" href="$event__if__libevent_8c.html#a7612123e0f293e4b76e7a948d1e12060" title="event_if_libevent_callback" alt="" coords="577,198,748,225"/>
-<area shape="rect" id="node11" href="$event__if__libevent_8c.html#af6a4a73563d9ead4fd2f8a5a8484abb8" title="convert_etpoll_own2eveid" alt="" coords="796,198,963,225"/>
+<area shape="rect" id="node2" href="$event__thread_8c.html#aaa5514a0ce6c490ee91af615c2d41f31" title="get subscriber " alt="" coords="184,5,315,47"/>
+<area shape="rect" id="node3" href="$event__thread_8c.html#a425c984e2437355893146600348ed020" title="get fd " alt="" coords="363,5,513,47"/>
 </map>

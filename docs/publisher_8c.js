@@ -7,6 +7,7 @@ var publisher_8c =
     [ "publisher_new", "publisher_8c.html#a68d8654b6723bbf29d5692ef46d88e06", null ],
     [ "publisher_publish", "publisher_8c.html#a59fb7a935a9e8dfb338ddd144366e6c2", null ],
     [ "publisher_subscribe", "publisher_8c.html#a4a58d95d58cc75d6a45f2d4e25c5ea3f", null ],
+    [ "publisher_subscribe_oneshot", "publisher_8c.html#a9c566795c3fb9f2e98629fd46ec92536", null ],
     [ "publisher_unsubscribe", "publisher_8c.html#a19233984adcb851a6441ac76467fc2c5", null ],
     [ "publisher_g", "publisher_8c.html#a0772646cbade7f6b07d78a53f68028b4", null ]
 ];

@@ -1,0 +1,6 @@
+<map id="publisher_subscribe_oneshot" name="publisher_subscribe_oneshot">
+<area shape="rect" id="node2" href="$publisher_8c.html#aea223bde10d68ce920966354ffff2b9d" title="get content from id " alt="" coords="204,5,353,32"/>
+<area shape="rect" id="node3" href="$publish__content_8c.html#a12de5b8a87dc77145164929caa5597f5" title="publish_content_subscribe\l_oneshot" alt="" coords="191,57,367,98"/>
+<area shape="rect" id="node4" href="$publish__content_8c.html#a023abdcbfc55b1eee56ac69dd00627d3" title="push subscriber " alt="" coords="415,57,563,98"/>
+<area shape="rect" id="node5" href="$dp__list_8h.html#aacb8cf2643fa1e8153eb99e724a10e3c" title="list push " alt="" coords="611,64,723,91"/>
+</map>

@@ -6,5 +6,6 @@ var publish__content_8h =
     [ "publish_content_new", "publish__content_8h.html#abc7a4b79ea6586122b8c1a6370c2b383", null ],
     [ "publish_content_publish", "publish__content_8h.html#a5ed4d9aef594b377430be1f263207a64", null ],
     [ "publish_content_subscribe", "publish__content_8h.html#a9140393911925b01e25b82f99c1e1eb3", null ],
+    [ "publish_content_subscribe_oneshot", "publish__content_8h.html#a12de5b8a87dc77145164929caa5597f5", null ],
     [ "publish_content_unsubscribe", "publish__content_8h.html#abe6cb501e94a2c20f79c49f79e54f7e8", null ]
 ];

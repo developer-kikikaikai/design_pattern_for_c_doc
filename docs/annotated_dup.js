@@ -21,6 +21,8 @@ var annotated_dup =
     [ "DPUtilList", "struct_d_p_util_list.html", null ],
     [ "event_epoll_handler_t", "structevent__epoll__handler__t.html", "structevent__epoll__handler__t" ],
     [ "event_epoll_t", "structevent__epoll__t.html", "structevent__epoll__t" ],
+    [ "event_libev_handler_t", "structevent__libev__handler__t.html", "structevent__libev__handler__t" ],
+    [ "event_libev_manager_t", "structevent__libev__manager__t.html", "structevent__libev__manager__t" ],
     [ "event_libevent_handler_t", "structevent__libevent__handler__t.html", "structevent__libevent__handler__t" ],
     [ "event_select_fds_t", "structevent__select__fds__t.html", "structevent__select__fds__t" ],
     [ "event_select_handler_t", "structevent__select__handler__t.html", "structevent__select__handler__t" ],
