@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">design_pattern_for_c
-   &#160;<span id="projectnumber">for 1.0.0</span>
+   &#160;<span id="projectnumber">V 1.00</span>
    </div>
   </td>
  </tr>
@@ -103,12 +103,14 @@ $(document).ready(function(){initNavTree('dp__debug_8h.html','');});
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
-<code>#include &lt;errno.h&gt;</code><br />
 <code>#include &lt;pthread.h&gt;</code><br />
+<code>#include &lt;errno.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for dp_debug.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="dp__debug_8h__incl.png" border="0" usemap="#_d_1_2design__pattern__for__c_2design__pattern__util_2include_2dp__debug_8h" alt=""/></div>
+<map name="_d_1_2design__pattern__for__c_2design__pattern__util_2include_2dp__debug_8h" id="_d_1_2design__pattern__for__c_2design__pattern__util_2include_2dp__debug_8h">
+</map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -144,16 +146,18 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a07f425e7292403a9291a9e6576e4d347"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#a07f425e7292403a9291a9e6576e4d347">DBGFLAG</a></td></tr>
+<tr class="memitem:a88edd2aa4feabff4af21a997d5d8aa23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#a88edd2aa4feabff4af21a997d5d8aa23">DEBUG_PRINT</a>(...)</td></tr>
+<tr class="separator:a88edd2aa4feabff4af21a997d5d8aa23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f425e7292403a9291a9e6576e4d347"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#a07f425e7292403a9291a9e6576e4d347">DBGFLAG</a>&#160;&#160;&#160;/*if you want to disable all debug information, please comment out it*/</td></tr>
 <tr class="separator:a07f425e7292403a9291a9e6576e4d347"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58edb19b1cf8a0e3d55a86b24dae9acb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#a58edb19b1cf8a0e3d55a86b24dae9acb">DEBUG_ERRPRINT</a>(...)&#160;&#160;&#160;<a class="el" href="dp__debug_8h.html#a702ec5f4a6870f70fbd3f7fef888a33c">DEBUG_ERRPRINT_</a>(__VA_ARGS__, &quot;&quot;)</td></tr>
-<tr class="separator:a58edb19b1cf8a0e3d55a86b24dae9acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4baf7d2a02303f196afa8dc9dd355ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#aa4baf7d2a02303f196afa8dc9dd355ce">DPDEBUG_INIT</a>&#160;&#160;&#160;<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>=<a class="el" href="dp__timelog_8c.html#a47da78e7595a5c0e5e6624a3bafd81ed">dp_timelog_init</a>(&quot;,&quot;, 2048, 8192, 0); <a class="el" href="dp__timelog_8c.html#a963174e915b171b793c63eed54692e90">dp_timelog_print</a>(<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>,&quot;init\n&quot;);</td></tr>
 <tr class="memdesc:aa4baf7d2a02303f196afa8dc9dd355ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">If you want to show deail log, please set DPDEBUG_INIT or DPDEBUG_INIT_THREADSAFE at start, and set DPDEBUG_EXIT at end.  <a href="#aa4baf7d2a02303f196afa8dc9dd355ce">More...</a><br /></td></tr>
 <tr class="separator:aa4baf7d2a02303f196afa8dc9dd355ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3185baf6bb64d6431e15d91927f7c29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#aa3185baf6bb64d6431e15d91927f7c29">DPDEBUG_INIT_THREADSAFE</a>&#160;&#160;&#160;<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>=<a class="el" href="dp__timelog_8c.html#a47da78e7595a5c0e5e6624a3bafd81ed">dp_timelog_init</a>(&quot;,&quot;, 2048, 8192, 1); <a class="el" href="dp__timelog_8c.html#a963174e915b171b793c63eed54692e90">dp_timelog_print</a>(<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>,&quot;init\n&quot;);</td></tr>
+<tr class="memitem:aa3185baf6bb64d6431e15d91927f7c29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#aa3185baf6bb64d6431e15d91927f7c29">DPDEBUG_INIT_THREADSAFE</a>&#160;&#160;&#160;<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>=<a class="el" href="dp__timelog_8c.html#a47da78e7595a5c0e5e6624a3bafd81ed">dp_timelog_init</a>(&quot;,&quot;, 2048, 1, 1); <a class="el" href="dp__timelog_8c.html#a963174e915b171b793c63eed54692e90">dp_timelog_print</a>(<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>,&quot;init\n&quot;);</td></tr>
 <tr class="memdesc:aa3185baf6bb64d6431e15d91927f7c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">If you want to show deail log, please set DPDEBUG_INIT or DPDEBUG_INIT_THREADSAFE at start, and set DPDEBUG_EXIT at end.  <a href="#aa3185baf6bb64d6431e15d91927f7c29">More...</a><br /></td></tr>
 <tr class="separator:aa3185baf6bb64d6431e15d91927f7c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58edb19b1cf8a0e3d55a86b24dae9acb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#a58edb19b1cf8a0e3d55a86b24dae9acb">DEBUG_ERRPRINT</a>(...)&#160;&#160;&#160;<a class="el" href="dp__debug_8h.html#a702ec5f4a6870f70fbd3f7fef888a33c">DEBUG_ERRPRINT_</a>(__VA_ARGS__, &quot;&quot;)</td></tr>
+<tr class="separator:a58edb19b1cf8a0e3d55a86b24dae9acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a702ec5f4a6870f70fbd3f7fef888a33c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#a702ec5f4a6870f70fbd3f7fef888a33c">DEBUG_ERRPRINT_</a>(fmt, ...)&#160;&#160;&#160;<a class="el" href="dp__timelog_8c.html#a963174e915b171b793c63eed54692e90">dp_timelog_print</a>(<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>, &quot;[%s(%s:%d)thread:%x]: &quot;fmt&quot;%s&quot;, __FUNCTION__,__FILE__,__LINE__,(unsigned int)pthread_self(), __VA_ARGS__)</td></tr>
 <tr class="separator:a702ec5f4a6870f70fbd3f7fef888a33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3b20238c216586561e4aefef1712dd5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dp__debug_8h.html#ac3b20238c216586561e4aefef1712dd5">DPDEBUG_EXIT</a>&#160;&#160;&#160;<a class="el" href="dp__timelog_8c.html#a963174e915b171b793c63eed54692e90">dp_timelog_print</a>(<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>,&quot;exit\n&quot;);dp_timelog_exit(<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>);<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>=NULL;</td></tr>
@@ -197,12 +201,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DBGFLAG</td>
+          <td class="memname">#define DBGFLAG&#160;&#160;&#160;/*if you want to disable all debug information, please comment out it*/</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00055">55</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00057">57</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
 
 </div>
 </div>
@@ -222,7 +226,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00058">58</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00069">69</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
 
 </div>
 </div>
@@ -252,7 +256,27 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00066">66</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00070">70</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
+
+</div>
+</div>
+<a id="a88edd2aa4feabff4af21a997d5d8aa23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88edd2aa4feabff4af21a997d5d8aa23">&#9670;&nbsp;</a></span>DEBUG_PRINT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUG_PRINT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00055">55</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
 
 </div>
 </div>
@@ -270,7 +294,7 @@ Variables</h2></td></tr>
 
 <p>If you want to show deail log, please set DPDEBUG_INIT or DPDEBUG_INIT_THREADSAFE at start, and set DPDEBUG_EXIT at end. </p>
 
-<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00069">69</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00073">73</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
 
 </div>
 </div>
@@ -288,7 +312,7 @@ Variables</h2></td></tr>
 
 <p>If you want to show deail log, please set DPDEBUG_INIT or DPDEBUG_INIT_THREADSAFE at start, and set DPDEBUG_EXIT at end. </p>
 
-<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00063">63</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00065">65</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
 
 </div>
 </div>
@@ -299,14 +323,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DPDEBUG_INIT_THREADSAFE&#160;&#160;&#160;<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>=<a class="el" href="dp__timelog_8c.html#a47da78e7595a5c0e5e6624a3bafd81ed">dp_timelog_init</a>(&quot;,&quot;, 2048, 8192, 1); <a class="el" href="dp__timelog_8c.html#a963174e915b171b793c63eed54692e90">dp_timelog_print</a>(<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>,&quot;init\n&quot;);</td>
+          <td class="memname">#define DPDEBUG_INIT_THREADSAFE&#160;&#160;&#160;<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>=<a class="el" href="dp__timelog_8c.html#a47da78e7595a5c0e5e6624a3bafd81ed">dp_timelog_init</a>(&quot;,&quot;, 2048, 1, 1); <a class="el" href="dp__timelog_8c.html#a963174e915b171b793c63eed54692e90">dp_timelog_print</a>(<a class="el" href="dp__timelog_8c.html#a51e44a6bea79ec5272f59bf4037e83f5">timelog_g</a>,&quot;init\n&quot;);</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>If you want to show deail log, please set DPDEBUG_INIT or DPDEBUG_INIT_THREADSAFE at start, and set DPDEBUG_EXIT at end. </p>
 
-<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00065">65</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dp__debug_8h_source.html#l00067">67</a> of file <a class="el" href="dp__debug_8h_source.html">dp_debug.h</a>.</p>
 
 </div>
 </div>

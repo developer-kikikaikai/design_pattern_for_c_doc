@@ -1868,27 +1868,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__if__libev_8c_1aa18f47657c299570b7cf255922616632';
-        sec-mem-ref-line = '152';
+        sec-mem-ref-line = '151';
         sec-mem-ref-name = 'event_if_del';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__if__libev_8c_1aa903a0971a8264153461f01e9438f388';
-        sec-mem-ref-line = '166';
+        sec-mem-ref-line = '165';
         sec-mem-ref-name = 'event_if_loop';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__if__libev_8c_1a8343693c8b70e81e82960389e7dac8db';
-        sec-mem-ref-line = '173';
+        sec-mem-ref-line = '172';
         sec-mem-ref-name = 'event_if_loopbreak';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__if__libev_8c_1a127eb84ce5fa16fcc7c995021b10308f';
-        sec-mem-ref-line = '180';
+        sec-mem-ref-line = '179';
         sec-mem-ref-name = 'event_if_exit';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__if__libev_8c_1a29248d04ab081760fecfe8459b5582cd';
-        sec-mem-ref-line = '186';
+        sec-mem-ref-line = '185';
         sec-mem-ref-name = 'event_if_free';
     };
     }; /* sec-member */
@@ -1992,7 +1992,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__if__libev_8c_1aa18f47657c299570b7cf255922616632';
-        sec-mem-ref-line = '152';
+        sec-mem-ref-line = '151';
         sec-mem-ref-name = 'event_if_del';
     };
     }; /* sec-member */
@@ -2069,22 +2069,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__if__libev_8c_1aa18f47657c299570b7cf255922616632';
-        sec-mem-ref-line = '152';
+        sec-mem-ref-line = '151';
         sec-mem-ref-name = 'event_if_del';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__if__libev_8c_1aa903a0971a8264153461f01e9438f388';
-        sec-mem-ref-line = '166';
+        sec-mem-ref-line = '165';
         sec-mem-ref-name = 'event_if_loop';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__if__libev_8c_1a8343693c8b70e81e82960389e7dac8db';
-        sec-mem-ref-line = '173';
+        sec-mem-ref-line = '172';
         sec-mem-ref-name = 'event_if_loopbreak';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__if__libev_8c_1a127eb84ce5fa16fcc7c995021b10308f';
-        sec-mem-ref-line = '180';
+        sec-mem-ref-line = '179';
         sec-mem-ref-name = 'event_if_exit';
     };
     }; /* sec-member */
@@ -2107,7 +2107,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__if__libev_8c_1a8343693c8b70e81e82960389e7dac8db';
-        sec-mem-ref-line = '173';
+        sec-mem-ref-line = '172';
         sec-mem-ref-name = 'event_if_loopbreak';
     };
     }; /* sec-member */
@@ -2206,12 +2206,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__if__libevent_8c_1aa18f47657c299570b7cf255922616632';
-        sec-mem-ref-line = '95';
+        sec-mem-ref-line = '94';
         sec-mem-ref-name = 'event_if_del';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__if__libevent_8c_1ab77635365c39241ca196b528c6a71df6';
-        sec-mem-ref-line = '102';
+        sec-mem-ref-line = '101';
         sec-mem-ref-name = 'event_if_getfd';
     };
     }; /* sec-member */
@@ -2895,7 +2895,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1aaa5514a0ce6c490ee91af615c2d41f31';
-        sec-mem-ref-line = '375';
+        sec-mem-ref-line = '373';
         sec-mem-ref-name = 'event_tpool_thread_get_subscriber';
     };
     }; /* sec-member */
@@ -2936,17 +2936,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1aba5dc282f2df9b3b0664764d7150e637';
-        sec-mem-ref-line = '295';
+        sec-mem-ref-line = '293';
         sec-mem-ref-name = 'event_subscriber_data_new';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a914e60d8a3a3d121c079a022d320168c';
-        sec-mem-ref-line = '316';
+        sec-mem-ref-line = '314';
         sec-mem-ref-name = 'event_subscriber_data_free';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a89ea4e0e155ede3e45d5d89ef650d2ac';
-        sec-mem-ref-line = '424';
+        sec-mem-ref-line = '422';
         sec-mem-ref-name = 'event_tpool_thread_msg_cb_update';
     };
     }; /* sec-member */
@@ -3042,22 +3042,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a5b12559eac99a129de44832c1dc9b077';
-        sec-mem-ref-line = '232';
+        sec-mem-ref-line = '230';
         sec-mem-ref-name = 'event_thread_msg_send_add';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1aaf63eb889e0ff85313b5753f59dec3be';
-        sec-mem-ref-line = '238';
+        sec-mem-ref-line = '236';
         sec-mem-ref-name = 'event_thread_msg_send_update';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1aba5dc282f2df9b3b0664764d7150e637';
-        sec-mem-ref-line = '295';
+        sec-mem-ref-line = '293';
         sec-mem-ref-name = 'event_subscriber_data_new';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a89ea4e0e155ede3e45d5d89ef650d2ac';
-        sec-mem-ref-line = '424';
+        sec-mem-ref-line = '422';
         sec-mem-ref-name = 'event_tpool_thread_msg_cb_update';
     };
       sec-mem-referenceby = {
@@ -3191,17 +3191,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a29fc7e7d2086121de80e8d4a8c15fc4e';
-        sec-mem-ref-line = '211';
+        sec-mem-ref-line = '209';
         sec-mem-ref-name = 'event_thread_msg_send_subscribe';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a28448587d7a075b3c0e67fcaa81587c1';
-        sec-mem-ref-line = '410';
+        sec-mem-ref-line = '408';
         sec-mem-ref-name = 'event_tpool_thread_msg_cb_add';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a89ea4e0e155ede3e45d5d89ef650d2ac';
-        sec-mem-ref-line = '424';
+        sec-mem-ref-line = '422';
         sec-mem-ref-name = 'event_tpool_thread_msg_cb_update';
     };
     }; /* sec-member */
@@ -3224,17 +3224,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a29fc7e7d2086121de80e8d4a8c15fc4e';
-        sec-mem-ref-line = '211';
+        sec-mem-ref-line = '209';
         sec-mem-ref-name = 'event_thread_msg_send_subscribe';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a28448587d7a075b3c0e67fcaa81587c1';
-        sec-mem-ref-line = '410';
+        sec-mem-ref-line = '408';
         sec-mem-ref-name = 'event_tpool_thread_msg_cb_add';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a89ea4e0e155ede3e45d5d89ef650d2ac';
-        sec-mem-ref-line = '424';
+        sec-mem-ref-line = '422';
         sec-mem-ref-name = 'event_tpool_thread_msg_cb_update';
     };
     }; /* sec-member */
@@ -3296,12 +3296,12 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a6a67831cc84e660a2c0fb87ae22c85fd';
-        sec-mem-ref-line = '242';
+        sec-mem-ref-line = '240';
         sec-mem-ref-name = 'event_thread_msg_send_del';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a0362cf7486b7259ef05efdb0dd065d71';
-        sec-mem-ref-line = '438';
+        sec-mem-ref-line = '436';
         sec-mem-ref-name = 'event_tpool_thread_msg_cb_del';
     };
     }; /* sec-member */
@@ -3375,7 +3375,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a434dd62b37638e31577b13671dee5976';
-        sec-mem-ref-line = '540';
+        sec-mem-ref-line = '537';
         sec-mem-ref-name = 'event_tpool_thread_new';
     };
     }; /* sec-member */
@@ -3398,7 +3398,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a434dd62b37638e31577b13671dee5976';
-        sec-mem-ref-line = '540';
+        sec-mem-ref-line = '537';
         sec-mem-ref-name = 'event_tpool_thread_new';
     };
     }; /* sec-member */
@@ -3421,7 +3421,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a434dd62b37638e31577b13671dee5976';
-        sec-mem-ref-line = '540';
+        sec-mem-ref-line = '537';
         sec-mem-ref-name = 'event_tpool_thread_new';
     };
     }; /* sec-member */
@@ -3548,22 +3548,22 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a29fc7e7d2086121de80e8d4a8c15fc4e';
-        sec-mem-ref-line = '211';
+        sec-mem-ref-line = '209';
         sec-mem-ref-name = 'event_thread_msg_send_subscribe';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a6a67831cc84e660a2c0fb87ae22c85fd';
-        sec-mem-ref-line = '242';
+        sec-mem-ref-line = '240';
         sec-mem-ref-name = 'event_thread_msg_send_del';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1ac3f6d6b2a6ac043ef46afba66cae53be';
-        sec-mem-ref-line = '265';
+        sec-mem-ref-line = '263';
         sec-mem-ref-name = 'event_thread_msg_send_stop';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a9e62ce73150c1d2ec9db174d2a07394f';
-        sec-mem-ref-line = '289';
+        sec-mem-ref-line = '287';
         sec-mem-ref-name = 'event_tpool_thread_msg_cb_call';
     };
     }; /* sec-member */
@@ -3586,7 +3586,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a29fc7e7d2086121de80e8d4a8c15fc4e';
-        sec-mem-ref-line = '211';
+        sec-mem-ref-line = '209';
         sec-mem-ref-name = 'event_thread_msg_send_subscribe';
     };
     }; /* sec-member */
@@ -3609,7 +3609,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a6a67831cc84e660a2c0fb87ae22c85fd';
-        sec-mem-ref-line = '242';
+        sec-mem-ref-line = '240';
         sec-mem-ref-name = 'event_thread_msg_send_del';
     };
     }; /* sec-member */
@@ -3632,27 +3632,27 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a29fc7e7d2086121de80e8d4a8c15fc4e';
-        sec-mem-ref-line = '211';
+        sec-mem-ref-line = '209';
         sec-mem-ref-name = 'event_thread_msg_send_subscribe';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a6a67831cc84e660a2c0fb87ae22c85fd';
-        sec-mem-ref-line = '242';
+        sec-mem-ref-line = '240';
         sec-mem-ref-name = 'event_thread_msg_send_del';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a28448587d7a075b3c0e67fcaa81587c1';
-        sec-mem-ref-line = '410';
+        sec-mem-ref-line = '408';
         sec-mem-ref-name = 'event_tpool_thread_msg_cb_add';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a89ea4e0e155ede3e45d5d89ef650d2ac';
-        sec-mem-ref-line = '424';
+        sec-mem-ref-line = '422';
         sec-mem-ref-name = 'event_tpool_thread_msg_cb_update';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a0362cf7486b7259ef05efdb0dd065d71';
-        sec-mem-ref-line = '438';
+        sec-mem-ref-line = '436';
         sec-mem-ref-name = 'event_tpool_thread_msg_cb_del';
     };
     }; /* sec-member */
@@ -4485,7 +4485,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a434dd62b37638e31577b13671dee5976';
-        sec-mem-ref-line = '540';
+        sec-mem-ref-line = '537';
         sec-mem-ref-name = 'event_tpool_thread_new';
     };
     }; /* sec-member */
@@ -4508,7 +4508,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'event__thread_8c_1a434dd62b37638e31577b13671dee5976';
-        sec-mem-ref-line = '540';
+        sec-mem-ref-line = '537';
         sec-mem-ref-name = 'event_tpool_thread_new';
     };
     }; /* sec-member */
@@ -8463,7 +8463,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -8751,7 +8751,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -10593,14 +10593,71 @@ file = {
     define = {
     define-member = {
       define-mem-kind = 'define';
-      define-mem-id   = 'dp__debug_8h_1a07f425e7292403a9291a9e6576e4d347';
+      define-mem-id   = 'dp__debug_8h_1a88edd2aa4feabff4af21a997d5d8aa23';
       define-mem-virt = normal;
       define-mem-prot = public;
-      define-mem-name = 'DBGFLAG';
+      define-mem-name = 'DEBUG_PRINT';
+      define-mem-param  = {
+        define-mem-def-name = '...';
+      }; /*        define-mem-def--param */
       define-mem-desc-file = 'D:/design_pattern_for_c/design_pattern_util/include/dp_debug.h';
       define-mem-desc-line = '55';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'dp__debug_8h_1a07f425e7292403a9291a9e6576e4d347';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'DBGFLAG';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+/*if you want to disable all debug information, please comment out it*/
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = 'D:/design_pattern_for_c/design_pattern_util/include/dp_debug.h';
+      define-mem-desc-line = '57';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'dp__debug_8h_1aa4baf7d2a02303f196afa8dc9dd355ce';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'DPDEBUG_INIT';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+timelog_g=dp_timelog_init(",", 2048, 8192, 0); dp_timelog_print(timelog_g,"init\n");
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = 'D:/design_pattern_for_c/design_pattern_util/include/dp_debug.h';
+      define-mem-desc-line = '65';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+If you want to show deail log, please set DPDEBUG_INIT or DPDEBUG_INIT_THREADSAFE at start, and set DPDEBUG_EXIT at end.
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'dp__debug_8h_1aa3185baf6bb64d6431e15d91927f7c29';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'DPDEBUG_INIT_THREADSAFE';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+timelog_g=dp_timelog_init(",", 2048, 1, 1); dp_timelog_print(timelog_g,"init\n");
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = 'D:/design_pattern_for_c/design_pattern_util/include/dp_debug.h';
+      define-mem-desc-line = '67';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+If you want to show deail log, please set DPDEBUG_INIT or DPDEBUG_INIT_THREADSAFE at start, and set DPDEBUG_EXIT at end.
 _EnD_oF_dEf_TeXt_;
       define-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
@@ -10619,45 +10676,9 @@ _EnD_oF_dEf_TeXt_;
 DEBUG_ERRPRINT_(__VA_ARGS__, "")
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = 'D:/design_pattern_for_c/design_pattern_util/include/dp_debug.h';
-      define-mem-desc-line = '58';
+      define-mem-desc-line = '69';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
-_EnD_oF_dEf_TeXt_;
-      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
-_EnD_oF_dEf_TeXt_;
-    }; /* define-member */
-    define-member = {
-      define-mem-kind = 'define';
-      define-mem-id   = 'dp__debug_8h_1aa4baf7d2a02303f196afa8dc9dd355ce';
-      define-mem-virt = normal;
-      define-mem-prot = public;
-      define-mem-name = 'DPDEBUG_INIT';
-      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
-timelog_g=dp_timelog_init(",", 2048, 8192, 0); dp_timelog_print(timelog_g,"init\n");
-_EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = 'D:/design_pattern_for_c/design_pattern_util/include/dp_debug.h';
-      define-mem-desc-line = '63';
-      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-If you want to show deail log, please set DPDEBUG_INIT or DPDEBUG_INIT_THREADSAFE at start, and set DPDEBUG_EXIT at end.
-_EnD_oF_dEf_TeXt_;
-      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
-_EnD_oF_dEf_TeXt_;
-    }; /* define-member */
-    define-member = {
-      define-mem-kind = 'define';
-      define-mem-id   = 'dp__debug_8h_1aa3185baf6bb64d6431e15d91927f7c29';
-      define-mem-virt = normal;
-      define-mem-prot = public;
-      define-mem-name = 'DPDEBUG_INIT_THREADSAFE';
-      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
-timelog_g=dp_timelog_init(",", 2048, 8192, 1); dp_timelog_print(timelog_g,"init\n");
-_EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = 'D:/design_pattern_for_c/design_pattern_util/include/dp_debug.h';
-      define-mem-desc-line = '65';
-      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-If you want to show deail log, please set DPDEBUG_INIT or DPDEBUG_INIT_THREADSAFE at start, and set DPDEBUG_EXIT at end.
 _EnD_oF_dEf_TeXt_;
       define-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
@@ -10679,7 +10700,7 @@ _EnD_oF_dEf_TeXt_;
 dp_timelog_print(timelog_g, "[%s(%s:%d)thread:%x]: "fmt"%s", __FUNCTION__,__FILE__,__LINE__,(unsigned int)pthread_self(), __VA_ARGS__)
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = 'D:/design_pattern_for_c/design_pattern_util/include/dp_debug.h';
-      define-mem-desc-line = '66';
+      define-mem-desc-line = '70';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -10697,7 +10718,7 @@ _EnD_oF_dEf_TeXt_;
 dp_timelog_print(timelog_g,"exit\n");dp_timelog_exit(timelog_g);timelog_g=NULL;
 _EnD_oF_dEf_TeXt_;
       define-mem-desc-file = 'D:/design_pattern_for_c/design_pattern_util/include/dp_debug.h';
-      define-mem-desc-line = '69';
+      define-mem-desc-line = '73';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 If you want to show deail log, please set DPDEBUG_INIT or DPDEBUG_INIT_THREADSAFE at start, and set DPDEBUG_EXIT at end.
 _EnD_oF_dEf_TeXt_;
@@ -10793,7 +10814,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -10987,7 +11008,7 @@ DPTimeLog
 _EnD_oF_dEf_TeXt_;
       var-mem-name = 'timelog_g';
       var-mem-desc-file = 'D:/design_pattern_for_c/design_pattern_util/include/dp_debug.h';
-      var-mem-desc-line = '61';
+      var-mem-desc-line = '63';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 global timelog handle to show debug log
 _EnD_oF_dEf_TeXt_;
@@ -11239,7 +11260,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -11863,7 +11884,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -12011,7 +12032,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -12247,7 +12268,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -12395,7 +12416,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -12979,7 +13000,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -13102,7 +13123,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -13555,7 +13576,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -13678,7 +13699,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -13985,7 +14006,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -14115,7 +14136,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -14182,7 +14203,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -14234,7 +14255,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -14288,7 +14309,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -15247,7 +15268,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -15377,7 +15398,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -15444,7 +15465,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -15496,7 +15517,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -15550,7 +15571,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -15730,7 +15751,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -16296,7 +16317,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -16514,7 +16535,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceby = {
@@ -16700,7 +16721,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -17159,7 +17180,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -17377,7 +17398,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceby = {
@@ -17900,7 +17921,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referenceby = {
         func-mem-ref-id = 'event__if__libev_8c_1aa18f47657c299570b7cf255922616632';
-        func-mem-ref-line = '152';
+        func-mem-ref-line = '151';
         func-mem-ref-name = 'event_if_del';
     };
     }; /* func-member */
@@ -18811,7 +18832,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'thread_size';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/design_pattern_for_c/threadpool/lib/event_thread.c';
-      func-mem-desc-line = '540';
+      func-mem-desc-line = '537';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 create and thread instance
 _EnD_oF_dEf_TeXt_;
@@ -18820,7 +18841,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
@@ -18850,7 +18871,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'event__thread_8c_1a32733e959c729cb360f17b65233de0d2';
-        func-mem-ref-line = '332';
+        func-mem-ref-line = '330';
         func-mem-ref-name = 'event_tpool_thread_set_event_base';
     };
       func-mem-referenceto = {
@@ -18880,7 +18901,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'this';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/design_pattern_for_c/threadpool/lib/event_thread.c';
-      func-mem-desc-line = '572';
+      func-mem-desc-line = '569';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 start thread
 _EnD_oF_dEf_TeXt_;
@@ -18894,7 +18915,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'event__thread_8c_1a49e9bbb821b0195b9ae31b14d93d589d';
-        func-mem-ref-line = '387';
+        func-mem-ref-line = '385';
         func-mem-ref-name = 'event_tpool_thread_main';
     };
       func-mem-referenceby = {
@@ -18919,7 +18940,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'this';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/design_pattern_for_c/threadpool/lib/event_thread.c';
-      func-mem-desc-line = '588';
+      func-mem-desc-line = '585';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 stop thread
 _EnD_oF_dEf_TeXt_;
@@ -18928,7 +18949,7 @@ stop thread, and remove resource
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'event__thread_8c_1ac3f6d6b2a6ac043ef46afba66cae53be';
-        func-mem-ref-line = '265';
+        func-mem-ref-line = '263';
         func-mem-ref-name = 'event_thread_msg_send_stop';
     };
       func-mem-referenceto = {
@@ -18970,7 +18991,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'arg';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/design_pattern_for_c/threadpool/lib/event_thread.c';
-      func-mem-desc-line = '604';
+      func-mem-desc-line = '601';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 add new subscriber
 _EnD_oF_dEf_TeXt_;
@@ -18979,7 +19000,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'event__thread_8c_1a5b12559eac99a129de44832c1dc9b077';
-        func-mem-ref-line = '232';
+        func-mem-ref-line = '230';
         func-mem-ref-name = 'event_thread_msg_send_add';
     };
       func-mem-referenceby = {
@@ -19021,7 +19042,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'arg';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/design_pattern_for_c/threadpool/lib/event_thread.c';
-      func-mem-desc-line = '607';
+      func-mem-desc-line = '604';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 update subscriber
 _EnD_oF_dEf_TeXt_;
@@ -19030,7 +19051,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'event__thread_8c_1aaf63eb889e0ff85313b5753f59dec3be';
-        func-mem-ref-line = '238';
+        func-mem-ref-line = '236';
         func-mem-ref-name = 'event_thread_msg_send_update';
     };
       func-mem-referenceby = {
@@ -19061,7 +19082,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'fd';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/design_pattern_for_c/threadpool/lib/event_thread.c';
-      func-mem-desc-line = '612';
+      func-mem-desc-line = '609';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 delete subscriber
 _EnD_oF_dEf_TeXt_;
@@ -19070,7 +19091,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'event__thread_8c_1a6a67831cc84e660a2c0fb87ae22c85fd';
-        func-mem-ref-line = '242';
+        func-mem-ref-line = '240';
         func-mem-ref-name = 'event_thread_msg_send_del';
     };
       func-mem-referenceby = {
@@ -19100,7 +19121,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'this';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/design_pattern_for_c/threadpool/lib/event_thread.c';
-      func-mem-desc-line = '615';
+      func-mem-desc-line = '612';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -19129,7 +19150,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'stack_size';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/design_pattern_for_c/threadpool/lib/event_thread.c';
-      func-mem-desc-line = '622';
+      func-mem-desc-line = '619';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -19163,7 +19184,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'plugin_path';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/design_pattern_for_c/threadpool/lib/event_thread.c';
-      func-mem-desc-line = '626';
+      func-mem-desc-line = '623';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -19172,17 +19193,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       func-mem-referenceto = {
         func-mem-ref-id = 'event__thread_8c_1a832cd90a003e1aeb1b2ef18c37a72abf';
-        func-mem-ref-line = '484';
+        func-mem-ref-line = '481';
         func-mem-ref-name = 'event_tpool_thread_get_defaullt_plugin';
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'dp__debug_8h_1a58edb19b1cf8a0e3d55a86b24dae9acb';
-        func-mem-ref-line = '58';
+        func-mem-ref-line = '69';
         func-mem-ref-name = 'DEBUG_ERRPRINT';
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'event__thread_8c_1aee50083bfbe38493d5d3c33d6d7fef89';
-        func-mem-ref-line = '504';
+        func-mem-ref-line = '501';
         func-mem-ref-name = 'event_tpool_thread_load_all_fun';
     };
       func-mem-referenceby = {
@@ -19206,7 +19227,7 @@ void
 _EnD_oF_dEf_TeXt_;
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/design_pattern_for_c/threadpool/lib/event_thread.c';
-      func-mem-desc-line = '652';
+      func-mem-desc-line = '649';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -19597,17 +19618,17 @@ _EnD_oF_dEf_TeXt_;
     };
       var-mem-referenceby = {
         var-mem-ref-id = 'event__thread_8c_1a914e60d8a3a3d121c079a022d320168c';
-        var-mem-ref-line = '316';
+        var-mem-ref-line = '314';
         var-mem-ref-name = 'event_subscriber_data_free';
     };
       var-mem-referenceby = {
         var-mem-ref-id = 'event__thread_8c_1a873727f5dd62d6c5beaad98426202c4d';
-        var-mem-ref-line = '364';
+        var-mem-ref-line = '362';
         var-mem-ref-name = 'event_tpool_thread_free';
     };
       var-mem-referenceby = {
         var-mem-ref-id = 'event__thread_8c_1a434dd62b37638e31577b13671dee5976';
-        var-mem-ref-line = '540';
+        var-mem-ref-line = '537';
         var-mem-ref-name = 'event_tpool_thread_new';
     };
       var-mem-referenceby = {
@@ -19875,7 +19896,7 @@ _EnD_oF_dEf_TeXt_;
     };
       func-mem-referenceto = {
         func-mem-ref-id = 'event__thread_8c_1aecf6f0b9b1aab74c6d6073b786269bc6';
-        func-mem-ref-line = '612';
+        func-mem-ref-line = '609';
         func-mem-ref-name = 'event_tpool_thread_del';
     };
       func-mem-referenceto = {
